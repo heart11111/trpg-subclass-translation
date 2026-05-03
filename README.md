@@ -1,7 +1,10 @@
-# TRPG Subclass Translation
+# 화살성채 캠페인 자료
 
-Dungeons & Dragons 2024 기준으로 정리한 한국어 서브클래스 번역 보기용 HTML입니다.
+GitHub Pages로 공유하는 화살성채 캠페인 자료 모음입니다.
 
-- `index.html`: 보기용 단일 페이지
-- `assets/`: 스타일과 검색 스크립트
-- `source/subclass-translation.md`: 원본 Markdown
+- `index.html`: 자료 허브
+- `player-guide.html`: 플레이어 가이드
+- `world.html`: 세계관 자료
+- `setting.html`: 설정 정리
+- `homebrew.html`: 홈브류 서브클래스 정리
+- `source/`: 원본 Markdown 자료
