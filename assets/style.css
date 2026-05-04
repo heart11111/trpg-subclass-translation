@@ -242,6 +242,22 @@ tbody td:first-child { font-weight:700; color:var(--accent); white-space:nowrap;
   font-family: Consolas, 'Cascadia Mono', monospace;
   font-size: .9em;
 }
+.doc-content a,
+.doc-content li {
+  overflow-wrap: anywhere;
+}
+.hub-page {
+  background: var(--dark);
+}
+.rules-page .title-cover {
+  min-height: 64vh;
+}
+.rules-page .content {
+  max-width: 980px;
+}
+.rules-page .doc-content h2 {
+  margin-top: 56px;
+}
 .back-link { font-family:'Cinzel',serif; font-size:.75em; color:var(--gold); opacity:.6; letter-spacing:2px; text-decoration:none; margin-top:20px; display:inline-block; }
 .back-link:hover { opacity:.85; }
 .badge { display:inline-block; padding:2px 7px; border-radius:2px; font-size:.72em; font-weight:600; }
