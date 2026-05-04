@@ -98,6 +98,7 @@ const slugOverrides = new Map([
 const removedSubclassTitles = new Set([
   '공허의 파수꾼 - Hollow Warden',
   '마녀사냥꾼 - Witch-Hunter',
+  '악몽의 회합 - Circle of Nightmares',
 ]);
 
 function escapeHtml(value) {
@@ -191,7 +192,10 @@ const firstClassIndex = findHeadingIndex(/^## 워록$/);
 const sourceIndex = findHeadingIndex(/^## 출처$/);
 const bodyLines = lines.slice(firstClassIndex, sourceIndex);
 const unusableSourcePattern = /- .+ - (기존 번역본|사용자 제공 원본 자료)$/;
-const sourceLines = sourceIndex >= 0 ? lines.slice(sourceIndex).filter(line => !unusableSourcePattern.test(line)) : [];
+function isRemovedSourceLine(line) {
+  return [...removedSubclassTitles].some(title => line.includes(title));
+}
+const sourceLines = sourceIndex >= 0 ? lines.slice(sourceIndex).filter(line => !unusableSourcePattern.test(line) && !isRemovedSourceLine(line)) : [];
 const sourceHtml = sourceLines.length ? mdToHtml(sourceLines.join('\n')) : '';
 
 const classSections = [];
