@@ -95,6 +95,10 @@ const slugOverrides = new Map([
   ['전격술사 - Electromancer', 'electromancer'],
 ]);
 
+const removedSubclassTitles = new Set([
+  '공허의 파수꾼 - Hollow Warden',
+]);
+
 function escapeHtml(value) {
   return String(value)
     .replaceAll('&', '&amp;')
@@ -226,6 +230,12 @@ for (const classSection of classSections) {
       lines: sectionLines.slice(start, end),
     });
     i = end - 1;
+  }
+}
+
+for (let i = subclasses.length - 1; i >= 0; i -= 1) {
+  if (removedSubclassTitles.has(subclasses[i].title)) {
+    subclasses.splice(i, 1);
   }
 }
 
