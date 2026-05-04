@@ -97,6 +97,7 @@ const slugOverrides = new Map([
 
 const removedSubclassTitles = new Set([
   '공허의 파수꾼 - Hollow Warden',
+  '마녀사냥꾼 - Witch-Hunter',
 ]);
 
 function escapeHtml(value) {
