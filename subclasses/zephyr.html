@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>질풍 - 화살성채 홈브류</title>
+<meta name="description" content="파이터 서브클래스 질풍 번역 및 룰 검토">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Noto+Serif+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body class="brew-page subclass-page">
+<nav class="site-nav" aria-label="주요 문서">
+  <a class="brand" href="../index.html">화살성채</a>
+  <div class="nav-links">
+    <a href="../index.html">홈</a>
+    <a href="../player-guide.html">플레이어 가이드</a>
+    <a href="../world.html">세계관 자료</a>
+    <a href="../setting.html">설정 정리</a>
+    <a class="active" href="../homebrew.html">홈브류</a>
+    <a href="../spells.html">주문</a>
+  </div>
+</nav>
+<main id="top" class="brew-detail">
+  <header class="brew-detail-hero">
+    <div class="brew-hero-copy">
+      <a class="crumb-link" href="../homebrew.html">홈브류 목록</a>
+      <p class="eyebrow">파이터 SUBCLASS</p>
+      <h1>질풍</h1>
+      <p class="brew-en">Zephyr</p>
+      <p class="brew-lede">모든 형태의 전투에서 신속함은 핵심 기술입니다. 지나가는 매 순간이 삶과 죽음의 차이를 가릅니다. 어떤 전사들에게는 단순히 빠른 것만으로는 충분하지 않습니다. 더 큰 속도를 향한 꺾이지 않는 욕망에 이끌린 </p>
+      <div class="brew-meta-row">
+        <span>공격</span>
+        <span>2024 구조 검토</span>
+        <span>번역 + 운용 메모</span>
+      </div>
+    </div>
+    <figure class="brew-art-frame">
+      <img src="../assets/images/cover-arrowkeep-v2.jpg" alt="질풍 분위기 이미지">
+    </figure>
+  </header>
+  <div class="brew-reading-grid">
+    <aside class="brew-side">
+      <div class="brew-side-box">
+        <p class="side-label">빠른 목차</p>
+        <ol><li><a href="#서브클래스-소개">서브클래스 소개</a></li><li><a href="#3레벨-운동-잠재력---kinetic-potential">3레벨: 운동 잠재력 - Kinetic Potential</a></li><li><a href="#3레벨-민첩한-집중---agile-focus">3레벨: 민첩한 집중 - Agile Focus</a></li><li><a href="#7레벨-가속-여행---hastened-travel">7레벨: 가속 여행 - Hastened Travel</a></li><li><a href="#10레벨-초반사-신경---hyper-reflexes">10레벨: 초반사 신경 - Hyper Reflexes</a></li><li><a href="#15레벨-민첩한-회피---dexterous-evasion">15레벨: 민첩한 회피 - Dexterous Evasion</a></li><li><a href="#18레벨-시간이-멈추다---time-stands-still">18레벨: 시간이 멈추다 - Time Stands Still</a></li><li><a href="#크레딧">크레딧</a></li></ol>
+      </div>
+      
+      <div class="brew-side-box">
+        <p class="side-label">같은 클래스</p>
+        <a class="side-link" href="combat-medic.html">전투 의무병</a><a class="side-link" href="marauder.html">약탈자</a>
+      </div>
+    </aside>
+    <article class="content doc-content brew-article">
+      <section id="질풍---zephyr" class="level3">
+<h3>질풍 - Zephyr</h3>
+<section id="서브클래스-소개" class="level4">
+<h4>서브클래스 소개</h4>
+<p>모든 형태의 전투에서 신속함은 핵심 기술입니다. 지나가는 매 순간이
+삶과 죽음의 차이를 가릅니다. 어떤 전사들에게는 단순히 빠른 것만으로는
+충분하지 않습니다. 더 큰 속도를 향한 꺾이지 않는 욕망에 이끌린 이
+파이터들은 인간 잠재력의 아직 닿지 않은 깊은 곳으로 파고들어, 번개처럼
+움직이는 법을 익힙니다.</p>
+</section>
+<section id="3레벨-운동-잠재력---kinetic-potential" class="level4">
+<h4>3레벨: 운동 잠재력 - Kinetic Potential</h4>
+<p>3레벨부터, 당신은 위치 에너지를 자신 안으로 끌어들여 갑작스러운 속도
+폭발을 일으킬 수 있습니다.</p>
+<p>자기 턴에 공격 행동을 할 때, 당신은 공격을 하는 대신 운동 잠재력
+점수를 얻을 수 있습니다. 이 방식으로 대체한 공격 하나마다 운동 잠재력
+1점을 얻습니다.</p>
+<p>전투 중 당신이 아닌 크리처가 자기 턴을 끝낼 때마다, 당신은 운동
+잠재력 1점을 소비해 다음 턴이 시작되기 전에 갑작스럽게 움직일 수
+있습니다. 이 순간 이동이 아니라, 매우 빠른 이동입니다.</p>
+<p>이 속도 폭발 동안 당신은 자신의 이동속도의 절반까지 이동할 수 있으며,
+행동 하나를 할 수 있습니다. 이 행동은 다음 중 하나로만 사용할 수
+있습니다.</p>
+<ul>
+<li>공격 행동. 단, 무기 공격 1회 또는 밀치기 시도 1회만 할 수
+있습니다.</li>
+<li>질주 행동</li>
+<li>이탈 행동</li>
+<li>도움 행동</li>
+<li>활용(Utilize) 행동. 원문 기준으로는 물체 사용(Use an Object)에
+해당합니다.</li>
+</ul>
+<p>당신의 턴이 시작될 때, 당신이 가진 운동 잠재력 점수는 모두
+사라집니다.</p>
+<blockquote>
+<p>쉽게 말해 자기 턴에 공격 일부를 포기해 “속도 점수”를 저장하고, 다른
+크리처들의 턴 사이사이에 그 점수를 써서 짧게 이동하고 제한된 행동을 하는
+서브클래스입니다. 저장한 점수는 다음 자기 턴이 시작되면 없어집니다.</p>
+</blockquote>
+</section>
+<section id="3레벨-민첩한-집중---agile-focus" class="level4">
+<h4>3레벨: 민첩한 집중 - Agile Focus</h4>
+<p>3레벨에, 당신은 초자연적인 민첩함의 축복을 받습니다. 우선권 굴림에
+이점을 얻고, 크리처들이 당신을 상대로 하는 기회 공격은 불리점을
+받습니다.</p>
+<p>또한 당신이 공격 행동을 할 때, 자신에게 운동 잠재력 1점을 추가로
+부여할 수 있습니다. 이 추가 점수는 숙련 보너스와 같은 횟수만큼 사용할 수
+있으며, 긴 휴식을 마치면 소모한 사용 횟수를 모두 회복합니다.</p>
+</section>
+<section id="7레벨-가속-여행---hastened-travel" class="level4">
+<h4>7레벨: 가속 여행 - Hastened Travel</h4>
+<p>7레벨에, 당신의 이동속도가 10피트 증가합니다.</p>
+<p>크리처가 당신을 상대로 기회 공격을 할 때, 당신은 현재 보유한 운동
+잠재력 점수를 자신의 AC에 더합니다.</p>
+<p>또한 도보로 1분 이상 이동할 때, 당신이 보통 속도나 빠른 속도로
+이동하고 있다면, 같은 시간 동안 이동하는 거리에 당신의 파이터 레벨을
+곱합니다.</p>
+<blockquote>
+<p>쉽게 말해 장거리 이동 중에는 파이터 레벨만큼 이동 효율이 늘어납니다.
+예를 들어 7레벨이면 같은 시간 동안 평소의 7배 거리를 이동합니다. 이
+효과는 극단적으로 빠르므로, 추격전이나 여행 규칙에서 DM과 적용 범위를
+맞추는 것이 좋습니다.</p>
+</blockquote>
+</section>
+<section id="10레벨-초반사-신경---hyper-reflexes" class="level4">
+<h4>10레벨: 초반사 신경 - Hyper Reflexes</h4>
+<p>10레벨부터, 당신이 반응행동을 하려는 순간마다 운동 잠재력 1점을
+소비할 수 있습니다. 그렇게 하면 당신은 반응행동을 소비하지 않고 그
+반응행동을 합니다.</p>
+<p>이 효과는 반응행동의 발동 조건을 없애 주지는 않습니다. 예를 들어 기회
+공격을 하려면 여전히 적이 당신의 사거리를 벗어나는 등 기회 공격을
+유발하는 상황이 필요합니다.</p>
+</section>
+<section id="15레벨-민첩한-회피---dexterous-evasion" class="level4">
+<h4>15레벨: 민첩한 회피 - Dexterous Evasion</h4>
+<p>15레벨에, 당신은 위험을 피하는 데 능숙해집니다. 민첩 내성 굴림에
+숙련을 얻습니다.</p>
+<p>또한 민첩 내성 굴림에 성공하면 절반의 피해만 받는 효과의 대상이
+되었을 때, 성공하면 피해를 전혀 받지 않고, 실패해도 절반의 피해만
+받습니다.</p>
+</section>
+<section id="18레벨-시간이-멈추다---time-stands-still" class="level4">
+<h4>18레벨: 시간이 멈추다 - Time Stands Still</h4>
+<p>18레벨에, 당신은 시간이 멈춘 것처럼 보일 정도로 강력한 속도에 접근할
+수 있습니다.</p>
+<p>당신이 재기의 바람 - Second Wind를 사용할 때, 다른 크리처들에게는
+시간이 멈춘 것처럼 만들 수 있습니다. 이때 당신은 Second Wind에서 굴린
+d10의 결과와 같은 수만큼 연속으로 턴을 가집니다. 이 턴들 동안 당신은
+정상적으로 행동하고 이동할 수 있습니다.</p>
+<p>이 얼어붙은 시간 상태는 다음 중 하나가 발생하면 즉시 끝납니다.</p>
+<ul>
+<li>이 기간 동안 당신이 한 행동이 당신이 아닌 크리처에게 영향을 미친
+경우</li>
+<li>이 기간 동안 당신이 만든 효과가 당신이 아닌 크리처에게 영향을 미친
+경우</li>
+<li>이 기간 동안 당신이 한 행동이나 만든 효과가 다른 누군가가 착용하거나
+운반 중인 물체에 영향을 미친 경우</li>
+</ul>
+<p>이 능력을 사용하면, 긴 휴식을 마칠 때까지 다시 사용할 수
+없습니다.</p>
+<blockquote>
+<p>쉽게 말해 재기의 바람을 쓸 때 d10을 굴리고, 그 숫자만큼 혼자 연속
+턴을 가집니다. 다만 그 시간 동안 다른 크리처나 다른 크리처가 들고 있는
+물건에 영향을 주면 효과가 바로 끝납니다. 따라서 공격용 시간
+정지라기보다는 이동, 숨기, 물건 조작, 자기 강화, 위치 재정비에 가까운
+능력입니다.</p>
+</blockquote>
+</section>
+<section id="크레딧" class="level4">
+<h4>크레딧</h4>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>홈브루 제작</td>
+<td>NCat</td>
+</tr>
+<tr>
+<td>소셜 링크</td>
+<td>Ncat.tumblr.com, r/NCatHomebrew</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="총평-룰상-애매하거나-앞뒤가-맞지-않는-부분" class="level4">
+<h4>총평: 룰상 애매하거나 앞뒤가 맞지 않는 부분</h4>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>검토 의견</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2024 적용</td>
+<td>파이터 서브클래스 레벨은 3/7/10/15/18레벨이므로 2024년판 구조와
+맞습니다. <code>Use an Object</code>는 2024년판 용어에 맞춰
+<code>Utilize</code> 행동으로 정리했습니다.</td>
+</tr>
+<tr>
+<td>운동 잠재력의 행동 경제</td>
+<td>공격을 포기해 점수를 얻고, 다른 크리처의 턴이 끝날 때 이동과 제한
+행동을 합니다. 반응행동을 쓰는 것이 아니므로, 원문 그대로라면 한
+라운드에 여러 번 끼어들 수 있습니다. 전투 처리량이 크게 늘어납니다.</td>
+</tr>
+<tr>
+<td>공격 대체와 추가 공격</td>
+<td>Extra Attack으로 얻은 여러 공격 중 일부를 운동 잠재력으로 바꿀 수
+있습니다. 공격 행동 전체를 포기하는 것이 아니라 공격 하나씩 대체하는
+구조입니다.</td>
+</tr>
+<tr>
+<td>운동 잠재력 소멸 시점</td>
+<td>점수는 자기 턴 시작에 사라집니다. 따라서 자기 턴에 얻은 점수는 그
+라운드의 다른 크리처 턴 사이에 써야 하며, 다음 자기 턴까지 저장되지
+않습니다.</td>
+</tr>
+<tr>
+<td>초반사 신경의 강도</td>
+<td>운동 잠재력만 충분하면 반응행동을 소비하지 않고 여러 반응행동 효과를
+쓸 수 있습니다. 기회 공격, 방어적 반응, 마법 아이템 반응 등과 결합하면
+강할 수 있으므로, 같은 유발 조건에 여러 반응을 겹칠 수 있는지는 DM이
+제한하는 편이 안전합니다.</td>
+</tr>
+<tr>
+<td>가속 여행의 배율</td>
+<td>이동 거리에 파이터 레벨을 곱하는 효과는 매우 큽니다. 7레벨만 되어도
+장거리 이동이 7배가 되므로, 캠페인 여행 시간과 추격전 균형을 크게 바꿀
+수 있습니다.</td>
+</tr>
+<tr>
+<td>시간이 멈추다와 Second Wind</td>
+<td>2024년판에서도 Second Wind는 d10을 굴려 회복량을 정하므로, 이 능력은
+그 d10 결과를 사용하면 됩니다. 다만 재기의 바람 회복 자체는 정상적으로
+적용됩니다.</td>
+</tr>
+<tr>
+<td>시간이 멈추다의 종료 조건</td>
+<td>다른 크리처에게 영향을 주면 즉시 끝납니다. 공격, 주문, 광역 효과는
+물론 다른 크리처가 들고 있는 물건을 건드리는 행동도 종료 조건이 됩니다.
+자기 자신에게만 영향을 주는 이동, 이탈, 질주, 자기 회복, 비착용 물체
+조작은 가능하다고 보는 것이 자연스럽습니다.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+</section>
+</section>
+
+    </article>
+  </div>
+</main>
+<button id="back-top" class="back-top" type="button" aria-label="맨 위로">↑</button>
+<script src="../assets/app.js"></script>
+</body>
+</html>

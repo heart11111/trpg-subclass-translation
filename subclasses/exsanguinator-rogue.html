@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>엑상귀네이터 로그 - 화살성채 홈브류</title>
+<meta name="description" content="로그 서브클래스 엑상귀네이터 로그 번역 및 룰 검토">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Noto+Serif+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body class="brew-page subclass-page">
+<nav class="site-nav" aria-label="주요 문서">
+  <a class="brand" href="../index.html">화살성채</a>
+  <div class="nav-links">
+    <a href="../index.html">홈</a>
+    <a href="../player-guide.html">플레이어 가이드</a>
+    <a href="../world.html">세계관 자료</a>
+    <a href="../setting.html">설정 정리</a>
+    <a class="active" href="../homebrew.html">홈브류</a>
+    <a href="../spells.html">주문</a>
+  </div>
+</nav>
+<main id="top" class="brew-detail">
+  <header class="brew-detail-hero">
+    <div class="brew-hero-copy">
+      <a class="crumb-link" href="../homebrew.html">홈브류 목록</a>
+      <p class="eyebrow">로그 SUBCLASS</p>
+      <h1>엑상귀네이터 로그</h1>
+      <p class="brew-en">Exsanguinator Rogue</p>
+      <p class="brew-lede">엑상귀네이터 로그</p>
+      <div class="brew-meta-row">
+        <span>공격</span>
+        <span>2024 구조 검토</span>
+        <span>번역 + 운용 메모</span>
+      </div>
+    </div>
+    <figure class="brew-art-frame">
+      <img src="../assets/images/setting-guild-v2.jpg" alt="엑상귀네이터 로그 분위기 이미지">
+    </figure>
+  </header>
+  <div class="brew-reading-grid">
+    <aside class="brew-side">
+      <div class="brew-side-box">
+        <p class="side-label">빠른 목차</p>
+        <ol><li><a href="#빠른-참조">빠른 참조</a></li><li><a href="#서브클래스-소개">서브클래스 소개</a></li><li><a href="#레벨별-기능">레벨별 기능</a></li><li><a href="#3레벨-혈격---bloodletting">3레벨: 혈격 - Bloodletting</a></li><li><a href="#3레벨-초자연적-무장---unnatural-armament">3레벨: 초자연적 무장 - Unnatural Armament</a></li><li><a href="#9레벨-비현실적-우아함---unreal-grace">9레벨: 비현실적 우아함 - Unreal Grace</a></li><li><a href="#13레벨-피-안개---blood-mist">13레벨: 피 안개 - Blood Mist</a></li><li><a href="#17레벨-탈혈---exsanguinate">17레벨: 탈혈 - Exsanguinate</a></li></ol>
+      </div>
+      
+      <div class="brew-side-box">
+        <p class="side-label">같은 클래스</p>
+        <a class="side-link" href="zodiac-archetype.html">조디악 아키타입</a><a class="side-link" href="field-medic.html">야전 의무병</a>
+      </div>
+    </aside>
+    <article class="content doc-content brew-article">
+      <section id="엑상귀네이터-로그---exsanguinator-rogue" class="level3">
+<h3>엑상귀네이터 로그 - Exsanguinator Rogue</h3>
+<p>엑상귀네이터 로그</p>
+<p>혈마법으로 적을 도륙하라</p>
+<blockquote>
+<p>문서 개요 분류: 로그 서브클래스 주제: 뱀파이어적 혈마법, 괴사 피해,
+흡혈, 피 안개 이동 사용 목적: 세션 준비와 캐릭터 빌드 중 빠르게 참조할
+수 있도록 번역문을 정리했습니다.</p>
+</blockquote>
+<section id="빠른-참조" class="level4">
+<h4>빠른 참조</h4>
+<table>
+<thead>
+<tr>
+<th>레벨</th>
+<th>기능</th>
+<th>핵심 효과</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3</td>
+<td>혈격 - Bloodletting</td>
+<td>기습 공격 명중 시 피해의 절반만큼 회복 가능. 기습 공격 피해를 괴사
+피해로 바꿀 수 있음.</td>
+</tr>
+<tr>
+<td>3</td>
+<td>초자연적 무장 - Unnatural Armament</td>
+<td>비무장 공격 피해를 1d6으로 바꾸고, 기습 공격에 사용할 수 있는 기교
+무기로 취급.</td>
+</tr>
+<tr>
+<td>9</td>
+<td>비현실적 우아함 - Unreal Grace</td>
+<td>벽과 천장 이동, 엎드림 회복, 민첩 기반 도약과 도약 거리 2배.</td>
+</tr>
+<tr>
+<td>13</td>
+<td>피 안개 - Blood Mist</td>
+<td>안개 걸음 추가 사용과 반응 시전. 긴 휴식마다 자신에게 기체 형태
+1회.</td>
+</tr>
+<tr>
+<td>17</td>
+<td>탈혈 - Exsanguinate</td>
+<td>혈격 사용 시 기습 공격 피해 주사위를 d6 대신 d12로 사용.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="서브클래스-소개" class="level4">
+<h4>서브클래스 소개</h4>
+<p>엑상귀네이터는 뛰어난 기술과 혈마법을 결합해 흡혈귀 같은 살인자가
+되는 로그입니다. 이들은 마법적으로 피를 터뜨리는 공격으로 적을
+찢어발기고, 피 안개로 흩어지며, 인간을 초월한 민첩성으로 도주합니다.</p>
+<p>엑상귀네이터의 능력은 흡혈귀의 선물과 관련되어 있지만, 반드시 그런
+방식으로 얻은 것은 아닐 수도 있습니다. 당신은 한때 뱀파이어 스폰이었을
+수도 있고, 훔친 마법 두루마리에서 금단의 비밀을 파헤쳤을 수도 있으며,
+선천적으로 혈마법에 대한 친화력을 발견했을 수도 있습니다.</p>
+</section>
+<section id="레벨별-기능" class="level4">
+<h4>레벨별 기능</h4>
+</section>
+<section id="3레벨-혈격---bloodletting" class="level4">
+<h4>3레벨: 혈격 - Bloodletting</h4>
+<p>당신이 기습 공격으로 크리처를 명중시켰을 때, 대상이 구조물이나
+언데드가 아니라면, 가한 피해의 절반만큼 히트 포인트를 회복할 수
+있습니다. 이 능력은 숙련 보너스와 같은 횟수만큼 사용할 수 있습니다. 짧은
+휴식을 마치면 소모한 사용 횟수 1회를 회복하고, 긴 휴식을 마치면 소모한
+모든 사용 횟수를 회복합니다.</p>
+<p>또한, 기습 공격 피해를 줄 때, 히트 포인트 회복을 선택하지 않더라도
+기습 공격의 피해 유형을 괴사 피해로 바꿀 수 있습니다.</p>
+</section>
+<section id="3레벨-초자연적-무장---unnatural-armament" class="level4">
+<h4>3레벨: 초자연적 무장 - Unnatural Armament</h4>
+<p>당신은 초자연적인 무장을 발현할 수 있습니다. 다음 혜택을
+얻습니다.</p>
+<ul>
+<li><p>자연 무기. 당신은 비무장 공격의 일반 피해 대신 1d6을 굴릴 수
+있으며, 이 피해는 타격, 관통, 참격 피해 중 하나가 될 수
+있습니다.</p></li>
+<li><p>치명적인 공격. 당신의 비무장 공격은 기습 공격 기능을 사용할 때
+기교 무기로 간주되며, 명중 굴림과 피해 굴림에 힘 대신 민첩 수정치를
+사용합니다.</p></li>
+</ul>
+<p>이 능력은 당신의 혈마법의 성질에 따라 원하는 형태로 발현됩니다.
+흡혈귀의 발톱, 송곳니, 괴력일 수도 있고, 뼈 가시, 피로 만든 칼날, 연골
+건틀릿일 수도 있습니다.</p>
+</section>
+<section id="9레벨-비현실적-우아함---unreal-grace" class="level4">
+<h4>9레벨: 비현실적 우아함 - Unreal Grace</h4>
+<p>당신은 혈마법을 통해 흡혈귀와 같은 놀라운 신체 능력을 얻습니다. 다음
+혜택을 얻습니다.</p>
+<ul>
+<li><p>벽에 달라붙기. 당신은 손을 자유롭게 둔 채로 수직 표면을
+오르내리거나 가로질러 이동할 수 있으며, 천장을 따라 이동할 수도
+있습니다.</p></li>
+<li><p>민첩한 회복. 당신이 엎드림 상태일 때, 이동력 5피트만 사용해 몸을
+일으킬 수 있습니다.</p></li>
+<li><p>그림자 도약. 당신은 도약 거리를 힘 대신 민첩으로 결정할 수
+있으며, 도약 거리가 두 배가 됩니다.</p></li>
+</ul>
+</section>
+<section id="13레벨-피-안개---blood-mist" class="level4">
+<h4>13레벨: 피 안개 - Blood Mist</h4>
+<p>당신은 피 안개로 흩어질 수 있습니다. 주문 슬롯이나 구성 요소 없이
+안개 걸음을 숙련 보너스와 같은 횟수만큼 시전할 수 있습니다.</p>
+<p>일반적인 시전 시간 외에도, 당신은 절묘한 회피를 사용할 때 그 반응의
+일부로 안개 걸음을 시전할 수 있으며, 회피 기능을 사용할 때도 반응으로
+안개 걸음을 시전할 수 있습니다. 짧은 휴식을 마치면 사용 횟수 1회를
+회복하고, 긴 휴식을 마치면 소모한 모든 사용 횟수를 회복합니다.</p>
+<p>또한, 긴 휴식마다 한 번 자신에게 기체 형태를 시전할 수 있습니다.</p>
+</section>
+<section id="17레벨-탈혈---exsanguinate" class="level4">
+<h4>17레벨: 탈혈 - Exsanguinate</h4>
+<p>당신이 기습 공격으로 크리처를 명중시키고 혈격을 사용할 때, 기습 공격
+피해를 계산할 때 d6 대신 d12를 사용할 수 있습니다.</p>
+<p>이 기능을 한 번 사용하면, 짧은 휴식이나 긴 휴식을 마칠 때까지 다시
+사용할 수 없습니다.</p>
+</section>
+<section id="플레이-설명" class="level4">
+<h4>플레이 설명</h4>
+<p>엑상귀네이터 로그는 흡혈귀의 무시무시한 능력을 다루는 피에 굶주린
+추적자입니다. 이들은 흡혈귀적 마법을 통해 언데드를 흉내 내며, 발톱과
+송곳니, 혹은 흡혈귀의 괴력을 만들어내고, 적의 정수를 빨아들이며, 피 안개
+구름으로 흩어집니다.</p>
+<p>이 새로운 던전 앤 드래곤 로그 서브클래스로 흡혈귀 암살자가 되어
+보세요!</p>
+</section>
+<section id="용어-번역-기준" class="level4">
+<h4>용어 번역 기준</h4>
+<table>
+<thead>
+<tr>
+<th>영문</th>
+<th>번역</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Rogue</td>
+<td>로그</td>
+</tr>
+<tr>
+<td>Subclass</td>
+<td>서브클래스</td>
+</tr>
+<tr>
+<td>Sneak Attack</td>
+<td>기습 공격</td>
+</tr>
+<tr>
+<td>Proficiency Bonus</td>
+<td>숙련 보너스</td>
+</tr>
+<tr>
+<td>Short Rest / Long Rest</td>
+<td>짧은 휴식 / 긴 휴식</td>
+</tr>
+<tr>
+<td>Unarmed Strike</td>
+<td>비무장 공격</td>
+</tr>
+<tr>
+<td>Finesse Weapon</td>
+<td>기교 무기</td>
+</tr>
+<tr>
+<td>Necrotic Damage</td>
+<td>괴사 피해</td>
+</tr>
+<tr>
+<td>Misty Step</td>
+<td>안개 걸음 - Misty Step</td>
+</tr>
+<tr>
+<td>Gaseous Form</td>
+<td>기체 형태 - Gaseous Form</td>
+</tr>
+<tr>
+<td>Uncanny Dodge</td>
+<td>절묘한 회피 - Uncanny Dodge</td>
+</tr>
+<tr>
+<td>Evasion</td>
+<td>회피 - Evasion</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="면책-고지-및-제작-정보" class="level4">
+<h4>면책 고지 및 제작 정보</h4>
+<p>이 던전 앤 드래곤 5판 보충 자료는 팬 콘텐츠 정책에 따라 허용되는
+비공식 팬 콘텐츠입니다. 위저즈 오브 더 코스트의 승인 또는 보증을 받지
+않았습니다. 사용된 자료의 일부는 위저즈 오브 더 코스트의 자산입니다. ©
+Wizards of the Coast LLC.</p>
+<p>Azure Spire Archive는 한 사람입니다. Archive가 문자 그대로 집단이라는
+모든 언급은 순전히 실사 롤플레잉입니다.</p>
+<p>HB 거의 10주년 | Homebrewery에서 제작</p>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>이름</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>디자인</td>
+<td>Azure Spire Archive</td>
+</tr>
+</tbody>
+</table>
+<hr />
+</section>
+</section>
+
+    </article>
+  </div>
+</main>
+<button id="back-top" class="back-top" type="button" aria-label="맨 위로">↑</button>
+<script src="../assets/app.js"></script>
+</body>
+</html>

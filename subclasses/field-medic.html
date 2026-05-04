@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>야전 의무병 - 화살성채 홈브류</title>
+<meta name="description" content="로그 서브클래스 야전 의무병 번역 및 룰 검토">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Noto+Serif+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body class="brew-page subclass-page">
+<nav class="site-nav" aria-label="주요 문서">
+  <a class="brand" href="../index.html">화살성채</a>
+  <div class="nav-links">
+    <a href="../index.html">홈</a>
+    <a href="../player-guide.html">플레이어 가이드</a>
+    <a href="../world.html">세계관 자료</a>
+    <a href="../setting.html">설정 정리</a>
+    <a class="active" href="../homebrew.html">홈브류</a>
+    <a href="../spells.html">주문</a>
+  </div>
+</nav>
+<main id="top" class="brew-detail">
+  <header class="brew-detail-hero">
+    <div class="brew-hero-copy">
+      <a class="crumb-link" href="../homebrew.html">홈브류 목록</a>
+      <p class="eyebrow">로그 SUBCLASS</p>
+      <h1>야전 의무병</h1>
+      <p class="brew-en">Field Medic</p>
+      <p class="brew-lede">전장의 한복판에서 빠르게 움직이고, 자신이 취하는 행동에 조금의 의심도 없이 정확해야 하도록 훈련받은 로그입니다. 한순간의 망설임이 누군가의 죽음을 불러올 수 있기 때문입니다.</p>
+      <div class="brew-meta-row">
+        <span>지원</span>
+        <span>2024 구조 검토</span>
+        <span>번역 + 운용 메모</span>
+      </div>
+    </div>
+    <figure class="brew-art-frame">
+      <img src="../assets/images/guide-characters-v2.jpg" alt="야전 의무병 분위기 이미지">
+    </figure>
+  </header>
+  <div class="brew-reading-grid">
+    <aside class="brew-side">
+      <div class="brew-side-box">
+        <p class="side-label">빠른 목차</p>
+        <ol><li><a href="#로그-서브클래스-야전-의무병---field-medic">로그 서브클래스: 야전 의무병 - Field Medic</a></li><li><a href="#3레벨-야전-투약---field-medication">3레벨: 야전 투약 - Field Medication</a></li><li><a href="#3레벨-신속-응급처치---quick-aid">3레벨: 신속 응급처치 - Quick Aid</a></li><li><a href="#9레벨-외과적-정밀성---surgical-precision">9레벨: 외과적 정밀성 - Surgical Precision</a></li><li><a href="#17레벨-전투-의무병---combat-medic">17레벨: 전투 의무병 - Combat Medic</a></li><li><a href="#제작-정보">제작 정보</a></li></ol>
+      </div>
+      
+      <div class="brew-side-box">
+        <p class="side-label">같은 클래스</p>
+        <a class="side-link" href="exsanguinator-rogue.html">엑상귀네이터 로그</a><a class="side-link" href="zodiac-archetype.html">조디악 아키타입</a>
+      </div>
+    </aside>
+    <article class="content doc-content brew-article">
+      <section id="야전-의무병---field-medic" class="level3">
+<h3>야전 의무병 - Field Medic</h3>
+<section id="로그-서브클래스-야전-의무병---field-medic" class="level4">
+<h4>로그 서브클래스: 야전 의무병 - Field Medic</h4>
+<p>전장의 한복판에서 빠르게 움직이고, 자신이 취하는 행동에 조금의 의심도
+없이 정확해야 하도록 훈련받은 로그입니다. 한순간의 망설임이 누군가의
+죽음을 불러올 수 있기 때문입니다.</p>
+<p>야전 의무병에게 의료 도구는 무기와도 같습니다. 이 도구들은 쓰러진
+이들을 안정화하고 다시 일으켜 세우는 데 쓰입니다. 야전 의무병은 자신의
+보살핌 아래 있는 이들을 가능한 한 모두 구하겠다는 맹세를 했고, 그 맹세를
+온 존재로 따릅니다.</p>
+</section>
+<section id="3레벨-야전-투약---field-medication" class="level4">
+<h4>3레벨: 야전 투약 - Field Medication</h4>
+<p>전장의 혼란 속으로 뛰어들면서, 당신은 전투 중 사용할 야전 약품을
+준비해 두었습니다.</p>
+<p>자기 턴에 크리처 하나에게 기습 공격 피해를 준 직후, 당신은 30피트
+이내에서 볼 수 있는 크리처 하나를 대상으로 삼을 수 있습니다. 당신의 로그
+레벨에 따른 기습 공격 주사위 개수의 절반, 올림 처리한 수만큼 주사위를
+굴립니다. 대상 크리처는 그 굴림 총합만큼 HP를 회복합니다. 이는 당신이
+야전 약품을 투여했기 때문입니다.</p>
+<p>이 능력은 당신의 지혜 수정치와 같은 횟수만큼 사용할 수 있으며, 긴
+휴식을 마치면 소모한 사용 횟수를 모두 회복합니다.</p>
+<blockquote>
+<p>예시 당신의 기습 공격이 5d6이라면, 그 절반을 올림 처리해 3d6을
+굴립니다. 대상은 그 결과만큼 HP를 회복합니다.</p>
+</blockquote>
+</section>
+<section id="3레벨-신속-응급처치---quick-aid" class="level4">
+<h4>3레벨: 신속 응급처치 - Quick Aid</h4>
+<p>당신은 쓰러진 아군을 안정화할 준비가 언제나 되어 있습니다.</p>
+<p>추가 행동으로 지혜(의학) 판정을 해서 크리처 하나를 안정화하거나, 다른
+크리처에게 물약을 먹일 수 있습니다.</p>
+<p>또한 당신은 30피트 이내의 크리처를 안정화할 수 있습니다. 이렇게
+안정화한 크리처는 1분 뒤 HP 1을 회복합니다.</p>
+</section>
+<section id="9레벨-외과적-정밀성---surgical-precision" class="level4">
+<h4>9레벨: 외과적 정밀성 - Surgical Precision</h4>
+<p>생명을 구하는 법을 가르쳐 준 바로 그 기술은, 적의 어느 부위를 해쳐야
+하는지도 더 정확히 알게 해 주었습니다.</p>
+<p>당신이 기습 공격 피해를 줄 때, 대상의 감각 중 하나를 무력화할 수
+있습니다. 대상은 건강 내성 굴림을 해야 합니다. DC는
+<code>8 + 당신의 숙련 보너스 + 당신의 민첩 수정치</code>입니다.</p>
+<p>실패하면, 대상은 당신의 다음 턴이 끝날 때까지 다음 효과 중 당신이
+명중 시 선택한 하나를 받습니다.</p>
+<ul>
+<li>실명 상태</li>
+<li>귀머거리 상태</li>
+<li>말을 할 수 없음</li>
+</ul>
+<p>이 능력은 당신의 지혜 수정치와 같은 횟수만큼 사용할 수 있으며, 긴
+휴식을 마치면 소모한 사용 횟수를 모두 회복합니다.</p>
+</section>
+<section id="13레벨-의료-비상-대책---medical-contingency"
+class="level4">
+<h4>13레벨: 의료 비상 대책 - Medical Contingency</h4>
+<p>당신은 전장에서 크리처들이 더 오래 버틸 수 있도록 대비책을
+마련했습니다.</p>
+<p>긴 휴식 동안, 당신은 지혜 수정치와 같은 수의 크리처를 선택하여 확실한
+죽음을 피할 방법을 준비할 수 있습니다.</p>
+<p>당신이 준비한 크리처가 피해를 받아 처음으로 HP 0으로 떨어지려 하지만
+즉사하지는 않는다면, 그 크리처는 대신 HP 1로 떨어지고, 당신의 지혜
+수정치의 두 배만큼 HP를 회복합니다.</p>
+</section>
+<section id="17레벨-전투-의무병---combat-medic" class="level4">
+<h4>17레벨: 전투 의무병 - Combat Medic</h4>
+<p>당신은 자신의 기술을 완전히 숙달했고, 보호의 맹세를 지켜 냈으며, 야전
+의무병으로서 최고 영예에 도달했습니다. 다음 혜택을 얻습니다.</p>
+<ul>
+<li>야전 투약 능력을 사용할 때, 사거리 안의 두 번째 크리처도 대상으로
+삼을 수 있습니다.</li>
+<li>야전 투약 능력으로 HP가 0인 크리처를 치유하기 위해 굴릴 때, 굴리는
+대신 가능한 최대 HP를 회복시킵니다.</li>
+<li>의료 비상 대책 능력의 대상이 된 크리처들은
+<code>당신의 로그 레벨 + 당신의 지혜 수정치</code>만큼 임시 HP를
+얻습니다.</li>
+</ul>
+</section>
+<section id="제작-정보" class="level4">
+<h4>제작 정보</h4>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>제작</td>
+<td>ArgenisDBarrios</td>
+</tr>
+<tr>
+<td>제작 도구</td>
+<td>GM Binder</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="총평-룰상-애매하거나-앞뒤가-맞지-않는-부분" class="level4">
+<h4>총평: 룰상 애매하거나 앞뒤가 맞지 않는 부분</h4>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>검토 의견</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2024 적용</td>
+<td>로그 서브클래스 레벨은 3/9/13/17레벨이므로 2024년판 구조와
+맞습니다.</td>
+</tr>
+<tr>
+<td>야전 투약의 회복 주사위</td>
+<td>“자기 레벨의 기습 공격 주사위 절반”을 굴립니다. 기습 공격 주사위가
+홀수일 때는 올림이라고 명시되어 있어 계산은 명확합니다.</td>
+</tr>
+<tr>
+<td>야전 투약의 대상</td>
+<td>기습 공격을 맞힌 적과 무관하게, 30피트 이내에서 볼 수 있는 크리처
+하나를 치유합니다. 자기 자신도 조건을 만족하면 대상이 될 수 있다고 보는
+것이 자연스럽습니다.</td>
+</tr>
+<tr>
+<td>신속 응급처치와 2024 물약 사용</td>
+<td>2024년판에서 물약 사용이 더 쉬워진 테이블이라면, “추가 행동으로 물약
+먹이기”의 가치는 줄어들 수 있습니다. 다만 안정화와 30피트 원거리
+안정화는 여전히 이 서브클래스의 고유 기능입니다.</td>
+</tr>
+<tr>
+<td>원거리 안정화</td>
+<td>30피트 안의 크리처를 안정화할 수 있다고 되어 있지만, 의학 판정이
+필요한지 자동 안정화인지 문장상 애매합니다. 앞문장과 연결해 추가
+행동으로 지혜(의학) 판정을 한다고 보는 것이 안전합니다.</td>
+</tr>
+<tr>
+<td>외과적 정밀성의 발동 시점</td>
+<td>“기습 공격 피해를 줄 때” 발동하며, 내성 실패 시 상태가 적용됩니다.
+같은 명중으로 이미 피해가 들어간 뒤 상태가 걸리는 구조입니다.</td>
+</tr>
+<tr>
+<td>말을 할 수 없음</td>
+<td>실명, 귀머거리와 달리 “말을 못 함”은 5e의 정식 상태명이 아닙니다.
+음성 구성요소가 필요한 주문을 막고 의사소통을 제한하는 효과로 처리하면
+됩니다.</td>
+</tr>
+<tr>
+<td>의료 비상 대책의 지속시간</td>
+<td>긴 휴식 중 선택한 크리처가 언제까지 준비 상태를 유지하는지 원문에
+직접 적혀 있지 않습니다. 다음 긴 휴식을 마칠 때까지로 보는 것이 가장
+자연스럽습니다.</td>
+</tr>
+<tr>
+<td>의료 비상 대책의 중복</td>
+<td>같은 대상에게 여러 번 준비할 수 있는지, 여러 야전 의무병의 효과가
+중첩되는지 명확하지 않습니다. 한 크리처는 같은 야전 의무병의 비상 대책
+하나만 받을 수 있다고 정하는 편이 안전합니다.</td>
+</tr>
+<tr>
+<td>전투 의무병의 임시 HP 시점</td>
+<td>17레벨의 의료 비상 대책 대상 임시 HP가 긴 휴식 준비 시점에 생기는지,
+HP 0 방지 효과가 발동할 때 생기는지 모호합니다. 문맥상 준비 대상이
+되었을 때 받는 혜택으로 보이지만, 강도가 높다면 발동 시점에 주는 것으로
+낮출 수 있습니다.</td>
+</tr>
+<tr>
+<td>원문 오탈자</td>
+<td>thought는 taught, uphelp는 upheld로 보이며, 일부 문장에 are가
+반복되어 있습니다. 번역문은 의미 기준으로 정리했습니다.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+</section>
+</section>
+
+    </article>
+  </div>
+</main>
+<button id="back-top" class="back-top" type="button" aria-label="맨 위로">↑</button>
+<script src="../assets/app.js"></script>
+</body>
+</html>
