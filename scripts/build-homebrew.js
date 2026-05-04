@@ -100,6 +100,7 @@ const removedSubclassTitles = new Set([
   '마녀사냥꾼 - Witch-Hunter',
   '악몽의 회합 - Circle of Nightmares',
   '장난의 회합 - Circle of Mischief',
+  '야전 의무병 - Field Medic',
 ]);
 
 function escapeHtml(value) {
