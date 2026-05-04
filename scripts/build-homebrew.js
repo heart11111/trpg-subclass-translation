@@ -18,6 +18,7 @@ const classArt = {
   '로그': 'assets/images/homebrew-classes/rogue.jpg',
   '바바리안': 'assets/images/homebrew-classes/barbarian.jpg',
   '위저드': 'assets/images/homebrew-classes/wizard.jpg',
+  '위치': 'assets/images/homebrew-classes/warlock.jpg',
 };
 
 const subclassArt = {
@@ -44,6 +45,7 @@ const subclassArt = {
   '피로 물든 폭풍의 길 - Path of the Bloodstained Hurricane': 'assets/images/homebrew-classes/barbarian.jpg',
   '지맥술 학파 - School of Geomancy': 'assets/images/homebrew-classes/wizard.jpg',
   '전격술사 - Electromancer': 'assets/images/homebrew-classes/wizard.jpg',
+  '위치 - Witch': 'assets/images/homebrew-classes/warlock.jpg',
 };
 
 const classNotes = {
@@ -56,6 +58,7 @@ const classNotes = {
   '로그': '피, 별자리, 의무병처럼 전문 기술의 성격이 강한 아키타입입니다.',
   '바바리안': '피와 폭풍을 전투 지속력으로 바꾸는 공격적 길입니다.',
   '위저드': '학파 자체의 계산과 환경 조작이 강한 주문 사용자 선택지입니다.',
+  '위치': '사역마, 주술, 포션, 달의 코븐을 중심으로 움직이는 자연 비전 계열 완전 클래스입니다.',
 };
 
 const slugOverrides = new Map([
@@ -68,6 +71,7 @@ const slugOverrides = new Map([
   ['로그', 'rogue'],
   ['바바리안', 'barbarian'],
   ['위저드', 'wizard'],
+  ['위치', 'witch'],
   ['독사과', 'poison-apple'],
   ['아타메 반사', 'athame-reflection'],
   ['마녀 집회 후원자 - Coven Patron: Spin the Threads of Fate', 'coven-patron'],
@@ -97,6 +101,7 @@ const slugOverrides = new Map([
   ['돌연변이의 길 - Path of the Mutant', 'path-of-the-mutant'],
   ['지맥술 학파 - School of Geomancy', 'school-of-geomancy'],
   ['전격술사 - Electromancer', 'electromancer'],
+  ['위치 - Witch', 'witch'],
 ]);
 
 const removedSubclassTitles = new Set([
@@ -123,7 +128,8 @@ function slugify(value) {
     .replace(/[^\w\s-]/g, '')
     .trim()
     .replace(/\s+/g, '-')
-    .replace(/-+/g, '-');
+    .replace(/-+/g, '-')
+    .replace(/^-|-$/g, '');
 }
 
 function titleParts(title) {
@@ -480,6 +486,10 @@ function artPathFor(className, prefix = '', title = '') {
   return `${prefix}${subclassArt[title] || classArt[className] || 'assets/images/homebrew-tome-v2.jpg'}`;
 }
 
+function documentKind(subclass) {
+  return subclass.title === '위치 - Witch' ? 'CLASS' : 'SUBCLASS';
+}
+
 function subclassCard(subclass) {
   const { ko, en } = titleParts(subclass.title);
   return `<a class="brew-card" href="subclasses/${subclass.slug}.html">
@@ -501,6 +511,7 @@ for (const subclass of subclasses) {
 
 for (const subclass of subclasses) {
   const { ko, en } = titleParts(subclass.title);
+  const kind = documentKind(subclass);
   const related = byClass.get(subclass.className).filter(item => item.slug !== subclass.slug).slice(0, 5);
   const bodyHtml = enhanceRuleHtml(mdToHtml(subclass.lines.join('\n')));
   const headings = extractHtmlHeadings(bodyHtml);
@@ -508,7 +519,7 @@ for (const subclass of subclasses) {
   <header class="brew-detail-hero">
     <div class="brew-hero-copy">
       <a class="crumb-link" href="../homebrew.html">홈브류 목록</a>
-      <p class="eyebrow">${escapeHtml(subclass.className)} SUBCLASS</p>
+      <p class="eyebrow">${escapeHtml(subclass.className)} ${kind}</p>
       <h1>${escapeHtml(ko)}</h1>
       ${en ? `<p class="brew-en">${escapeHtml(en)}</p>` : ''}
       <p class="brew-lede">${escapeHtml(synopsis(subclass.lines))}</p>
@@ -545,7 +556,7 @@ for (const subclass of subclasses) {
     bodyClass: 'brew-page subclass-page',
     active: 'homebrew',
     prefix: '../',
-    description: `${subclass.className} 서브클래스 ${ko} 번역 및 룰 검토`,
+    description: `${subclass.className} ${kind === 'CLASS' ? '클래스' : '서브클래스'} ${ko} 번역`,
     content,
   }));
 }
