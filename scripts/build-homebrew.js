@@ -4,9 +4,14 @@ const { spawnSync } = require('child_process');
 
 const root = path.resolve(__dirname, '..');
 const sourcePath = path.join(root, 'source', 'subclass-translation.md');
+const backgroundSourcePath = path.join(root, 'source', 'backgrounds.md');
 const outDir = path.join(root, 'subclasses');
 const source = fs.readFileSync(sourcePath, 'utf8').replace(/\r\n/g, '\n');
+const backgroundSource = fs.existsSync(backgroundSourcePath)
+  ? fs.readFileSync(backgroundSourcePath, 'utf8').replace(/\r\n/g, '\n')
+  : '';
 const lines = source.split('\n');
+const backgroundLines = backgroundSource.split('\n');
 
 const classArt = {
   '워록': 'assets/images/homebrew-classes/warlock.jpg',
@@ -53,6 +58,21 @@ const subclassArt = {
   '지맥술 학파 - School of Geomancy': 'assets/images/homebrew-classes/wizard.jpg',
   '전격술사 - Electromancer': 'assets/images/homebrew-classes/wizard.jpg',
   '위치 - Witch': 'assets/images/homebrew-classes/warlock.jpg',
+};
+
+const backgroundArt = {
+  '시정 의원 - Alderman': 'assets/images/setting-guild-v2.jpg',
+  '여관 주인 - Innkeeper': 'assets/images/cover-arrowkeep-v2.jpg',
+  '전령 - Courier': 'assets/images/world-map-v2.jpg',
+  '추방 귀족 - Exiled Noble': 'assets/images/guide-characters-v2.jpg',
+  '도굴꾼 - Graverobber': 'assets/images/homebrew-classes/rogue.jpg',
+  '쥐잡이 - Rat Catcher': 'assets/images/setting-guild-v2.jpg',
+  '상단장 - Caravan Master': 'assets/images/world-map-v2.jpg',
+  '마차꾼 - Coach Driver': 'assets/images/guide-walden-v2.jpg',
+  '순례자 - Pilgrim': 'assets/images/world-map-v2.jpg',
+  '신학자 - Theologian': 'assets/images/homebrew-classes/wizard.jpg',
+  '퇴마사 - Exorcist': 'assets/images/homebrew-classes/warlock.jpg',
+  '묘지기 - Gravekeeper': 'assets/images/homebrew-classes/paladin.jpg',
 };
 
 const classNotes = {
@@ -177,6 +197,7 @@ function makeNav(prefix = '', active = 'homebrew') {
     ['world.html', '세계관 자료', 'world'],
     ['setting.html', '설정 정리', 'setting'],
     ['homebrew.html', '홈브류', 'homebrew'],
+    ['backgrounds.html', '백그라운드', 'backgrounds'],
     ['spells.html', '주문', 'spells'],
     ['credits.html', '크레딧', 'credits'],
   ];
@@ -424,6 +445,66 @@ function spellCardHtml(spell) {
   </article>`;
 }
 
+function parseBackgroundSections() {
+  const entries = [];
+  for (let i = 0; i < backgroundLines.length; i += 1) {
+    const match = backgroundLines[i].match(/^### (.+)$/);
+    if (!match) continue;
+    const start = i;
+    let end = backgroundLines.length;
+    for (let j = i + 1; j < backgroundLines.length; j += 1) {
+      if (/^### /.test(backgroundLines[j]) || /^## 크레딧$/.test(backgroundLines[j])) {
+        end = j;
+        break;
+      }
+    }
+    entries.push({
+      title: match[1],
+      slug: slugify(match[1]),
+      lines: backgroundLines.slice(start, end),
+    });
+    i = end - 1;
+  }
+  return entries;
+}
+
+function parseBackground(background) {
+  const meta = {};
+  const body = [];
+  for (const line of background.lines.slice(1)) {
+    const match = line.match(/^\*\*(능력치|재주|기술 숙련|도구 숙련|장비):\*\*\s*(.+)$/);
+    if (match) meta[match[1]] = match[2];
+    else body.push(line);
+  }
+  return {
+    title: background.title,
+    meta,
+    body: body.join('\n').trim(),
+  };
+}
+
+function backgroundCardHtml(background) {
+  const parsed = parseBackground(background);
+  const { ko, en } = titleParts(background.title);
+  const bodyHtml = enhanceRuleHtml(mdToHtml(parsed.body || ''));
+  const art = backgroundArt[background.title] || 'assets/images/guide-characters-v2.jpg';
+  const stats = ['능력치', '재주', '기술 숙련', '도구 숙련', '장비'];
+  return `<article id="${escapeHtml(background.slug)}" class="dndb-spell background-entry">
+    <header class="dndb-spell-head background-head">
+      <div>
+        <p class="spell-source">BACKGROUND · 2024 구조</p>
+        <h2>${escapeHtml(ko)}</h2>
+        ${en ? `<p class="spell-subtitle">${escapeHtml(en)}</p>` : ''}
+      </div>
+      <img src="${art}" alt="${escapeHtml(ko)} 분위기 이미지">
+    </header>
+    <dl class="spell-stats background-stats">
+      ${stats.map(label => `<div><dt>${label}</dt><dd>${escapeHtml(parsed.meta[label] || '-')}</dd></div>`).join('')}
+    </dl>
+    <div class="spell-body doc-content background-body">${bodyHtml}</div>
+  </article>`;
+}
+
 function extractHeadings(markdownLines) {
   return markdownLines
     .filter(line => /^#### /.test(line))
@@ -523,6 +604,7 @@ for (const subclass of subclasses) {
   if (!byClass.has(subclass.className)) byClass.set(subclass.className, []);
   byClass.get(subclass.className).push(subclass);
 }
+const backgroundSections = parseBackgroundSections();
 
 for (const subclass of subclasses) {
   const { ko, en } = titleParts(subclass.title);
@@ -602,12 +684,15 @@ const homeContent = `<main id="top" class="brew-index">
       <strong>서브클래스</strong>
       <span>${spellSections.length}</span>
       <strong>신규 주문</strong>
+      <span>${backgroundSections.length}</span>
+      <strong>백그라운드</strong>
       <a href="spells.html">주문 문서로 이동</a>
     </div>
   </header>
   <nav class="brew-toc" aria-label="홈브류 목차">
     <a href="#subclasses">서브클래스 전체</a>
     ${[...byClass.keys()].map(className => `<a href="#${slugify(className)}">${escapeHtml(className)}</a>`).join('')}
+    <a href="backgrounds.html">백그라운드</a>
     <a href="spells.html">주문</a>
     <a href="credits.html">크레딧</a>
   </nav>
@@ -655,6 +740,47 @@ fs.writeFileSync(path.join(root, 'spells.html'), pageShell({
   active: 'spells',
   description: '화살성채 캠페인 홈브류 신규 주문 모음',
   content: spellsContent,
+}));
+
+const backgroundCards = backgroundSections.map(backgroundCardHtml).join('\n');
+const backgroundCreditIndex = backgroundLines.findIndex(line => /^## 크레딧$/.test(line));
+const backgroundCreditHtml = backgroundCreditIndex >= 0
+  ? mdToHtml(backgroundLines.slice(backgroundCreditIndex).join('\n'))
+  : '';
+
+const backgroundsContent = `<main id="top" class="background-index">
+  <header class="brew-index-hero background-hero">
+    <div>
+      <p class="eyebrow">CHARACTER ORIGINS</p>
+      <h1>백그라운드</h1>
+      <p class="brew-lede">The Inspired Arcana의 D&D 5.5용 백그라운드를 2024 구조에 맞춰 번역했습니다. 각 항목은 능력치, 출신 재주, 기술 숙련, 도구 숙련, 장비 선택지를 바로 확인할 수 있게 정리했습니다.</p>
+    </div>
+    <div class="brew-index-panel">
+      <span>${backgroundSections.length}</span>
+      <strong>백그라운드</strong>
+      <span>${new Set(backgroundSections.map(item => parseBackground(item).meta['재주']).filter(Boolean)).size}</span>
+      <strong>출신 재주</strong>
+      <a href="homebrew.html">홈브류로 돌아가기</a>
+    </div>
+  </header>
+  <nav class="brew-toc" aria-label="백그라운드 목차">
+    ${backgroundSections.map(background => `<a href="#${background.slug}">${escapeHtml(displayName(background.title))}</a>`).join('')}
+  </nav>
+  <section class="background-list">
+    ${backgroundCards || '<p class="empty-note">등록된 백그라운드가 없습니다.</p>'}
+  </section>
+  ${backgroundCreditHtml ? `<section class="background-credits credit-card source-card">
+    <header><span>Attribution</span><h2>백그라운드 크레딧</h2></header>
+    <div class="doc-content">${backgroundCreditHtml}</div>
+  </section>` : ''}
+</main>`;
+
+fs.writeFileSync(path.join(root, 'backgrounds.html'), pageShell({
+  title: '화살성채 - 백그라운드',
+  bodyClass: 'brew-page backgrounds-page',
+  active: 'backgrounds',
+  description: '화살성채 캠페인 홈브류 백그라운드 모음',
+  content: backgroundsContent,
 }));
 
 const creditCards = creditSections.map(section => {

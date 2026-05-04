@@ -818,6 +818,11 @@ tbody td:first-child { font-weight:700; color:var(--accent); white-space:nowrap;
   margin: 0 auto;
   padding: 0 28px 90px;
 }
+.background-list {
+  max-width: 1060px;
+  margin: 0 auto;
+  padding: 0 28px 58px;
+}
 .dndb-spell {
   background: #fbf8ef;
   border: 1px solid rgba(56,39,22,.22);
@@ -889,6 +894,35 @@ tbody td:first-child { font-weight:700; color:var(--accent); white-space:nowrap;
 }
 .spell-body p:last-child {
   margin-bottom: 0;
+}
+.background-entry {
+  overflow: hidden;
+}
+.background-head {
+  align-items: stretch;
+}
+.background-head img {
+  width: min(34vw, 300px);
+  min-height: 150px;
+  object-fit: cover;
+  border-left: 1px solid rgba(56,39,22,.18);
+  filter: saturate(.92) contrast(1.02);
+}
+.background-stats {
+  grid-template-columns: repeat(5, 1fr);
+}
+.background-stats dd {
+  font-size: .84rem;
+}
+.background-body h4 {
+  margin-top: 28px;
+  padding-left: 12px;
+  border-left: 4px solid #7d1717;
+  color: #4b281d;
+}
+.background-credits {
+  max-width: 980px;
+  margin: 0 auto 90px;
 }
 .credits-teaser {
   max-width: 980px;
@@ -982,7 +1016,8 @@ tbody td:first-child { font-weight:700; color:var(--accent); white-space:nowrap;
   .brew-directory,
   .brew-detail-hero,
   .brew-reading-grid,
-  .spell-list {
+  .spell-list,
+  .background-list {
     padding-left: 18px;
     padding-right: 18px;
   }
@@ -1004,6 +1039,12 @@ tbody td:first-child { font-weight:700; color:var(--accent); white-space:nowrap;
   }
   .spell-stats {
     grid-template-columns: 1fr 1fr;
+  }
+  .background-head img {
+    width: 100%;
+    min-height: 180px;
+    border-left: none;
+    border-top: 1px solid rgba(56,39,22,.18);
   }
   .dndb-spell-head,
   .credits-teaser {
