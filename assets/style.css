@@ -645,6 +645,9 @@ tbody td:first-child { font-weight:700; color:var(--accent); white-space:nowrap;
   margin: 0 auto;
   padding: clamp(46px, 7vw, 84px) 28px 40px;
 }
+.brew-hero-copy {
+  min-width: 0;
+}
 .crumb-link {
   display: inline-block;
   margin-bottom: 22px;
@@ -739,6 +742,67 @@ tbody td:first-child { font-weight:700; color:var(--accent); white-space:nowrap;
   max-width: none;
   border: 1px solid rgba(62,45,24,.16);
   box-shadow: 0 24px 70px rgba(42,32,21,.11);
+}
+.level-summary {
+  margin: 0 0 34px;
+  padding: 0 0 8px;
+  border-bottom: 1px solid rgba(62,45,24,.14);
+}
+.summary-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 14px;
+}
+.summary-head span {
+  font-family: 'Cinzel', serif;
+  color: #9d762d;
+  font-size: .68rem;
+  letter-spacing: 2px;
+}
+.summary-head h2 {
+  margin: 0;
+  padding: 0;
+  border: none;
+  color: #2a2015;
+  font-family: 'Noto Serif KR', serif;
+  font-size: 1.16rem;
+  letter-spacing: 0;
+}
+.level-summary table {
+  margin: 0 0 18px;
+  border: 1px solid rgba(62,45,24,.14);
+  background: #f8f2e6;
+}
+.level-summary thead tr {
+  background: #2f261c;
+}
+.level-summary tbody td:first-child {
+  width: 96px;
+  color: #7a3f28;
+}
+.brew-article .feature-block {
+  margin: 30px 0;
+  padding: 20px 22px 6px;
+  border: 1px solid rgba(62,45,24,.14);
+  border-left: 5px solid #8b3f2a;
+  background: linear-gradient(180deg, rgba(255,255,255,.58), rgba(248,242,230,.62));
+}
+.brew-article .feature-block h4 {
+  margin: 0 0 14px;
+  padding: 0 0 10px;
+  border-left: none;
+  border-bottom: 1px solid rgba(62,45,24,.14);
+  color: #4b281d;
+  font-size: 1.08rem;
+}
+.brew-article .rule-note {
+  margin: 18px 0;
+  padding: 13px 16px;
+  border-left: 4px solid #9d762d;
+  background: #f1e6d4;
+  color: #4f3a24;
 }
 .brew-article h3:first-child {
   margin-top: 0;
@@ -926,6 +990,10 @@ tbody td:first-child { font-weight:700; color:var(--accent); white-space:nowrap;
   .brew-detail-hero h1 {
     font-size: clamp(2.35rem, 13vw, 3.7rem);
     line-height: 1;
+  }
+  .brew-article h3:first-child {
+    font-size: 1.55rem;
+    line-height: 1.35;
   }
   .brew-source,
   .brew-article,

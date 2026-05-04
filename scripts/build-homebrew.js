@@ -105,6 +105,7 @@ const removedSubclassTitles = new Set([
   '악몽의 회합 - Circle of Nightmares',
   '장난의 회합 - Circle of Mischief',
   '야전 의무병 - Field Medic',
+  '약탈자 - Marauder',
 ]);
 
 function escapeHtml(value) {
@@ -421,6 +422,43 @@ function extractHtmlHeadings(html) {
   })).filter(item => !/^총평/.test(item.title)).slice(0, 8);
 }
 
+function extractLevelSummary(markdownLines) {
+  const rows = [];
+  for (const line of markdownLines) {
+    const match = line.match(/^####\s+(\d+)레벨:\s+(.+)$/);
+    if (!match || /^(신규 주문|총평|개요)/.test(match[2])) continue;
+    rows.push({ level: `${match[1]}레벨`, title: match[2].trim() });
+  }
+  const seen = new Set();
+  return rows.filter(row => {
+    const key = `${row.level}:${row.title}`;
+    if (seen.has(key)) return false;
+    seen.add(key);
+    return true;
+  }).slice(0, 10);
+}
+
+function levelSummaryHtml(markdownLines) {
+  const rows = extractLevelSummary(markdownLines);
+  if (!rows.length) return '';
+  return `<section class="level-summary" aria-label="레벨 요약">
+    <div class="summary-head">
+      <span>LEVEL PROGRESSION</span>
+      <h2>레벨 요약</h2>
+    </div>
+    <table>
+      <thead><tr><th>레벨</th><th>기능</th></tr></thead>
+      <tbody>${rows.map(row => `<tr><td>${escapeHtml(row.level)}</td><td>${escapeHtml(row.title)}</td></tr>`).join('')}</tbody>
+    </table>
+  </section>`;
+}
+
+function enhanceRuleHtml(html) {
+  return html
+    .replace(/<p>((?:쉽게 말해|다만|원문상|보통은|즉,|주의:)[\s\S]*?)<\/p>/g, '<p class="rule-note">$1</p>')
+    .replace(/<section id="([^"]+)" class="level4">\s*<h4>([\s\S]*?)<\/h4>/g, '<section id="$1" class="level4 feature-block"><h4>$2</h4>');
+}
+
 function synopsis(markdownLines) {
   const paragraph = markdownLines
     .filter(line => line && !/^#|^\||^-|^---/.test(line))
@@ -464,7 +502,7 @@ for (const subclass of subclasses) {
 for (const subclass of subclasses) {
   const { ko, en } = titleParts(subclass.title);
   const related = byClass.get(subclass.className).filter(item => item.slug !== subclass.slug).slice(0, 5);
-  const bodyHtml = mdToHtml(subclass.lines.join('\n'));
+  const bodyHtml = enhanceRuleHtml(mdToHtml(subclass.lines.join('\n')));
   const headings = extractHtmlHeadings(bodyHtml);
   const content = `<main id="top" class="brew-detail">
   <header class="brew-detail-hero">
@@ -476,8 +514,8 @@ for (const subclass of subclasses) {
       <p class="brew-lede">${escapeHtml(synopsis(subclass.lines))}</p>
       <div class="brew-meta-row">
         <span>${escapeHtml(badgeFor(subclass))}</span>
-        <span>2024 구조 검토</span>
-        <span>번역 + 운용 메모</span>
+        <span>2024 구조</span>
+        <span>번역 본문</span>
       </div>
     </div>
     <figure class="brew-art-frame">
@@ -497,6 +535,7 @@ for (const subclass of subclasses) {
       </div>` : ''}
     </aside>
     <article class="content doc-content brew-article">
+      ${levelSummaryHtml(subclass.lines)}
       ${bodyHtml}
     </article>
   </div>
