@@ -99,6 +99,7 @@ const removedSubclassTitles = new Set([
   '공허의 파수꾼 - Hollow Warden',
   '마녀사냥꾼 - Witch-Hunter',
   '악몽의 회합 - Circle of Nightmares',
+  '장난의 회합 - Circle of Mischief',
 ]);
 
 function escapeHtml(value) {
