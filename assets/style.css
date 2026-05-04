@@ -302,19 +302,19 @@ tbody td:first-child { font-weight:700; color:var(--accent); white-space:nowrap;
   opacity: .46;
 }
 .cover-bg::after {
-  background-image: url('images/cover-arrowkeep.jpg');
+  background-image: url('images/cover-arrowkeep-v2.jpg');
 }
 .guide-bg::after {
-  background-image: url('images/guide-walden.jpg');
+  background-image: url('images/guide-walden-v2.jpg');
 }
 .world-bg::after {
-  background-image: url('images/world-map.jpg');
+  background-image: url('images/world-map-v2.jpg');
 }
 .setting-bg::after {
-  background-image: url('images/setting-guild.jpg');
+  background-image: url('images/setting-guild-v2.jpg');
 }
 .homebrew-bg::after {
-  background-image: url('images/homebrew-tome.jpg');
+  background-image: url('images/homebrew-tome-v2.jpg');
 }
 .hero-visual::before,
 .image-section::before {
@@ -338,6 +338,7 @@ tbody td:first-child { font-weight:700; color:var(--accent); white-space:nowrap;
 .visual-toc .hub-card img {
   display: block;
   width: 100%;
+  height: auto;
   aspect-ratio: 16 / 9;
   object-fit: cover;
   border-bottom: 1px solid var(--gold-dim);
@@ -361,6 +362,7 @@ tbody td:first-child { font-weight:700; color:var(--accent); white-space:nowrap;
 .section-image-row img {
   display: block;
   width: min(980px, 100%);
+  height: auto;
   margin: 0 auto;
   border: 1px solid var(--gold-dim);
   box-shadow: 0 20px 48px rgba(0,0,0,.28);
