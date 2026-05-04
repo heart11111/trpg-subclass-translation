@@ -89,6 +89,7 @@ const slugOverrides = new Map([
   ['내면의 빛의 전사 - Warrior of the Inner Light', 'warrior-of-the-inner-light'],
   ['엑상귀네이터 로그 - Exsanguinator Rogue', 'exsanguinator-rogue'],
   ['조디악 아키타입 - Zodiac Archetype', 'zodiac-archetype'],
+  ['스워시버클러 - Swashbuckler (2024)', 'swashbuckler-2024'],
   ['야전 의무병 - Field Medic', 'field-medic'],
   ['피로 물든 폭풍의 길 - Path of the Bloodstained Hurricane', 'path-of-the-bloodstained-hurricane'],
   ['지옥불의 길 - Path of the Inferno', 'path-of-the-inferno'],
