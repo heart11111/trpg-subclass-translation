@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>라이칸의 길 - 화살성채 홈브류</title>
+<meta name="description" content="바바리안 서브클래스 라이칸의 길 번역 및 룰 검토">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Noto+Serif+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body class="brew-page subclass-page">
+<nav class="site-nav" aria-label="주요 문서">
+  <a class="brand" href="../index.html">화살성채</a>
+  <div class="nav-links">
+    <a href="../index.html">홈</a>
+    <a href="../player-guide.html">플레이어 가이드</a>
+    <a href="../world.html">세계관 자료</a>
+    <a href="../setting.html">설정 정리</a>
+    <a class="active" href="../homebrew.html">홈브류</a>
+    <a href="../spells.html">주문</a>
+    <a href="../credits.html">크레딧</a>
+  </div>
+</nav>
+<main id="top" class="brew-detail">
+  <header class="brew-detail-hero">
+    <div class="brew-hero-copy">
+      <a class="crumb-link" href="../homebrew.html">홈브류 목록</a>
+      <p class="eyebrow">바바리안 SUBCLASS</p>
+      <h1>라이칸의 길</h1>
+      <p class="brew-en">Path of the Lycan</p>
+      <p class="brew-lede">라이칸스로피는 걸린 이를 살점에 굶주린 정신 없는 야수로 바꾸는 오래된 저주입니다. 하지만 어떤 이들은 이 두려운 저주에 일부러 감염됩니다. 그들은 이 야성의 힘을 받아들여, 세상에서 다른 라이칸스로프들을 </p>
+      <div class="brew-meta-row">
+        <span>공격</span>
+        <span>2024 구조 검토</span>
+        <span>번역 + 운용 메모</span>
+      </div>
+    </div>
+    <figure class="brew-art-frame">
+      <img src="../assets/images/homebrew-classes/barbarian.jpg" alt="라이칸의 길 분위기 이미지">
+    </figure>
+  </header>
+  <div class="brew-reading-grid">
+    <aside class="brew-side">
+      <div class="brew-side-box">
+        <p class="side-label">빠른 목차</p>
+        <ol><li><a href="#3레벨-동물-형상---animal-form">3레벨: 동물 형상 - Animal Form</a></li><li><a href="#3레벨-혼성-형상---hybrid-form">3레벨: 혼성 형상 - Hybrid Form</a></li><li><a href="#블러드-헌터-해체---blood-hunter-dissected">블러드 헌터 해체 - Blood Hunter, Dissected</a></li><li><a href="#6레벨-저주받은-포식자---accursed-predator">6레벨: 저주받은 포식자 - Accursed Predator</a></li><li><a href="#10레벨-라이칸-전사---lycan-warrior">10레벨: 라이칸 전사 - Lycan Warrior</a></li></ol>
+      </div>
+      
+      <div class="brew-side-box">
+        <p class="side-label">같은 클래스</p>
+        <a class="side-link" href="path-of-the-bloodstained-hurricane.html">피로 물든 폭풍의 길</a><a class="side-link" href="path-of-the-inferno.html">지옥불의 길</a><a class="side-link" href="path-of-the-mutant.html">돌연변이의 길</a>
+      </div>
+    </aside>
+    <article class="content doc-content brew-article">
+      <section id="라이칸의-길---path-of-the-lycan" class="level3">
+<h3>라이칸의 길 - Path of the Lycan</h3>
+<p>라이칸스로피는 걸린 이를 살점에 굶주린 정신 없는 야수로 바꾸는 오래된
+저주입니다. 하지만 어떤 이들은 이 두려운 저주에 일부러 감염됩니다.
+그들은 이 야성의 힘을 받아들여, 세상에서 다른 라이칸스로프들을 제거하려
+합니다.</p>
+<p>이 길을 걷는 바바리안들은 종종 나이 든 스승에게서 힘을 물려받습니다.
+그 스승은 라이칸스로피의 저주를 받은 괴물들을 사냥하는 사명을 이어받을
+제자를 찾고 있었을지도 모릅니다.</p>
+<table>
+<thead>
+<tr>
+<th>바바리안 레벨</th>
+<th>원시 길 특징</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3레벨</td>
+<td>동물 형상 - Animal Form, 혼성 형상 - Hybrid Form</td>
+</tr>
+<tr>
+<td>6레벨</td>
+<td>저주받은 포식자 - Accursed Predator</td>
+</tr>
+<tr>
+<td>10레벨</td>
+<td>라이칸 전사 - Lycan Warrior</td>
+</tr>
+<tr>
+<td>14레벨</td>
+<td>원초적 분노의 울부짖음 - Howl of Primal Fury</td>
+</tr>
+</tbody>
+</table>
+<section id="3레벨-동물-형상---animal-form" class="level4">
+<h4>3레벨: 동물 형상 - Animal Form</h4>
+<p>당신은 자신의 라이칸스로피를 통제하는 법을 배웠고, 의지대로 신체
+형태를 바꿀 수 있습니다. 자기 턴에 행동으로, 드루이드가 야생 변신 - Wild
+Shape으로 야수의 형태를 취하듯, 당신은 라이칸스로피의 동물 형상으로
+변신할 수 있습니다.</p>
+<p>당신의 라이칸스로피 저주를 가장 잘 나타내는 도전 지수 1 이하의 야수
+하나를 고릅니다. 흔한 예로는 멧돼지, 갈색곰, 다이어 울프, 호랑이, 쥐가
+있습니다. 이 선택은 저주의 변하지 않는 본질을 반영하므로 영구적이며,
+소원 - Wish 주문이 아니면 바꿀 수 없습니다.</p>
+<p>동물 형상으로 변신하면, 플레이어 핸드북의 드루이드 클래스에 있는 야생
+변신 규칙을 모두 따릅니다.</p>
+<p>당신은 최대 1시간 동안 동물 형상으로 남을 수 있습니다. HP가 0으로
+떨어지거나, 추가 행동을 사용해 원래 모습으로 돌아오면 변신은 일찍
+끝납니다.</p>
+<p>한 번 동물 형상으로 변신하면, 짧은 휴식 또는 긴 휴식을 마치기 전까지
+다시 변신할 수 없습니다. 사용 횟수가 남아 있지 않다면, 격노 사용 횟수
+하나를 소비해 다시 변신할 수 있습니다.</p>
+</section>
+<section id="3레벨-혼성-형상---hybrid-form" class="level4">
+<h4>3레벨: 혼성 형상 - Hybrid Form</h4>
+<p>당신의 격노는 내면의 야수성을 끌어냅니다. 당신이 격노할 때, 당신은
+야수와 인간형 사이의 융합 형태인 혼성 형상으로 변신할 수 있습니다. 혼성
+형상인 동안, 격노가 지속되는 동안 다음 혜택을 얻습니다.</p>
+<ul>
+<li>AC에 +1 보너스를 얻습니다.</li>
+<li>당신의 손가락과 이빨은 발톱과 송곳니가 됩니다. 이것들은 가벼움
+속성을 가진 단순 무기로 취급됩니다. 명중 시 발톱은 1d6 참격 피해,
+송곳니는 1d6 관통 피해를 줍니다.</li>
+<li>당신의 보행 속도가 10피트 증가합니다.</li>
+</ul>
+</section>
+<section id="블러드-헌터-해체---blood-hunter-dissected" class="level4">
+<h4>블러드 헌터 해체 - Blood Hunter, Dissected</h4>
+<p>여기에 제시된 라이칸의 길과 돌연변이의 길은 블러드 헌터의 해당
+결사들을 5e의 공식 플레이어 선택지에 더 가까운 형태로 각색하려는
+시도입니다.</p>
+</section>
+<section id="6레벨-저주받은-포식자---accursed-predator" class="level4">
+<h4>6레벨: 저주받은 포식자 - Accursed Predator</h4>
+<p>당신의 혈관에 흐르는 저주가 감각을 강화합니다. 청각, 시각, 또는
+후각에 의존하는 지혜(감지) 판정을 할 때, 그 굴림에 당신의 건강 수정치와
+같은 보너스를 더합니다. 최소 보너스는 +1입니다.</p>
+<p>또한 동물 형상과 혼성 형상에서 하는 당신의 자연 무기 공격은 비마법
+공격과 피해에 대한 저항 및 면역을 극복할 때 마법적인 것으로
+취급됩니다.</p>
+</section>
+<section id="10레벨-라이칸-전사---lycan-warrior" class="level4">
+<h4>10레벨: 라이칸 전사 - Lycan Warrior</h4>
+<p>당신은 저주의 온전한 힘을 끌어냅니다. 동물 형상 또는 혼성 형상으로
+변신할 때, 다음 추가 혜택을 얻습니다.</p>
+<ul>
+<li>당신은 자기 크기를 한 단계 키울 수 있습니다.</li>
+<li>근접 공격의 도달 거리가 5피트 증가합니다.</li>
+<li>보행 속도가 추가로 10피트 증가합니다.</li>
+<li>자연 무기의 피해가 1d8이 됩니다.</li>
+<li>자기 턴 시작 시 현재 HP가 최대 HP의 절반보다 적다면, 즉시 당신의
+건강 수정치와 같은 HP를 회복합니다. 최소 회복량은 1 HP입니다.</li>
+</ul>
+</section>
+<section id="14레벨-원초적-분노의-울부짖음---howl-of-primal-fury"
+class="level4">
+<h4>14레벨: 원초적 분노의 울부짖음 - Howl of Primal Fury</h4>
+<p>당신이 격노 사용 횟수를 소비할 때, 피를 얼어붙게 하는 울부짖음을
+내지를 수 있습니다. 당신으로부터 30피트 이내에 있고 당신의 소리를 들을
+수 있는, 당신이 선택한 크리처들은 지혜 내성 굴림을 해야 합니다. DC는
+<code>8 + 당신의 숙련 보너스 + 당신의 건강 수정치</code>입니다. 실패하면
+대상은 최대 1분 동안 당신에게 공포 상태가 됩니다.</p>
+<p>대상은 자기 각 턴이 끝날 때 이 내성 굴림을 반복할 수 있으며, 성공하면
+효과가 끝납니다.</p>
+<p>이 효과에 대한 내성 굴림에 성공한 크리처는 다음 24시간 동안 이 능력에
+면역이 됩니다.</p>
+</section>
+<section id="총평-룰상-애매하거나-앞뒤가-맞지-않는-부분" class="level4">
+<h4>총평: 룰상 애매하거나 앞뒤가 맞지 않는 부분</h4>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>메모</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>동물 형상과 2024 야생 변신</td>
+<td>원문은 플레이어 핸드북의 드루이드 야생 변신 규칙을 참조합니다.
+사용하는 판본에 따라 야생 변신 세부 규칙이 다를 수 있으므로, 캠페인 기준
+규칙을 정해 두는 편이 좋습니다.</td>
+</tr>
+<tr>
+<td>동물 형상과 격노</td>
+<td>사용 횟수가 없을 때 격노 사용 횟수로 동물 형상을 다시 사용할 수
+있지만, 변신 자체가 격노를 자동으로 시작한다는 뜻은 아닙니다.</td>
+</tr>
+<tr>
+<td>라이칸 전사의 회복</td>
+<td>HP가 절반 미만이면 매 턴 시작마다 회복합니다. 제한 횟수가 없으므로
+장기전에서 강력합니다. 회복 차단 효과나 큰 피해로 압박하는 식의 대응이
+필요할 수 있습니다.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+</section>
+</section>
+
+    </article>
+  </div>
+</main>
+<button id="back-top" class="back-top" type="button" aria-label="맨 위로">↑</button>
+<script src="../assets/app.js"></script>
+</body>
+</html>

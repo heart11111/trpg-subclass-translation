@@ -91,6 +91,9 @@ const slugOverrides = new Map([
   ['조디악 아키타입 - Zodiac Archetype', 'zodiac-archetype'],
   ['야전 의무병 - Field Medic', 'field-medic'],
   ['피로 물든 폭풍의 길 - Path of the Bloodstained Hurricane', 'path-of-the-bloodstained-hurricane'],
+  ['지옥불의 길 - Path of the Inferno', 'path-of-the-inferno'],
+  ['라이칸의 길 - Path of the Lycan', 'path-of-the-lycan'],
+  ['돌연변이의 길 - Path of the Mutant', 'path-of-the-mutant'],
   ['지맥술 학파 - School of Geomancy', 'school-of-geomancy'],
   ['전격술사 - Electromancer', 'electromancer'],
 ]);
