@@ -18,6 +18,7 @@
     <a href="setting.html">설정 정리</a>
     <a href="homebrew.html">홈브류</a>
     <a class="active" href="spells.html">주문</a>
+    <a href="credits.html">크레딧</a>
   </div>
 </nav>
 <main id="top" class="spell-index">
@@ -28,70 +29,67 @@
       <p class="brew-lede">서브클래스 본문에 섞여 있던 신규 주문을 따로 모았습니다. 플레이 중에는 이 페이지에서 주문 이름만 바로 찾으면 됩니다.</p>
     </div>
     <figure class="brew-art-frame compact">
-      <img src="assets/images/homebrew-tome-v2.jpg" alt="주문 문서 분위기 이미지">
+      <img src="assets/images/homebrew-classes/wizard.jpg" alt="주문 문서 분위기 이미지">
     </figure>
   </header>
   <nav class="brew-toc" aria-label="주문 목차">
-    <a href="#">독사과</a><a href="#">아타메 반사</a>
+    <a href="#poison-apple">독사과 - Poison Apple</a><a href="#athame-reflection">아타메 반사 - Athame Reflection</a>
   </nav>
   <section class="spell-list">
-    <article id="" class="spell-card">
-    <div class="spell-card-head">
-      <span>워록</span>
-      <a href="subclasses/coven-patron.html">마녀 집회 후원자</a>
-    </div>
-    <div class="doc-content"><section id="독사과" class="level3">
-<h3>독사과</h3>
-<p>1레벨 변환계 주문 (워록, 바드, 위저드)</p>
-<p>시전 시간: 행동<br />
-사거리: 10피트<br />
-구성요소: 음성, 동작<br />
-지속시간: 즉시</p>
-<p>사거리 안의 한 지점을 중심으로 한 5피트 반경 구체 안에 있는 모든
+    <article id="poison-apple" class="dndb-spell">
+    <header class="dndb-spell-head">
+      <div>
+        <p class="spell-source">워록 · <a href="subclasses/coven-patron.html">마녀 집회 후원자</a></p>
+        <h2>독사과 - Poison Apple</h2>
+        <p class="spell-subtitle">1레벨 변환계</p>
+      </div>
+      <span class="spell-class-pill">워록, 바드, 위저드</span>
+    </header>
+    <dl class="spell-stats">
+      <div><dt>시전 시간</dt><dd>행동  </dd></div>
+      <div><dt>사거리</dt><dd>10피트  </dd></div>
+      <div><dt>구성요소</dt><dd>음성, 동작  </dd></div>
+      <div><dt>지속시간</dt><dd>즉시</dd></div>
+    </dl>
+    <div class="spell-body doc-content"><p>사거리 안의 한 지점을 중심으로 한 5피트 반경 구체 안에 있는 모든
 비마법적 음식과 음료에 마법적인 부패 또는 독이 스며든다. 이 음식이나
 음료를 먹거나 마신 생물은 건강 내성굴림을 해야 하며, 실패하면 짧은 휴식
-또는 긴 휴식을 마칠 때까지 중독 상태가 된다.</p>
-<p>더 높은 레벨의 주문 슬롯 사용: 더 높은 레벨의 주문 슬롯으로 시전하면,
-이 부패와 독은 시각이나 맛으로 알아차릴 수 없게 된다.</p>
-</section>
+또는 긴 휴식을 마칠 때까지 중독 상태가 된다. 더 높은 레벨의 주문 슬롯
+사용: 더 높은 레벨의 주문 슬롯으로 시전하면, 이 부패와 독은 시각이나
+맛으로 알아차릴 수 없게 된다.</p>
 </div>
   </article>
-<article id="" class="spell-card">
-    <div class="spell-card-head">
-      <span>워록</span>
-      <a href="subclasses/coven-patron.html">마녀 집회 후원자</a>
-    </div>
-    <div class="doc-content"><section id="아타메-반사" class="level3">
-<h3>아타메 반사</h3>
-<p>3레벨 환영계 주문 (워록, 위저드)</p>
-<p>시전 시간: 반응행동. 사거리 안의 생물이 적대적인 주문의 대상으로
-지정되었을 때 사용한다.<br />
-사거리: 100피트<br />
-구성요소: 음성, 동작<br />
-지속시간: 즉시</p>
-<p>당신은 굴절된 달빛으로 이루어진 영적인 가위를 불러내, 위브와 시전자
-사이의 실을 잘라낸다.</p>
-<p>발동 조건이 된 주문이 1레벨 주문이라면, 당신은 그 주문을 새로운
-대상으로 돌릴 수 있다. 새 대상은 반사된 주문의 사거리 안에 있어야 하며,
-원래 시전자 자신을 대상으로 삼을 수도 있다.</p>
-<p>주문을 돌려보낼 때, 그 주문은 원래 시전자의 주문시전 능력 대신 당신의
-주문시전 능력을 사용한다. 다만 주문은 여전히 원래 시전자의 공간에서
-시작된 것으로 처리한다. 즉, 주문 공격 보너스나 주문 내성 DC처럼 주문시전
-능력에 묶인 수치는 당신의 것을 쓰지만, 사거리와 출발 위치는 원래 시전자
-기준으로 본다는 뜻이다.</p>
-<p>발동 조건이 된 주문이 2레벨 주문이라면, 당신은 지능(비전학) 판정에
-성공해야 한다. DC는 10 + 그 주문 레벨의 두 배다. 성공하면 주문이 다른
-대상으로 돌려진다. 실패하면 반사에 실패한다.</p>
-<p>이 주문으로 돌릴 수 없는 주문을 대상으로 시도하면, 반사는
-실패한다.</p>
-<p>더 높은 레벨의 주문 슬롯 사용: 3레벨보다 높은 슬롯으로 시전할 때마다,
-자동으로 반사할 수 있는 주문 레벨과 비전학 판정 성공 시 반사할 수 있는
-주문 레벨이 각각 1씩 증가한다. 예를 들어 4레벨 슬롯으로 시전하면 2레벨
-주문은 자동 반사하고, 3레벨 주문은 비전학 판정에 성공해야 반사할 수
-있다.</p>
-<p>분류: 워록<br />
-기능 제작: u/connyhimmy/</p>
-</section>
+<article id="athame-reflection" class="dndb-spell">
+    <header class="dndb-spell-head">
+      <div>
+        <p class="spell-source">워록 · <a href="subclasses/coven-patron.html">마녀 집회 후원자</a></p>
+        <h2>아타메 반사 - Athame Reflection</h2>
+        <p class="spell-subtitle">3레벨 환영계</p>
+      </div>
+      <span class="spell-class-pill">워록, 위저드</span>
+    </header>
+    <dl class="spell-stats">
+      <div><dt>시전 시간</dt><dd>반응행동. 사거리 안의 생물이 적대적인 주문의 대상으로 지정되었을 때 사용한다.  </dd></div>
+      <div><dt>사거리</dt><dd>100피트  </dd></div>
+      <div><dt>구성요소</dt><dd>음성, 동작  </dd></div>
+      <div><dt>지속시간</dt><dd>즉시</dd></div>
+    </dl>
+    <div class="spell-body doc-content"><p>당신은 굴절된 달빛으로 이루어진 영적인 가위를 불러내, 위브와 시전자
+사이의 실을 잘라낸다. 발동 조건이 된 주문이 1레벨 주문이라면, 당신은 그
+주문을 새로운 대상으로 돌릴 수 있다. 새 대상은 반사된 주문의 사거리 안에
+있어야 하며, 원래 시전자 자신을 대상으로 삼을 수도 있다. 주문을 돌려보낼
+때, 그 주문은 원래 시전자의 주문시전 능력 대신 당신의 주문시전 능력을
+사용한다. 다만 주문은 여전히 원래 시전자의 공간에서 시작된 것으로
+처리한다. 즉, 주문 공격 보너스나 주문 내성 DC처럼 주문시전 능력에 묶인
+수치는 당신의 것을 쓰지만, 사거리와 출발 위치는 원래 시전자 기준으로
+본다는 뜻이다. 발동 조건이 된 주문이 2레벨 주문이라면, 당신은
+지능(비전학) 판정에 성공해야 한다. DC는 10 + 그 주문 레벨의 두 배다.
+성공하면 주문이 다른 대상으로 돌려진다. 실패하면 반사에 실패한다. 이
+주문으로 돌릴 수 없는 주문을 대상으로 시도하면, 반사는 실패한다. 더 높은
+레벨의 주문 슬롯 사용: 3레벨보다 높은 슬롯으로 시전할 때마다, 자동으로
+반사할 수 있는 주문 레벨과 비전학 판정 성공 시 반사할 수 있는 주문
+레벨이 각각 1씩 증가한다. 예를 들어 4레벨 슬롯으로 시전하면 2레벨 주문은
+자동 반사하고, 3레벨 주문은 비전학 판정에 성공해야 반사할 수 있다.</p>
 </div>
   </article>
   </section>

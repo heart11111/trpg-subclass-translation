@@ -754,27 +754,133 @@ tbody td:first-child { font-weight:700; color:var(--accent); white-space:nowrap;
   margin: 0 auto;
   padding: 0 28px 90px;
 }
-.spell-card {
-  background: var(--cream);
-  border: 1px solid rgba(62,45,24,.18);
-  margin-bottom: 18px;
-  box-shadow: 0 18px 50px rgba(42,32,21,.08);
+.dndb-spell {
+  background: #fbf8ef;
+  border: 1px solid rgba(56,39,22,.22);
+  margin-bottom: 22px;
+  box-shadow: 0 20px 58px rgba(42,32,21,.1);
 }
-.spell-card-head {
+.dndb-spell-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 18px;
+  padding: 26px 34px 18px;
+  border-top: 5px solid #7d1717;
+  border-bottom: 1px solid rgba(56,39,22,.18);
+}
+.dndb-spell h2 {
+  margin: 4px 0 6px;
+  color: #5a1714;
+  font-family: 'Noto Serif KR', serif;
+  font-size: clamp(1.6rem, 3vw, 2.25rem);
+  line-height: 1.15;
+}
+.spell-source,
+.spell-source a {
+  color: #7f663d;
+  text-decoration: none;
+  font-size: .84rem;
+}
+.spell-subtitle {
+  color: #4f4538;
+  font-style: italic;
+}
+.spell-class-pill {
+  flex: 0 0 auto;
+  border: 1px solid rgba(125,23,23,.28);
+  color: #7d1717;
+  background: #f2e8d9;
+  padding: 8px 10px;
+  font-size: .82rem;
+}
+.spell-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 0;
+  background: #efe5d2;
+  border-bottom: 1px solid rgba(56,39,22,.18);
+}
+.spell-stats div {
+  padding: 14px 18px;
+  border-right: 1px solid rgba(56,39,22,.14);
+}
+.spell-stats div:last-child {
+  border-right: none;
+}
+.spell-stats dt {
+  color: #7d1717;
+  font-weight: 700;
+  font-size: .78rem;
+  margin-bottom: 4px;
+}
+.spell-stats dd {
+  margin: 0;
+  color: #2a2015;
+  font-size: .9rem;
+  line-height: 1.55;
+}
+.spell-body {
+  padding: 26px 34px 34px;
+}
+.spell-body p:last-child {
+  margin-bottom: 0;
+}
+.credits-teaser {
+  max-width: 980px;
+  margin: 0 auto 90px;
+  padding: 22px 28px;
   display: flex;
   justify-content: space-between;
   gap: 16px;
-  padding: 12px 18px;
-  background: #241a12;
-  color: rgba(232,207,130,.78);
-  font-size: .82rem;
+  align-items: center;
+  border: 1px solid rgba(62,45,24,.18);
+  background: rgba(255,255,255,.48);
 }
-.spell-card-head a {
+.credits-teaser p {
+  color: #5e5243;
+}
+.credits-teaser a {
+  color: #f7efd9;
+  background: #2b2118;
+  text-decoration: none;
+  padding: 10px 14px;
+  white-space: nowrap;
+}
+.credit-list {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 0 28px 90px;
+}
+.credit-card {
+  background: #fbf8ef;
+  border: 1px solid rgba(62,45,24,.18);
+  margin-bottom: 16px;
+  box-shadow: 0 18px 46px rgba(42,32,21,.08);
+}
+.credit-card header {
+  padding: 16px 22px;
+  background: #241a12;
+  color: rgba(232,207,130,.72);
+}
+.credit-card header span {
+  font-family: 'Cinzel', serif;
+  letter-spacing: 2px;
+  font-size: .7rem;
+}
+.credit-card h2 {
+  margin: 6px 0 0;
+  font-size: 1.08rem;
+}
+.credit-card h2 a {
   color: var(--gold-light);
   text-decoration: none;
 }
-.spell-card .doc-content {
-  padding: 26px 34px 32px;
+.credit-card .doc-content {
+  padding: 20px 24px 24px;
+}
+.credit-card table {
+  margin-bottom: 0;
 }
 .empty-note {
   padding: 30px;
@@ -823,8 +929,17 @@ tbody td:first-child { font-weight:700; color:var(--accent); white-space:nowrap;
   }
   .brew-source,
   .brew-article,
-  .spell-card .doc-content {
+  .spell-body,
+  .credit-card .doc-content {
     padding-left: 20px;
     padding-right: 20px;
+  }
+  .spell-stats {
+    grid-template-columns: 1fr 1fr;
+  }
+  .dndb-spell-head,
+  .credits-teaser {
+    flex-direction: column;
+    align-items: stretch;
   }
 }

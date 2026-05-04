@@ -9,41 +9,41 @@ const source = fs.readFileSync(sourcePath, 'utf8').replace(/\r\n/g, '\n');
 const lines = source.split('\n');
 
 const classArt = {
-  '워록': 'assets/images/homebrew-tome-v2.jpg',
-  '파이터': 'assets/images/guide-characters-v2.jpg',
-  '팔라딘': 'assets/images/cover-arrowkeep-v2.jpg',
-  '레인저': 'assets/images/world-map-v2.jpg',
-  '드루이드': 'assets/images/guide-walden-v2.jpg',
-  '몽크': 'assets/images/cover-arrowkeep-v2.jpg',
-  '로그': 'assets/images/setting-guild-v2.jpg',
-  '바바리안': 'assets/images/setting-guild-v2.jpg',
-  '위저드': 'assets/images/homebrew-tome-v2.jpg',
+  '워록': 'assets/images/homebrew-classes/warlock.jpg',
+  '파이터': 'assets/images/homebrew-classes/fighter.jpg',
+  '팔라딘': 'assets/images/homebrew-classes/paladin.jpg',
+  '레인저': 'assets/images/homebrew-classes/ranger.jpg',
+  '드루이드': 'assets/images/homebrew-classes/druid.jpg',
+  '몽크': 'assets/images/homebrew-classes/monk.jpg',
+  '로그': 'assets/images/homebrew-classes/rogue.jpg',
+  '바바리안': 'assets/images/homebrew-classes/barbarian.jpg',
+  '위저드': 'assets/images/homebrew-classes/wizard.jpg',
 };
 
 const subclassArt = {
-  '마녀 집회 후원자 - Coven Patron: Spin the Threads of Fate': 'assets/images/homebrew-tome-v2.jpg',
-  '진홍 갈증의 워록 - Warlock of the Crimson Thirst': 'assets/images/homebrew-tome-v2.jpg',
-  '전투 의무병 - Combat Medic': 'assets/images/guide-characters-v2.jpg',
-  '질풍 - Zephyr': 'assets/images/cover-arrowkeep-v2.jpg',
-  '약탈자 - Marauder': 'assets/images/setting-guild-v2.jpg',
-  '사랑의 맹세 - Oath of Love': 'assets/images/guide-walden-v2.jpg',
-  '전승지기의 맹세 - Oath of the Lore-Keeper': 'assets/images/homebrew-tome-v2.jpg',
-  '공허의 파수꾼 - Hollow Warden': 'assets/images/world-map-v2.jpg',
-  '감시자 - The Sentinel': 'assets/images/cover-arrowkeep-v2.jpg',
-  '마녀사냥꾼 - Witch-Hunter': 'assets/images/setting-guild-v2.jpg',
-  '괴물성의 회합 - Circle of Monstrosity': 'assets/images/world-map-v2.jpg',
-  '모기의 서클 - Circle of the Mosquito': 'assets/images/guide-walden-v2.jpg',
-  '장난의 회합 - Circle of Mischief': 'assets/images/guide-characters-v2.jpg',
-  '파수꾼의 회합 - Circle of the Warden': 'assets/images/cover-arrowkeep-v2.jpg',
-  '악몽의 회합 - Circle of Nightmares': 'assets/images/homebrew-tome-v2.jpg',
-  '봄의 회합 - Circle of Spring': 'assets/images/guide-walden-v2.jpg',
-  '내면의 빛의 전사 - Warrior of the Inner Light': 'assets/images/cover-arrowkeep-v2.jpg',
-  '엑상귀네이터 로그 - Exsanguinator Rogue': 'assets/images/setting-guild-v2.jpg',
-  '조디악 아키타입 - Zodiac Archetype': 'assets/images/homebrew-tome-v2.jpg',
-  '야전 의무병 - Field Medic': 'assets/images/guide-characters-v2.jpg',
-  '피로 물든 폭풍의 길 - Path of the Bloodstained Hurricane': 'assets/images/setting-guild-v2.jpg',
-  '지맥술 학파 - School of Geomancy': 'assets/images/world-map-v2.jpg',
-  '전격술사 - Electromancer': 'assets/images/homebrew-tome-v2.jpg',
+  '마녀 집회 후원자 - Coven Patron: Spin the Threads of Fate': 'assets/images/homebrew-classes/warlock.jpg',
+  '진홍 갈증의 워록 - Warlock of the Crimson Thirst': 'assets/images/homebrew-classes/warlock.jpg',
+  '전투 의무병 - Combat Medic': 'assets/images/homebrew-classes/fighter.jpg',
+  '질풍 - Zephyr': 'assets/images/homebrew-classes/fighter.jpg',
+  '약탈자 - Marauder': 'assets/images/homebrew-classes/barbarian.jpg',
+  '사랑의 맹세 - Oath of Love': 'assets/images/homebrew-classes/paladin.jpg',
+  '전승지기의 맹세 - Oath of the Lore-Keeper': 'assets/images/homebrew-classes/paladin.jpg',
+  '공허의 파수꾼 - Hollow Warden': 'assets/images/homebrew-classes/ranger.jpg',
+  '감시자 - The Sentinel': 'assets/images/homebrew-classes/ranger.jpg',
+  '마녀사냥꾼 - Witch-Hunter': 'assets/images/homebrew-classes/ranger.jpg',
+  '괴물성의 회합 - Circle of Monstrosity': 'assets/images/homebrew-classes/druid.jpg',
+  '모기의 서클 - Circle of the Mosquito': 'assets/images/homebrew-classes/druid.jpg',
+  '장난의 회합 - Circle of Mischief': 'assets/images/homebrew-classes/druid.jpg',
+  '파수꾼의 회합 - Circle of the Warden': 'assets/images/homebrew-classes/druid.jpg',
+  '악몽의 회합 - Circle of Nightmares': 'assets/images/homebrew-classes/druid.jpg',
+  '봄의 회합 - Circle of Spring': 'assets/images/homebrew-classes/druid.jpg',
+  '내면의 빛의 전사 - Warrior of the Inner Light': 'assets/images/homebrew-classes/monk.jpg',
+  '엑상귀네이터 로그 - Exsanguinator Rogue': 'assets/images/homebrew-classes/rogue.jpg',
+  '조디악 아키타입 - Zodiac Archetype': 'assets/images/homebrew-classes/rogue.jpg',
+  '야전 의무병 - Field Medic': 'assets/images/homebrew-classes/fighter.jpg',
+  '피로 물든 폭풍의 길 - Path of the Bloodstained Hurricane': 'assets/images/homebrew-classes/barbarian.jpg',
+  '지맥술 학파 - School of Geomancy': 'assets/images/homebrew-classes/wizard.jpg',
+  '전격술사 - Electromancer': 'assets/images/homebrew-classes/wizard.jpg',
 };
 
 const classNotes = {
@@ -68,6 +68,8 @@ const slugOverrides = new Map([
   ['로그', 'rogue'],
   ['바바리안', 'barbarian'],
   ['위저드', 'wizard'],
+  ['독사과', 'poison-apple'],
+  ['아타메 반사', 'athame-reflection'],
   ['마녀 집회 후원자 - Coven Patron: Spin the Threads of Fate', 'coven-patron'],
   ['진홍 갈증의 워록 - Warlock of the Crimson Thirst', 'crimson-thirst-warlock'],
   ['전투 의무병 - Combat Medic', 'combat-medic'],
@@ -116,6 +118,11 @@ function titleParts(title) {
   return { ko: ko.trim(), en: rest.join(' - ').trim() };
 }
 
+function displayName(title) {
+  const { ko, en } = titleParts(title);
+  return en ? `${ko} - ${en}` : ko;
+}
+
 function mdToHtml(markdown) {
   const result = spawnSync('pandoc', ['-f', 'gfm', '-t', 'html', '--section-divs'], {
     input: markdown,
@@ -137,6 +144,7 @@ function makeNav(prefix = '', active = 'homebrew') {
     ['setting.html', '설정 정리', 'setting'],
     ['homebrew.html', '홈브류', 'homebrew'],
     ['spells.html', '주문', 'spells'],
+    ['credits.html', '크레딧', 'credits'],
   ];
   return `<nav class="site-nav" aria-label="주요 문서">
   <a class="brand" href="${prefix}index.html">화살성채</a>
@@ -177,7 +185,8 @@ function findHeadingIndex(pattern, start = 0) {
 const firstClassIndex = findHeadingIndex(/^## 워록$/);
 const sourceIndex = findHeadingIndex(/^## 출처$/);
 const bodyLines = lines.slice(firstClassIndex, sourceIndex);
-const sourceLines = sourceIndex >= 0 ? lines.slice(sourceIndex) : [];
+const unusableSourcePattern = /- .+ - (기존 번역본|사용자 제공 원본 자료)$/;
+const sourceLines = sourceIndex >= 0 ? lines.slice(sourceIndex).filter(line => !unusableSourcePattern.test(line)) : [];
 const sourceHtml = sourceLines.length ? mdToHtml(sourceLines.join('\n')) : '';
 
 const classSections = [];
@@ -221,7 +230,61 @@ for (const classSection of classSections) {
 }
 
 const spellSections = [];
+const creditSections = [];
+const creditHeadingPattern = /^#### (제작 및 고지|크레딧|제작 정보|면책 고지 및 제작 정보)$/;
+const creditLinePattern = /^(분류:|서브클래스 제작:|기능 제작:|원문 중간 표기:|>\s*분류:)/;
+
+function captureTable(lines, start) {
+  let end = start;
+  while (end < lines.length && (lines[end].trim() === '' || /^\|/.test(lines[end]))) {
+    end += 1;
+  }
+  return end;
+}
+
+function cleanCredits(subclass) {
+  const content = [];
+  const credits = [];
+  for (let i = 0; i < subclass.lines.length; i += 1) {
+    const line = subclass.lines[i];
+    if (creditHeadingPattern.test(line)) {
+      let end = subclass.lines.length;
+      for (let j = i + 1; j < subclass.lines.length; j += 1) {
+        if (/^#### /.test(subclass.lines[j])) {
+          end = j;
+          break;
+        }
+      }
+      credits.push(...subclass.lines.slice(i, end));
+      i = end - 1;
+      continue;
+    }
+    if (creditLinePattern.test(line)) {
+      credits.push(line);
+      if (i + 1 < subclass.lines.length && creditLinePattern.test(subclass.lines[i + 1])) continue;
+      continue;
+    }
+    if (/^\|.*(제작|홈브루 제작|제작 도구|Homebrewery|GM Binder|GMBinder).*\|/.test(line)) {
+      const end = captureTable(subclass.lines, i);
+      credits.push(...subclass.lines.slice(i, end));
+      i = end - 1;
+      continue;
+    }
+    content.push(line);
+  }
+  if (credits.some(item => item.trim())) {
+    creditSections.push({
+      className: subclass.className,
+      title: subclass.title,
+      slug: subclass.slug,
+      lines: credits,
+    });
+  }
+  subclass.lines = content;
+}
+
 for (const subclass of subclasses) {
+  cleanCredits(subclass);
   const out = [];
   for (let i = 0; i < subclass.lines.length; i += 1) {
     if (/^#### 신규 주문 - New Spells/.test(subclass.lines[i])) {
@@ -247,8 +310,13 @@ for (const subclass of subclasses) {
             break;
           }
         }
+        const originalNames = {
+          '독사과': 'Poison Apple',
+          '아타메 반사': 'Athame Reflection',
+        };
+        const spellTitle = originalNames[m[1]] ? `${m[1]} - ${originalNames[m[1]]}` : m[1];
         spellSections.push({
-          title: m[1],
+          title: spellTitle,
           slug: slugify(m[1]),
           className: subclass.className,
           sourceTitle: subclass.title,
@@ -267,6 +335,50 @@ for (const subclass of subclasses) {
     }
   }
   subclass.lines = out;
+}
+
+function parseSpell(spell) {
+  const title = spell.title;
+  const rest = spell.lines.slice(1).filter(line => line.trim());
+  const subtitle = rest[0] || '';
+  const meta = {};
+  const body = [];
+  for (const line of rest.slice(1)) {
+    const m = line.match(/^(시전 시간|사거리|구성요소|지속시간):\s*(.+)$/);
+    if (m) meta[m[1]] = m[2];
+    else body.push(line);
+  }
+  const sub = subtitle.match(/^(.+?) 주문(?: \((.+)\))?$/);
+  return {
+    title,
+    levelSchool: sub ? sub[1] : subtitle,
+    classes: sub && sub[2] ? sub[2] : '',
+    meta,
+    body: body.join('\n'),
+  };
+}
+
+function spellCardHtml(spell) {
+  const parsed = parseSpell(spell);
+  const bodyHtml = mdToHtml(parsed.body || '');
+  const sourceName = titleParts(spell.sourceTitle).ko;
+  return `<article id="${spell.slug}" class="dndb-spell">
+    <header class="dndb-spell-head">
+      <div>
+        <p class="spell-source">${escapeHtml(spell.className)} · <a href="subclasses/${spell.sourceSlug}.html">${escapeHtml(sourceName)}</a></p>
+        <h2>${escapeHtml(displayName(parsed.title))}</h2>
+        <p class="spell-subtitle">${escapeHtml(parsed.levelSchool)}</p>
+      </div>
+      ${parsed.classes ? `<span class="spell-class-pill">${escapeHtml(parsed.classes)}</span>` : ''}
+    </header>
+    <dl class="spell-stats">
+      <div><dt>시전 시간</dt><dd>${escapeHtml(parsed.meta['시전 시간'] || '-')}</dd></div>
+      <div><dt>사거리</dt><dd>${escapeHtml(parsed.meta['사거리'] || '-')}</dd></div>
+      <div><dt>구성요소</dt><dd>${escapeHtml(parsed.meta['구성요소'] || '-')}</dd></div>
+      <div><dt>지속시간</dt><dd>${escapeHtml(parsed.meta['지속시간'] || '-')}</dd></div>
+    </dl>
+    <div class="spell-body doc-content">${bodyHtml}</div>
+  </article>`;
 }
 
 function extractHeadings(markdownLines) {
@@ -411,12 +523,14 @@ const homeContent = `<main id="top" class="brew-index">
     <a href="#subclasses">서브클래스 전체</a>
     ${[...byClass.keys()].map(className => `<a href="#${slugify(className)}">${escapeHtml(className)}</a>`).join('')}
     <a href="spells.html">주문</a>
+    <a href="credits.html">크레딧</a>
   </nav>
   <section id="subclasses" class="brew-directory">
     ${classSectionsHtml}
   </section>
-  <section class="content doc-content brew-source">
-    ${sourceHtml}
+  <section class="credits-teaser">
+    <p>제작자, 제작 도구, 원문 링크, 고지 문구는 본문에서 분리했습니다.</p>
+    <a href="credits.html">크레딧 보기</a>
   </section>
 </main>`;
 
@@ -428,16 +542,7 @@ fs.writeFileSync(path.join(root, 'homebrew.html'), pageShell({
   content: homeContent,
 }));
 
-const spellCards = spellSections.map(spell => {
-  const html = mdToHtml(spell.lines.join('\n'));
-  return `<article id="${spell.slug}" class="spell-card">
-    <div class="spell-card-head">
-      <span>${escapeHtml(spell.className)}</span>
-      <a href="subclasses/${spell.sourceSlug}.html">${escapeHtml(titleParts(spell.sourceTitle).ko)}</a>
-    </div>
-    <div class="doc-content">${html}</div>
-  </article>`;
-}).join('\n');
+const spellCards = spellSections.map(spellCardHtml).join('\n');
 
 const spellsContent = `<main id="top" class="spell-index">
   <header class="brew-index-hero spell-hero">
@@ -451,7 +556,7 @@ const spellsContent = `<main id="top" class="spell-index">
     </figure>
   </header>
   <nav class="brew-toc" aria-label="주문 목차">
-    ${spellSections.map(spell => `<a href="#${spell.slug}">${escapeHtml(titleParts(spell.title).ko)}</a>`).join('')}
+    ${spellSections.map(spell => `<a href="#${spell.slug}">${escapeHtml(displayName(spell.title))}</a>`).join('')}
   </nav>
   <section class="spell-list">
     ${spellCards || '<p class="empty-note">분리된 신규 주문이 없습니다.</p>'}
@@ -466,4 +571,47 @@ fs.writeFileSync(path.join(root, 'spells.html'), pageShell({
   content: spellsContent,
 }));
 
-console.log(`Built ${subclasses.length} subclass pages and ${spellSections.length} spell entries.`);
+const creditCards = creditSections.map(section => {
+  const html = mdToHtml(section.lines.join('\n'));
+  return `<article class="credit-card">
+    <header>
+      <span>${escapeHtml(section.className)}</span>
+      <h2><a href="subclasses/${section.slug}.html">${escapeHtml(titleParts(section.title).ko)}</a></h2>
+    </header>
+    <div class="doc-content">${html}</div>
+  </article>`;
+}).join('\n');
+
+const creditsContent = `<main id="top" class="credits-index">
+  <header class="brew-index-hero">
+    <div>
+      <p class="eyebrow">ATTRIBUTION</p>
+      <h1>크레딧</h1>
+      <p class="brew-lede">개별 서브클래스 본문에 흩어져 있던 제작자, 제작 도구, 고지, 원문 출처를 한곳으로 모았습니다. 플레이 중 읽기 흐름을 끊는 정보는 이 페이지에서만 확인하면 됩니다.</p>
+    </div>
+    <div class="brew-index-panel">
+      <span>${creditSections.length}</span>
+      <strong>크레딧 항목</strong>
+      <span>${sourceLines.length ? 1 : 0}</span>
+      <strong>출처 묶음</strong>
+      <a href="homebrew.html">홈브류로 돌아가기</a>
+    </div>
+  </header>
+  <section class="credit-list">
+    ${creditCards}
+    <article class="credit-card source-card">
+      <header><span>Source</span><h2>출처</h2></header>
+      <div class="doc-content">${sourceHtml}</div>
+    </article>
+  </section>
+</main>`;
+
+fs.writeFileSync(path.join(root, 'credits.html'), pageShell({
+  title: '화살성채 - 크레딧',
+  bodyClass: 'brew-page credits-page',
+  active: 'credits',
+  description: '화살성채 홈브류 제작자, 고지, 출처 모음',
+  content: creditsContent,
+}));
+
+console.log(`Built ${subclasses.length} subclass pages, ${spellSections.length} spell entries, and ${creditSections.length} credit entries.`);
