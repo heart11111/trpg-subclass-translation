@@ -133,6 +133,7 @@ const removedSubclassTitles = new Set([
   '약탈자 - Marauder',
   '엑상귀네이터 로그 - Exsanguinator Rogue',
   '펜서 - Fencer',
+  '광대 대학 - College of Fools',
 ]);
 
 function escapeHtml(value) {
