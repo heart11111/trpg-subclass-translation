@@ -10,6 +10,8 @@ const source = fs.readFileSync(sourcePath, 'utf8').replace(/\r\n/g, '\n');
 const backgroundSource = fs.existsSync(backgroundSourcePath)
   ? fs.readFileSync(backgroundSourcePath, 'utf8').replace(/\r\n/g, '\n')
   : '';
+const pandocPath = process.env.PANDOC_PATH
+  || (fs.existsSync('C:\\Program Files\\Pandoc\\pandoc.exe') ? 'C:\\Program Files\\Pandoc\\pandoc.exe' : 'pandoc');
 const lines = source.split('\n');
 const backgroundLines = backgroundSource.split('\n');
 
@@ -171,7 +173,7 @@ function displayName(title) {
 }
 
 function mdToHtml(markdown) {
-  const result = spawnSync('pandoc', ['-f', 'gfm', '-t', 'html', '--section-divs'], {
+  const result = spawnSync(pandocPath, ['-f', 'gfm', '-t', 'html', '--section-divs'], {
     input: markdown,
     cwd: root,
     encoding: 'utf8',
@@ -190,7 +192,7 @@ function makeNav(prefix = '', active = 'homebrew') {
     ['world.html', '세계관 자료', 'world'],
     ['setting.html', '설정 정리', 'setting'],
     ['homebrew.html', '홈브류', 'homebrew'],
-    ['credits.html', '크레딧', 'credits'],
+  ['credits.html', '출처', 'credits'],
   ];
   return `<nav class="site-nav" aria-label="주요 문서">
   <a class="brand" href="${prefix}index.html">화살성채</a>
@@ -615,7 +617,6 @@ function documentKind(subclass) {
 function subclassCard(subclass) {
   const { ko, en } = titleParts(subclass.title);
   return `<a class="brew-card" href="subclasses/${subclass.slug}.html">
-    <span class="brew-card-kicker">${escapeHtml(subclass.className)} · ${escapeHtml(badgeFor(subclass))}</span>
     <strong>${escapeHtml(ko)}</strong>
     ${en ? `<em>${escapeHtml(en)}</em>` : ''}
     <p>${escapeHtml(cardSynopsis(subclass.lines))}</p>
@@ -655,7 +656,7 @@ const homebrewTabItems = [
   ['feats', '피트', originFeats.size, '#feats'],
   ['backgrounds', '백그라운드', backgroundSections.length, 'backgrounds.html'],
   ['spells', '주문', spellSections.length, 'spells.html'],
-  ['credits', '크레딧', creditSections.length, 'credits.html'],
+  ['credits', '출처', creditSections.length, 'credits.html'],
 ];
 
 function homebrewSideTabs(active = 'subclasses', { prefix = '', switchLocal = false } = {}) {
@@ -696,7 +697,7 @@ for (const subclass of subclasses) {
       ${en ? `<p class="brew-en">${escapeHtml(en)}</p>` : ''}
       <p class="brew-lede">${escapeHtml(synopsis(subclass.lines))}</p>
       <div class="brew-meta-row">
-        <span>${escapeHtml(badgeFor(subclass))}</span>
+        <span>${escapeHtml(subclass.className)}</span>
         <span>2024 구조</span>
         <span>번역 본문</span>
       </div>
@@ -796,7 +797,7 @@ const homeContent = `<main id="top" class="brew-index">
   </div>
   <section class="credits-teaser">
     <p>제작자, 제작 도구, 원문 링크, 고지 문구는 본문에서 분리했습니다.</p>
-    <a href="credits.html">크레딧 보기</a>
+  <a href="credits.html">출처 보기</a>
   </section>
 </main>`;
 
@@ -885,37 +886,32 @@ fs.writeFileSync(path.join(root, 'backgrounds.html'), pageShell({
   content: backgroundsContent,
 }));
 
-const creditCards = creditSections.map(section => {
+const creditBlocks = creditSections.map(section => {
   const html = mdToHtml(section.lines.join('\n'));
-  return `<article class="credit-card">
-    <header>
-      <span>${escapeHtml(section.className)}</span>
-      <h2><a href="subclasses/${section.slug}.html">${escapeHtml(titleParts(section.title).ko)}</a></h2>
-    </header>
-    <div class="doc-content">${html}</div>
-  </article>`;
+  return `<section class="credit-source-block">
+    <h3><a href="subclasses/${section.slug}.html">${escapeHtml(titleParts(section.title).ko)}</a></h3>
+    ${html}
+  </section>`;
 }).join('\n');
 
 const creditsContent = `<main id="top" class="credits-index">
   <header class="brew-index-hero">
     <div>
       <p class="eyebrow">ATTRIBUTION</p>
-      <h1>크레딧</h1>
-      <p class="brew-lede">개별 서브클래스 본문에 흩어져 있던 제작자, 제작 도구, 고지, 원문 출처를 한곳으로 모았습니다. 플레이 중 읽기 흐름을 끊는 정보는 이 페이지에서만 확인하면 됩니다.</p>
+      <h1>출처</h1>
+      <p class="brew-lede">제작 정보, 고지, 원문 출처를 한곳에 정리했습니다.</p>
     </div>
     <div class="brew-index-panel">
-      <span>${creditSections.length}</span>
-      <strong>크레딧 항목</strong>
-      <span>${sourceLines.length ? 1 : 0}</span>
-      <strong>출처 묶음</strong>
       <a href="homebrew.html">홈브류로 돌아가기</a>
     </div>
   </header>
-  <section class="credit-list">
-    ${creditCards}
+  <section class="credit-list single-source">
     <article class="credit-card source-card">
       <header><span>Source</span><h2>출처</h2></header>
-      <div class="doc-content">${sourceHtml}</div>
+      <div class="doc-content">
+        ${creditBlocks}
+        ${sourceHtml}
+      </div>
     </article>
   </section>
 </main>`;
