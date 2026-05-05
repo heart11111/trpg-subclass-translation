@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>화살성채 - 홈브류 자료실</title>
-<meta name="description" content="화살성채 캠페인 홈브류 서브클래스와 주문 자료실">
+<meta name="description" content="화살성채 캠페인 홈브류 클래스, 서브클래스, 레이스, 주문 자료실">
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Noto+Serif+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/style.css">
 </head>
@@ -25,13 +25,15 @@
     <div>
       <p class="eyebrow">DUNGEONS & DRAGONS 2024</p>
       <h1>홈브류 자료실</h1>
-      <p class="brew-lede">홈브류는 좌측 탭에서 클래스, 서브클래스, 피트, 백그라운드, 주문을 바로 오가며 읽도록 정리했습니다. 플레이 중 필요한 항목을 빠르게 찾을 수 있게 목록과 규칙 카드를 분리했습니다.</p>
+      <p class="brew-lede">홈브류는 좌측 탭에서 클래스, 서브클래스, 레이스, 피트, 백그라운드, 주문을 바로 오가며 읽도록 정리했습니다. 플레이 중 필요한 항목을 빠르게 찾을 수 있게 목록과 규칙 카드를 분리했습니다.</p>
     </div>
     <div class="brew-index-panel">
       <span>1</span>
       <strong>클래스</strong>
-      <span>23</span>
+      <span>25</span>
       <strong>서브클래스</strong>
+      <span>2</span>
+      <strong>레이스</strong>
       <span>14</span>
       <strong>주문</strong>
       <span>12</span>
@@ -42,7 +44,7 @@
   <div class="homebrew-shell tabs-ready" data-tabs="true" data-default-tab="subclasses">
     <aside class="homebrew-side-tabs" aria-label="홈브류 분류">
     <p class="homebrew-side-title">Homebrew</p>
-    <a data-tab="classes" href="#classes"><span>클래스</span><strong>1</strong></a><a class="active" data-tab="subclasses" href="#subclasses"><span>서브클래스</span><strong>23</strong></a><a data-tab="feats" href="#feats"><span>피트</span><strong>7</strong></a><a  href="backgrounds.html"><span>백그라운드</span><strong>12</strong></a><a  href="spells.html"><span>주문</span><strong>14</strong></a><a  href="credits.html"><span>크레딧</span><strong>8</strong></a>
+    <a data-tab="classes" href="#classes"><span>클래스</span><strong>1</strong></a><a class="active" data-tab="subclasses" href="#subclasses"><span>서브클래스</span><strong>25</strong></a><a data-tab="races" href="#races"><span>레이스</span><strong>2</strong></a><a data-tab="feats" href="#feats"><span>피트</span><strong>7</strong></a><a  href="backgrounds.html"><span>백그라운드</span><strong>12</strong></a><a  href="spells.html"><span>주문</span><strong>14</strong></a><a  href="credits.html"><span>크레딧</span><strong>9</strong></a>
   </aside>
     <div class="homebrew-tab-content">
       <section id="classes" class="homebrew-pane" data-pane="classes">
@@ -65,7 +67,7 @@
       </section>
       <section id="subclasses" class="homebrew-pane active" data-pane="subclasses">
         <nav class="brew-toc compact-toc" aria-label="클래스별 서브클래스 목차">
-          <a href="#warlock">워록</a><a href="#fighter">파이터</a><a href="#paladin">팔라딘</a><a href="#ranger">레인저</a><a href="#druid">드루이드</a><a href="#monk">몽크</a><a href="#rogue">로그</a><a href="#bard">바드</a><a href="#barbarian">바바리안</a><a href="#wizard">위저드</a><a href="#witch">위치</a>
+          <a href="#warlock">워록</a><a href="#fighter">파이터</a><a href="#cleric">클레릭</a><a href="#paladin">팔라딘</a><a href="#ranger">레인저</a><a href="#druid">드루이드</a><a href="#monk">몽크</a><a href="#rogue">로그</a><a href="#bard">바드</a><a href="#barbarian">바바리안</a><a href="#wizard">위저드</a><a href="#witch">위치</a>
         </nav>
         <section id="warlock" class="brew-class-section" style="--i:0">
     <div class="brew-class-head">
@@ -111,10 +113,26 @@
     <p>모든 형태의 전투에서 신속함은 핵심 기술입니다.</p>
   </a></div>
   </section>
-<section id="paladin" class="brew-class-section" style="--i:2">
+<section id="cleric" class="brew-class-section" style="--i:2">
     <div class="brew-class-head">
       <div>
         <span class="section-number">03</span>
+        <h2>클레릭</h2>
+        <p>신성 권역을 통해 신의 힘과 교리를 전투와 주문 운용으로 확장하는 선택지입니다.</p>
+      </div>
+      <img src="assets/images/homebrew-tome-v2.jpg" alt="클레릭 분위기 이미지">
+    </div>
+    <div class="brew-card-grid"><a class="brew-card" href="subclasses/dragon-domain.html">
+    <span class="brew-card-kicker">클레릭 · 권역</span>
+    <strong>드래곤 권역</strong>
+    <em>Dragon Domain</em>
+    <p>드래곤 신을 섬기는 클레릭이 용의 축복, 숨결 무기, 전설적인 보호를 얻는 신성 권역입니다.</p>
+  </a></div>
+  </section>
+<section id="paladin" class="brew-class-section" style="--i:3">
+    <div class="brew-class-head">
+      <div>
+        <span class="section-number">04</span>
         <h2>팔라딘</h2>
         <p>맹세와 신조가 플레이 방향을 강하게 정하는 서약형 서브클래스입니다.</p>
       </div>
@@ -137,6 +155,12 @@
     <strong>슬픔의 맹세</strong>
     <em>Oath of Sorrows</em>
     <p>슬픔의 맹세를 한 팔라딘은 자신의 비탄을 적을 쓰러뜨리는 무기이자, 슬픔에 잠긴 이들의 길을 밝히는 횃불로 사용합니다.</p>
+  </a>
+<a class="brew-card" href="subclasses/oath-of-frontiers.html">
+    <span class="brew-card-kicker">팔라딘 · 주문 확장</span>
+    <strong>국경의 맹세</strong>
+    <em>Oath of Frontiers</em>
+    <p>국경의 맹세를 한 팔라딘은 문명의 가장자리에서도 법을 지키며, 변방 마을의 유일한 질서의 등불이 됩니다.</p>
   </a></div>
   </section>
 <section id="ranger" class="brew-class-section" style="--i:3">
@@ -321,6 +345,30 @@
     <p>위치는 자연 비전 마법의 가장 오래된 형태를 익힌 주문 사용자입니다.</p>
   </a></div>
   </section>
+      </section>
+      <section id="races" class="homebrew-pane" data-pane="races">
+        <section class="brew-class-section compact-section">
+          <div class="brew-class-head">
+            <div>
+              <span class="section-number">RACE</span>
+              <h2>레이스</h2>
+              <p>종족 유산과 서브레이스를 별도 규칙 카드로 정리했습니다.</p>
+            </div>
+            <img src="assets/images/homebrew-tome-v2.jpg" alt="레이스 분위기 이미지">
+          </div>
+          <div class="brew-card-grid"><a class="brew-card" href="races/rakshasa-tiefling.html">
+    <span class="brew-card-kicker">티플링 · 유산</span>
+    <strong>라크샤사</strong>
+    <em>Rakshasa</em>
+    <p>변신 능력을 지닌 악마적 존재의 피가 드러나는 티플링 유산입니다.</p>
+  </a>
+<a class="brew-card" href="races/tanarukk.html">
+    <span class="brew-card-kicker">오크 · 서브레이스</span>
+    <strong>타나루크</strong>
+    <em>Tanarukk</em>
+    <p>악마의 피와 오크의 혈통이 섞인 변방의 강인한 서브레이스입니다.</p>
+  </a></div>
+        </section>
       </section>
       <section id="feats" class="homebrew-pane" data-pane="feats">
         <section class="brew-class-section compact-section">

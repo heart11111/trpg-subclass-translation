@@ -38,7 +38,7 @@ body { background:#1c1812; font-family:'Noto Serif KR',serif; color:var(--text);
   background:linear-gradient(180deg, transparent 0 68%, rgba(9,12,29,.06));
   pointer-events:none;
 }
-.eyebrow { font-family:'Cinzel',serif; font-size:11px; letter-spacing:5px; color:#8d7735; opacity:.7; margin-bottom:28px; }
+.eyebrow { font-family:'Cinzel',serif; font-size:11px; letter-spacing:1.6px; color:#8d7735; opacity:.7; margin-bottom:28px; }
 .title-cover h1 { font-family:'Cinzel',serif; font-size:clamp(3em,8vw,5.2em); color:var(--astro-ink); letter-spacing:0; line-height:1.05; margin-bottom:8px; position:relative; text-wrap:balance; }
 .title-cover .subtitle { font-family:'Cinzel',serif; font-size:.9em; color:#46486f; opacity:.72; letter-spacing:4px; margin-bottom:34px; }
 .ornament {
@@ -248,10 +248,11 @@ tbody td:first-child { font-weight:700; color:var(--accent); white-space:nowrap;
 }
 .hub-card:hover { background: rgba(201,168,76,.1); border-color: rgba(201,168,76,.55); }
 .hub-card .card-kicker {
-  font-family: 'Cinzel', serif;
+  font-family: 'Noto Serif KR', serif;
+  font-weight: 700;
   color: rgba(201,168,76,.45);
   font-size: .72em;
-  letter-spacing: 2px;
+  letter-spacing: .08em;
   margin-bottom: 10px;
 }
 .hub-card h2 {
@@ -612,6 +613,10 @@ tbody td:first-child { font-weight:700; color:var(--accent); white-space:nowrap;
 }
 .brew-index-hero .eyebrow,
 .brew-detail-hero .eyebrow {
+  font-family: 'Noto Serif KR', serif;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: none;
   color: #8f6b26;
   opacity: .75;
   margin-bottom: 18px;
@@ -743,10 +748,11 @@ tbody td:first-child { font-weight:700; color:var(--accent); white-space:nowrap;
 .section-number,
 .brew-card-kicker,
 .side-label {
-  font-family: 'Cinzel', serif;
+  font-family: 'Noto Serif KR', serif;
+  font-weight: 700;
   color: #9d762d;
   font-size: .72rem;
-  letter-spacing: 2px;
+  letter-spacing: .08em;
 }
 .brew-card-grid {
   display: grid;
@@ -848,7 +854,7 @@ tbody td:first-child { font-weight:700; color:var(--accent); white-space:nowrap;
 .brew-en {
   color: #6e5a40;
   font-family: 'Cinzel', serif;
-  letter-spacing: 1px;
+  letter-spacing: .02em;
   margin-bottom: 20px;
 }
 .brew-meta-row {
@@ -868,19 +874,19 @@ tbody td:first-child { font-weight:700; color:var(--accent); white-space:nowrap;
   margin: 0;
   position: relative;
   max-width: 100%;
-  overflow: hidden;
-  padding: 10px;
-  border: 2px solid var(--astro-gold);
+  overflow: visible;
+  padding: 18px 16px 20px;
+  border: 1px solid rgba(185,139,62,.64);
   background:
-    linear-gradient(180deg, var(--astro-ink) 0 18%, rgba(232,224,193,.86) 18%),
-    #e8ddc7;
+    linear-gradient(90deg, rgba(185,139,62,.38) 0 1px, transparent 1px calc(100% - 1px), rgba(185,139,62,.38) calc(100% - 1px)),
+    linear-gradient(0deg, rgba(185,139,62,.32) 0 1px, transparent 1px calc(100% - 1px), rgba(185,139,62,.32) calc(100% - 1px)),
+    linear-gradient(180deg, #fbf7ee, #efe5d3);
   box-shadow:
-    0 1px 0 rgba(255,255,255,.72) inset,
-    0 0 0 3px rgba(248,243,232,.56) inset,
-    0 0 0 4px rgba(197,173,67,.22) inset,
-    0 30px 80px rgba(42,32,21,.22);
-  transform: rotate(.7deg);
-  clip-path: var(--astro-mask);
+    0 0 0 5px rgba(255,255,255,.55) inset,
+    0 0 0 7px rgba(185,139,62,.16) inset,
+    0 24px 70px rgba(42,32,21,.18);
+  transform: rotate(.35deg);
+  clip-path: polygon(9% 0, 91% 0, 91% 3%, 97% 3%, 97% 9%, 100% 9%, 100% 91%, 97% 91%, 97% 97%, 91% 97%, 91% 100%, 9% 100%, 9% 97%, 3% 97%, 3% 91%, 0 91%, 0 9%, 3% 9%, 3% 3%, 9% 3%);
 }
 .brew-art-frame::before,
 .brew-art-frame::after {
@@ -890,26 +896,37 @@ tbody td:first-child { font-weight:700; color:var(--accent); white-space:nowrap;
   z-index: 2;
 }
 .brew-art-frame::before {
-  inset: 5px;
-  border: 1px solid rgba(54,39,23,.34);
-  box-shadow: 0 0 0 1px rgba(255,255,255,.42);
+  inset: 10px 8px 12px;
+  border: 1px solid rgba(181,132,51,.62);
+  clip-path: polygon(8% 0, 92% 0, 92% 3%, 98% 3%, 98% 8%, 100% 8%, 100% 92%, 98% 92%, 98% 97%, 92% 97%, 92% 100%, 8% 100%, 8% 97%, 2% 97%, 2% 92%, 0 92%, 0 8%, 2% 8%, 2% 3%, 8% 3%);
+  box-shadow:
+    0 0 0 1px rgba(255,255,255,.78) inset,
+    0 0 0 3px rgba(185,139,62,.12);
 }
 .brew-art-frame::after {
-  inset: 14px;
-  border: 1px solid rgba(238,221,174,.36);
+  inset: 0;
   background:
-    linear-gradient(90deg, rgba(38,27,18,.42) 0 2px, transparent 2px calc(100% - 2px), rgba(38,27,18,.42) calc(100% - 2px)),
-    linear-gradient(0deg, rgba(38,27,18,.42) 0 2px, transparent 2px calc(100% - 2px), rgba(38,27,18,.42) calc(100% - 2px));
+    linear-gradient(135deg, transparent 0 18px, rgba(181,132,51,.8) 18px 20px, transparent 20px) top left / 58px 58px no-repeat,
+    linear-gradient(225deg, transparent 0 18px, rgba(181,132,51,.8) 18px 20px, transparent 20px) top right / 58px 58px no-repeat,
+    linear-gradient(45deg, transparent 0 18px, rgba(181,132,51,.8) 18px 20px, transparent 20px) bottom left / 58px 58px no-repeat,
+    linear-gradient(315deg, transparent 0 18px, rgba(181,132,51,.8) 18px 20px, transparent 20px) bottom right / 58px 58px no-repeat,
+    linear-gradient(90deg, transparent 18px, rgba(181,132,51,.62) 18px calc(100% - 18px), transparent calc(100% - 18px)) top 7px left 0 / 100% 1px no-repeat,
+    linear-gradient(90deg, transparent 18px, rgba(181,132,51,.62) 18px calc(100% - 18px), transparent calc(100% - 18px)) bottom 9px left 0 / 100% 1px no-repeat,
+    linear-gradient(0deg, transparent 18px, rgba(181,132,51,.62) 18px calc(100% - 18px), transparent calc(100% - 18px)) left 7px top 0 / 1px 100% no-repeat,
+    linear-gradient(0deg, transparent 18px, rgba(181,132,51,.62) 18px calc(100% - 18px), transparent calc(100% - 18px)) right 7px top 0 / 1px 100% no-repeat;
 }
 .brew-art-frame img {
   display: block;
   width: 100%;
   aspect-ratio: 4 / 5;
   object-fit: cover;
-  border: 1px solid rgba(35,26,18,.72);
-  box-shadow: 0 0 0 1px rgba(255,255,255,.2), 0 12px 22px rgba(35,26,18,.2);
-  opacity: .95;
-  clip-path: polygon(0 0, calc(100% - 14px) 0, 100% 14px, 100% 100%, 14px 100%, 0 calc(100% - 14px));
+  border: 1px solid rgba(46,34,21,.62);
+  box-shadow:
+    0 0 0 3px rgba(252,248,239,.84),
+    0 0 0 5px rgba(181,132,51,.46),
+    0 13px 24px rgba(35,26,18,.18);
+  opacity: .98;
+  clip-path: polygon(7% 0, 93% 0, 93% 3%, 98% 3%, 98% 8%, 100% 8%, 100% 92%, 98% 92%, 98% 97%, 93% 97%, 93% 100%, 7% 100%, 7% 97%, 2% 97%, 2% 92%, 0 92%, 0 8%, 2% 8%, 2% 3%, 7% 3%);
 }
 .brew-art-frame.compact img {
   aspect-ratio: 4 / 3;
@@ -982,7 +999,7 @@ tbody td:first-child { font-weight:700; color:var(--accent); white-space:nowrap;
   font-family: 'Cinzel', serif;
   color: #9d762d;
   font-size: .68rem;
-  letter-spacing: 2px;
+  letter-spacing: .08em;
 }
 .summary-head h2 {
   margin: 0;
@@ -1097,7 +1114,7 @@ tbody td:first-child { font-weight:700; color:var(--accent); white-space:nowrap;
   font-family: 'Cinzel', serif;
   color: #9d762d;
   font-size: .68rem;
-  letter-spacing: 2.4px;
+  letter-spacing: .12em;
   margin: 0 0 6px;
   text-transform: uppercase;
 }
@@ -1222,7 +1239,7 @@ tbody td:first-child { font-weight:700; color:var(--accent); white-space:nowrap;
   color: rgba(232,207,130,.5);
   font-family: 'Cinzel', serif;
   font-size: .68rem;
-  letter-spacing: 2px;
+  letter-spacing: .08em;
   text-transform: uppercase;
 }
 .spell-subtitle {
@@ -1232,7 +1249,7 @@ tbody td:first-child { font-weight:700; color:var(--accent); white-space:nowrap;
 .background-head .spell-subtitle {
   color: rgba(201,168,76,.42);
   font-family: 'Cinzel', serif;
-  letter-spacing: 1.4px;
+  letter-spacing: .04em;
   font-style: normal;
 }
 .spell-classes {
@@ -1259,8 +1276,8 @@ tbody td:first-child { font-weight:700; color:var(--accent); white-space:nowrap;
   background: #f2e8d9;
   padding: 6px 10px;
   font-size: .78rem;
-  font-family: 'Cinzel', serif;
-  letter-spacing: .7px;
+  font-family: 'Noto Serif KR', serif;
+  letter-spacing: 0;
   font-weight: 400;
 }
 .spell-stats {
@@ -1387,7 +1404,7 @@ tbody td:first-child { font-weight:700; color:var(--accent); white-space:nowrap;
 }
 .credit-card header span {
   font-family: 'Cinzel', serif;
-  letter-spacing: 2px;
+  letter-spacing: .08em;
   font-size: .7rem;
 }
 .credit-card h2 {
@@ -1510,7 +1527,8 @@ tbody td:first-child { font-weight:700; color:var(--accent); white-space:nowrap;
   .brew-lede {
     width: calc(100vw - 72px);
     max-width: 32ch;
-    word-break: break-all;
+    word-break: keep-all;
+    overflow-wrap: anywhere;
   }
   .brew-index-hero h1,
   .brew-detail-hero h1 {
