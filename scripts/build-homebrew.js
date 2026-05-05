@@ -638,7 +638,7 @@ for (const subclass of subclasses) {
   const { ko, en } = titleParts(subclass.title);
   const kind = documentKind(subclass);
   const related = byClass.get(subclass.className).filter(item => item.slug !== subclass.slug).slice(0, 5);
-  const bodyHtml = enhanceRuleHtml(mdToHtml(subclass.lines.join('\n')));
+  const bodyHtml = enhanceRuleHtml(mdToHtml(subclass.lines.slice(1).join('\n')));
   const headings = extractHtmlHeadings(bodyHtml);
   const content = `<main id="top" class="brew-detail">
   <header class="brew-detail-hero">
