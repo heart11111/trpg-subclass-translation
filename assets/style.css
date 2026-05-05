@@ -977,6 +977,10 @@ tbody td:first-child { font-weight:700; color:var(--accent); white-space:nowrap;
   margin: 0 auto;
   padding: 0 28px 90px;
 }
+.brew-reading-grid.no-side {
+  grid-template-columns: minmax(0, 1fr);
+  max-width: 980px;
+}
 .brew-side {
   position: sticky;
   top: 108px;

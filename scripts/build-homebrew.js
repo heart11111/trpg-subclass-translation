@@ -679,7 +679,14 @@ for (const subclass of subclasses) {
   const kind = documentKind(subclass);
   const related = byClass.get(subclass.className).filter(item => item.slug !== subclass.slug).slice(0, 5);
   const bodyHtml = enhanceRuleHtml(mdToHtml(subclass.lines.slice(1).join('\n')));
-  const headings = extractHtmlHeadings(bodyHtml);
+  const hasRelatedSpells = spellSections.some(spell => spell.sourceSlug === subclass.slug);
+  const sideContent = [
+    hasRelatedSpells ? `<a class="side-action" href="../spells.html">관련 주문 보기</a>` : '',
+    related.length ? `<div class="brew-side-box">
+        <p class="side-label">같은 클래스</p>
+        ${related.map(item => `<a class="side-link" href="${item.slug}.html">${escapeHtml(titleParts(item.title).ko)}</a>`).join('')}
+      </div>` : '',
+  ].filter(Boolean).join('\n      ');
   const content = `<main id="top" class="brew-detail">
   <header class="brew-detail-hero">
     <div class="brew-hero-copy">
@@ -698,18 +705,10 @@ for (const subclass of subclasses) {
       <img src="../${artPathFor(subclass.className, '', subclass.title)}" alt="${escapeHtml(ko)} 분위기 이미지">
     </figure>
   </header>
-  <div class="brew-reading-grid">
-    <aside class="brew-side">
-      <div class="brew-side-box">
-        <p class="side-label">빠른 목차</p>
-        ${headings.length ? `<ol>${headings.map(item => `<li><a href="#${escapeHtml(item.id)}">${escapeHtml(item.title)}</a></li>`).join('')}</ol>` : '<p>본문 기능을 순서대로 읽으면 됩니다.</p>'}
-      </div>
-      ${spellSections.some(spell => spell.sourceSlug === subclass.slug) ? `<a class="side-action" href="../spells.html">관련 주문 보기</a>` : ''}
-      ${related.length ? `<div class="brew-side-box">
-        <p class="side-label">같은 클래스</p>
-        ${related.map(item => `<a class="side-link" href="${item.slug}.html">${escapeHtml(titleParts(item.title).ko)}</a>`).join('')}
-      </div>` : ''}
-    </aside>
+  <div class="brew-reading-grid${sideContent ? '' : ' no-side'}">
+    ${sideContent ? `<aside class="brew-side">
+      ${sideContent}
+    </aside>` : ''}
     <article class="content doc-content brew-article">
       ${levelSummaryHtml(subclass.lines)}
       ${bodyHtml}
