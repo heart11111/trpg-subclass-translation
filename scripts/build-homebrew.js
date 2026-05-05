@@ -435,23 +435,26 @@ function spellCardHtml(spell) {
   const bodyHtml = mdToHtml(parsed.body || '');
   const sourceName = titleParts(spell.sourceTitle).ko;
   const availableFor = parsed.classes || spell.className;
-  return `<article id="${spell.slug}" class="dndb-spell spell-dndb-card">
+  return `<article id="${spell.slug}" class="dndb-spell spell-card spell-dndb-card">
     <header class="dndb-spell-head spell-dndb-head">
       <p class="spell-source">${escapeHtml(spell.className)} · <a href="subclasses/${spell.sourceSlug}.html">${escapeHtml(sourceName)}</a></p>
       <h2>${escapeHtml(displayName(parsed.title))}</h2>
+      <p class="spell-subtitle">${escapeHtml(parsed.level)} · ${escapeHtml(parsed.school)}</p>
     </header>
+    <div class="spell-classes">
+      <span>사용 가능 클래스</span>${availableFor.split(/,\s*/).map(item => `<strong>${escapeHtml(item)}</strong>`).join('')}
+    </div>
     <dl class="spell-stats spell-dndb-stats">
-      <div><dt>LEVEL</dt><dd>${escapeHtml(parsed.level)}</dd></div>
-      <div><dt>CASTING TIME</dt><dd>${escapeHtml(parsed.meta['시전 시간'] || '-')}</dd></div>
-      <div><dt>RANGE/AREA</dt><dd>${escapeHtml(parsed.meta['사거리'] || '-')}</dd></div>
-      <div><dt>COMPONENTS</dt><dd>${escapeHtml(parsed.meta['구성요소'] || '-')}</dd></div>
-      <div><dt>DURATION</dt><dd>${escapeHtml(parsed.meta['지속시간'] || '-')}</dd></div>
-      <div><dt>SCHOOL</dt><dd>${escapeHtml(parsed.school)}</dd></div>
-      <div><dt>ATTACK/SAVE</dt><dd>${escapeHtml(parsed.attackSave)}</dd></div>
-      <div><dt>DAMAGE/EFFECT</dt><dd>${escapeHtml(parsed.damageEffect)}</dd></div>
+      <div class="spell-stat-item"><dt>LEVEL</dt><dd>${escapeHtml(parsed.level)}</dd></div>
+      <div class="spell-stat-item"><dt>CASTING TIME</dt><dd>${escapeHtml(parsed.meta['시전 시간'] || '-')}</dd></div>
+      <div class="spell-stat-item"><dt>RANGE/AREA</dt><dd>${escapeHtml(parsed.meta['사거리'] || '-')}</dd></div>
+      <div class="spell-stat-item"><dt>COMPONENTS</dt><dd>${escapeHtml(parsed.meta['구성요소'] || '-')}</dd></div>
+      <div class="spell-stat-item"><dt>DURATION</dt><dd>${escapeHtml(parsed.meta['지속시간'] || '-')}</dd></div>
+      <div class="spell-stat-item"><dt>SCHOOL</dt><dd>${escapeHtml(parsed.school)}</dd></div>
+      <div class="spell-stat-item"><dt>ATTACK/SAVE</dt><dd>${escapeHtml(parsed.attackSave)}</dd></div>
+      <div class="spell-stat-item"><dt>DAMAGE/EFFECT</dt><dd>${escapeHtml(parsed.damageEffect)}</dd></div>
     </dl>
     <div class="spell-body doc-content">${bodyHtml}</div>
-    <footer class="spell-available"><span>사용 가능 클래스</span>${availableFor.split(/,\s*/).map(item => `<strong>${escapeHtml(item)}</strong>`).join('')}</footer>
   </article>`;
 }
 
@@ -498,16 +501,16 @@ function backgroundCardHtml(background) {
   const { ko, en } = titleParts(background.title);
   const bodyHtml = enhanceRuleHtml(mdToHtml(parsed.body || ''));
   const stats = ['능력치', '재주', '기술 숙련', '도구 숙련', '장비'];
-  return `<article id="${escapeHtml(background.slug)}" class="dndb-spell background-entry">
+  return `<article id="${escapeHtml(background.slug)}" class="dndb-spell bg-card background-entry">
     <header class="dndb-spell-head background-head">
       <div>
-        <p class="spell-source">BACKGROUND · 2024 구조</p>
+        <p class="spell-source">BACKGROUND · 백그라운드</p>
         <h2>${escapeHtml(ko)}</h2>
         ${en ? `<p class="spell-subtitle">${escapeHtml(en)}</p>` : ''}
       </div>
     </header>
     <dl class="spell-stats background-stats">
-      ${stats.map(label => `<div><dt>${label}</dt><dd>${escapeHtml(parsed.meta[label] || '-')}</dd></div>`).join('')}
+      ${stats.map(label => `<div class="bg-stat-item"><dt>${label}</dt><dd>${escapeHtml(parsed.meta[label] || '-')}</dd></div>`).join('')}
     </dl>
     <div class="spell-body doc-content background-body">${bodyHtml}</div>
   </article>`;
@@ -614,6 +617,20 @@ function subclassCard(subclass) {
 
 fs.rmSync(outDir, { recursive: true, force: true });
 fs.mkdirSync(outDir, { recursive: true });
+fs.writeFileSync(path.join(outDir, 'path-of-the-bloodstained-hurricane.html'), `<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="refresh" content="0; url=../homebrew.html#subclasses">
+<title>삭제된 홈브류 항목</title>
+<link rel="canonical" href="../homebrew.html#subclasses">
+</head>
+<body>
+<p>삭제된 홈브류 항목입니다. <a href="../homebrew.html#subclasses">홈브류 목록으로 이동</a></p>
+</body>
+</html>
+`);
 
 const byClass = new Map();
 for (const subclass of subclasses) {
@@ -625,22 +642,29 @@ const classDocuments = subclasses.filter(item => documentKind(item) === 'CLASS')
 const subclassDocuments = subclasses.filter(item => documentKind(item) === 'SUBCLASS');
 const originFeats = new Set(backgroundSections.map(item => parseBackground(item).meta['재주']).filter(Boolean));
 
-const homebrewCategoryLinks = [
-  ['#classes', '클래스', classDocuments.length],
-  ['#subclasses', '서브클래스', subclassDocuments.length],
-  ['#races', '종족', 0],
-  ['#feats', '피트', originFeats.size],
-  ['backgrounds.html', '백그라운드', backgroundSections.length],
-  ['spells.html', '주문', spellSections.length],
+const homebrewTabItems = [
+  ['classes', '클래스', classDocuments.length, '#classes'],
+  ['subclasses', '서브클래스', subclassDocuments.length, '#subclasses'],
+  ['feats', '피트', originFeats.size, '#feats'],
+  ['backgrounds', '백그라운드', backgroundSections.length, 'backgrounds.html'],
+  ['spells', '주문', spellSections.length, 'spells.html'],
+  ['credits', '크레딧', creditSections.length, 'credits.html'],
 ];
 
-function homebrewSubnav(active = '서브클래스', inHomebrewIndex = false) {
-  return `<nav class="homebrew-subnav" aria-label="홈브류 분류">
-    ${homebrewCategoryLinks.map(([href, label, count]) => {
-      const resolvedHref = inHomebrewIndex || !href.startsWith('#') ? href : `homebrew.html${href}`;
-      return `<a${label === active ? ' class="active"' : ''} href="${resolvedHref}"><span>${label}</span><strong>${count}</strong></a>`;
+function homebrewSideTabs(active = 'subclasses', { prefix = '', switchLocal = false } = {}) {
+  return `<aside class="homebrew-side-tabs" aria-label="홈브류 분류">
+    <p class="homebrew-side-title">Homebrew</p>
+    ${homebrewTabItems.map(([key, label, count, href]) => {
+      const localPane = ['classes', 'subclasses', 'feats'].includes(key);
+      const localHref = localPane ? `homebrew.html${href}` : href;
+      const resolvedHref = switchLocal && localPane ? href : `${prefix}${localHref}`;
+      const attrs = [
+        key === active ? 'class="active"' : '',
+        switchLocal && localPane ? `data-tab="${key}"` : '',
+      ].filter(Boolean).join(' ');
+      return `<a ${attrs} href="${resolvedHref}"><span>${label}</span><strong>${count}</strong></a>`;
     }).join('')}
-  </nav>`;
+  </aside>`;
 }
 
 for (const subclass of subclasses) {
@@ -714,7 +738,7 @@ const homeContent = `<main id="top" class="brew-index">
     <div>
       <p class="eyebrow">DUNGEONS & DRAGONS 2024</p>
       <h1>홈브류 자료실</h1>
-      <p class="brew-lede">홈브류는 클래스, 서브클래스, 종족, 피트, 백그라운드, 주문으로 나눠 관리합니다. 각 문서는 플레이 중 바로 읽을 수 있도록 규칙 표와 본문을 분리했습니다.</p>
+      <p class="brew-lede">홈브류는 좌측 탭에서 클래스, 서브클래스, 피트, 백그라운드, 주문을 바로 오가며 읽도록 정리했습니다. 플레이 중 필요한 항목을 빠르게 찾을 수 있게 목록과 규칙 카드를 분리했습니다.</p>
     </div>
     <div class="brew-index-panel">
       <span>${classDocuments.length}</span>
@@ -728,54 +752,42 @@ const homeContent = `<main id="top" class="brew-index">
       <a href="spells.html">주문 보기</a>
     </div>
   </header>
-  ${homebrewSubnav('서브클래스', true)}
-  <nav class="brew-toc" aria-label="홈브류 목차">
-    <a href="#classes">클래스</a>
-    <a href="#subclasses">서브클래스 전체</a>
-    ${[...byClass.keys()].map(className => `<a href="#${slugify(className)}">${escapeHtml(className)}</a>`).join('')}
-    <a href="backgrounds.html">백그라운드</a>
-    <a href="spells.html">주문</a>
-    <a href="credits.html">크레딧</a>
-  </nav>
-  <section id="classes" class="brew-directory">
-    <section class="brew-class-section">
-      <div class="brew-class-head">
-        <div>
-          <span class="section-number">00</span>
-          <h2>클래스</h2>
-          <p>완전 클래스 문서입니다. 현재는 위치 - Witch를 별도 클래스 문서로 관리합니다.</p>
-        </div>
-        <img src="${artPathFor('위치')}" alt="클래스 분위기 이미지">
-      </div>
-      <div class="brew-card-grid">${classDocuments.map(subclassCard).join('\n') || '<p class="empty-note">등록된 클래스가 없습니다.</p>'}</div>
-    </section>
-  </section>
-  <section id="races" class="brew-directory">
-    <section class="brew-class-section compact-section">
-      <div class="brew-class-head">
-        <div>
-          <span class="section-number">R</span>
-          <h2>종족</h2>
-          <p>현재 등록된 홈브류 종족은 없습니다. 추가되면 이 분류에 모읍니다.</p>
-        </div>
-      </div>
-    </section>
-  </section>
-  <section id="feats" class="brew-directory">
-    <section class="brew-class-section compact-section">
-      <div class="brew-class-head">
-        <div>
-          <span class="section-number">F</span>
-          <h2>피트</h2>
-          <p>백그라운드에 포함된 출신 재주입니다. 세부 규칙은 백그라운드 페이지의 해당 항목에 함께 정리했습니다.</p>
-        </div>
-      </div>
-      <div class="brew-mini-list">${[...originFeats].map(feat => `<span>${escapeHtml(feat)}</span>`).join('')}</div>
-    </section>
-  </section>
-  <section id="subclasses" class="brew-directory">
-    ${classSectionsHtml}
-  </section>
+  <div class="homebrew-shell" data-tabs="true" data-default-tab="subclasses">
+    ${homebrewSideTabs('subclasses', { switchLocal: true })}
+    <div class="homebrew-tab-content">
+      <section id="classes" class="homebrew-pane" data-pane="classes">
+        <section class="brew-class-section">
+          <div class="brew-class-head">
+            <div>
+              <span class="section-number">CLASS</span>
+              <h2>클래스</h2>
+              <p>완전 클래스 문서입니다. 현재는 위치 - Witch를 별도 클래스 문서로 관리합니다.</p>
+            </div>
+            <img src="${artPathFor('위치')}" alt="클래스 분위기 이미지">
+          </div>
+          <div class="brew-card-grid">${classDocuments.map(subclassCard).join('\n') || '<p class="empty-note">등록된 클래스가 없습니다.</p>'}</div>
+        </section>
+      </section>
+      <section id="subclasses" class="homebrew-pane" data-pane="subclasses">
+        <nav class="brew-toc compact-toc" aria-label="클래스별 서브클래스 목차">
+          ${[...byClass.keys()].map(className => `<a href="#${slugify(className)}">${escapeHtml(className)}</a>`).join('')}
+        </nav>
+        ${classSectionsHtml}
+      </section>
+      <section id="feats" class="homebrew-pane" data-pane="feats">
+        <section class="brew-class-section compact-section">
+          <div class="brew-class-head">
+            <div>
+              <span class="section-number">FEAT</span>
+              <h2>피트</h2>
+              <p>백그라운드에 포함된 출신 재주입니다. 세부 규칙은 백그라운드 페이지의 해당 항목에 함께 정리했습니다.</p>
+            </div>
+          </div>
+          <div class="brew-mini-list">${[...originFeats].map(feat => `<span>${escapeHtml(feat)}</span>`).join('')}</div>
+        </section>
+      </section>
+    </div>
+  </div>
   <section class="credits-teaser">
     <p>제작자, 제작 도구, 원문 링크, 고지 문구는 본문에서 분리했습니다.</p>
     <a href="credits.html">크레딧 보기</a>
@@ -800,13 +812,17 @@ const spellsContent = `<main id="top" class="spell-index">
       <p class="brew-lede">서브클래스 본문에 섞여 있던 신규 주문을 따로 모았습니다. 플레이 중에는 이 페이지에서 주문 이름만 바로 찾으면 됩니다.</p>
     </div>
   </header>
-  ${homebrewSubnav('주문')}
-  <nav class="brew-toc" aria-label="주문 목차">
-    ${spellSections.map(spell => `<a href="#${spell.slug}">${escapeHtml(displayName(spell.title))}</a>`).join('')}
-  </nav>
-  <section class="spell-list">
-    ${spellCards || '<p class="empty-note">분리된 신규 주문이 없습니다.</p>'}
-  </section>
+  <div class="homebrew-shell">
+    ${homebrewSideTabs('spells')}
+    <div class="homebrew-tab-content">
+      <nav class="brew-toc compact-toc" aria-label="주문 목차">
+        ${spellSections.map(spell => `<a href="#${spell.slug}">${escapeHtml(displayName(spell.title))}</a>`).join('')}
+      </nav>
+      <section class="spell-list">
+        ${spellCards || '<p class="empty-note">분리된 신규 주문이 없습니다.</p>'}
+      </section>
+    </div>
+  </div>
 </main>`;
 
 fs.writeFileSync(path.join(root, 'spells.html'), pageShell({
@@ -838,17 +854,21 @@ const backgroundsContent = `<main id="top" class="background-index">
       <a href="homebrew.html">홈브류로 돌아가기</a>
     </div>
   </header>
-  ${homebrewSubnav('백그라운드')}
-  <nav class="brew-toc" aria-label="백그라운드 목차">
-    ${backgroundSections.map(background => `<a href="#${background.slug}">${escapeHtml(displayName(background.title))}</a>`).join('')}
-  </nav>
-  <section class="background-list">
-    ${backgroundCards || '<p class="empty-note">등록된 백그라운드가 없습니다.</p>'}
-  </section>
-  ${backgroundCreditHtml ? `<section class="background-credits credit-card source-card">
-    <header><span>Attribution</span><h2>백그라운드 크레딧</h2></header>
-    <div class="doc-content">${backgroundCreditHtml}</div>
-  </section>` : ''}
+  <div class="homebrew-shell">
+    ${homebrewSideTabs('backgrounds')}
+    <div class="homebrew-tab-content">
+      <nav class="brew-toc compact-toc" aria-label="백그라운드 목차">
+        ${backgroundSections.map(background => `<a href="#${background.slug}">${escapeHtml(displayName(background.title))}</a>`).join('')}
+      </nav>
+      <section class="background-list">
+        ${backgroundCards || '<p class="empty-note">등록된 백그라운드가 없습니다.</p>'}
+      </section>
+      ${backgroundCreditHtml ? `<section class="background-credits credit-card source-card">
+        <header><span>Attribution</span><h2>백그라운드 크레딧</h2></header>
+        <div class="doc-content">${backgroundCreditHtml}</div>
+      </section>` : ''}
+    </div>
+  </div>
 </main>`;
 
 fs.writeFileSync(path.join(root, 'backgrounds.html'), pageShell({
