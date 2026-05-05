@@ -574,7 +574,15 @@ function synopsis(markdownLines) {
   const paragraph = markdownLines
     .filter(line => line && !/^#|^\||^-|^---/.test(line))
     .find(line => /[가-힣]/.test(line));
-  return paragraph ? paragraph.replace(/\*\*/g, '').slice(0, 115) : '번역문과 플레이용 룰 검토를 함께 정리한 서브클래스입니다.';
+  return paragraph ? paragraph.replace(/\*\*/g, '').trim() : '번역문과 플레이용 룰 검토를 함께 정리한 서브클래스입니다.';
+}
+
+function cardSynopsis(markdownLines) {
+  const text = synopsis(markdownLines);
+  if (text.length <= 105) return text;
+  const sentence = text.match(/^(.+?[.!?。]|.+?다\.|.+?요\.)/);
+  if (sentence && sentence[1].length <= 120) return sentence[1].trim();
+  return `${text.slice(0, 104).trim()}...`;
 }
 
 function badgeFor(subclass) {
@@ -601,7 +609,7 @@ function subclassCard(subclass) {
     <span class="brew-card-kicker">${escapeHtml(subclass.className)} · ${escapeHtml(badgeFor(subclass))}</span>
     <strong>${escapeHtml(ko)}</strong>
     ${en ? `<em>${escapeHtml(en)}</em>` : ''}
-    <p>${escapeHtml(synopsis(subclass.lines))}</p>
+    <p>${escapeHtml(cardSynopsis(subclass.lines))}</p>
   </a>`;
 }
 
