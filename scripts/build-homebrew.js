@@ -132,6 +132,7 @@ const removedSubclassTitles = new Set([
   '야전 의무병 - Field Medic',
   '약탈자 - Marauder',
   '엑상귀네이터 로그 - Exsanguinator Rogue',
+  '펜서 - Fencer',
 ]);
 
 function escapeHtml(value) {
