@@ -752,7 +752,7 @@ const homeContent = `<main id="top" class="brew-index">
       <a href="spells.html">주문 보기</a>
     </div>
   </header>
-  <div class="homebrew-shell" data-tabs="true" data-default-tab="subclasses">
+  <div class="homebrew-shell tabs-ready" data-tabs="true" data-default-tab="subclasses">
     ${homebrewSideTabs('subclasses', { switchLocal: true })}
     <div class="homebrew-tab-content">
       <section id="classes" class="homebrew-pane" data-pane="classes">
@@ -768,7 +768,7 @@ const homeContent = `<main id="top" class="brew-index">
           <div class="brew-card-grid">${classDocuments.map(subclassCard).join('\n') || '<p class="empty-note">등록된 클래스가 없습니다.</p>'}</div>
         </section>
       </section>
-      <section id="subclasses" class="homebrew-pane" data-pane="subclasses">
+      <section id="subclasses" class="homebrew-pane active" data-pane="subclasses">
         <nav class="brew-toc compact-toc" aria-label="클래스별 서브클래스 목차">
           ${[...byClass.keys()].map(className => `<a href="#${slugify(className)}">${escapeHtml(className)}</a>`).join('')}
         </nav>
