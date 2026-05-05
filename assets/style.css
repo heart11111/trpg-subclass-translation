@@ -443,6 +443,7 @@ tbody td:first-child { font-weight:700; color:var(--accent); white-space:nowrap;
 }
 .brew-index,
 .spell-index,
+.background-index,
 .brew-detail {
   min-height: 100dvh;
 }
@@ -571,6 +572,22 @@ tbody td:first-child { font-weight:700; color:var(--accent); white-space:nowrap;
   object-fit: cover;
   border: 1px solid rgba(62,45,24,.25);
   box-shadow: 0 18px 46px rgba(42,32,21,.16);
+}
+.compact-section .brew-class-head {
+  grid-template-columns: 1fr;
+}
+.brew-mini-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 0 28px 28px;
+}
+.brew-mini-list span {
+  padding: 8px 11px;
+  background: #f4ead8;
+  border: 1px solid rgba(62,45,24,.14);
+  color: #4b281d;
+  font-size: .9rem;
 }
 .section-number,
 .brew-card-kicker,
@@ -813,8 +830,43 @@ tbody td:first-child { font-weight:700; color:var(--accent); white-space:nowrap;
 .spell-hero {
   align-items: center;
 }
+.homebrew-subnav {
+  max-width: 1060px;
+  margin: -38px auto 34px;
+  padding: 0 28px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+}
+.homebrew-subnav a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  min-height: 54px;
+  padding: 12px 14px;
+  color: #3d2d1d;
+  background: rgba(255,255,255,.66);
+  border: 1px solid rgba(62,45,24,.16);
+  text-decoration: none;
+}
+.homebrew-subnav a.active {
+  color: #f7efd9;
+  background: #2b2118;
+  border-color: #2b2118;
+}
+.homebrew-subnav span {
+  font-weight: 700;
+}
+.homebrew-subnav strong {
+  font-family: 'Cinzel', serif;
+  color: #9d762d;
+}
+.homebrew-subnav a.active strong {
+  color: var(--gold-light);
+}
 .spell-list {
-  max-width: 980px;
+  max-width: 1060px;
   margin: 0 auto;
   padding: 0 28px 90px;
 }
@@ -826,23 +878,18 @@ tbody td:first-child { font-weight:700; color:var(--accent); white-space:nowrap;
 .dndb-spell {
   background: #fbf8ef;
   border: 1px solid rgba(56,39,22,.22);
-  margin-bottom: 22px;
-  box-shadow: 0 20px 58px rgba(42,32,21,.1);
+  margin-bottom: 28px;
+  box-shadow: 0 18px 44px rgba(42,32,21,.08);
 }
 .dndb-spell-head {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 18px;
-  padding: 26px 34px 18px;
-  border-top: 5px solid #7d1717;
-  border-bottom: 1px solid rgba(56,39,22,.18);
+  padding: 28px 34px 16px;
+  border-bottom: 3px solid #5c43d1;
 }
 .dndb-spell h2 {
-  margin: 4px 0 6px;
-  color: #5a1714;
+  margin: 6px 0 0;
+  color: #171717;
   font-family: 'Noto Serif KR', serif;
-  font-size: clamp(1.6rem, 3vw, 2.25rem);
+  font-size: clamp(1.65rem, 3vw, 2.45rem);
   line-height: 1.15;
 }
 .spell-source,
@@ -866,47 +913,38 @@ tbody td:first-child { font-weight:700; color:var(--accent); white-space:nowrap;
 .spell-stats {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  margin: 0;
-  background: #efe5d2;
-  border-bottom: 1px solid rgba(56,39,22,.18);
+  gap: 22px 30px;
+  margin: 0 34px;
+  padding: 24px 0;
+  background: transparent;
+  border-bottom: 2px solid #6b4ff0;
 }
 .spell-stats div {
-  padding: 14px 18px;
-  border-right: 1px solid rgba(56,39,22,.14);
-}
-.spell-stats div:last-child {
+  padding: 0;
   border-right: none;
 }
 .spell-stats dt {
-  color: #7d1717;
+  color: #111;
   font-weight: 700;
-  font-size: .78rem;
-  margin-bottom: 4px;
+  font-family: Arial, sans-serif;
+  font-size: .72rem;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  margin-bottom: 5px;
 }
 .spell-stats dd {
   margin: 0;
-  color: #2a2015;
-  font-size: .9rem;
-  line-height: 1.55;
+  color: #141414;
+  font-family: Arial, sans-serif;
+  font-size: .98rem;
+  line-height: 1.45;
 }
 .spell-body {
-  padding: 26px 34px 34px;
+  padding: 26px 34px 24px;
+  color: #111;
 }
 .spell-body p:last-child {
   margin-bottom: 0;
-}
-.background-entry {
-  overflow: hidden;
-}
-.background-head {
-  align-items: stretch;
-}
-.background-head img {
-  width: min(34vw, 300px);
-  min-height: 150px;
-  object-fit: cover;
-  border-left: 1px solid rgba(56,39,22,.18);
-  filter: saturate(.92) contrast(1.02);
 }
 .background-stats {
   grid-template-columns: repeat(5, 1fr);
@@ -923,6 +961,29 @@ tbody td:first-child { font-weight:700; color:var(--accent); white-space:nowrap;
 .background-credits {
   max-width: 980px;
   margin: 0 auto 90px;
+}
+.spell-available {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  padding: 0 34px 30px;
+  color: #1c1c1c;
+  font-family: Arial, sans-serif;
+  font-size: .86rem;
+}
+.spell-available span {
+  margin-right: 4px;
+}
+.spell-available strong {
+  display: inline-flex;
+  align-items: center;
+  min-height: 24px;
+  padding: 4px 8px;
+  border: 1px solid rgba(56,39,22,.2);
+  background: #eee9df;
+  font-size: .72rem;
+  text-transform: uppercase;
 }
 .credits-teaser {
   max-width: 980px;
@@ -988,7 +1049,8 @@ tbody td:first-child { font-weight:700; color:var(--accent); white-space:nowrap;
   .brew-index-hero,
   .brew-detail-hero,
   .brew-class-head,
-  .brew-reading-grid {
+  .brew-reading-grid,
+  .homebrew-subnav {
     grid-template-columns: 1fr;
   }
   .brew-side {
@@ -1039,12 +1101,6 @@ tbody td:first-child { font-weight:700; color:var(--accent); white-space:nowrap;
   }
   .spell-stats {
     grid-template-columns: 1fr 1fr;
-  }
-  .background-head img {
-    width: 100%;
-    min-height: 180px;
-    border-left: none;
-    border-top: 1px solid rgba(56,39,22,.18);
   }
   .dndb-spell-head,
   .credits-teaser {
