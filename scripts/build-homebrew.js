@@ -73,6 +73,7 @@ const subclassArt = {
   '돌연변이의 길 - Path of the Mutant': 'assets/images/subclasses-v2/path-of-the-mutant.jpg',
   '지맥술 학파 - School of Geomancy': 'assets/images/subclasses-v2/school-of-geomancy.jpg',
   '전격술사 - Electromancer': 'assets/images/subclasses-v2/electromancer.jpg',
+  '재야 마법 - Hedge Magic': 'assets/images/subclasses-v2/hedge-magic.jpg',
   '위치 - Witch': 'assets/images/subclasses-v2/witch.jpg',
 };
 
@@ -142,6 +143,7 @@ const slugOverrides = new Map([
   ['돌연변이의 길 - Path of the Mutant', 'path-of-the-mutant'],
   ['지맥술 학파 - School of Geomancy', 'school-of-geomancy'],
   ['전격술사 - Electromancer', 'electromancer'],
+  ['재야 마법 - Hedge Magic', 'hedge-magic'],
   ['위치 - Witch', 'witch'],
   ['마우스포크 - Mousefolk', 'mousefolk'],
   ['라크샤사 - Rakshasa', 'rakshasa-tiefling'],
@@ -766,6 +768,7 @@ const raceArt = {
 
 const cardSynopsisOverrides = {
   '내면의 빛의 전사 - Warrior of the Inner Light': '빛과 생명력을 무술 에너지로 다루는 몽크 서브클래스입니다.',
+  '재야 마법 - Hedge Magic': '정규 학파 밖에서 낮은 마법을 실전으로 익힌 위저드 서브클래스입니다.',
 };
 
 function raceArtPath(race, prefix = '') {
