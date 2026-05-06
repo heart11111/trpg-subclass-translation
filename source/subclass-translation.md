@@ -27,7 +27,7 @@
 - 드루이드
   - 잿더미의 회합 - Circle of Ashes
   - 괴물성의 회합 - Circle of Monstrosity
-  - 모기의 서클 - Circle of the Mosquito
+  - 모기의 회합 - Circle of the Mosquito
   - 장난의 회합 - Circle of Mischief
   - 파수꾼의 회합 - Circle of the Warden
   - 악몽의 회합 - Circle of Nightmares
@@ -1240,13 +1240,13 @@
 
 ---
 
-### 모기의 서클 - Circle of the Mosquito
+### 모기의 회합 - Circle of the Mosquito
 
-모기의 서클 드루이드는 자연의 흡혈성 기생충을 받아들입니다. 이들은 훔친 생명력으로 스스로를 살찌웁니다. 어떤 드루이드는 이 존재들이 불쾌하지만 자연 질서에 필요한 일부라고 생각합니다. 또 다른 이들은 그저 적의 피를 실컷 탐하고 싶어 할 뿐입니다.
+모기의 회합 드루이드는 자연의 흡혈성 기생충을 받아들입니다. 이들은 훔친 생명력으로 스스로를 살찌웁니다. 어떤 드루이드는 이 존재들이 불쾌하지만 자연 질서에 필요한 일부라고 생각합니다. 또 다른 이들은 그저 적의 피를 실컷 탐하고 싶어 할 뿐입니다.
 
-#### 3레벨: 모기의 서클 주문 - Circle of the Mosquito Spells
+#### 3레벨: 모기의 회합 주문 - Circle of the Mosquito Spells
 
-당신이 모기의 서클 주문 표에 명시된 드루이드 레벨에 도달하면, 이후 해당 주문들을 항상 준비한 것으로 간주합니다.
+당신이 모기의 회합 주문 표에 명시된 드루이드 레벨에 도달하면, 이후 해당 주문들을 항상 준비한 것으로 간주합니다.
 
 | 드루이드 레벨 | 준비 주문 |
 | --- | --- |
@@ -3246,7 +3246,7 @@
 - 마녀사냥꾼 - Witch-Hunter - 사용자 제공 원본 자료
 - 잿더미의 회합 - Circle of Ashes - 사용자 제공 원본 자료
 - 괴물성의 회합 - Circle of Monstrosity - 기존 번역본
-- 모기의 서클 - Circle of the Mosquito - 기존 번역본
+- 모기의 회합 - Circle of the Mosquito - 기존 번역본
 - 장난의 회합 - Circle of Mischief - 사용자 제공 원본 자료
 - 파수꾼의 회합 - Circle of the Warden - 사용자 제공 원본 자료
 - 악몽의 회합 - Circle of Nightmares - Kibbles Compendium of Craft and Creation, kthomebrew.com
