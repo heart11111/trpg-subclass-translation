@@ -5,15 +5,21 @@ const { spawnSync } = require('child_process');
 const root = path.resolve(__dirname, '..');
 const sourcePath = path.join(root, 'source', 'subclass-translation.md');
 const backgroundSourcePath = path.join(root, 'source', 'backgrounds.md');
+const raceSourcePath = path.join(root, 'source', 'races.md');
 const outDir = path.join(root, 'subclasses');
+const raceOutDir = path.join(root, 'races');
 const source = fs.readFileSync(sourcePath, 'utf8').replace(/\r\n/g, '\n');
 const backgroundSource = fs.existsSync(backgroundSourcePath)
   ? fs.readFileSync(backgroundSourcePath, 'utf8').replace(/\r\n/g, '\n')
+  : '';
+const raceSource = fs.existsSync(raceSourcePath)
+  ? fs.readFileSync(raceSourcePath, 'utf8').replace(/\r\n/g, '\n')
   : '';
 const pandocPath = process.env.PANDOC_PATH
   || (fs.existsSync('C:\\Program Files\\Pandoc\\pandoc.exe') ? 'C:\\Program Files\\Pandoc\\pandoc.exe' : 'pandoc');
 const lines = source.split('\n');
 const backgroundLines = backgroundSource.split('\n');
+const raceLines = raceSource.split('\n');
 
 const classArt = {
   '워록': 'assets/images/homebrew-classes/warlock.jpg',
@@ -31,37 +37,42 @@ const classArt = {
 };
 
 const subclassArt = {
-  '마녀 집회 후원자 - Coven Patron: Spin the Threads of Fate': 'assets/images/homebrew-classes/warlock.jpg',
-  '진홍 갈증의 워록 - Warlock of the Crimson Thirst': 'assets/images/homebrew-classes/warlock.jpg',
-  '전투 의무병 - Combat Medic': 'assets/images/homebrew-classes/fighter.jpg',
-  '질풍 - Zephyr': 'assets/images/homebrew-classes/fighter.jpg',
-  '드래곤 권역 - Dragon Domain': 'assets/images/homebrew-tome-v2.jpg',
+  '마녀 집회 후원자 - Coven Patron: Spin the Threads of Fate': 'assets/images/subclasses-v2/coven-patron.jpg',
+  '진홍 갈증의 워록 - Warlock of the Crimson Thirst': 'assets/images/subclasses-v2/crimson-thirst-warlock.jpg',
+  '전투 의무병 - Combat Medic': 'assets/images/subclasses-v2/combat-medic.jpg',
+  '질풍 - Zephyr': 'assets/images/subclasses-v2/zephyr.jpg',
+  '드래곤 권역 - Dragon Domain': 'assets/images/subclasses-v2/dragon-domain.jpg',
   '약탈자 - Marauder': 'assets/images/homebrew-classes/barbarian.jpg',
-  '사랑의 맹세 - Oath of Love': 'assets/images/homebrew-classes/paladin.jpg',
-  '전승지기의 맹세 - Oath of the Lore-Keeper': 'assets/images/homebrew-classes/paladin.jpg',
-  '슬픔의 맹세 - Oath of Sorrows': 'assets/images/homebrew-classes/paladin.jpg',
-  '국경의 맹세 - Oath of Frontiers': 'assets/images/homebrew-classes/paladin.jpg',
+  '사랑의 맹세 - Oath of Love': 'assets/images/subclasses-v2/oath-of-love.jpg',
+  '전승지기의 맹세 - Oath of the Lore-Keeper': 'assets/images/subclasses-v2/oath-of-the-lore-keeper.jpg',
+  '슬픔의 맹세 - Oath of Sorrows': 'assets/images/subclasses-v2/oath-of-sorrows.jpg',
+  '국경의 맹세 - Oath of Frontiers': 'assets/images/subclasses-v2/oath-of-frontiers.jpg',
   '공허의 파수꾼 - Hollow Warden': 'assets/images/homebrew-classes/ranger.jpg',
-  '감시자 - The Sentinel': 'assets/images/homebrew-classes/ranger.jpg',
+  '감시자 - The Sentinel': 'assets/images/subclasses-v2/sentinel.jpg',
   '마녀사냥꾼 - Witch-Hunter': 'assets/images/homebrew-classes/ranger.jpg',
-  '괴물성의 회합 - Circle of Monstrosity': 'assets/images/homebrew-classes/druid.jpg',
-  '모기의 서클 - Circle of the Mosquito': 'assets/images/homebrew-classes/druid.jpg',
+  '괴물성의 회합 - Circle of Monstrosity': 'assets/images/subclasses-v2/circle-of-monstrosity.jpg',
+  '모기의 서클 - Circle of the Mosquito': 'assets/images/subclasses-v2/circle-of-the-mosquito.jpg',
+  '잿더미의 회합 - Circle of Ashes': 'assets/images/homebrew-classes/druid.jpg',
   '장난의 회합 - Circle of Mischief': 'assets/images/homebrew-classes/druid.jpg',
-  '파수꾼의 회합 - Circle of the Warden': 'assets/images/homebrew-classes/druid.jpg',
+  '파수꾼의 회합 - Circle of the Warden': 'assets/images/subclasses-v2/circle-of-the-warden.jpg',
   '악몽의 회합 - Circle of Nightmares': 'assets/images/homebrew-classes/druid.jpg',
-  '봄의 회합 - Circle of Spring': 'assets/images/homebrew-classes/druid.jpg',
-  '내면의 빛의 전사 - Warrior of the Inner Light': 'assets/images/homebrew-classes/monk.jpg',
+  '봄의 회합 - Circle of Spring': 'assets/images/subclasses-v2/circle-of-spring.jpg',
+  '내면의 빛의 전사 - Warrior of the Inner Light': 'assets/images/subclasses-v2/warrior-of-the-inner-light.jpg',
   '엑상귀네이터 로그 - Exsanguinator Rogue': 'assets/images/homebrew-classes/rogue.jpg',
-  '조디악 아키타입 - Zodiac Archetype': 'assets/images/homebrew-classes/rogue.jpg',
+  '조디악 아키타입 - Zodiac Archetype': 'assets/images/subclasses-v2/zodiac-archetype.jpg',
   '펜서 - Fencer': 'assets/images/homebrew-classes/rogue.jpg',
-  '사보추어 - Saboteur': 'assets/images/homebrew-classes/rogue.jpg',
-  '서전 - Surgeon': 'assets/images/homebrew-classes/rogue.jpg',
+  '사보추어 - Saboteur': 'assets/images/subclasses-v2/saboteur.jpg',
+  '서전 - Surgeon': 'assets/images/subclasses-v2/surgeon.jpg',
   '광대 대학 - College of Fools': 'assets/images/homebrew-classes/warlock.jpg',
-  '추도사 대학 - College of Eulogies': 'assets/images/homebrew-classes/warlock.jpg',
+  '추도사 대학 - College of Eulogies': 'assets/images/subclasses-v2/college-of-eulogies.jpg',
+  '스워시버클러 - Swashbuckler (2024)': 'assets/images/subclasses-v2/swashbuckler-2024.jpg',
   '야전 의무병 - Field Medic': 'assets/images/homebrew-classes/fighter.jpg',
-  '지맥술 학파 - School of Geomancy': 'assets/images/homebrew-classes/wizard.jpg',
-  '전격술사 - Electromancer': 'assets/images/homebrew-classes/wizard.jpg',
-  '위치 - Witch': 'assets/images/homebrew-classes/warlock.jpg',
+  '지옥불의 길 - Path of the Inferno': 'assets/images/subclasses-v2/path-of-the-inferno.jpg',
+  '라이칸의 길 - Path of the Lycan': 'assets/images/subclasses-v2/path-of-the-lycan.jpg',
+  '돌연변이의 길 - Path of the Mutant': 'assets/images/subclasses-v2/path-of-the-mutant.jpg',
+  '지맥술 학파 - School of Geomancy': 'assets/images/subclasses-v2/school-of-geomancy.jpg',
+  '전격술사 - Electromancer': 'assets/images/subclasses-v2/electromancer.jpg',
+  '위치 - Witch': 'assets/images/subclasses-v2/witch.jpg',
 };
 
 const classNotes = {
@@ -107,6 +118,7 @@ const slugOverrides = new Map([
   ['공허의 파수꾼 - Hollow Warden', 'hollow-warden'],
   ['감시자 - The Sentinel', 'sentinel'],
   ['마녀사냥꾼 - Witch-Hunter', 'witch-hunter'],
+  ['잿더미의 회합 - Circle of Ashes', 'circle-of-ashes'],
   ['괴물성의 회합 - Circle of Monstrosity', 'circle-of-monstrosity'],
   ['모기의 서클 - Circle of the Mosquito', 'circle-of-the-mosquito'],
   ['장난의 회합 - Circle of Mischief', 'circle-of-mischief'],
@@ -129,6 +141,9 @@ const slugOverrides = new Map([
   ['지맥술 학파 - School of Geomancy', 'school-of-geomancy'],
   ['전격술사 - Electromancer', 'electromancer'],
   ['위치 - Witch', 'witch'],
+  ['마우스포크 - Mousefolk', 'mousefolk'],
+  ['라크샤사 - Rakshasa', 'rakshasa-tiefling'],
+  ['타나루크 - Tanarukk', 'tanarukk'],
 ]);
 
 const removedSubclassTitles = new Set([
@@ -172,6 +187,122 @@ function displayName(title) {
   return en ? `${ko} - ${en}` : ko;
 }
 
+function inlineMarkdown(value) {
+  return escapeHtml(value)
+    .replace(/`([^`]+)`/g, '<code>$1</code>')
+    .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')
+    .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2">$1</a>');
+}
+
+function fallbackHeadingId(title, index) {
+  return slugify(title) || `section-${index}`;
+}
+
+function simpleMarkdownToHtml(markdown) {
+  const src = markdown.replace(/\r\n/g, '\n').split('\n');
+  const html = [];
+  const openSections = [];
+  let headingIndex = 0;
+
+  function closeSections(level = 0) {
+    while (openSections.length && openSections.at(-1) >= level) {
+      html.push('</section>');
+      openSections.pop();
+    }
+  }
+
+  function readParagraph(start) {
+    const parts = [];
+    let i = start;
+    while (
+      i < src.length
+      && src[i].trim()
+      && !/^#{1,6}\s+/.test(src[i])
+      && !/^\|/.test(src[i].trim())
+      && !/^\s*[-*]\s+/.test(src[i])
+      && !/^>\s?/.test(src[i])
+    ) {
+      parts.push(src[i].trim());
+      i += 1;
+    }
+    html.push(`<p>${inlineMarkdown(parts.join(' '))}</p>`);
+    return i;
+  }
+
+  function readList(start) {
+    const items = [];
+    let i = start;
+    while (i < src.length && /^\s*[-*]\s+/.test(src[i])) {
+      items.push(src[i].replace(/^\s*[-*]\s+/, '').trim());
+      i += 1;
+    }
+    html.push(`<ul>${items.map(item => `<li>${inlineMarkdown(item)}</li>`).join('')}</ul>`);
+    return i;
+  }
+
+  function readBlockquote(start) {
+    const parts = [];
+    let i = start;
+    while (i < src.length && /^>\s?/.test(src[i])) {
+      parts.push(src[i].replace(/^>\s?/, '').trim());
+      i += 1;
+    }
+    html.push(`<blockquote>${parts.map(part => `<p>${inlineMarkdown(part)}</p>`).join('')}</blockquote>`);
+    return i;
+  }
+
+  function readTable(start) {
+    const rows = [];
+    let i = start;
+    while (i < src.length && /^\|/.test(src[i].trim())) {
+      rows.push(src[i].trim());
+      i += 1;
+    }
+    const parsedRows = rows
+      .filter((row, idx) => idx !== 1 || !/^\|?\s*:?-{3,}:?\s*(\|\s*:?-{3,}:?\s*)+\|?$/.test(row))
+      .map(row => row.replace(/^\||\|$/g, '').split('|').map(cell => cell.trim()));
+    if (!parsedRows.length) return i;
+    const [head, ...body] = parsedRows;
+    html.push(`<table><thead><tr>${head.map(cell => `<th>${inlineMarkdown(cell)}</th>`).join('')}</tr></thead><tbody>${body.map(row => `<tr>${row.map(cell => `<td>${inlineMarkdown(cell)}</td>`).join('')}</tr>`).join('')}</tbody></table>`);
+    return i;
+  }
+
+  for (let i = 0; i < src.length;) {
+    const line = src[i];
+    if (!line.trim() || /^---$/.test(line.trim())) {
+      i += 1;
+      continue;
+    }
+    const heading = line.match(/^(#{1,6})\s+(.+)$/);
+    if (heading) {
+      const level = heading[1].length;
+      const title = heading[2].trim();
+      closeSections(level);
+      headingIndex += 1;
+      html.push(`<section id="${escapeHtml(fallbackHeadingId(title, headingIndex))}" class="level${level}"><h${level}>${inlineMarkdown(title)}</h${level}>`);
+      openSections.push(level);
+      i += 1;
+      continue;
+    }
+    if (/^\|/.test(line.trim())) {
+      i = readTable(i);
+      continue;
+    }
+    if (/^\s*[-*]\s+/.test(line)) {
+      i = readList(i);
+      continue;
+    }
+    if (/^>\s?/.test(line)) {
+      i = readBlockquote(i);
+      continue;
+    }
+    i = readParagraph(i);
+  }
+
+  closeSections(0);
+  return html.join('\n');
+}
+
 function mdToHtml(markdown) {
   const result = spawnSync(pandocPath, ['-f', 'gfm', '-t', 'html', '--section-divs'], {
     input: markdown,
@@ -179,8 +310,12 @@ function mdToHtml(markdown) {
     encoding: 'utf8',
     maxBuffer: 1024 * 1024 * 20,
   });
+  if (result.error) {
+    return simpleMarkdownToHtml(markdown);
+  }
   if (result.status !== 0) {
-    throw new Error(result.stderr || 'pandoc failed');
+    if (!result.stderr) return simpleMarkdownToHtml(markdown);
+    throw new Error(result.stderr);
   }
   return result.stdout;
 }
@@ -220,7 +355,7 @@ ${content}
 <script src="${prefix}assets/app.js"></script>
 </body>
 </html>
-`;
+`.replace(/[ \t]+$/gm, '');
 }
 
 function findHeadingIndex(pattern, start = 0) {
@@ -505,6 +640,47 @@ function parseBackground(background) {
   };
 }
 
+function extractOriginFeat(background) {
+  const parsed = parseBackground(background);
+  const start = background.lines.findIndex(line => /^#### 재주:/.test(line));
+  if (start < 0) {
+    return parsed.meta['재주'] ? { title: parsed.meta['재주'], lines: [] } : null;
+  }
+  const headingTitle = background.lines[start].replace(/^#### 재주:\s*/, '').trim();
+  let end = background.lines.length;
+  for (let i = start + 1; i < background.lines.length; i += 1) {
+    if (/^#### /.test(background.lines[i])) {
+      end = i;
+      break;
+    }
+  }
+  return {
+    title: headingTitle || parsed.meta['재주'],
+    lines: background.lines.slice(start + 1, end).filter(line => line.trim() !== '---'),
+  };
+}
+
+function collectOriginFeats(backgrounds) {
+  const byTitle = new Map();
+  for (const background of backgrounds) {
+    const feat = extractOriginFeat(background);
+    if (!feat?.title) continue;
+    const backgroundName = displayName(background.title);
+    if (!byTitle.has(feat.title)) {
+      byTitle.set(feat.title, {
+        ...feat,
+        slug: slugify(feat.title),
+        backgrounds: [backgroundName],
+      });
+    } else {
+      const existing = byTitle.get(feat.title);
+      existing.backgrounds.push(backgroundName);
+      if (!existing.lines.length && feat.lines.length) existing.lines = feat.lines;
+    }
+  }
+  return [...byTitle.values()];
+}
+
 function backgroundCardHtml(background) {
   const parsed = parseBackground(background);
   const { ko, en } = titleParts(background.title);
@@ -523,6 +699,126 @@ function backgroundCardHtml(background) {
     </dl>
     <div class="spell-body doc-content background-body">${bodyHtml}</div>
   </article>`;
+}
+
+function featCardHtml(feat) {
+  const { ko, en } = titleParts(feat.title);
+  const body = feat.lines.length
+    ? feat.lines.join('\n')
+    : '이 피트의 규칙 본문은 연결된 백그라운드 항목에 포함되어 있습니다.';
+  const bodyHtml = enhanceRuleHtml(mdToHtml(body));
+  return `<article id="${escapeHtml(feat.slug)}" class="dndb-spell origin-feat-card">
+    <header class="dndb-spell-head background-head">
+      <p class="spell-source">ORIGIN FEAT · 출신 재주</p>
+      <h2>${escapeHtml(ko)}</h2>
+      ${en ? `<p class="spell-subtitle">${escapeHtml(en)}</p>` : ''}
+    </header>
+    <div class="feat-used-by">
+      <span>포함 백그라운드</span>
+      ${feat.backgrounds.map(item => `<strong>${escapeHtml(item)}</strong>`).join('')}
+    </div>
+    <div class="spell-body doc-content feat-body">${bodyHtml}</div>
+  </article>`;
+}
+
+function parseRaceSections() {
+  const entries = [];
+  let currentCategory = '';
+  for (let i = 0; i < raceLines.length; i += 1) {
+    const categoryMatch = raceLines[i].match(/^## (.+)$/);
+    if (categoryMatch && categoryMatch[1] !== '목차') {
+      currentCategory = categoryMatch[1];
+      continue;
+    }
+    const match = raceLines[i].match(/^### (.+)$/);
+    if (!match) continue;
+    const start = i;
+    let end = raceLines.length;
+    for (let j = i + 1; j < raceLines.length; j += 1) {
+      if (/^### /.test(raceLines[j]) || /^## /.test(raceLines[j])) {
+        end = j;
+        break;
+      }
+    }
+    entries.push({
+      category: currentCategory || '종족 옵션',
+      title: match[1],
+      slug: slugify(match[1]),
+      lines: raceLines.slice(start, end),
+    });
+    i = end - 1;
+  }
+  return entries;
+}
+
+const raceArt = {
+  '마우스포크 - Mousefolk': 'assets/images/homebrew-classes/ranger.jpg',
+  '라크샤사 - Rakshasa': 'assets/images/homebrew-tome-v2.jpg',
+  '타나루크 - Tanarukk': 'assets/images/homebrew-classes/barbarian.jpg',
+};
+
+function raceArtPath(race, prefix = '') {
+  return `${prefix}${raceArt[race.title] || 'assets/images/homebrew-tome-v2.jpg'}`;
+}
+
+function raceKindLabel(race) {
+  if (/유산/.test(race.category)) return '유산';
+  if (/서브레이스/.test(race.category)) return '서브레이스';
+  return '종족';
+}
+
+function raceEyebrow(race) {
+  if (/티플링/.test(race.category)) return '티플링 LEGACY';
+  if (/오크/.test(race.category)) return '오크 SUBRACE';
+  return 'SPECIES';
+}
+
+function raceIntro(race) {
+  const paragraph = race.lines
+    .slice(1)
+    .filter(line => line.trim() && !/^#|^\||^-|^---|^>|\*\*/.test(line))
+    .find(line => /[가-힣]/.test(line));
+  return paragraph ? paragraph.replace(/\*\*/g, '').trim() : '플레이에 사용할 수 있도록 정리한 종족 옵션입니다.';
+}
+
+function raceFeatureNames(race) {
+  return race.lines
+    .map(line => {
+      const match = line.match(/^#{4,6}\s+(.+)$/);
+      return match ? match[1] : null;
+    })
+    .filter(Boolean)
+    .filter(name => !/(털북숭이|집과 난로|장인과 모험가|고결하고|이름|특성|혈통 선택)/.test(name))
+    .slice(0, 8);
+}
+
+function raceSummaryHtml(race) {
+  const features = raceFeatureNames(race);
+  const rows = [
+    ['분류', race.category],
+    ['유형', raceKindLabel(race)],
+    ['핵심 특성', features.length ? features.map(displayName).join(', ') : '본문 참고'],
+  ];
+  return `<section class="level-summary" aria-label="종족 특성 요약">
+        <div class="summary-head">
+          <span>RACE TRAITS</span>
+          <h2>특성 요약</h2>
+        </div>
+        <table>
+          <thead><tr><th>구분</th><th>내용</th></tr></thead>
+          <tbody>${rows.map(([key, value]) => `<tr><td>${escapeHtml(key)}</td><td>${escapeHtml(value)}</td></tr>`).join('')}</tbody>
+        </table>
+      </section>`;
+}
+
+function raceCardHtml(race) {
+  const { ko, en } = titleParts(race.title);
+  return `<a class="brew-card" href="races/${race.slug}.html">
+    <span class="brew-card-art"><img src="${raceArtPath(race)}" alt="${escapeHtml(ko)} 분위기 이미지"></span>
+    <strong>${escapeHtml(ko)}</strong>
+    ${en ? `<em>${escapeHtml(en)}</em>` : ''}
+    <p>${escapeHtml(cardSynopsis(race.lines))}</p>
+  </a>`;
 }
 
 function extractHeadings(markdownLines) {
@@ -617,6 +913,7 @@ function documentKind(subclass) {
 function subclassCard(subclass) {
   const { ko, en } = titleParts(subclass.title);
   return `<a class="brew-card" href="subclasses/${subclass.slug}.html">
+    <span class="brew-card-art"><img src="${artPathFor(subclass.className, '', subclass.title)}" alt="${escapeHtml(ko)} 분위기 이미지"></span>
     <strong>${escapeHtml(ko)}</strong>
     ${en ? `<em>${escapeHtml(en)}</em>` : ''}
     <p>${escapeHtml(cardSynopsis(subclass.lines))}</p>
@@ -646,14 +943,16 @@ for (const subclass of subclasses) {
   byClass.get(subclass.className).push(subclass);
 }
 const backgroundSections = parseBackgroundSections();
+const raceSections = parseRaceSections();
 const classDocuments = subclasses.filter(item => documentKind(item) === 'CLASS');
 const subclassDocuments = subclasses.filter(item => documentKind(item) === 'SUBCLASS');
-const originFeats = new Set(backgroundSections.map(item => parseBackground(item).meta['재주']).filter(Boolean));
+const originFeats = collectOriginFeats(backgroundSections);
 
 const homebrewTabItems = [
   ['classes', '클래스', classDocuments.length, '#classes'],
   ['subclasses', '서브클래스', subclassDocuments.length, '#subclasses'],
-  ['feats', '피트', originFeats.size, '#feats'],
+  ['feats', '피트', originFeats.length, '#feats'],
+  ['races', '종족', raceSections.length, '#races'],
   ['backgrounds', '백그라운드', backgroundSections.length, 'backgrounds.html'],
   ['spells', '주문', spellSections.length, 'spells.html'],
   ['credits', '출처', creditSections.length, 'credits.html'],
@@ -663,7 +962,7 @@ function homebrewSideTabs(active = 'subclasses', { prefix = '', switchLocal = fa
   return `<aside class="homebrew-side-tabs" aria-label="홈브류 분류">
     <p class="homebrew-side-title">Homebrew</p>
     ${homebrewTabItems.map(([key, label, count, href]) => {
-      const localPane = ['classes', 'subclasses', 'feats'].includes(key);
+      const localPane = ['classes', 'subclasses', 'feats', 'races'].includes(key);
       const localHref = localPane ? `homebrew.html${href}` : href;
       const resolvedHref = switchLocal && localPane ? href : `${prefix}${localHref}`;
       const attrs = [
@@ -726,6 +1025,54 @@ for (const subclass of subclasses) {
   }));
 }
 
+fs.rmSync(raceOutDir, { recursive: true, force: true });
+fs.mkdirSync(raceOutDir, { recursive: true });
+
+for (const race of raceSections) {
+  const { ko, en } = titleParts(race.title);
+  const related = raceSections.filter(item => item.slug !== race.slug).slice(0, 5);
+  const bodyHtml = enhanceRuleHtml(mdToHtml(race.lines.slice(1).join('\n')));
+  const content = `<main id="top" class="brew-detail">
+  <header class="brew-detail-hero">
+    <div class="brew-hero-copy">
+      <a class="crumb-link" href="../homebrew.html#races">종족 목록</a>
+      <p class="eyebrow">${escapeHtml(raceEyebrow(race))}</p>
+      <h1>${escapeHtml(ko)}</h1>
+      ${en ? `<p class="brew-en">${escapeHtml(en)}</p>` : ''}
+      <p class="brew-lede">${escapeHtml(raceIntro(race))}</p>
+      <div class="brew-meta-row">
+        <span>${escapeHtml(race.category)}</span>
+        <span>${escapeHtml(raceKindLabel(race))}</span>
+        <span>2024 구조</span>
+      </div>
+    </div>
+    <figure class="brew-art-frame compact">
+      <img src="../${raceArtPath(race)}" alt="${escapeHtml(ko)} 분위기 이미지">
+    </figure>
+  </header>
+  <div class="brew-reading-grid${related.length ? '' : ' no-side'}">
+    ${related.length ? `<aside class="brew-side">
+      <div class="brew-side-box">
+        <p class="side-label">다른 종족 옵션</p>
+        ${related.map(item => `<a class="side-link" href="${item.slug}.html">${escapeHtml(titleParts(item.title).ko)}</a>`).join('')}
+      </div>
+    </aside>` : ''}
+    <article class="content doc-content brew-article">
+      ${raceSummaryHtml(race)}
+      ${bodyHtml}
+    </article>
+  </div>
+</main>`;
+  fs.writeFileSync(path.join(raceOutDir, `${race.slug}.html`), pageShell({
+    title: `${ko} - 화살성채 홈브류`,
+    bodyClass: 'brew-page subclass-page',
+    active: 'homebrew',
+    prefix: '../',
+    description: `${race.category} ${ko} 번역`,
+    content,
+  }));
+}
+
 const classSectionsHtml = [...byClass.entries()].map(([className, items], index) => {
   return `<section id="${slugify(className)}" class="brew-class-section" style="--i:${index}">
     <div class="brew-class-head">
@@ -745,13 +1092,17 @@ const homeContent = `<main id="top" class="brew-index">
     <div>
       <p class="eyebrow">DUNGEONS & DRAGONS 2024</p>
       <h1>홈브류 자료실</h1>
-      <p class="brew-lede">홈브류는 좌측 탭에서 클래스, 서브클래스, 피트, 백그라운드, 주문을 바로 오가며 읽도록 정리했습니다. 플레이 중 필요한 항목을 빠르게 찾을 수 있게 목록과 규칙 카드를 분리했습니다.</p>
+      <p class="brew-lede">홈브류는 좌측 탭에서 클래스, 서브클래스, 피트, 종족, 백그라운드, 주문을 바로 오가며 읽도록 정리했습니다. 플레이 중 필요한 항목을 빠르게 찾을 수 있게 목록과 규칙 카드를 분리했습니다.</p>
     </div>
     <div class="brew-index-panel">
       <span>${classDocuments.length}</span>
       <strong>클래스</strong>
       <span>${subclassDocuments.length}</span>
       <strong>서브클래스</strong>
+      <span>${originFeats.length}</span>
+      <strong>피트</strong>
+      <span>${raceSections.length}</span>
+      <strong>종족</strong>
       <span>${spellSections.length}</span>
       <strong>주문</strong>
       <span>${backgroundSections.length}</span>
@@ -787,10 +1138,23 @@ const homeContent = `<main id="top" class="brew-index">
             <div>
               <span class="section-number">FEAT</span>
               <h2>피트</h2>
-              <p>백그라운드에 포함된 출신 재주입니다. 세부 규칙은 백그라운드 페이지의 해당 항목에 함께 정리했습니다.</p>
+              <p>백그라운드에 포함된 출신 재주도 플레이 중 바로 찾을 수 있도록 별도 규칙 카드로 분리했습니다.</p>
             </div>
           </div>
-          <div class="brew-mini-list">${[...originFeats].map(feat => `<span>${escapeHtml(feat)}</span>`).join('')}</div>
+          <div class="feat-list">${originFeats.map(featCardHtml).join('\n') || '<p class="empty-note">등록된 피트가 없습니다.</p>'}</div>
+        </section>
+      </section>
+      <section id="races" class="homebrew-pane" data-pane="races">
+        <section class="brew-class-section compact-section">
+          <div class="brew-class-head">
+            <div>
+              <span class="section-number">RACE</span>
+              <h2>종족</h2>
+              <p>2024 캐릭터 작성에 맞춰 정리한 종족, 유산, 서브레이스 옵션입니다.</p>
+            </div>
+            <img src="${raceArtPath(raceSections[0] || { title: '' })}" alt="종족 옵션 분위기 이미지">
+          </div>
+          <div class="brew-card-grid">${raceSections.map(raceCardHtml).join('\n') || '<p class="empty-note">등록된 종족 옵션이 없습니다.</p>'}</div>
         </section>
       </section>
     </div>
@@ -856,7 +1220,7 @@ const backgroundsContent = `<main id="top" class="background-index">
     <div class="brew-index-panel">
       <span>${backgroundSections.length}</span>
       <strong>백그라운드</strong>
-      <span>${new Set(backgroundSections.map(item => parseBackground(item).meta['재주']).filter(Boolean)).size}</span>
+      <span>${originFeats.length}</span>
       <strong>출신 재주</strong>
       <a href="homebrew.html">홈브류로 돌아가기</a>
     </div>
@@ -924,4 +1288,4 @@ fs.writeFileSync(path.join(root, 'credits.html'), pageShell({
   content: creditsContent,
 }));
 
-console.log(`Built ${subclasses.length} subclass pages, ${spellSections.length} spell entries, and ${creditSections.length} credit entries.`);
+console.log(`Built ${subclasses.length} subclass pages, ${raceSections.length} race pages, ${spellSections.length} spell entries, and ${creditSections.length} credit entries.`);

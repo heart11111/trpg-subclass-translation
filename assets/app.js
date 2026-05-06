@@ -29,7 +29,9 @@
     const hashedPane = initialHash && document.getElementById(initialHash)?.closest('[data-pane]');
     activate(hashedPane?.dataset.pane || initialHash || defaultTab, false);
     if (initialHash && panes.some(pane => pane.dataset.pane === initialHash)) {
-      setTimeout(() => window.scrollTo(0, 0), 0);
+      const resetPaneScroll = () => window.scrollTo(0, 0);
+      setTimeout(resetPaneScroll, 0);
+      window.addEventListener('load', () => requestAnimationFrame(resetPaneScroll), { once: true });
     }
   }
 })();
