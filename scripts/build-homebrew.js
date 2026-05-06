@@ -39,6 +39,7 @@ const classArt = {
 const subclassArt = {
   '마녀 집회 후원자 - Coven Patron: Spin the Threads of Fate': 'assets/images/subclasses-v2/coven-patron.jpg',
   '진홍 갈증의 워록 - Warlock of the Crimson Thirst': 'assets/images/subclasses-v2/crimson-thirst-warlock.jpg',
+  '크라켄 - Kraken': 'assets/images/subclasses-v2/kraken.jpg',
   '전투 의무병 - Combat Medic': 'assets/images/subclasses-v2/combat-medic.jpg',
   '질풍 - Zephyr': 'assets/images/subclasses-v2/zephyr.jpg',
   '드래곤 권역 - Dragon Domain': 'assets/images/subclasses-v2/dragon-domain.jpg',
@@ -52,7 +53,7 @@ const subclassArt = {
   '마녀사냥꾼 - Witch-Hunter': 'assets/images/homebrew-classes/ranger.jpg',
   '괴물성의 회합 - Circle of Monstrosity': 'assets/images/subclasses-v2/circle-of-monstrosity.jpg',
   '모기의 서클 - Circle of the Mosquito': 'assets/images/subclasses-v2/circle-of-the-mosquito.jpg',
-  '잿더미의 회합 - Circle of Ashes': 'assets/images/homebrew-classes/druid.jpg',
+  '잿더미의 회합 - Circle of Ashes': 'assets/images/subclasses-v2/circle-of-ashes.jpg',
   '장난의 회합 - Circle of Mischief': 'assets/images/homebrew-classes/druid.jpg',
   '파수꾼의 회합 - Circle of the Warden': 'assets/images/subclasses-v2/circle-of-the-warden.jpg',
   '악몽의 회합 - Circle of Nightmares': 'assets/images/homebrew-classes/druid.jpg',
@@ -165,6 +166,11 @@ function escapeHtml(value) {
     .replaceAll('<', '&lt;')
     .replaceAll('>', '&gt;')
     .replaceAll('"', '&quot;');
+}
+
+function cardArtHtml(src, alt) {
+  const safeSrc = escapeHtml(src);
+  return `<span class="brew-card-art" style="--brew-card-image: url('${safeSrc}')"><img src="${safeSrc}" alt="${escapeHtml(alt)}"></span>`;
 }
 
 function slugify(value) {
@@ -753,13 +759,13 @@ function parseRaceSections() {
 }
 
 const raceArt = {
-  '마우스포크 - Mousefolk': 'assets/images/homebrew-classes/ranger.jpg',
-  '라크샤사 - Rakshasa': 'assets/images/homebrew-tome-v2.jpg',
-  '타나루크 - Tanarukk': 'assets/images/homebrew-classes/barbarian.jpg',
+  '마우스포크 - Mousefolk': 'assets/images/races-v2/mousefolk.jpg',
+  '라크샤사 - Rakshasa': 'assets/images/races-v2/rakshasa.jpg',
+  '타나루크 - Tanarukk': 'assets/images/races-v2/tanarukk.jpg',
 };
 
 function raceArtPath(race, prefix = '') {
-  return `${prefix}${raceArt[race.title] || 'assets/images/homebrew-tome-v2.jpg'}`;
+  return `${prefix}${raceArt[race.title] || 'assets/images/races-v2/race-card.jpg'}`;
 }
 
 function raceKindLabel(race) {
@@ -814,8 +820,9 @@ function raceSummaryHtml(race) {
 
 function raceCardHtml(race) {
   const { ko, en } = titleParts(race.title);
+  const art = raceArtPath(race);
   return `<a class="brew-card" href="races/${race.slug}.html">
-    <span class="brew-card-art"><img src="${raceArtPath(race)}" alt="${escapeHtml(ko)} 분위기 이미지"></span>
+    ${cardArtHtml(art, `${ko} 분위기 이미지`)}
     <strong>${escapeHtml(ko)}</strong>
     ${en ? `<em>${escapeHtml(en)}</em>` : ''}
     <p>${escapeHtml(cardSynopsis(race.lines))}</p>
@@ -913,8 +920,9 @@ function documentKind(subclass) {
 
 function subclassCard(subclass) {
   const { ko, en } = titleParts(subclass.title);
+  const art = artPathFor(subclass.className, '', subclass.title);
   return `<a class="brew-card" href="subclasses/${subclass.slug}.html">
-    <span class="brew-card-art"><img src="${artPathFor(subclass.className, '', subclass.title)}" alt="${escapeHtml(ko)} 분위기 이미지"></span>
+    ${cardArtHtml(art, `${ko} 분위기 이미지`)}
     <strong>${escapeHtml(ko)}</strong>
     ${en ? `<em>${escapeHtml(en)}</em>` : ''}
     <p>${escapeHtml(cardSynopsis(subclass.lines))}</p>
@@ -1076,13 +1084,12 @@ for (const race of raceSections) {
 
 const classSectionsHtml = [...byClass.entries()].map(([className, items], index) => {
   return `<section id="${slugify(className)}" class="brew-class-section" style="--i:${index}">
-    <div class="brew-class-head">
+    <div class="brew-class-head no-art">
       <div>
         <span class="section-number">${String(index + 1).padStart(2, '0')}</span>
         <h2>${escapeHtml(className)}</h2>
         <p>${escapeHtml(classNotes[className] || '클래스별 서브클래스 번역과 운용 메모입니다.')}</p>
       </div>
-      <img src="${artPathFor(className)}" alt="${escapeHtml(className)} 분위기 이미지">
     </div>
     <div class="brew-card-grid">${items.map(subclassCard).join('\n')}</div>
   </section>`;
@@ -1116,13 +1123,12 @@ const homeContent = `<main id="top" class="brew-index">
     <div class="homebrew-tab-content">
       <section id="classes" class="homebrew-pane" data-pane="classes">
         <section class="brew-class-section">
-          <div class="brew-class-head">
+          <div class="brew-class-head no-art">
             <div>
               <span class="section-number">CLASS</span>
               <h2>클래스</h2>
               <p>완전 클래스 문서입니다. 현재는 위치 - Witch를 별도 클래스 문서로 관리합니다.</p>
             </div>
-            <img src="${artPathFor('위치')}" alt="클래스 분위기 이미지">
           </div>
           <div class="brew-card-grid">${classDocuments.map(subclassCard).join('\n') || '<p class="empty-note">등록된 클래스가 없습니다.</p>'}</div>
         </section>
@@ -1147,13 +1153,12 @@ const homeContent = `<main id="top" class="brew-index">
       </section>
       <section id="races" class="homebrew-pane" data-pane="races">
         <section class="brew-class-section compact-section">
-          <div class="brew-class-head">
+          <div class="brew-class-head no-art">
             <div>
               <span class="section-number">RACE</span>
               <h2>종족</h2>
               <p>2024 캐릭터 작성에 맞춰 정리한 종족, 유산, 서브레이스 옵션입니다.</p>
             </div>
-            <img src="${raceArtPath(raceSections[0] || { title: '' })}" alt="종족 옵션 분위기 이미지">
           </div>
           <div class="brew-card-grid">${raceSections.map(raceCardHtml).join('\n') || '<p class="empty-note">등록된 종족 옵션이 없습니다.</p>'}</div>
         </section>
