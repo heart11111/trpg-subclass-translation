@@ -2039,7 +2039,7 @@
 
 ---
 
-### 스워시버클러 - Swashbuckler (2024)
+### 스워시버클러 - Swashbuckler
 
 스워시버클러로서 당신은 칼날의 기예에 집중합니다. 당신의 전투 방식에는 속도, 우아함, 매력이 어우러지며, 여기에 화려한 기백까지 더해집니다. 당신은 일대일 전투에 뛰어나고, 당신의 방식은 결투를 현란한 공연처럼 보이게 만듭니다.
 
@@ -3255,7 +3255,7 @@
 - 조디악 아키타입 - Zodiac Archetype - Monarch's guild
 - 사보추어 - Saboteur - 사용자 제공 원본 자료
 - 서전 - Surgeon - 사용자 제공 원본 자료
-- 스워시버클러 - Swashbuckler (2024) - D&D Beyond: https://www.dndbeyond.com/subclasses/2194307-swashbuckler-2024
+- 스워시버클러 - Swashbuckler - [D&D Beyond 원문](https://www.dndbeyond.com/subclasses/2194307-swashbuckler-2024)
 - 야전 의무병 - Field Medic - ArgenisDBarrios, GM Binder
 - 추도사 대학 - College of Eulogies - 사용자 제공 원본 자료
 - 잉걸심장 - Emberheart - 사용자 제공 원본 자료
