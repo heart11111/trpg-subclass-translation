@@ -107,6 +107,7 @@ const slugOverrides = new Map([
   ['아타메 반사', 'athame-reflection'],
   ['마녀 집회 후원자 - Coven Patron: Spin the Threads of Fate', 'coven-patron'],
   ['진홍 갈증의 워록 - Warlock of the Crimson Thirst', 'crimson-thirst-warlock'],
+  ['크라켄 - Kraken', 'kraken'],
   ['전투 의무병 - Combat Medic', 'combat-medic'],
   ['질풍 - Zephyr', 'zephyr'],
   ['드래곤 권역 - Dragon Domain', 'dragon-domain'],
