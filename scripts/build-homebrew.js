@@ -764,6 +764,10 @@ const raceArt = {
   '타나루크 - Tanarukk': 'assets/images/races-v2/tanarukk.jpg',
 };
 
+const cardSynopsisOverrides = {
+  '내면의 빛의 전사 - Warrior of the Inner Light': '빛과 생명력을 무술 에너지로 다루는 몽크 서브클래스입니다.',
+};
+
 function raceArtPath(race, prefix = '') {
   return `${prefix}${raceArt[race.title] || 'assets/images/races-v2/race-card.jpg'}`;
 }
@@ -825,7 +829,7 @@ function raceCardHtml(race) {
     ${cardArtHtml(art, `${ko} 분위기 이미지`)}
     <strong>${escapeHtml(ko)}</strong>
     ${en ? `<em>${escapeHtml(en)}</em>` : ''}
-    <p>${escapeHtml(cardSynopsis(race.lines))}</p>
+    <p>${escapeHtml(cardSynopsis(race.lines, race.title))}</p>
   </a>`;
 }
 
@@ -892,7 +896,8 @@ function synopsis(markdownLines) {
   return paragraph ? paragraph.replace(/\*\*/g, '').trim() : '번역문과 플레이용 룰 검토를 함께 정리한 서브클래스입니다.';
 }
 
-function cardSynopsis(markdownLines) {
+function cardSynopsis(markdownLines, title = '') {
+  if (cardSynopsisOverrides[title]) return cardSynopsisOverrides[title];
   const text = synopsis(markdownLines);
   if (text.length <= 105) return text;
   const sentence = text.match(/^(.+?[.!?。]|.+?다\.|.+?요\.)/);
@@ -925,7 +930,7 @@ function subclassCard(subclass) {
     ${cardArtHtml(art, `${ko} 분위기 이미지`)}
     <strong>${escapeHtml(ko)}</strong>
     ${en ? `<em>${escapeHtml(en)}</em>` : ''}
-    <p>${escapeHtml(cardSynopsis(subclass.lines))}</p>
+    <p>${escapeHtml(cardSynopsis(subclass.lines, subclass.title))}</p>
   </a>`;
 }
 
