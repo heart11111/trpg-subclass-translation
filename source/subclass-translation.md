@@ -276,10 +276,13 @@
 
 | 워록 레벨 | 주문 |
 | --- | --- |
-| 3레벨 | 원소 흡수 - Absorb Elements, 물 창조 또는 파괴 - Create or Destroy Water, 돌풍 - Gust of Wind, 흔적 없는 이동 - Pass without Trace |
+| 3레벨 | 천둥파 - Thunderwave, 물 창조 또는 파괴 - Create or Destroy Water, 돌풍 - Gust of Wind, 흔적 없는 이동 - Pass without Trace |
 | 5레벨 | 번개 부르기 - Call Lightning, 수중 호흡 - Water Breathing |
 | 7레벨 | 물 조종 - Control Water, 얼음 폭풍 - Ice Storm |
-| 9레벨 | 각성 - Awaken, 소용돌이 - Maelstrom |
+| 9레벨 | 각성 - Awaken, 냉기 분사 - Cone of Cold |
+
+> 대체 주문
+> 원문 주문 중 원소 흡수 - Absorb Elements와 소용돌이 - Maelstrom은 2024 기본 주문 기준에서 제외하고, 같은 레벨대의 바다/폭풍 테마 주문인 천둥파 - Thunderwave와 냉기 분사 - Cone of Cold로 대체했습니다.
 
 #### 3레벨: 심연의 선물 - Gift of the Deep
 
