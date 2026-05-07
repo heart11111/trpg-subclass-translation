@@ -1,5 +1,6 @@
 const fs = require('fs');
 const path = require('path');
+const crypto = require('crypto');
 const { spawnSync } = require('child_process');
 
 const root = path.resolve(__dirname, '..');
@@ -175,8 +176,32 @@ function escapeHtml(value) {
     .replaceAll('"', '&quot;');
 }
 
+const assetVersionCache = new Map();
+
+function assetPathOnDisk(src) {
+  const cleanSrc = String(src).split('?')[0].split('#')[0].replace(/\\/g, '/').replace(/^(\.\.\/)+/, '').replace(/^\.\//, '');
+  if (!cleanSrc.startsWith('assets/')) return null;
+  return path.join(root, ...cleanSrc.split('/'));
+}
+
+function assetVersion(src) {
+  const diskPath = assetPathOnDisk(src);
+  if (!diskPath || !fs.existsSync(diskPath)) return '';
+  if (!assetVersionCache.has(diskPath)) {
+    const hash = crypto.createHash('sha1').update(fs.readFileSync(diskPath)).digest('hex').slice(0, 8);
+    assetVersionCache.set(diskPath, hash);
+  }
+  return assetVersionCache.get(diskPath);
+}
+
+function assetUrl(src) {
+  const version = assetVersion(src);
+  if (!version) return src;
+  return `${src}${src.includes('?') ? '&' : '?'}v=${version}`;
+}
+
 function cardArtHtml(src, alt) {
-  const safeSrc = escapeHtml(src);
+  const safeSrc = escapeHtml(assetUrl(src));
   return `<span class="brew-card-art" style="--brew-card-image: url('${safeSrc}')"><img src="${safeSrc}" alt="${escapeHtml(alt)}"></span>`;
 }
 
@@ -1061,7 +1086,7 @@ for (const subclass of subclasses) {
       </div>
     </div>
     <figure class="brew-art-frame">
-      <img src="../${artPathFor(subclass.className, '', subclass.title)}" alt="${escapeHtml(ko)} 분위기 이미지">
+      <img src="${escapeHtml(assetUrl(`../${artPathFor(subclass.className, '', subclass.title)}`))}" alt="${escapeHtml(ko)} 분위기 이미지">
     </figure>
   </header>
   <div class="brew-reading-grid${sideContent ? '' : ' no-side'}">
@@ -1111,7 +1136,7 @@ for (const race of raceSections) {
       </div>
     </div>
     <figure class="brew-art-frame compact">
-      <img src="../${raceArtPath(race)}" alt="${escapeHtml(ko)} 분위기 이미지">
+      <img src="${escapeHtml(assetUrl(`../${raceArtPath(race)}`))}" alt="${escapeHtml(ko)} 분위기 이미지">
     </figure>
   </header>
   <div class="brew-reading-grid${related.length ? '' : ' no-side'}">
