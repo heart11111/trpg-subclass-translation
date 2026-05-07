@@ -1061,15 +1061,29 @@ tbody td:first-child { font-weight:700; color:var(--accent); white-space:nowrap;
   letter-spacing: 0;
 }
 .level-summary table {
+  display: table;
   margin: 0 0 18px;
   border: 1px solid rgba(62,45,24,.14);
   background: #f8f2e6;
+  table-layout: fixed;
 }
 .level-summary thead tr {
   background: #2f261c;
 }
+.level-summary th,
+.level-summary td {
+  overflow-wrap: anywhere;
+}
+.level-summary thead th,
+.level-summary tbody td {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.level-summary thead th:first-child,
 .level-summary tbody td:first-child {
-  width: 96px;
+  width: 76px;
+}
+.level-summary tbody td:first-child {
   color: #7a3f28;
 }
 .brew-article .feature-block {
@@ -1608,6 +1622,12 @@ tbody td:first-child { font-weight:700; color:var(--accent); white-space:nowrap;
   .brew-article h3:first-child {
     font-size: 1.55rem;
     line-height: 1.35;
+  }
+  .summary-head {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 6px;
+    justify-content: flex-start;
   }
   .brew-source,
   .brew-article,
