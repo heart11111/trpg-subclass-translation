@@ -975,7 +975,7 @@ tbody td:first-child { font-weight:700; color:var(--accent); white-space:nowrap;
   clip-path: polygon(7% 0, 93% 0, 93% 3%, 98% 3%, 98% 8%, 100% 8%, 100% 92%, 98% 92%, 98% 97%, 93% 97%, 93% 100%, 7% 100%, 7% 97%, 2% 97%, 2% 92%, 0 92%, 0 8%, 2% 8%, 2% 3%, 7% 3%);
 }
 .brew-art-frame.compact img {
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 4 / 5;
 }
 .brew-reading-grid {
   display: grid;
