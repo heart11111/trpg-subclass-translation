@@ -792,6 +792,21 @@ function raceKindLabel(race) {
   return '종족';
 }
 
+function isSubraceOption(race) {
+  return /서브레이스|유산/.test(race.category);
+}
+
+function parentRaceLabel(race) {
+  return race.category
+    .replace(/\s*(서브레이스|유산|옵션)$/g, '')
+    .replace(/^독립\s*종족$/, '')
+    .trim();
+}
+
+function subraceOptionLabel(race) {
+  return `${titleParts(race.title).ko} ${raceKindLabel(race)}`;
+}
+
 function raceEyebrow(race) {
   if (/티플링/.test(race.category)) return '티플링 LEGACY';
   if (/오크/.test(race.category)) return '오크 SUBRACE';
@@ -820,11 +835,18 @@ function raceFeatureNames(race) {
 
 function raceSummaryHtml(race) {
   const features = raceFeatureNames(race);
-  const rows = [
-    ['분류', race.category],
-    ['유형', raceKindLabel(race)],
-    ['핵심 특성', features.length ? features.map(displayName).join(', ') : '본문 참고'],
-  ];
+  const rows = isSubraceOption(race)
+    ? [
+        ['기본 종족', parentRaceLabel(race)],
+        ['선택지', subraceOptionLabel(race)],
+        ['유형', raceKindLabel(race)],
+        ['핵심 특성', features.length ? features.map(displayName).join(', ') : '본문 참고'],
+      ]
+    : [
+        ['분류', race.category],
+        ['유형', raceKindLabel(race)],
+        ['핵심 특성', features.length ? features.map(displayName).join(', ') : '본문 참고'],
+      ];
   return `<section class="level-summary" aria-label="종족 특성 요약">
         <div class="summary-head">
           <span>RACE TRAITS</span>
@@ -840,10 +862,14 @@ function raceSummaryHtml(race) {
 function raceCardHtml(race) {
   const { ko, en } = titleParts(race.title);
   const art = raceArtPath(race);
+  const lineage = isSubraceOption(race)
+    ? `<span class="race-card-lineage"><span>기본 종족: ${escapeHtml(parentRaceLabel(race))}</span><span>${escapeHtml(subraceOptionLabel(race))}</span></span>`
+    : `<span class="race-card-lineage"><span>종족 옵션</span></span>`;
   return `<a class="brew-card" href="races/${race.slug}.html">
     ${cardArtHtml(art, `${ko} 분위기 이미지`)}
     <strong>${escapeHtml(ko)}</strong>
     ${en ? `<em>${escapeHtml(en)}</em>` : ''}
+    ${lineage}
     <p>${escapeHtml(cardSynopsis(race.lines, race.title))}</p>
   </a>`;
 }
@@ -977,12 +1003,15 @@ const raceSections = parseRaceSections();
 const classDocuments = subclasses.filter(item => documentKind(item) === 'CLASS');
 const subclassDocuments = subclasses.filter(item => documentKind(item) === 'SUBCLASS');
 const originFeats = collectOriginFeats(backgroundSections);
+const raceDocuments = raceSections.filter(item => !isSubraceOption(item));
+const subraceDocuments = raceSections.filter(item => isSubraceOption(item));
 
 const homebrewTabItems = [
   ['classes', '클래스', classDocuments.length, '#classes'],
   ['subclasses', '서브클래스', subclassDocuments.length, '#subclasses'],
   ['feats', '피트', originFeats.length, '#feats'],
-  ['races', '종족', raceSections.length, '#races'],
+  ['races', '종족', raceDocuments.length, '#races'],
+  ['subraces', '서브레이스', subraceDocuments.length, '#subraces'],
   ['backgrounds', '백그라운드', backgroundSections.length, 'backgrounds.html'],
   ['spells', '주문', spellSections.length, 'spells.html'],
   ['credits', '출처', creditSections.length, 'credits.html'],
@@ -992,7 +1021,7 @@ function homebrewSideTabs(active = 'subclasses', { prefix = '', switchLocal = fa
   return `<aside class="homebrew-side-tabs" aria-label="홈브류 분류">
     <p class="homebrew-side-title">Homebrew</p>
     ${homebrewTabItems.map(([key, label, count, href]) => {
-      const localPane = ['classes', 'subclasses', 'feats', 'races'].includes(key);
+      const localPane = ['classes', 'subclasses', 'feats', 'races', 'subraces'].includes(key);
       const localHref = localPane ? `homebrew.html${href}` : href;
       const resolvedHref = switchLocal && localPane ? href : `${prefix}${localHref}`;
       const attrs = [
@@ -1060,18 +1089,23 @@ fs.mkdirSync(raceOutDir, { recursive: true });
 
 for (const race of raceSections) {
   const { ko, en } = titleParts(race.title);
-  const related = raceSections.filter(item => item.slug !== race.slug).slice(0, 5);
+  const isSubrace = isSubraceOption(race);
+  const parentRace = parentRaceLabel(race);
+  const detailPane = isSubrace ? 'subraces' : 'races';
+  const related = isSubrace
+    ? raceSections.filter(item => item.slug !== race.slug && isSubraceOption(item) && parentRaceLabel(item) === parentRace).slice(0, 5)
+    : raceDocuments.filter(item => item.slug !== race.slug).slice(0, 5);
   const bodyHtml = enhanceRuleHtml(mdToHtml(race.lines.slice(1).join('\n')));
   const content = `<main id="top" class="brew-detail">
   <header class="brew-detail-hero">
     <div class="brew-hero-copy">
-      <a class="crumb-link" href="../homebrew.html#races">종족 목록</a>
+      <a class="crumb-link" href="../homebrew.html#${detailPane}">${isSubrace ? '서브레이스 목록' : '종족 목록'}</a>
       <p class="eyebrow">${escapeHtml(raceEyebrow(race))}</p>
       <h1>${escapeHtml(ko)}</h1>
       ${en ? `<p class="brew-en">${escapeHtml(en)}</p>` : ''}
       <p class="brew-lede">${escapeHtml(raceIntro(race))}</p>
       <div class="brew-meta-row">
-        <span>${escapeHtml(race.category)}</span>
+        <span>${escapeHtml(isSubrace ? `기본 종족: ${parentRace}` : race.category)}</span>
         <span>${escapeHtml(raceKindLabel(race))}</span>
         <span>2024 구조</span>
       </div>
@@ -1083,7 +1117,7 @@ for (const race of raceSections) {
   <div class="brew-reading-grid${related.length ? '' : ' no-side'}">
     ${related.length ? `<aside class="brew-side">
       <div class="brew-side-box">
-        <p class="side-label">다른 종족 옵션</p>
+        <p class="side-label">${isSubrace ? `${escapeHtml(parentRace)} 선택지` : '다른 종족'}</p>
         ${related.map(item => `<a class="side-link" href="${item.slug}.html">${escapeHtml(titleParts(item.title).ko)}</a>`).join('')}
       </div>
     </aside>` : ''}
@@ -1121,7 +1155,7 @@ const homeContent = `<main id="top" class="brew-index">
     <div>
       <p class="eyebrow">DUNGEONS & DRAGONS 2024</p>
       <h1>홈브류 자료실</h1>
-      <p class="brew-lede">홈브류는 좌측 탭에서 클래스, 서브클래스, 피트, 종족, 백그라운드, 주문을 바로 오가며 읽도록 정리했습니다. 플레이 중 필요한 항목을 빠르게 찾을 수 있게 목록과 규칙 카드를 분리했습니다.</p>
+      <p class="brew-lede">홈브류는 좌측 탭에서 클래스, 서브클래스, 피트, 종족, 서브레이스, 백그라운드, 주문을 바로 오가며 읽도록 정리했습니다. 플레이 중 필요한 항목을 빠르게 찾을 수 있게 목록과 규칙 카드를 분리했습니다.</p>
     </div>
     <div class="brew-index-panel">
       <span>${classDocuments.length}</span>
@@ -1130,8 +1164,10 @@ const homeContent = `<main id="top" class="brew-index">
       <strong>서브클래스</strong>
       <span>${originFeats.length}</span>
       <strong>피트</strong>
-      <span>${raceSections.length}</span>
+      <span>${raceDocuments.length}</span>
       <strong>종족</strong>
+      <span>${subraceDocuments.length}</span>
+      <strong>서브레이스</strong>
       <span>${spellSections.length}</span>
       <strong>주문</strong>
       <span>${backgroundSections.length}</span>
@@ -1178,10 +1214,22 @@ const homeContent = `<main id="top" class="brew-index">
             <div>
               <span class="section-number">RACE</span>
               <h2>종족</h2>
-              <p>2024 캐릭터 작성에 맞춰 정리한 종족, 유산, 서브레이스 옵션입니다.</p>
+              <p>독립적으로 선택하는 종족 옵션입니다.</p>
             </div>
           </div>
-          <div class="brew-card-grid">${raceSections.map(raceCardHtml).join('\n') || '<p class="empty-note">등록된 종족 옵션이 없습니다.</p>'}</div>
+          <div class="brew-card-grid">${raceDocuments.map(raceCardHtml).join('\n') || '<p class="empty-note">등록된 종족 옵션이 없습니다.</p>'}</div>
+        </section>
+      </section>
+      <section id="subraces" class="homebrew-pane" data-pane="subraces">
+        <section class="brew-class-section compact-section">
+          <div class="brew-class-head no-art">
+            <div>
+              <span class="section-number">SUBRACE</span>
+              <h2>서브레이스</h2>
+              <p>기본 종족에 붙여 쓰는 서브레이스와 유산 옵션입니다.</p>
+            </div>
+          </div>
+          <div class="brew-card-grid">${subraceDocuments.map(raceCardHtml).join('\n') || '<p class="empty-note">등록된 서브레이스 옵션이 없습니다.</p>'}</div>
         </section>
       </section>
     </div>

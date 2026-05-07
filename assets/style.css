@@ -1909,6 +1909,27 @@ tbody td:first-child { font-weight:700; color:var(--accent); white-space:nowrap;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
+.race-card-lineage {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 8px 16px 0;
+  min-height: 26px;
+  position: relative;
+  z-index: 1;
+}
+.race-card-lineage span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 24px;
+  padding: 3px 8px;
+  border: 1px solid rgba(157,118,45,.28);
+  background: rgba(157,118,45,.08);
+  color: #5d4426;
+  font-size: .73rem;
+  line-height: 1.25;
+  font-weight: 700;
+}
 .brew-card p {
   margin: 8px 16px 18px;
   -webkit-line-clamp: 2;
