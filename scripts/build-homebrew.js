@@ -51,7 +51,7 @@ const subclassArt = {
   '국경의 맹세 - Oath of Frontiers': 'assets/images/subclasses-v2/oath-of-frontiers.jpg',
   '공허의 파수꾼 - Hollow Warden': 'assets/images/homebrew-classes/ranger.jpg',
   '감시자 - The Sentinel': 'assets/images/subclasses-v2/sentinel.jpg',
-  '마녀사냥꾼 - Witch-Hunter': 'assets/images/homebrew-classes/ranger.jpg',
+  '위치 헌터 - Witch Hunter': 'assets/images/subclasses-v2/witch-hunter.jpg',
   '모기의 회합 - Circle of the Mosquito': 'assets/images/subclasses-v2/circle-of-the-mosquito.jpg',
   '잿더미의 회합 - Circle of Ashes': 'assets/images/subclasses-v2/circle-of-ashes.jpg',
   '장난의 회합 - Circle of Mischief': 'assets/images/homebrew-classes/druid.jpg',
@@ -124,7 +124,7 @@ const slugOverrides = new Map([
   ['국경의 맹세 - Oath of Frontiers', 'oath-of-frontiers'],
   ['공허의 파수꾼 - Hollow Warden', 'hollow-warden'],
   ['감시자 - The Sentinel', 'sentinel'],
-  ['마녀사냥꾼 - Witch-Hunter', 'witch-hunter'],
+  ['위치 헌터 - Witch Hunter', 'witch-hunter'],
   ['잿더미의 회합 - Circle of Ashes', 'circle-of-ashes'],
   ['모기의 회합 - Circle of the Mosquito', 'circle-of-the-mosquito'],
   ['장난의 회합 - Circle of Mischief', 'circle-of-mischief'],
@@ -158,7 +158,6 @@ const slugOverrides = new Map([
 
 const removedSubclassTitles = new Set([
   '공허의 파수꾼 - Hollow Warden',
-  '마녀사냥꾼 - Witch-Hunter',
   '악몽의 회합 - Circle of Nightmares',
   '장난의 회합 - Circle of Mischief',
   '야전 의무병 - Field Medic',
@@ -779,6 +778,7 @@ const cardSynopsisOverrides = {
   '브리딩의 회합 - Circle of Breeding': '생체 정수를 수집해 정수 영혼으로 투사하는 드루이드 회합입니다.',
   '어린양의 회합 - Circle of the Lamb': '포근한 안식과 생명력 공유로 동료를 지키는 드루이드 회합입니다.',
   '전장의 의사 - Physician': '의학, 약학, 독물학을 암습과 응급 처치에 결합한 로그 서브클래스입니다.',
+  '위치 헌터 - Witch Hunter': '사냥꾼의 표식을 심판의 낙인으로 바꾸어 주문시전자와 이단자를 추적하는 레인저 서브클래스입니다.',
   '와이번본 - Wyvernborn': '비행과 독침 꼬리를 얻는 와이번 혈통 드래곤본 변형 옵션입니다.',
 };
 
