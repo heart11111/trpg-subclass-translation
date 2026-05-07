@@ -153,6 +153,7 @@ const slugOverrides = new Map([
   ['마우스포크 - Mousefolk', 'mousefolk'],
   ['라크샤사 - Rakshasa', 'rakshasa-tiefling'],
   ['타나루크 - Tanarukk', 'tanarukk'],
+  ['와이번본 - Wyvernborn', 'wyvernborn'],
 ]);
 
 const removedSubclassTitles = new Set([
@@ -769,6 +770,7 @@ const raceArt = {
   '마우스포크 - Mousefolk': 'assets/images/races-v2/mousefolk.jpg',
   '라크샤사 - Rakshasa': 'assets/images/races-v2/rakshasa.jpg',
   '타나루크 - Tanarukk': 'assets/images/races-v2/tanarukk.jpg',
+  '와이번본 - Wyvernborn': 'assets/images/races-v2/wyvernborn.jpg',
 };
 
 const cardSynopsisOverrides = {
@@ -776,6 +778,7 @@ const cardSynopsisOverrides = {
   '재야 마법 - Hedge Magic': '정규 학파 밖에서 낮은 마법을 실전으로 익힌 위저드 서브클래스입니다.',
   '브리딩의 회합 - Circle of Breeding': '생체 정수를 수집해 정수 영혼으로 투사하는 드루이드 회합입니다.',
   '어린양의 회합 - Circle of the Lamb': '포근한 안식과 생명력 공유로 동료를 지키는 드루이드 회합입니다.',
+  '와이번본 - Wyvernborn': '비행과 독침 꼬리를 얻는 와이번 혈통 드래곤본 변형 옵션입니다.',
 };
 
 function raceArtPath(race, prefix = '') {
@@ -791,6 +794,7 @@ function raceKindLabel(race) {
 function raceEyebrow(race) {
   if (/티플링/.test(race.category)) return '티플링 LEGACY';
   if (/오크/.test(race.category)) return '오크 SUBRACE';
+  if (/드래곤본/.test(race.category)) return '드래곤본 SUBRACE';
   return 'SPECIES';
 }
 
@@ -809,7 +813,7 @@ function raceFeatureNames(race) {
       return match ? match[1] : null;
     })
     .filter(Boolean)
-    .filter(name => !/(털북숭이|집과 난로|장인과 모험가|고결하고|이름|특성|혈통 선택)/.test(name))
+    .filter(name => !/(털북숭이|집과 난로|장인과 모험가|고결하고|이름|특성|혈통 선택|총평)/.test(name))
     .slice(0, 8);
 }
 
