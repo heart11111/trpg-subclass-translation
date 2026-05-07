@@ -37,7 +37,7 @@
 - 로그
   - 조디악 아키타입 - Zodiac Archetype
   - 사보추어 - Saboteur
-  - 군의관 - Physician
+  - 내과의 - Physician
   - 야전 의무병 - Field Medic
 - 바드
   - 추도사 대학 - College of Eulogies
@@ -2312,9 +2312,9 @@
 
 ---
 
-### 군의관 - Physician
+### 내과의 - Physician
 
-군의관은 의학, 약학, 독물학, 해부학을 전투 기술과 결합한 로그입니다. 이들은 아군을 회복시키고 보호하는 동시에, 적의 신경, 혈류, 호흡, 시야를 정밀하게 망가뜨립니다.
+내과의는 의학, 약학, 독물학, 해부학을 전투 기술과 결합한 로그입니다. 이들은 아군을 회복시키고 보호하는 동시에, 적의 신경, 혈류, 호흡, 시야를 정밀하게 망가뜨립니다.
 
 이 변환본은 현행 로그 구조에 맞춰 3, 9, 13, 17레벨 특징으로 정리하고, 5레벨에 얻는 교묘한 일격 - Cunning Strike에 추가 선택지를 붙였습니다.
 
@@ -3750,7 +3750,7 @@
 - 내면의 빛의 전사 - Warrior of the Inner Light - 기존 번역본
 - 조디악 아키타입 - Zodiac Archetype - Monarch's guild
 - 사보추어 - Saboteur - 사용자 제공 원본 자료
-- 군의관 - Physician - 사용자 제공 원본 자료
+- 내과의 - Physician - 사용자 제공 원본 자료
 - 스워시버클러 - Swashbuckler - [D&D Beyond 원문](https://www.dndbeyond.com/subclasses/2194307-swashbuckler-2024)
 - 야전 의무병 - Field Medic - ArgenisDBarrios, GM Binder
 - 추도사 대학 - College of Eulogies - 사용자 제공 원본 자료
