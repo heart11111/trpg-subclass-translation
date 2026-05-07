@@ -901,7 +901,7 @@ function levelSummaryHtml(markdownLines) {
 function enhanceRuleHtml(html) {
   return html
     .replace(/<p>((?:쉽게 말해|다만|원문상|보통은|즉,|주의:)[\s\S]*?)<\/p>/g, '<p class="rule-note">$1</p>')
-    .replace(/<section id="([^"]+)" class="level4">\s*<h4>([\s\S]*?)<\/h4>/g, '<section id="$1" class="level4 feature-block"><h4>$2</h4>');
+    .replace(/<section\s+id="([^"]+)"\s+class="level4">\s*<h4>([\s\S]*?)<\/h4>/g, '<section id="$1" class="level4 feature-block"><h4>$2</h4>');
 }
 
 function synopsis(markdownLines) {
