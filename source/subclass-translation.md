@@ -4004,47 +4004,20 @@
 
 #### 사이언 주문 목록 - Psion Spell List
 
-아래 주문들은 사이언이 선택할 수 있는 주문이다. `*`는 `Xanathar's Guide to Everything`, `**`는 `Tasha's Cauldron of Everything`, `LL`은 laserllama Spell Compendium 출처다.
+아래 주문들은 사이언이 선택할 수 있는 주문이다. `LL`은 laserllama Spell Compendium 출처의 주문이다. 공식 주문과 이름이 겹치는 laserllama 대체판은 `LL 대체`로 구분했다.
 
-##### 소마법, 0레벨 - Cantrips
-
-`사이오닉 방호 - blade ward LL 대체`, `감화의 속삭임 - friends LL 대체`, `기술 인도 - guidance LL 대체`, `빛 - light`, `마법사의 손 - mage hand`, `마법 돌 - magic stone`, `전언 - message`, `정신 파편 - mind sliver **`, `정신 찌르기 - mind thrust LL`, `하급 환영 - minor illusion`, `신비 망치 - mystic hammer LL`, `사이오닉 일격 - psionic strike LL`, `죽음 방지 - spare the dying`, `칼날 고리 - sword burst LL 대체`, `기적술 - thaumaturgy`, `망자의 종소리 - toll the dead`, `예지 일격 - true strike LL 대체`
-
-##### 1레벨
-
-`투척 - catapult *`, `공포 유발 - cause fear *`, `인간형 매혹 - charm person`, `명령 - command`, `언어 이해 - comprehend languages`, `마법 탐지 - detect magic`, `변장 - disguise self`, `불협화음 속삭임 - dissonant whispers`, `에테르 닻 - ethereal anchor LL`, `요정불 - faerie fire`, `섬뜩한 웃음 - hideous laughter`, `이드 암시 - id insinuation LL`, `식별 - identify`, `부유 도약 - jump LL 대체`, `마법 화살 - magic missile`, `역장 방패 - shield LL 대체`, `수면 - sleep`
-
-##### 2레벨
-
-`실명/청각상실 - blindness/deafness`, `흐릿해짐 - blur`, `감정 진정 - calm emotions`, `광기의 왕관 - crown of madness`, `생각 탐지 - detect thoughts`, `확대/축소 - enlarge/reduce`, `인간형 포박 - hold person`, `투명화 - invisibility`, `공중부양 - levitate`, `야수와 식물 탐지 - locate creature LL 대체`, `정신 가시 - mind spike *`, `정신 채찍 - mind whip **`, `거울상 - mirror image`, `안개 걸음 - misty step`, `신비 창 - mystic spear LL`, `환영의 힘 - phantasmal force`, `투명체 보기 - see invisibility`, `암시 - suggestion`
-
-##### 3레벨
-
-`점멸 - blink`, `대뇌 폭발 - cerebral blast LL`, `천리안 - clairvoyance`, `적의 난입 - enemies abound *`, `공포 - fear`, `죽은 척하기 - feign death`, `비행 - fly`, `가속 - haste`, `최면 문양 - hypnotic pattern LL 대체`, `지성 요새 - intellect fortress **`, `생명 이전 - life transference *`, `상급 환영 - major image`, `탐지 방해 - nondetection`, `전송 - sending`, `감속 - slow`, `유령 통로 - spectral passage LL`, `언어 통달 - tongues`, `물 위 걷기 - water walk`
-
-##### 4레벨
-
-`비전의 눈 - arcane eye`, `괴물 매혹 - charm monster *`, `강박 - compulsion`, `혼란 - confusion`, `야수 지배 - dominate creature LL 대체`, `차원문 - dimension door`, `자아 채찍 - ego scourge LL`, `이동의 자유 - freedom of movement`, `상급 투명화 - greater invisibility`, `환영 살해자 - phantasmal killer`, `탄성 구체 - resilient sphere`
-
-##### 5레벨
-
-`비전의 손 - arcane hand`, `꿈 - dream`, `원거리 걸음 - far step *`, `속박 명령 - geas`, `괴물 포박 - hold monster`, `기억 수정 - modify memory`, `정신 압살 - psychic crush LL`, `점술 관찰 - scrying`, `기술 강화 - skill empowerment *`, `시냅스 정전기 - synaptic static *`, `염동력 - telekinesis`, `정신 연결 - telepathic bond`, `파괴 가능한 역장벽 - wall of force LL 대체`
-
-##### 6레벨
-
-`비전 관문 - arcane gate`, `은줄 별계 투사 - astral projection LL 대체`, `마안 - eyebite`, `무적의 구체 - globe of invulnerability`, `대규모 암시 - mass suggestion`, `정신 감옥 - mental prison *`, `사이오닉 억압 - psionic oppression LL`, `흩뿌리기 - scatter *`, `진실 보기 - true seeing`
-
-##### 7레벨
-
-`에테르화 - etherealness`, `파괴 가능한 역장 감옥 - forcecage LL 대체`, `차원 이동 - plane shift`, `영상 투사 - project image`, `중력 반전 - reverse gravity`, `격리 - sequester`, `순간이동 - teleport`, `짧은 시간 정지 - time stop LL 대체`
-
-##### 8레벨
-
-`대마법장 - antimagic field`, `반감 각인 - antipathy LL 대체`, `정신박약 - feeblemind`, `광기의 어둠 - maddening darkness *`, `정신 보호 - mind blank`, `장거리 정신감응 - telepathy`
-
-##### 9레벨
-
-`예지 - foresight`, `무적화 - invulnerability *`, `정신 비명 - psychic scream *`, `심연 공포 환영 - weird LL 대체`
+| 주문 레벨 | 주문 |
+|---|---|
+| 소마법 | `사이오닉 방호 - blade ward LL 대체`, `감화의 속삭임 - friends LL 대체`, `기술 인도 - guidance LL 대체`, `빛 - light`, `마법사의 손 - mage hand`, `마법 돌 - magic stone`, `전언 - message`, `정신 파편 - mind sliver`, `정신 찌르기 - mind thrust LL`, `하급 환영 - minor illusion`, `신비 망치 - mystic hammer LL`, `사이오닉 일격 - psionic strike LL`, `죽음 방지 - spare the dying`, `칼날 고리 - sword burst LL 대체`, `기적술 - thaumaturgy`, `망자의 종소리 - toll the dead`, `예지 일격 - true strike LL 대체` |
+| 1레벨 | `투척 - catapult`, `공포 유발 - cause fear`, `인간형 매혹 - charm person`, `명령 - command`, `언어 이해 - comprehend languages`, `마법 탐지 - detect magic`, `변장 - disguise self`, `불협화음 속삭임 - dissonant whispers`, `에테르 닻 - ethereal anchor LL`, `요정불 - faerie fire`, `섬뜩한 웃음 - hideous laughter`, `이드 암시 - id insinuation LL`, `식별 - identify`, `부유 도약 - jump LL 대체`, `마법 화살 - magic missile`, `역장 방패 - shield LL 대체`, `수면 - sleep` |
+| 2레벨 | `실명/청각상실 - blindness/deafness`, `흐릿해짐 - blur`, `감정 진정 - calm emotions`, `광기의 왕관 - crown of madness`, `생각 탐지 - detect thoughts`, `확대/축소 - enlarge/reduce`, `인간형 포박 - hold person`, `투명화 - invisibility`, `공중부양 - levitate`, `야수와 식물 탐지 - locate creature LL 대체`, `정신 가시 - mind spike`, `정신 채찍 - mind whip`, `거울상 - mirror image`, `안개 걸음 - misty step`, `신비 창 - mystic spear LL`, `환영의 힘 - phantasmal force`, `투명체 보기 - see invisibility`, `암시 - suggestion` |
+| 3레벨 | `점멸 - blink`, `대뇌 폭발 - cerebral blast LL`, `천리안 - clairvoyance`, `적의 난입 - enemies abound`, `공포 - fear`, `죽은 척하기 - feign death`, `비행 - fly`, `가속 - haste`, `최면 문양 - hypnotic pattern LL 대체`, `지성 요새 - intellect fortress`, `생명 이전 - life transference`, `상급 환영 - major image`, `탐지 방해 - nondetection`, `전송 - sending`, `감속 - slow`, `유령 통로 - spectral passage LL`, `언어 통달 - tongues`, `물 위 걷기 - water walk` |
+| 4레벨 | `비전의 눈 - arcane eye`, `괴물 매혹 - charm monster`, `강박 - compulsion`, `혼란 - confusion`, `야수 지배 - dominate creature LL 대체`, `차원문 - dimension door`, `자아 채찍 - ego scourge LL`, `이동의 자유 - freedom of movement`, `상급 투명화 - greater invisibility`, `환영 살해자 - phantasmal killer`, `탄성 구체 - resilient sphere` |
+| 5레벨 | `비전의 손 - arcane hand`, `꿈 - dream`, `원거리 걸음 - far step`, `속박 명령 - geas`, `괴물 포박 - hold monster`, `기억 수정 - modify memory`, `정신 압살 - psychic crush LL`, `점술 관찰 - scrying`, `기술 강화 - skill empowerment`, `시냅스 정전기 - synaptic static`, `염동력 - telekinesis`, `정신 연결 - telepathic bond`, `파괴 가능한 역장벽 - wall of force LL 대체` |
+| 6레벨 | `비전 관문 - arcane gate`, `은줄 별계 투사 - astral projection LL 대체`, `마안 - eyebite`, `무적의 구체 - globe of invulnerability`, `대규모 암시 - mass suggestion`, `정신 감옥 - mental prison`, `사이오닉 억압 - psionic oppression LL`, `흩뿌리기 - scatter`, `진실 보기 - true seeing` |
+| 7레벨 | `에테르화 - etherealness`, `파괴 가능한 역장 감옥 - forcecage LL 대체`, `차원 이동 - plane shift`, `영상 투사 - project image`, `중력 반전 - reverse gravity`, `격리 - sequester`, `순간이동 - teleport`, `짧은 시간 정지 - time stop LL 대체` |
+| 8레벨 | `대마법장 - antimagic field`, `반감 각인 - antipathy LL 대체`, `정신박약 - feeblemind`, `광기의 어둠 - maddening darkness`, `정신 보호 - mind blank`, `장거리 정신감응 - telepathy` |
+| 9레벨 | `예지 - foresight`, `무적화 - invulnerability`, `정신 비명 - psychic scream`, `심연 공포 환영 - weird LL 대체` |
 
 ##### 확장 주문 목록 - Psion: Expanded Spell List
 
@@ -4141,7 +4114,7 @@
 
 | 사이언 레벨 | 주문 |
 |---:|---|
-| 1 | `투척 - catapult *` |
+| 1 | `투척 - catapult` |
 | 3 | `공중부양 - levitate` |
 | 5 | `유령 통로 - spectral passage LL` |
 | 7 | `탄성 구체 - resilient sphere` |
@@ -4325,7 +4298,7 @@
 | 사이언 레벨 | 주문 |
 |---:|---|
 | 1 | `소리 없는 환영 - silent image` |
-| 3 | `그림자 칼날 - shadow blade *` |
+| 3 | `그림자 칼날 - shadow blade` |
 | 5 | `상급 환영 - major image` |
 | 7 | `환영 지형 - hallucinatory terrain` |
 | 9 | `창조 - creation` |
@@ -4392,7 +4365,7 @@
 | 3 | `광기의 왕관 - crown of madness` |
 | 5 | `대뇌 폭발 - cerebral blast LL` |
 | 7 | `혼란 - confusion` |
-| 9 | `시냅스 정전기 - synaptic static *` |
+| 9 | `시냅스 정전기 - synaptic static` |
 
 ##### 사이오닉 분출 - Psionic Eruption
 
