@@ -36,12 +36,14 @@ const classArt = {
   '소서러': 'assets/images/homebrew-tome-v2.jpg',
   '위저드': 'assets/images/homebrew-classes/wizard.jpg',
   '위치': 'assets/images/homebrew-classes/warlock.jpg',
+  '사이언': 'assets/images/subclasses-v2/psion.png',
 };
 
 const subclassArt = {
   '마녀 집회 후원자 - Coven Patron: Spin the Threads of Fate': 'assets/images/subclasses-v2/coven-patron.jpg',
   '진홍 갈증의 워록 - Warlock of the Crimson Thirst': 'assets/images/subclasses-v2/crimson-thirst-warlock.jpg',
   '크라켄 - Kraken': 'assets/images/subclasses-v2/kraken.jpg',
+  '정신의 칼날 - The Mind Blade': 'assets/images/subclasses-v2/mind-blade.png',
   '전투 의무병 - Combat Medic': 'assets/images/subclasses-v2/combat-medic.jpg',
   '질풍 - Zephyr': 'assets/images/subclasses-v2/zephyr.jpg',
   '드래곤 권역 - Dragon Domain': 'assets/images/subclasses-v2/dragon-domain.jpg',
@@ -78,6 +80,7 @@ const subclassArt = {
   '전격술사 - Electromancer': 'assets/images/subclasses-v2/electromancer.jpg',
   '재야 마법 - Hedge Magic': 'assets/images/subclasses-v2/hedge-magic.jpg',
   '위치 - Witch': 'assets/images/subclasses-v2/witch.jpg',
+  '사이언 - The Psion': 'assets/images/subclasses-v2/psion.png',
 };
 
 const classNotes = {
@@ -94,6 +97,7 @@ const classNotes = {
   '소서러': '타고난 비전 기원을 통해 주문과 몸 자체를 변화시키는 선택지입니다.',
   '위저드': '학파 자체의 계산과 환경 조작이 강한 주문 사용자 선택지입니다.',
   '위치': '사역마, 주술, 포션, 달의 코븐을 중심으로 움직이는 자연 비전 계열 완전 클래스입니다.',
+  '사이언': '내면의 사이오닉 힘으로 주문, 감정, 육체, 현실 조작을 다루는 완전 클래스입니다.',
 };
 
 const slugOverrides = new Map([
@@ -110,11 +114,13 @@ const slugOverrides = new Map([
   ['소서러', 'sorcerer'],
   ['위저드', 'wizard'],
   ['위치', 'witch'],
+  ['사이언', 'psion-class'],
   ['독사과', 'poison-apple'],
   ['아타메 반사', 'athame-reflection'],
   ['마녀 집회 후원자 - Coven Patron: Spin the Threads of Fate', 'coven-patron'],
   ['진홍 갈증의 워록 - Warlock of the Crimson Thirst', 'crimson-thirst-warlock'],
   ['크라켄 - Kraken', 'kraken'],
+  ['정신의 칼날 - The Mind Blade', 'mind-blade'],
   ['전투 의무병 - Combat Medic', 'combat-medic'],
   ['질풍 - Zephyr', 'zephyr'],
   ['드래곤 권역 - Dragon Domain', 'dragon-domain'],
@@ -151,6 +157,7 @@ const slugOverrides = new Map([
   ['전격술사 - Electromancer', 'electromancer'],
   ['재야 마법 - Hedge Magic', 'hedge-magic'],
   ['위치 - Witch', 'witch'],
+  ['사이언 - The Psion', 'psion'],
   ['마우스포크 - Mousefolk', 'mousefolk'],
   ['라크샤사 - Rakshasa', 'rakshasa-tiefling'],
   ['타나루크 - Tanarukk', 'tanarukk'],
@@ -798,6 +805,8 @@ const raceArt = {
 };
 
 const cardSynopsisOverrides = {
+  '사이언 - The Psion': '내면의 사이오닉 힘으로 주문과 현실 조작을 발현하는 laserllama의 완전 클래스입니다.',
+  '정신의 칼날 - The Mind Blade': 'psi 포인트와 지능 기반 사이오닉 검술로 현실을 베어내는 파이터 무술 원형입니다.',
   '내면의 빛의 전사 - Warrior of the Inner Light': '빛과 생명력을 무술 에너지로 다루는 몽크 서브클래스입니다.',
   '재야 마법 - Hedge Magic': '정규 학파 밖에서 낮은 마법을 실전으로 익힌 위저드 서브클래스입니다.',
   '브리딩의 회합 - Circle of Breeding': '생체 정수를 수집해 정수 영혼으로 투사하는 드루이드 회합입니다.',
@@ -987,7 +996,7 @@ function artPathFor(className, prefix = '', title = '') {
 }
 
 function documentKind(subclass) {
-  return subclass.title === '위치 - Witch' ? 'CLASS' : 'SUBCLASS';
+  return ['위치 - Witch', '사이언 - The Psion'].includes(subclass.title) ? 'CLASS' : 'SUBCLASS';
 }
 
 function subclassCard(subclass) {
@@ -1209,7 +1218,7 @@ const homeContent = `<main id="top" class="brew-index">
             <div>
               <span class="section-number">CLASS</span>
               <h2>클래스</h2>
-              <p>완전 클래스 문서입니다. 현재는 위치 - Witch를 별도 클래스 문서로 관리합니다.</p>
+              <p>완전 클래스 문서입니다. 위치 - Witch와 사이언 - The Psion을 별도 클래스 문서로 관리합니다.</p>
             </div>
           </div>
           <div class="brew-card-grid">${classDocuments.map(subclassCard).join('\n') || '<p class="empty-note">등록된 클래스가 없습니다.</p>'}</div>
