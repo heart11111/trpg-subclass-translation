@@ -1108,6 +1108,88 @@ tbody td:first-child { font-weight:700; color:var(--accent); white-space:nowrap;
   background: #f1e6d4;
   color: #4f3a24;
 }
+.equipment-choice-list {
+  display: grid;
+  gap: 0;
+  margin: 14px 0 18px;
+  padding: 0;
+  list-style: none;
+  border-top: 1px solid rgba(62,45,24,.16);
+}
+.equipment-choice-list > li {
+  display: grid;
+  grid-template-columns: minmax(112px, 150px) minmax(0, 1fr);
+  gap: 12px;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(62,45,24,.16);
+}
+.equipment-choice-list strong {
+  display: inline;
+  margin: 0;
+  color: #3e2d18;
+}
+.equipment-fixed-list {
+  margin: 12px 0 18px;
+}
+.spell-chip-group {
+  margin: 18px 0 22px;
+  padding-top: 4px;
+}
+.spell-chip-group h5 {
+  margin: 0 0 10px;
+  color: #4b281d;
+  font-size: .98rem;
+}
+.spell-level-table td:first-child {
+  width: 88px;
+  color: #6e2f20;
+  font-weight: 700;
+  white-space: nowrap;
+}
+.spell-chip-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  align-items: flex-start;
+}
+.spell-chip {
+  display: inline-flex;
+  align-items: center;
+  max-width: 100%;
+  min-height: 30px;
+  padding: 5px 9px;
+  border: 1px solid rgba(62,45,24,.16);
+  border-radius: 6px;
+  background: #f4ead8;
+  color: #2b2118;
+  font-family: Consolas, 'Cascadia Mono', 'Noto Serif KR', monospace;
+  font-size: .84rem;
+  line-height: 1.35;
+  overflow-wrap: anywhere;
+}
+.spell-chip-homebrew {
+  border-color: rgba(126,61,36,.42);
+  background: #ead3b1;
+  color: #351d12;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: inset 0 -2px 0 rgba(126,61,36,.2);
+}
+.spell-chip-homebrew::after {
+  content: '번역';
+  margin-left: 7px;
+  padding: 2px 5px;
+  border-radius: 4px;
+  background: #7e3d24;
+  color: #fff8e8;
+  font-family: 'Noto Serif KR', serif;
+  font-size: .68rem;
+  line-height: 1;
+}
+.spell-chip-homebrew:hover {
+  border-color: rgba(126,61,36,.78);
+  background: #e3c596;
+}
 .brew-article h3:first-child {
   margin-top: 0;
   color: #2a2015;
@@ -1657,6 +1739,16 @@ tbody td:first-child { font-weight:700; color:var(--accent); white-space:nowrap;
   .credits-teaser {
     flex-direction: column;
     align-items: stretch;
+  }
+  .spell-level-table td:first-child {
+    width: auto;
+  }
+  .spell-chip {
+    width: 100%;
+  }
+  .equipment-choice-list > li {
+    grid-template-columns: 1fr;
+    gap: 4px;
   }
 }
 
