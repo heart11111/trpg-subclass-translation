@@ -1,0 +1,361 @@
+UNEARTHED ARCANA 2026
+MYSTIC SUBCLASSES
+This playtest document is part of a series of                           WARRIOR OF THE MYSTIC ARTS (MONK)
+Unearthed Arcana articles that present material
+designed for upcoming products. The material here                       Weave Martial and Mystic Arts
+uses the rules in the 2024 Player’s Handbook.
+                                                                        Warriors of the Mystic Arts wield magic to
+                                                                        supplement their martial skill. They harness their
+WHAT’S INSIDE                                                           supernatural focus to enhance their magical and
+                                                                        physical abilities.
+This document presents four new subclasses:
+
+• Monk (Warrior of the Mystic Arts)                                     LEVEL 3: SPELLCASTING
+• Paladin (Oath of the Spellguard)                                      You have learned to cast spells. See the Player’s
+• Rogue (Magic Stealer)                                                 Handbook for the rules on spellcasting. The
+• Warlock (Vestige Patron)                                              information below details how you use those rules
+                                                                        as a Warrior of the Mystic Arts.
+THIS IS PLAYTEST MATERIAL                                                 Cantrips. You know two cantrips of your choice
+This article is presented for playtesting and feedback.                 from the Sorcerer spell list. Blade Ward and
+The options here are experimental and in draft form.                    Thunderclap are recommended. Whenever you gain
+They aren’t officially part of the game. Your feedback                  a Monk level, you can replace one of these cantrips
+will help determine whether we adopt it as official.                    with another cantrip of your choice from the
+   How to Playtest This UA. We invite you to try out                    Sorcerer spell list.
+this material in play. To play with this material, you                    When you reach Monk level 10, you learn another
+may either incorporate it into your campaign or run                     Sorcerer cantrip of your choice.
+one or more special playtest sessions. For such a                         Spell Slots. The Warrior of the Mystic Arts
+                                                                        Spellcasting table shows how many spell slots you
+session, you may create an adventure of your own or
+                                                                        have to cast your level 1+ spells. You regain all
+use a short adventure from a source like Dragon
+                                                                        expended slots when you finish a Long Rest.
+Delves.
+   Power Level. The character options you read here                     WARRIOR OF THE MYSTIC ARTS SPELLCASTING
+might be more or less powerful than options in the
+                                                                          Monk      Prepared      —Spell Slots per Spell Level—
+2024 Player’s Handbook. If a design survives
+                                                                          Level       Spells       1        2       3        4
+playtesting, we adjust its power to the desirable level
+                                                                            3           3          2       —        —       —
+before publication. This means an option could be
+                                                                            4           4          3       —        —       —
+more or less powerful in its final form.
+                                                                            5           4          3       —        —       —
+   Feedback. The best way for you to give us feedback
+                                                                            6           4          3       —        —       —
+on this material is in the survey we’ll release on D&D
+                                                                            7           5          4        2       —       —
+Beyond. If we make this material official, it will be
+                                                                            8           6          4        2       —       —
+refined based on your feedback, and then it will appear
+                                                                            9           6          4        2       —       —
+in a D&D book.
+                                                                           10           7          4        3       —       —
+   Providing feedback on this document is one way you
+                                                                           11           8          4        3       —       —
+can help shape the future of D&D!
+                                                                           12           8          4        3       —       —
+                                                                           13           9          4        3       2       —
+                                                                           14          10          4        3       2       —
+                                                                           15          10          4        3       2       —
+                                                                           16          11          4        3       3       —
+                                                                           17          11          4        3       3       —
+                                                                           18          11          4        3       3       —
+                                                                           19          12          4        3       3        1
+                                                                           20          13          4        3       3        1
+
+
+
+
+©2026 Wizards of the Coast LLC. Permission granted to print and photocopy this page for personal use.                             1
+   Prepared Spells of Level 1+. You prepare the list                    LEVEL 6: MYSTIC FIGHTING STYLE
+of level 1+ spells that are available for you to cast
+                                                                        When you take the Attack action on your turn, you
+with this feature. To start, choose three level 1 spells
+                                                                        can replace one of the attacks with a casting of one
+from the Sorcerer spell list. Jump, Magic Missile, and
+                                                                        of your Sorcerer cantrips that has a casting time of
+Shield are recommended.
+                                                                        an action.
+   The number of spells on your list increases as you
+gain Monk levels, as shown in the Prepared Spells
+column of the Warrior of the Mystic Arts Spellcasting                   LEVEL 11: CENTERED FOCUS
+table. Whenever that number increases, choose                           Whenever you expend a Focus Point to use Flurry of
+additional spells from the Sorcerer spell list until the                Blows, Patient Defense, or Step of the Wind, you
+number of spells on your list matches the number on                     have Advantage on any saving throw you make to
+the table. The chosen spells must be of a level for                     maintain Concentration until the start of your next
+which you have spell slots. For example, if you’re a                    turn.
+level 7 Monk, your list of prepared spells can include
+five Sorcerer spells of levels 1 and 2 in any                           LEVEL 17: IMPROVED MYSTIC FIGHTING STYLE
+combination.                                                            When you take the Attack action on your turn, you
+   Changing Your Prepared Spells. Whenever you                          can replace two of the attacks with a casting of one
+gain a Monk level, you can replace one spell on your                    of your level 1 or 2 Sorcerer spells that has a casting
+list with another Sorcerer spell for which you have                     time of an action.
+spell slots.
+   Spellcasting Ability. Wisdom is your spellcasting
+ability for your Sorcerer spells.
+   Spellcasting Focus. You can use an Arcane Focus
+as a Spellcasting Focus for your Sorcerer spells.
+   Multiclassing. If you multiclass and have the
+Spellcasting feature from more than one class, add
+one third of your Monk levels (round down) to
+determine your available spell slots.
+
+LEVEL 6: MYSTIC FOCUS
+You keep your magical power and martial focus in
+perfect balance, allowing you to convert spell slots
+into Focus Points, or convert Focus Points into spell
+slots.
+  Converting Spell Slots to Focus Points. You can
+expend a spell slot to regain a number of expended
+Focus Points equal to the slot’s level (no action
+required).
+  Recovering Spell Slots. As a Bonus Action, you can
+transform unexpended Focus Points to recover one
+expended spell slot. The Recovering Spell Slots table
+shows the cost of recovering a spell slot of a given
+level, and it lists the minimum Monk level you must
+be to recover a slot. You can recover a spell slot no
+higher than level 4.
+
+RECOVERING SPELL SLOTS
+   Spell Slot      Focus Point Cost         Min. Monk
+     Level                                    Level
+       1                   2                     6
+       2                   3                     7
+       3                   5                   13
+       4                   6                   19
+
+
+
+
+©2026 Wizards of the Coast LLC. Permission granted to print and photocopy this page for personal use.                          2
+OATH OF THE SPELLGUARD (PALADIN)                                        LEVEL 7: AURA OF CONCENTRATION
+                                                                        Your aura of protection fosters mental focus. You
+Protect Your Allies from Villainous Magic                               and your allies have Advantage on Constitution
+Paladins who take the Oath of the Spellguard are                        saving throws to maintain Concentration while in
+sworn to battle those who use magic to harm others.                     your Aura of Protection.
+They often serve as bodyguards to upstanding
+mages, but their most important role is protecting                      LEVEL 15: SPELL-BREAKING BLADE
+allies from devastating magical attacks. Those who                      Immediately after you hit a creature with your
+swear this oath ensure that villains who misuse                         Spellguard Strike, you can cast Counterspell as part
+magic are brought to justice.                                           of the same Reaction.
+   These paladins share the following tenets:                             When you cast Counterspell with a spell slot, that
+                                                                        slot isn’t expended if the spell fails to stop a spell.
+• Protect the innocent from wicked mages.
+• Prevent magic from falling into villains’ hands.                      LEVEL 20: ETERNAL SPELLGUARD
+• Protect mages who use magic honorably.
+                                                                        As a Bonus Action, you can empower your Aura of
+LEVEL 3: GUARDIAN BOND                                                  Protection, granting the benefits below for 1 minute
+                                                                        or until you end them (no action required). Once you
+As a Magic Action, you can expend one use of your                       use this feature, you can’t use it again until you finish
+Channel Divinity to forge a divine bond with a                          a Long Rest. You can restore your use of this ability
+willing creature within 5 feet of yourself. The bond                    by expending a level 5 spell slot (no action required).
+lasts for 1 hour or until you have the Unconscious                         Bodyguard. While the target of your Guardian
+condition. For the duration, while the bonded                           Bond is in the aura, that creature has Resistance to
+creature is within your reach and is hit by an attack                   all damage.
+roll, you can take a Reaction to add your Charisma                         Protection from Magic. You and your allies in the
+modifier (minimum of +1) to that creature’s AC,                         aura have Advantage on saving throws against
+possibly causing the attack to miss.                                    spells.
+  You can end your divine bond at any time (no                             Spell Ward. Spell attack rolls against you and your
+action required). If you already have a divine bond                     allies in the aura have Disadvantage.
+when you forge a new one, the previous bond ends.
+
+LEVEL 3: OATH OF THE SPELLGUARD SPELLS
+The magic of your oath ensures you always have
+certain spells ready; when you reach a Paladin level
+specified in the Oath of the Spellguard Spells table,
+you thereafter always have the listed spells
+prepared.
+
+OATH OF THE SPELLGUARD SPELLS
+  Paladin Level     Spells
+        3           Detect Magic, Shield
+        5           See Invisibility, Silence
+        9           Counterspell, Dispel Magic
+       13           Freedom of Movement, Otiluke’s
+                    Resilient Sphere
+        17          Circle of Power, Hallow
+
+
+LEVEL 3: SPELLGUARD STRIKE
+When you see a creature within your reach casting a
+spell with Verbal, Somatic, or Material components,
+you can take a Reaction to make a melee attack with
+a weapon or an Unarmed Strike against that
+creature.
+
+
+
+
+©2026 Wizards of the Coast LLC. Permission granted to print and photocopy this page for personal use.                             3
+MAGIC STEALER (ROGUE)                                                   LEVEL 13: OCCULT SHROUD
+                                                                        Whenever you finish a Long Rest, you can cast the
+Steal Magical Power to Empower Yourself                                 Nondetection spell, using Intelligence as your
+While ordinary thieves are cutting purses and                           spellcasting ability. When you do so, you can target
+burgling homes, a Magic Stealer is after a much more                    only yourself, and the duration increases to 24
+valuable prize: magic. The Magic Stealer preys on                       hours.
+spellcasters, repurposing their magic and eluding
+divination spells to take magical power at the point                    LEVEL 13: IMPROVED DRAIN MAGIC
+of a knife.                                                             You can now use Drain Magic as a Bonus Action. In
+                                                                        addition, when you use Drain Magic, you can end one
+LEVEL 3: EMPOWER SNEAK ATTACK                                           ongoing level 1, level 2, or level 3 spell on the target,
+Immediately after a creature you can see within 30                      and the target recovers one expended spell slot of
+feet of you casts a level 1+ spell, you can take a                      level 3 or lower (the target’s choice).
+Reaction to absorb magical energy from the spell.
+When you do so, until the end of your next turn, the                    LEVEL 17: ELDRITCH IMPLOSION
+next time you hit with your Sneak Attack you deal                       When you use Empower Sneak Attack, you can force
+extra Force damage. To determine the extra damage,                      the target to make a Constitution saving throw (DC 8
+roll a number of d6s equal to the spell’s level, and                    plus your Dexterity modifier and Proficiency Bonus).
+add them together.                                                      On a failed save, the spell dissipates with no effect,
+   You can take this Reaction a number of times                         and the target has the Stunned condition until the
+equal to your Intelligence modifier (minimum of                         start of its next turn.
+once), and you regain all expended uses when you
+finish a Long Rest.
+
+LEVEL 3: DRAIN MAGIC
+You can drain power from ongoing spells to recharge
+your allies’ magic. As a Magic Action, you can touch a
+willing creature and end one ongoing level 1 or level
+2 spell on it; the creature immediately recovers one
+expended spell slot of level 2 or lower (the target’s
+choice).
+  Once you use this feature, you can’t do so again
+until you finish a Short or Long Rest.
+
+LEVEL 9: MAGICAL SABOTAGE
+You gain the following Cunning Strike options.
+  Spell Susceptibility (Cost: 2d6). The target has
+Disadvantage on the next saving throw it makes
+against a spell until the start of your next turn.
+  Disrupt Spell (Cost: 3d6). The target’s magical
+acuity is disrupted until the start of your next turn.
+Whenever the target casts a spell during that time, it
+must succeed on an Intelligence saving throw or the
+spell dissipates with no effect, and the action, Bonus
+Action, or Reaction used to cast it is wasted. If that
+spell was cast with a spell slot, the slot isn’t
+expended.
+  Steal Resistance (Cost: 2d6). Choose one kind of
+damage. If the target has Resistance to that kind of
+damage, until the start of your next turn, the target
+loses that Resistance and you gain Resistance to that
+damage type.
+
+
+
+
+©2026 Wizards of the Coast LLC. Permission granted to print and photocopy this page for personal use.                          4
+VESTIGE PATRON (WARLOCK)                                                VESTIGE COMPANION
+                                                                        Small Celestial, Fiend, or Undead; Neutral
+Wield the Remnants of a Dying God’s Power                               AC 13 + your Charisma modifier
+Your pact draws on the power of a dying god, a being                    HP 4 + four times your Warlock level (the vestige has a
+once worshipped by countless followers but now                            number of Hit Dice [d6s] equal to your Warlock level)
+abandoned and forgotten. This dying god, known as                       Speed 5 Ft., Fly 30 ft. (hover)
+                                                                                 MOD   SAVE             MOD   SAVE          MOD          SAVE
+a vestige, might have been benevolent, evil, or                         STR 1    −5 −5 DEX 14 +2 +2 CON 10 +0                        +0
+strange and unknowable, but now it is driven to                         INT 15 +2 +2 WIS 15 +2 +2 CHA 16 +3                          +3
+regain its former power. The vestige needs your help                    Resistances Fire (Fiend only), Necrotic (Undead only),
+it is willing to share its remaining strength with you.                   Radiant (Celestial only)
+                                                                        Immunities Charmed, Frightened, Prone
+LEVEL 3: VESTIGE COMPANION                                              Senses Darkvision 60 ft.; Passive Perception 11
+The vestige manifests, aiding you to do so and                          Languages Speaks the languages you know
+drawing strength from your pact. It uses the Vestige                    CR None (XP 0; PB equals your Proficiency Bonus)
+Companion stat block and is a Celestial, Fiend, or
+Undead (choose when you gain this feature). You                         TRAITS
+determine what the vestige looks like, but regardless                   Pact Bond. Add your Proficiency Bonus to any ability
+of its form, the vestige bears features indicating its                  check or saving throw the vestige makes.
+supernatural origin. For example, you might decide
+your vestige is an oversize floating skull etched with                  ACTIONS
+sigils, a circle of glowing runes, or a constantly
+shifting abstract shape. The vestige is Friendly to                     Vestige’s Strike. Melee or Ranged Attack Roll: Bonus
+you and your allies and obeys your commands. It                         equals your spell attack modifier, reach 5 ft. or range 60
+vanishes if you die.                                                    ft. Hit: 1d6 + 3 plus your Charisma modifier Fire (Fiend),
+   The Vestige in Combat. In combat, the vestige                        Necrotic (Undead), or Radiant (Celestial) damage.
+acts during your turn. It can move and use its
+Reaction on its own, but the only action it takes is                    BONUS ACTIONS
+the Dodge action unless you take a Bonus Action to                      Divine Power (1/Day). Your vestige manifests a remnant
+command it to take an action in its stat block or                       of its divine power in one of the following ways, based on
+some other action. You can also sacrifice one of your                   its form:
+attacks when you take the Attack action to command
+the vestige to take the Vestige’s Strike action. If you                 Cursed Invocation (Undead Only). The vestige places a
+have the Incapacitated condition, the vestige acts on                      curse on a creature you can see within 30 feet of the
+its own and isn’t limited to the Dodge action.                             vestige for 1 minute. While cursed, the target has
+   Disappearance of the Vestige. When the vestige                          Disadvantage on attack rolls against you and the
+drops to 0 Hit Points, it disappears. You can spend 1                      vestige.
+minute performing a magic ceremony to manifest                          Fiendish Swap (Fiend Only). If you and the vestige are
+the vestige again; it reappears with its maximum Hit                       within 60 feet of each other, you both teleport,
+Points in an unoccupied space within 5 feet of you.                        swapping places.
+As a Magic action, you can temporarily dismiss the                      Healing Touch (Celestial Only). The vestige touches
+vestige to a pocket dimension. As a Magic action                           another creature. The target regains Hit Points equal to
+while it is temporarily dismissed, you can cause the                       2d8 plus your Charisma modifier and ends one
+vestige to reappear in an unoccupied space within                          condition on it: Blinded, Deafened, or Poisoned.
+30 feet of you. Whenever the vestige drops to 0 Hit                     LEVEL 3: VESTIGE SPELLS
+Points or disappears into the pocket dimension, it
+leaves behind in its space anything it was wearing or                   The magic of your Vestige Companion ensures you
+carrying.                                                               always have certain spells ready. Select one of the
+   Whenever you finish a Long Rest, you can                             following Cleric Domains: Life, Light, Trickery, or
+summon the vestige in a new form, which appears in                      War. The Domain Spells of your chosen Domain are
+an unoccupied space within 5 feet of you. You                           Warlock spells for you. When you reach a Warlock
+choose its appearance and whether it is a Celestial,                    level equal to a Cleric Level listed on the Domain
+Fiend, or Undead. If the vestige is already manifested                  Spells table for the Domain you have chosen, you
+from this feature, its form changes to the new one.                     thereafter always have the listed spells prepared.
+                                                                          For example, if you chose the War Domain for this
+                                                                        feature, when you reach Warlock level 3, you would
+                                                                        have the Guiding Bolt, Magic Weapon, Shield of Faith,
+                                                                        and Spiritual Weapon spells prepared.
+
+
+
+
+©2026 Wizards of the Coast LLC. Permission granted to print and photocopy this page for personal use.                                5
+LEVEL 6: VESTIGE RECOVERY
+Your Vestige Companion now regains its use of
+Divine Power whenever you finish a Short or Long
+Rest or when you use your Magical Cunning feature.
+
+LEVEL 10: AURA OF POWER
+Your Vestige Companion increases in magical
+strength. As a Magic Action, you can cause the
+vestige to manifest an aura in a 30-foot Emanation
+that originates from the vestige. The aura lasts a
+number of hours equal to your Charisma modifier or
+until the vestige disappears or is temporarily
+dismissed. You, the vestige, and your allies within
+the aura gain Resistance to Fire, Necrotic, and
+Radiant damage and have Immunity to the Charmed
+and Frightened conditions. Once you manifest this
+aura, you can’t do so again until you finish a Long
+Rest.
+   In addition, when you drop to 0 Hit Points while
+within the aura, you instead change your Hit Points
+to a number equal to your Warlock level plus your
+Charisma modifier. The vestige is then dismissed
+into a pocket dimension and can’t return until you
+finish a Long Rest.
+
+LEVEL 14: SEMBLANCE OF LIFE
+Your Vestige Companion continues to grow in
+strength, and with your assistance, it can briefly
+adopt a more powerful form. Depending on the
+vestige’s type, you can cast one of the following
+spells while the vestige is within 90 feet of you
+without expending a spell slot or needing Material
+components: Summon Celestial (Celestial vestige),
+Summon Fiend (Fiend vestige), or Summon Undead
+(Undead vestige). When you cast the spell with this
+feature, the vestige becomes the summoned
+creature. Its game statistics are replaced by the
+summoned creature’s stat block, the spell’s level is
+equal to half your Warlock level (round down;
+maximum level 9), and the spell’s duration is 1
+minute. When the spell ends, the vestige returns to
+its previous form.
+   Once you have cast the spell in this way, you can’t
+do so again until you finish a Long Rest.
+
+
+
+
+©2026 Wizards of the Coast LLC. Permission granted to print and photocopy this page for personal use.   6
+

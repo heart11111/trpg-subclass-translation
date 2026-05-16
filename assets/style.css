@@ -127,6 +127,177 @@ tbody td:first-child { font-weight:700; color:var(--accent); white-space:nowrap;
   border-radius:18px 4px 18px 4px;
 }
 
+.guide-summary {
+  background:rgba(255,255,255,.58);
+  border:1px solid rgba(197,173,67,.42);
+  border-left:4px solid var(--astro-gold);
+  padding:18px 20px;
+  margin:18px 0 30px;
+  border-radius:18px 4px 18px 4px;
+}
+.guide-summary-title {
+  font-family:'Cinzel',serif;
+  color:var(--accent);
+  font-size:.78em;
+  letter-spacing:1.2px;
+  margin-bottom:6px;
+}
+.guide-summary p { margin:0; color:var(--muted); font-size:.92em; }
+.rule-grid,
+.tool-grid,
+.start-grid {
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:12px;
+  margin:18px 0 30px;
+}
+.rule-panel,
+.tool-panel,
+.start-panel {
+  background:rgba(255,255,255,.62);
+  border:1px solid rgba(143,147,216,.24);
+  padding:17px 18px;
+  border-radius:18px 4px 18px 4px;
+}
+.important-rules .rule-panel {
+  border-color:rgba(156,111,48,.36);
+  background:#f6efe4;
+}
+.rule-label {
+  display:inline-block;
+  font-family:'Cinzel',serif;
+  font-size:.68em;
+  letter-spacing:1.4px;
+  color:#8d7735;
+  border-bottom:1px solid rgba(197,173,67,.36);
+  margin-bottom:8px;
+}
+.rule-panel h4,
+.tool-panel h4 {
+  margin:0 0 9px;
+  padding:0;
+  border:none;
+  color:#252337;
+}
+.rule-panel p,
+.tool-panel p,
+.start-panel p { margin:0; color:var(--muted); font-size:.88em; line-height:1.75; }
+.rule-list {
+  border-top:1px solid rgba(143,147,216,.22);
+  border-bottom:1px solid rgba(143,147,216,.22);
+  margin:18px 0 30px;
+}
+.rule-list.compact { margin-top:16px; }
+.rule-row {
+  display:grid;
+  grid-template-columns:150px 1fr;
+  gap:18px;
+  padding:13px 0;
+  border-bottom:1px solid rgba(143,147,216,.16);
+}
+.rule-row:last-child { border-bottom:none; }
+.rule-row strong {
+  color:var(--accent);
+  font-size:.9em;
+}
+.rule-row span {
+  color:var(--text);
+  font-size:.9em;
+  line-height:1.75;
+}
+.tool-panel a,
+.rule-row a {
+  color:#5a3e1b;
+  font-weight:700;
+  text-decoration-color:rgba(201,168,76,.55);
+}
+.source-grid,
+.item-chip-grid,
+.price-grid {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
+  gap:8px;
+  margin:16px 0 30px;
+}
+.source-item,
+.item-chip-grid span,
+.price-grid div {
+  background:rgba(255,255,255,.62);
+  border:1px solid rgba(197,173,67,.32);
+  padding:11px 13px;
+  border-radius:14px 4px 14px 4px;
+}
+.source-item strong,
+.price-grid strong {
+  display:block;
+  color:var(--accent);
+  font-size:.84em;
+  margin-bottom:3px;
+}
+.source-item span,
+.price-grid span {
+  display:block;
+  color:var(--muted);
+  font-size:.82em;
+  line-height:1.5;
+}
+.start-level {
+  font-family:'Cinzel',serif;
+  color:#8d7735;
+  font-size:.8em;
+  letter-spacing:1.5px;
+  margin-bottom:8px;
+}
+.start-panel strong { color:var(--accent); }
+.item-chip-grid span {
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:8px;
+  color:var(--text);
+  font-size:.86em;
+  line-height:1.45;
+}
+.item-chip-grid small {
+  color:#8d7735;
+  font-size:.72em;
+  letter-spacing:.8px;
+  white-space:nowrap;
+}
+.loot-steps {
+  list-style:none;
+  counter-reset:loot-step;
+  padding:0;
+  margin:18px 0 30px;
+  display:grid;
+  gap:10px;
+}
+.loot-steps li {
+  counter-increment:loot-step;
+  display:grid;
+  grid-template-columns:42px 100px 1fr;
+  gap:12px;
+  align-items:start;
+  margin:0;
+  padding:13px 15px;
+  background:rgba(255,255,255,.62);
+  border:1px solid rgba(143,147,216,.24);
+  border-radius:16px 4px 16px 4px;
+}
+.loot-steps li::before {
+  content:counter(loot-step);
+  display:grid;
+  place-items:center;
+  width:30px;
+  height:30px;
+  background:var(--astro-ink);
+  color:var(--gold-light);
+  font-family:'Cinzel',serif;
+  font-size:.82em;
+}
+.loot-steps strong { color:var(--accent); font-size:.9em; }
+.loot-steps span { color:var(--text); font-size:.9em; line-height:1.65; }
+
 /* ── LOCATION BLOCKS ── */
 .location-block {
   border:1px solid rgba(197,173,67,.42); margin:28px 0; background:rgba(255,255,255,.5);
@@ -191,6 +362,12 @@ tbody td:first-child { font-weight:700; color:var(--accent); white-space:nowrap;
   .content{padding:40px 22px 52px;}
   .detail-grid{grid-template-columns:1fr;}
   .card-grid{grid-template-columns:1fr;}
+  .rule-grid,
+  .tool-grid,
+  .start-grid{grid-template-columns:1fr;}
+  .rule-row{grid-template-columns:1fr;gap:4px;}
+  .loot-steps li{grid-template-columns:36px 1fr;gap:8px 10px;}
+  .loot-steps span{grid-column:2;}
   .world-link-wrap{padding:32px 22px;}
 }
 /* Unified site shell */

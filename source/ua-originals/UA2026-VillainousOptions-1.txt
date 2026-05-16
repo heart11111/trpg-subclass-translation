@@ -1,0 +1,721 @@
+UNEARTHED ARCANA 2026
+VILLAINOUS OPTIONS
+This playtest document is part of a series of
+Unearthed Arcana articles that present material                         SUBCLASSES
+designed for upcoming products. The material here                       This section presents the following subclasses:
+uses the rules in the Player’s Handbook.                                Pestilence Domain, Circle of the Titan, Hell Knight,
+                                                                        and Demonic Sorcery.
+WHAT’S INSIDE
+This document presents four new subclasses:
+                                                                        PESTILENCE DOMAIN (CLERIC)
+                                                                        Foment Plague and Rot
+• Cleric (Pestilence Domain)
+• Druid (Circle of the Titan)                                           Clerics of the Pestilence Domain harness
+• Fighter (Hell Knight)                                                 supernatural plague and decay to erode their
+• Sorcerer (Demonic Sorcery)                                            enemies’ vitality. Though common folk often regard
+                                                                        pestilence as a force of rampant destruction, Clerics
+This document also includes paths of villainy: groups                   of this domain wield it with surgical precision.
+of feats that provide characters a path toward                            The Pestilence Domain is associated with gods of
+thematic archetypes. The two paths of villainy in this                  poison, disease, famine, and rot. These deities use
+document are the Path of the Death Knight and the                       blighted crops, magical outbreaks, and swarms of
+Path of the Lich.                                                       insects and vermin to motivate or punish mortals in
+                                                                        accordance with their doctrines. Their followers
+                                                                        include apothecaries, doctors, poisoners, and royal
+CONTENT WARNING                                                         tasters. Other followers might devote themselves to
+This material contains descriptions of body horror,                     a god of pestilence to spare their communities or
+disease, and insects that some readers might find                       loved ones from plague.
+disturbing.
+                                                                        LEVEL 3: BLIGHT WEAVER
+THIS IS PLAYTEST MATERIAL                                               You gain the following benefits.
+This article is presented for playtesting and feedback.                   Inoculated Soul. You have Resistance to Necrotic
+The options here are experimental and in draft form.                    and Poison damage, and you can’t be infected by
+They aren’t officially part of the game. Your feedback                  magical contagions.
+will help determine whether we adopt it as official.                      Rot and Fester. Damage from your Cleric spells
+   How to Playtest This UA. We invite you to try out                    and Cleric features ignores Resistance to Necrotic
+this material in play. To play with this material, you                  and Poison damage. Additionally, when you cast a
+may either incorporate it into your campaign or run                     Cleric spell or use a Cleric feature that deals either
+one or more special playtest sessions. For such a                       Necrotic or Poison damage, you can change that
+session, you may create an adventure of your own or                     damage to the other type.
+use a short adventure from a source like Dragon
+Delves.                                                                 LEVEL 3: PESTILENCE DOMAIN SPELLS
+   Power Level. The character options you read here                     Your connection to this divine domain ensures you
+might be more or less powerful than options in the                      always have certain spells ready. When you reach a
+Player’s Handbook. If a design survives playtesting, we                 Cleric level specified in the Pestilence Domain Spells
+adjust its power to the desirable level before                          table, you thereafter always have the listed spells
+publication. This means an option could be more or                      prepared.
+less powerful in its final form.
+   Feedback. The best way for you to give us feedback                   PESTILENCE DOMAIN SPELLS
+on this material is in the survey we’ll release on D&D                   Cleric Level    Prepared Spells
+Beyond. If we make this material official, it will be                          3         Detect Poison and Disease, Protection
+refined based on your feedback, and then it will appear                                  from Poison, Ray of Enfeeblement,
+in a D&D book.                                                                           Ray of Sickness
+   Providing feedback on this document is one way you                          5         Stinking Cloud, Vampiric Touch
+can help shape the future of D&D!                                              7         Blight, Giant Insect
+                                                                               9         Contagion, Insect Plague
+
+
+
+©2026 Wizards of the Coast LLC. Permission granted to print and photocopy this page for personal use.                            1
+LEVEL 3: PLAGUE BLESSING                                                LEVEL 17: VERMIN FORM
+As a Magic action, you can present your Holy Symbol                     As a Bonus Action, you can shape-shift into a
+and expend a use of Channel Divinity to manifest a 5-                   Medium swarm of Tiny pests, such as cockroaches,
+foot Emanation of withering plague that surrounds                       maggots, or rats. While you’re in this form, you
+you or one willing creature you touch for 1 minute. It                  retain your general shape, personality, memories,
+ends early if you dismiss it (no action required),                      and the ability to speak; any equipment you’re
+manifest it again, or have the Incapacitated                            wearing or carrying doesn’t transform with you, but
+condition.                                                              you can continue using that equipment while in this
+  Each creature of your choice that starts its turn in                  form. Your game statistics remain the same, apart
+the Emanation must succeed on a Constitution                            from the following changes:
+saving throw against your spell save DC or gain 1
+Exhaustion level. This feature can’t increase a                         Condition Immunities. You have Immunity to the
+creature’s Exhaustion level higher than a level equal                     Grappled, Paralyzed, Prone, and Restrained
+to your Wisdom modifier (minimum of 1 Exhaustion                          conditions.
+level). For example, if you have a Wisdom score of                      Damage Resistances. You have Resistance to
+16, this feature can’t increase a creature’s                              Bludgeoning, Piercing, and Slashing damage.
+Exhaustion level higher than 3.                                         Movement. You can enter and occupy another
+  The plague spread by this feature manifests with a                      creature’s space and vice versa. Additionally, you
+specific symptom. Choose it from the Plague                               have a Climb Speed equal to your Speed, and you
+Symptoms table or determine it randomly.                                  can climb difficult surfaces—including along
+                                                                          ceilings—without needing to make an ability
+PLAGUE SYMPTOMS                                                           check.
+ 1d6    While Infected, a Creature …                                    Plague Bites. Whenever you enter an enemy’s
+  1     Is drained of all color, appearing in                             space, that creature takes damage equal to your
+        monochromatic grays.                                              Wisdom modifier; the damage is Necrotic,
+  2     Sheds metallic, rust-hued flakes and creaks                       Piercing, or Poison (your choice). A creature also
+        while moving.                                                     takes this damage when it enters your space or
+  3     Secretes foul-smelling mucus.                                     ends its turn there. A creature takes this damage
+                                                                          only once per turn.
+  4     Is surrounded by a cloud of buzzing insects.
+  5     Sprouts fungi or other foliage from its flesh.                  You revert to your true form after 10 minutes, if you
+  6     Is covered in glowing pustules.                                 choose to end the transformation (no action
+                                                                        required), if you have the Incapacitated condition, or
+                                                                        if you die.
+LEVEL 6: VIRULENT BURST                                                    Once you use this feature, you can’t use it again
+                                                                        until you finish a Long Rest unless you expend a
+When an enemy within 60 feet of you is reduced to 0
+                                                                        level 5+ spell slot (no action required) to restore
+Hit Points, you can take a Reaction to cause plague to
+                                                                        your use of it.
+burst from that creature, spreading pestilence in a
+10-foot Emanation originating from the enemy; if
+the enemy had at least 1 Exhaustion level, the size of
+the Emanation increases to 20 feet.
+  Each creature of your choice in the Emanation
+makes a Constitution saving throw against your spell
+save DC. On a failed save, a target suffers one of the
+following effects:
+
+Putrid Shock. The target has the Incapacitated
+  condition until the end of its next turn. While
+  Incapacitated, the target’s Speed is 0.
+Toxic Infection. The target takes 3d6 Necrotic or
+  Poison damage (your choice).
+You can use this feature a number of times equal to
+your Wisdom modifier (minimum of once), and you
+regain all expended uses when you finish a Long
+Rest.
+
+
+
+
+©2026 Wizards of the Coast LLC. Permission granted to print and photocopy this page for personal use.                          2
+CIRCLE OF THE TITAN (DRUID)                                               Elemental Rend. Whenever you hit with your
+                                                                        Titan Form’s Rend attack, you can cause it to deal
+Wreak Colossal Havoc                                                    your choice of Acid, Cold, Fire, Lightning, or Thunder
+                                                                        damage rather than its normal damage type.
+When civilization violates the natural world—by                           Shock Wave. Your transformation upheaves your
+deforesting ancient groves, polluting sacred waters,                    surroundings. Immediately after you assume a Titan
+or hunting wildlife to the brink of extinction—                         Form or by taking a Bonus Action to expend a level
+Druids of the Circle of the Titan intervene. Druids of                  1+ spell slot while in your Titan Form, you can
+this order believe that for nature to thrive, society                   create a shock wave in a 15-foot Emanation
+must sometimes fall. To this end, they assume                           originating from you. Each creature in the
+towering, monstrous forms to mete out cataclysmic                       Emanation must succeed on a Constitution saving
+retribution and forcibly restore the natural order.                     throw against your spell save DC or have the Prone
+                                                                        condition.
+LEVEL 3: CIRCLE OF THE TITAN SPELLS
+When you reach a Druid level specified in the Circle                    LEVEL 10: PRIMAL HAVOC
+of the Titan Spells table, you thereafter always have                   The unbridled power of nature surges within you,
+the listed spells prepared.                                             granting you the following benefits.
+  In addition, you can cast the spells from this                          Improved Titan Form. You can choose to become
+feature while you’re in your Titan Form.                                Huge when assuming your Titan Form. Each Titan
+                                                                        Form also gains an additional benefit, as noted in its
+CIRCLE OF THE TITAN SPELLS                                              respective stat block.
+ Druid Level      Prepared Spells                                         Above It All. While you are Huge or larger in your
+      3           Cure Wounds, Longstrider,                             Titan Form, Difficult Terrain caused by heavy snow,
+                  Thaumaturgy                                           ice, rubble, or undergrowth doesn’t cost you extra
+        5         Fear                                                  movement.
+        7         Stoneskin
+        9         Destructive Wave                                      LEVEL 14: MONSTROUS APPETITE
+                                                                        Your transformation embodies the vast size and
+                                                                        terror of nature’s titans. You gain the following
+                                                                        benefits.
+LEVEL 3: TITAN FORM                                                       Gargantuan Size. You can choose to become
+When you use Wild Shape, you can adopt a Titan                          Gargantuan when assuming your Titan Form.
+Form, choosing from the Behemoth, Leviathan, and                          Grappling Rend. Once per turn when you are
+Insectoid stat blocks presented later in this                           Huge or larger and hit a creature with your Rend
+subclass’s description.                                                 attack of your Titan Form, you can give the target
+  You determine what your Titan Form looks like.                        the Grappled condition (escape DC equals your spell
+Roll on or choose from the Titan Appearance table to                    save DC). You can have only one target grappled in
+inspire aspects of your form’s appearance.                              this way at a time.
+                                                                          Swallow. As a Bonus Action while you are
+TITAN APPEARANCE                                                        Gargantuan, choose one Large or smaller creature
+                                                                        Grappled by you. The target makes a Strength saving
+  1d4       Behemoth     Leviathan       Insectoid
+                                                                        throw against your spell save DC. On a failure, you
+   1        Reflective   Many-           Iridescent wings
+                                                                        swallow the target, and the Grappled condition ends
+            scales       tentacled
+                                                                        on it. A swallowed creature has the Blinded and
+   2        Multiple     Translucent     Compound eyes                  Restrained conditions, has Total Cover against
+            heads        and                                            attacks and other effects outside of your stomach,
+                         bloblike                                       and takes 2d8 Acid damage at the start of each of
+   3        Reptilian    Lamprey-        Chitinous horns                your turns.
+            tail         like mouth                                       The number of creatures you can have swallowed
+   4        Woolly and   Serpentine      Bioluminescent                 at a time equals your Wisdom modifier (minimum of
+            simian       body            exoskeleton                    one creature). You must maintain Concentration to
+                                                                        hold swallowed creatures in your stomach. If you
+                                                                        lose Concentration or leave your Titan Form, you
+                                                                        regurgitate all swallowed creatures, each of which
+LEVEL 6: DIRE IMPACT                                                    falls in a space within 10 feet of you and has the
+Your Titan Form brings greater devastation. You                         Prone condition.
+gain the following benefits.
+
+
+
+
+©2026 Wizards of the Coast LLC. Permission granted to print and photocopy this page for personal use.                        3
+BEHEMOTH                                                                LEVIATHAN
+Large, Huge (Requires Druid Level 10+), or Gargantuan                   Large, Huge (Requires Druid Level 10+), or Gargantuan
+(Requires Druid Level 14+) Monstrosity; Your Alignment                  (Requires Druid Level 14+) Monstrosity; Your Alignment
+Doesn’t Change                                                          Doesn’t Change
+AC 11 + your Wisdom Modifier                                            AC 10 + your Wisdom Modifier
+Temp HP 2 times your Druid level                                        Temp HP 2 times your Druid level
+Speed 40 ft., Climb 40 ft.                                              Speed 40 ft., Swim 40 ft.
+Str., Dex. Your Strength and Dexterity scores are equal to              Str., Dex. Your Strength and Dexterity scores are equal to
+  your Wisdom score in this form.                                         your Wisdom score in this form.
+Con., Int., Wis., Cha. Your Constitution, Intelligence,                 Con., Int., Wis., Cha. Your Constitution, Intelligence,
+  Wisdom, and Charisma don’t change.                                      Wisdom, and Charisma don’t change.
+Senses Darkvision 60 ft.                                                Senses Darkvision 60 ft.
+Languages Your languages don’t change.                                  Languages Your languages don’t change.
+CR — (PB is your Proficiency Bonus)                                     CR — (PB is your Proficiency Bonus)
+
+TRAITS                                                                  TRAITS
+Rampager (Requires Druid Level 10+). When you enter                     Amphibious. You can breathe air and water.
+the space of an enemy that is at least one size smaller
+                                                                        Toxic Stench (Requires Druid Level 10+). Constitution
+than you for the first time on a turn, that creature is
+                                                                        Saving Throw: DC equals your spell save DC, each creature
+subjected to the following effect. Strength Saving Throw:
+                                                                        of your choice that starts its turn in a 10-foot Emanation
+DC equals your spell save DC. Failure: The target has the
+                                                                        originating from you. Failure: 2d4 Poison damage, and the
+Prone condition. If the target already has the Prone
+                                                                        target has the Poisoned condition until the start of its next
+condition, it instead takes 2d6 Bludgeoning damage.
+                                                                        turn.
+Siege Monster. You deal double damage to objects and
+structures.                                                             ACTIONS
+                                                                        Multiattack (Requires Druid Level 5+). You make two
+ACTIONS                                                                 Rend attacks.
+Multiattack (Requires Druid Level 5+). You make two
+                                                                        Rend. Melee Attack Roll: Bonus equals your spell attack
+Rend attacks.
+                                                                        modifier, reach 10 ft. Hit: 1d8 plus your Wisdom modifier
+Rend. Melee Attack Roll: Bonus equals your spell attack                 Bludgeoning damage.
+modifier, reach 10 ft. Hit: 1d8 plus your Wisdom modifier
+Slashing damage.                                                        REACTIONS
+Incandescent Breath. You expend a level 1+ spell slot.                  Ink Cloud. Trigger: You take damage. Response: You
+Dexterity Saving Throw: DC equals your spell save DC,                   expend a level 1+ spell slot and release an inky cloud that
+each creature in a 5-foot-wide, 60-foot-long Line. Failure:             fills a 15-foot-radius Cube centered on yourself, and you
+2d8 Radiant damage per level of the spell slot expended                 move up to your Speed. The Cube is Heavily Obscured. It
+plus your Wisdom modifier. Success: Half damage.                        lasts for 1 minute or until a strong current or wind (such
+                                                                        as one created by Gust of Wind) disperses it.
+
+
+
+
+©2026 Wizards of the Coast LLC. Permission granted to print and photocopy this page for personal use.                                4
+INSECTOID
+Large, Huge (Requires Druid Level 10+), or Gargantuan
+(Requires Druid Level 14+) Monstrosity; Your Alignment
+Doesn’t Change
+AC 8 + your Wisdom Modifier
+Temp HP 2 times your Druid level
+Speed 40 ft., Fly 40 ft.
+Str., Dex. Your Strength and Dexterity scores are equal to
+  your Wisdom score in this form.
+Con., Int., Wis., Cha. Your Constitution, Intelligence,
+  Wisdom, and Charisma don’t change.
+Senses Darkvision 60 ft.
+Languages Your languages don’t change.
+CR — (PB is your Proficiency Bonus)
+
+TRAITS
+Flyby. You don’t provoke an Opportunity Attack when you
+fly out of an enemy’s reach.
+Hive Mind (Requires Druid Level 10+). When you assume
+this form, you forge a telepathic link with a number of
+creatures of your choice you can see and that can
+communicate in at least one language; the maximum
+number of creatures is equal to your Druid level. You and
+the chosen creatures can communicate telepathically with
+each other whether or not you share a language as long as
+you are on the same plane.
+
+ACTIONS
+Multiattack (Requires Level 5+). You make two Rend
+attacks.
+Rend. Melee Attack Roll: Bonus equals your spell attack
+modifier, reach 10 ft. Hit: 1d8 plus your Wisdom modifier
+Piercing damage.
+Energizing Pollen. You expend a level 1+ spell slot and
+emit a cloud of healing pollen that can restore a number
+of Hit Points equal to 2d8 plus five times the expended
+spell slot’s level. Choose any number of creatures within
+15 feet of yourself, and divide those Hit Points among
+them.
+
+
+
+
+©2026 Wizards of the Coast LLC. Permission granted to print and photocopy this page for personal use.   5
+HELL KNIGHT (FIGHTER)                                                     While transformed into a Hellfire Weapon, a
+                                                                        weapon emits Dim Light in a 5-foot Emanation, and
+Inflict Hellish Wounds and Damn Enemies                                 whenever you deal damage with the weapon, it can
+                                                                        deal your choice of Fire damage or its normal
+Hell Knights are the champions of archdevils and                        damage type.
+other high-ranking fiends of the Nine Hells, such as
+cambions and night hags. Armed with the techniques                      LEVEL 3: INFERNAL WOUND
+of the Nine Hells’ fiercest warriors, Hell Knights
+inflict infernal wounds and fight with the tenacity of                  Your Hellfire Weapon can inflict infernal wounds.
+a devil.                                                                  Infernal Wound Die. You have one Infernal
+   Devils and other sinister figures employ Hell                        Wound Die, which is a d6.
+Knights to enact their will across the multiverse. A                      Inflicting Infernal Wounds. Once per turn when
+Hell Knight might serve as a soldier on the front                       you hit a creature with your Hellfire Weapon, you
+lines of the Blood War, while another might be                          can deal extra Fire damage equal to one roll of your
+tasked with punishing creatures that violate infernal                   Infernal Wound Die and give the target an infernal
+contracts or flee their consequences. Others act as                     wound.
+interplanar bounty hunters, hastening the journey of                      While wounded in this way, the target takes Fire
+wicked souls to the River Styx.                                         damage equal to one roll of your Infernal Wound Die
+   A Hell Knight’s relationship with the Nine Hells is                  at the start of each of its turns. This effect lasts for 1
+transactional. Archdevils see Hell Knights as an                        minute, until the target regains Hit Points, or until
+investment, and Hell Knights benefit in turn. The                       the target or a creature within 5 feet of the target
+Hell Knight Pursuits table lists reasons why a Fighter                  takes an action to stanch the wound. A target can be
+might become a Hell Knight.                                             affected by only one instance of this feature at a
+                                                                        time.
+HELL KNIGHT PURSUITS                                                      You can use this feature a number of times equal
+ 1d6    You Became a Hell Knight Because You …                          to your Constitution modifier (minimum of once).
+  1     Desired treasures only the Nine Hells could                     You regain all expended uses when you finish a
+        grant you.                                                      Short or Long Rest.
+  2     Hungered for power beyond mortal bounds.
+  3     Made a wager with a devil—and lost.
+                                                                        LEVEL 7: ADVANCED WOUNDS
+  4     Sacrificed your soul to spare someone else’s.                   When you roll your Infernal Wound Die and roll a 6,
+  5     Sought vengeance on an adversary who                            you can apply one of the following effects.
+        wronged you deeply.                                               Purulence of Minauros. Caustic pus erupts from
+  6     Were fooled by fine print in an infernal                        the wound. Each creature in a 5-foot Emanation
+        contract.                                                       originating from the target takes Acid damage equal
+                                                                        to your Constitution modifier, and the target has the
+                                                                        Poisoned condition until the start of its next turn.
+LEVEL 3: DIABOLICAL GIFT                                                  Rupture of Cania. The wound ruptures with a
+                                                                        spurt of arcane energy. The target takes Force
+As a soldier for the agents of the Nine Hells, you’ve                   damage equal to your Constitution modifier.
+been given fiendish powers. You gain the following                        Stygian Gangrene. Infernal rime spreads out from
+benefits.                                                               the wound. The target takes Cold damage equal to
+  Devil’s Sight. You can see normally in Dim Light                      your Constitution modifier, and it can’t take
+and Darkness—both magical and nonmagical—                               Reactions until the start of its next turn.
+within 120 feet of yourself.
+  Devil’s Tongue. You know Infernal, the language                       LEVEL 7: HELL-FORGED EQUIPMENT
+of devils. If you already know Infernal, you learn
+another language of your choice.                                        Your armor and weapons embody infernal
+                                                                        armaments forged in the fires of Avernus, granting
+LEVEL 3: HELLFIRE WEAPON                                                you the following benefits.
+                                                                          Fire Resistance. While wearing armor or wielding
+When you take the Attack action, you can imbue one                      a Shield, you have Resistance to Fire damage.
+weapon that you are holding with hellfire,                                Unholy Fire. Damage from your weapon attacks
+transforming it into a Hellfire Weapon. It remains                      and Fighter features ignores Resistance to Fire
+transformed in this way for 10 minutes or until you                     damage.
+use this feature again, you die, or the weapon is
+more than 5 feet away from you for 1 minute or
+more. You can also end this effect early (no action
+required).
+
+
+
+
+©2026 Wizards of the Coast LLC. Permission granted to print and photocopy this page for personal use.                            6
+LEVEL 10: HELLFIRE SURGE                                                DEMONIC SORCERY (SORCERER)
+When you use your Action Surge while wearing
+armor or wielding a Shield, you can superheat your                      Summon the Powers of the Abyss
+equipment, causing it to erupt with hellfire in a 10-                   The corruptive magic of demons courses through
+foot Emanation originating from you. Each creature                      you, making you a conduit for the infinite layers of
+of your choice in the Emanation must succeed on a                       the Abyss and their horrors. Your gift might stem
+Dexterity saving throw (DC equals 8 plus your                           from a distant demonic ancestry, a fated encounter
+Constitution modifier and Proficiency Bonus). On a                      with a demon that cursed you, or a brush with the
+failed save, a target takes Fire damage equal to one                    dark hunger of the Abyss.
+roll of your Infernal Wound Die and is burning. On a                      The Abyss is a plane of wickedness and disorder,
+successful save, a target takes half as much damage                     and this chaos echoes in your innate magic. Abyssal
+only.                                                                   energy erupts from you, warping your body and
+                                                                        surroundings in tandem with your sorcery.
+LEVEL 15: BLISTER OF AVERNUS                                              These Abyssal eruptions manifest in strange and
+Your hellfire leaves painful, boiling blisters. When                    gruesome ways. Roll on or choose from the Abyssal
+you roll a 6 on your Infernal Wound Die, you can roll                   Manifestations table to inspire how your connection
+another d6 and add it to the damage. The maximum                        to the Abyss might manifest when you channel your
+number of d6s you can add to the Infernal Wound’s                       demonic power.
+damage on a turn is three.
+                                                                        ABYSSAL MANIFESTATIONS
+LEVEL 18: HELLFIRE CONDEMNATION                                          1d6    Manifestation
+                                                                          1     Abyssal fissures mar your flesh, revealing
+Whenever damage from your Hellfire Weapon or
+                                                                                windows into a vast demonic realm.
+Infernal Wound reduces a creature to 0 Hit Points,
+                                                                          2     Insects writhe beneath your skin and escape
+the creature dies, and its soul rises from the River
+                                                                                from your mouth, nose, and ears.
+Styx as a Lemure in a layer of the Nine Hells of your
+                                                                          3     Sheets of scorched skin peel from your body.
+choice in 1d4 hours. If the creature isn’t revived
+before then, only a Wish spell can return the                             4     Your flesh bubbles and froths like a toxic bog.
+creature to life.                                                         5     Your fingers or other extremities discolor as if
+                                                                                frostbitten.
+LEVEL 18: INFERNAL BARGAIN                                                6     You grow a second head. (This has no impact
+                                                                                on your game statistics.)
+When you roll your Infernal Wound Die, you can
+treat a roll of 1 as a 6.
+                                                                        LEVEL 3: ABYSSAL RUPTURE
+                                                                        When you spend at least 1 Sorcery Point as part of a
+                                                                        Magic action or a Bonus Action on your turn, you can
+                                                                        unleash one of the following magical effects of your
+                                                                        choice. You can do so only once per turn.
+                                                                          Demonic Lash. One creature you can see within
+                                                                        20 feet of you takes 1d4 Slashing damage, and if it is
+                                                                        Large or smaller, you can pull it up to 10 feet closer
+                                                                        to you.
+                                                                          Fiendish Carapace. Until the start of your next
+                                                                        turn, attack rolls against you have Disadvantage.
+
+
+
+
+©2026 Wizards of the Coast LLC. Permission granted to print and photocopy this page for personal use.                              7
+LEVEL 3: DEMONIC SPELLS                                                   4     Enthralling Spores. Intoxicating spores fill the
+                                                                                Emanation, which is Heavily Obscured for
+When you reach a Sorcerer level specified in the                                creatures of your choice. When you reach
+Demonic Spells table, you thereafter always have the                            Sorcerer level 11, each enemy that starts its
+listed spells prepared.                                                         turn in the Emanation must succeed on a
+                                                                                Wisdom saving throw or have the Charmed
+DEMONIC SPELLS                                                                  condition until the start of its next turn.
+ Sorcerer
+  Level       Spells                                                      5     Poisonous Foliage. The Emanation is Lightly
+    3         Detect Magic, Entangle, Misty Step,                               Obscured by demonic flora. Each enemy that
+              Spider Climb                                                      starts its turn in the Emanation takes 1d6 Poison
+                                                                                damage and must succeed on a Constitution
+      5       Dispel Magic, Gaseous Form
+                                                                                saving throw or have the Poisoned condition
+      7       Confusion, Hallucinatory Terrain
+                                                                                until the start of its next turn. This damage
+      9       Contact Other Plane, Hallow
+                                                                                increases by 1d6 when you reach Sorcerer levels
+                                                                                11 (2d6) and 16 (3d6).
+
+LEVEL 6: ABYSSAL AURA                                                     6     Enervating Bones. Spectral limbs erupt from the
+                                                                                ground, reaching to sap the life around them.
+When you use Innate Sorcery, you can infuse the
+                                                                                Each enemy that starts its turn in the Emanation
+chaos of the Abyss into your surroundings. While
+                                                                                takes 1d10 Necrotic damage and can’t regain
+this use of Innate Sorcery is active, reality warps in a
+                                                                                Hit Points until the start of its next turn. The
+10-foot Emanation originating from you, filling the
+                                                                                Necrotic damage increases by 1d10 when you
+area with a demonic effect. Roll on the Abyssal
+                                                                                reach Sorcerer levels 11 (2d10) and 16 (3d10).
+Effects table to determine the effect. If an effect
+requires a saving throw, the DC equals your spell
+save DC.
+  Once you use this feature, you can’t use it again                     LEVEL 14: ABYSSAL CONDUIT
+until you finish a Long Rest. You can also restore                      Your Abyssal powers reach their full potential. You
+your use of it by spending 2 Sorcery Points (no                         gain the following benefits.
+action required).                                                         Aura Expansion. Your Abyssal Aura is now a 20-
+                                                                        foot Emanation.
+ABYSSAL EFFECTS                                                           Controlled Chaos. Whenever you would roll on
+ 1d6      Effect                                                        the Abyssal Effects table, you can roll twice and
+  1       Sticky Webs. Thick webs fill the Emanation,                   choose which of the two effects to use. If you roll the
+          making it Difficult Terrain for your enemies.                 same number on both dice, you can instead choose
+          Each enemy that starts its turn in the Emanation              any effect on the table.
+          must succeed on a Strength saving throw or
+          have the Restrained condition. A creature
+                                                                        LEVEL 18: FIENDISH SERVANT
+          Restrained by the webs can take an action to
+          make a Strength (Athletics) check against your                You can cast Summon Fiend without a Material
+          spell save DC, ending the effect on itself with a             component. You can also cast it once without a spell
+          successful check.                                             slot, and you regain the ability to cast it in this way
+                                                                        when you finish a Long Rest. When you cast it in this
+  2       Caustic Ooze. Slick, oily gunk covers the ground              way, you must choose Demon for the summoned
+          in the Emanation, making it Difficult Terrain for             Fiend’s type.
+          your enemies. Each enemy that starts its turn
+          on the ground in the Emanation takes 1d6 Acid
+          damage and must succeed on a Dexterity saving
+          throw or have the Prone condition. This damage
+          increases by 1d6 when you reach Sorcerer levels
+          11 (2d6) and 16 (3d6).
+  3       Terrifying Screams. Each enemy that starts its
+          turn in the Emanation takes 1d6 Psychic damage
+          and must succeed on a Wisdom saving throw or
+          have the Frightened condition until the start of
+          its next turn. This damage increases by 1d6
+          when you reach Sorcerer levels 11 (2d6) and 16
+          (3d6).
+
+
+
+
+©2026 Wizards of the Coast LLC. Permission granted to print and photocopy this page for personal use.                               8
+                                                                        Vanrak Moonstar of Waterdeep, who repented to
+PATHS OF VILLAINY                                                       Selûne for betraying her in favor of her nemesis, Shar.
+                                                                          For more on death knights, see the Monster Manual.
+This section includes two paths: the Path of the
+Death Knight and the Path of the Lich. Each path                        PATH OF THE DEATH KNIGHT FEATS
+presents a selection of feats that represent a
+character’s transformation into one of these two                        The following feats represent one path a character
+villainous archetypes.                                                  can take to become a death knight. To complete the
+                                                                        Path of the Death Knight, begin by taking the Death
+PATH OF THE DEATH KNIGHT                                                Knight Initiate feat, followed by any other Path of the
+                                                                        Death Knight feat you choose. Finally, when you
+Death knights are dastards, deserters, and disgraced                    reach level 12 or higher, take the Death Knight
+champions, undead warriors who march toward                             Ascension feat.
+perdition to fulfill selfish desires and slake their
+bloodthirst. A death knight’s martial prowess is                        DEATH KNIGHT INITIATE
+inextricably tied to their evil nature, but their                       Path of the Death Knight Feat (Prerequisite: Level 4+,
+heinous deeds extend far beyond the battlefield.                        Weapon Mastery Feature)
+
+DEATH KNIGHT JOURNEYS                                                   You gain the following benefits.
+                                                                          Ability Score Increase. Increase your Strength or
+While each death knight is unique, every death                          Charisma score by 1, to a maximum of 20.
+knight’s descent into villainy begins with a                              Death Points. Your dedication to the path of the
+significant and dishonorable act—a deliberate                           Death Knight gives you access to profane powers of
+wrongdoing or shameful mistake that marks their                         undeath. Your ability to use such powers is
+disgrace. You can roll on or choose from the Death                      represented by Death Points. You have a number of
+Knight Journeys table to determine why your                             Death Points equal to your Proficiency Bonus. You
+character has chosen to walk this path.                                 regain all expended Death Points when you finish a
+                                                                        Long Rest.
+DEATH KNIGHT JOURNEYS                                                     You can expend Death Points to use certain Path of
+ 1d6    You Fell from Grace When You …                                  the Death Knight benefits. This feat gives you one
+  1     Abandoned your companions in battle.                            such benefit: Dread Strike.
+  2     Betrayed a loved one.                                             Dread Strike. You always have the Wrathful Smite
+  3     Intentionally harmed an innocent.                               spell prepared. Charisma is your spellcasting ability
+  4     Made a pact with a malevolent entity such as                    for this spell. You can cast it without expending a
+        a demon lord.                                                   spell slot by expending 1 Death Point. When you
+                                                                        expend Death Points to cast Wrathful Smite, the
+  5     Offended a benevolent god.
+                                                                        target has Disadvantage on Wisdom saving throws
+  6     Violated a sworn oath.
+                                                                        to avoid or end the spell’s effect. You can also cast
+                                                                        the spell using any spell slots you have.
+DEATH KNIGHTS ACROSS THE MULTIVERSE
+The death knights of D&D are dramatic figures whose
+                                                                        DREAD AUTHORITY
+tragic fates result from equally tragic sins. On many                   Path of the Death Knight Feat (Prerequisite: Death
+worlds, death knights’ misdeeds spell doom not just for                 Knight Initiate Feat)
+themselves and their companions but for entire                          You gain the following benefits.
+kingdoms.                                                                 Ability Score Increase. Increase your Constitution
+   Notable death knights across the multiverse include                  or Charisma score by 1, to a maximum of 20.
+the following:                                                            Dread Command. You always have the Command
+Lord Soth, Knight of the Black Rose and ruler of                        spell prepared. Charisma is your spellcasting ability
+                                                                        for this spell. You can cast it without expending a
+  Dargaard Keep on the world of Krynn
+                                                                        spell slot by expending 1 Death Point. You can also
+Olanthius, former general of the angel Zariel who
+                                                                        cast the spell using any spell slots you have. When
+  became a death knight after Zariel’s fall from grace
+                                                                        you expend Death Points to cast Command, Undead
+Saint Kargoth, favored servant of the demon lord                        targeted by it have Disadvantage on the saving
+  Demogorgon and Greyhawk’s first death knight                          throw against the spell.
+While most death knights refuse to atone for the acts
+that made them, it’s possible for a death knight to
+repent and end their curse. Such was the fate of Lord
+
+
+
+
+©2026 Wizards of the Coast LLC. Permission granted to print and photocopy this page for personal use.                         9
+HARBINGER OF DOOM                                                       DEATH KNIGHT ASCENSION
+Path of the Death Knight Feat (Prerequisite: Death                      Path of the Death Knight Feat (Prerequisite: Level
+Knight Initiate Feat)                                                   12+, two Path of the Death Knight Feats)
+You gain the following benefits.                                        Your path to becoming a death knight is complete.
+  Ability Score Increase. Increase your Strength,                       You gain the following benefits.
+Constitution, or Charisma score by 1, to a maximum                        Ability Score Increase. Increase your Strength or
+of 20.                                                                  Charisma score by 1, to a maximum of 20.
+  Ill Omen. You always have the Bane spell                                Undead. Your creature type is Undead.
+prepared. Charisma is your spellcasting ability for                       Unholy Anatomy. You have Resistance to Necrotic
+this spell. You can cast it without expending a spell                   and Poison damage. You don’t gain Exhaustion levels
+slot by expending 1 Death Point. You can also cast                      from dehydration, malnutrition, or suffocation.
+the spell using any spell slots you have. When you                        Hellfire Orb. As a Magic action, you can expend 1
+expend Death Points to cast Bane, affected targets                      to 5 Death Points to throw an orb of pure hellfire at a
+subtract 1d6 from attack rolls and saving throws                        point you can see within 120 feet. Each creature in a
+instead of 1d4.                                                         20-foot-radius Sphere centered on the chosen point
+                                                                        makes a Dexterity saving throw (DC 8 plus your
+DEATHLY PRESENCE                                                        Charisma modifier and Proficiency Bonus). On a
+Path of the Death Knight Feat (Prerequisite: Level 8+,                  failed save, a target takes 2d6 Fire damage and 2d6
+Death Knight Initiate Feat)                                             Necrotic damage per Death Point expended. On a
+                                                                        successful save, the target takes half as much
+You gain the following benefits.                                        damage.
+  Ability Score Increase. Increase your Strength,
+Constitution, or Charisma score by 1, to a maximum
+of 20.
+  Awful Presence. You always have the Fear spell
+prepared. Charisma is your spellcasting ability for
+this spell. You can cast it without expending a spell
+slot by expending 1 Death Point. You can also cast
+the spell using any spell slots you have. When you
+expend Death Points to cast Fear, you deal 7 (2d6)
+Psychic damage to each creature that fails its saving
+throw against the spell, in addition to the spell’s
+normal effects.
+
+UNHOLY STEED
+Path of the Death Knight Feat (Prerequisite: Level 8+,
+Death Knight Initiate Feat)
+You gain the following benefits.
+  Ability Score Increase. Increase your Strength or
+Constitution score by 1, to a maximum of 20.
+  Spectral Steed. You always have the Find Steed
+spell prepared. Charisma is your spellcasting ability
+for this spell. You can cast it without expending a
+spell slot by expending 1 Death Point. When you
+expend Death Points to cast Find Steed, the
+summoned steed is a Fiend, and targets you choose
+have Disadvantage on the Wisdom saving throw
+against its Fell Glare. You can also cast the spell
+using any spell slots you have.
+
+
+
+
+©2026 Wizards of the Coast LLC. Permission granted to print and photocopy this page for personal use.                        10
+PATH OF THE LICH                                                        PATH OF THE LICH FEATS
+Liches are powerful spellcasters who have                               The following Path of the Lich feats represent one
+conquered death through the relentless pursuit of                       path a character can take to become a lich. To
+arcane power. All liches undergo a ritual that binds                    complete the Path of the Lich, begin by taking the
+their soul to a spirit jar, a personal and well-                        Lich Initiate feat, followed by any other Path of the
+protected object that allows the lich’s destroyed                       Lich feat you choose. Finally, when you reach level
+body to re-form as long as the object is intact.                        12 or higher, take the Lich Ascension feat.
+
+LICH RITES                                                              LICH INITIATE
+                                                                        Path of the Lich Feat (Prerequisite: Level 4+,
+The path to lichdom is unique to each who walks it.                     Spellcasting or Pact Magic Feature)
+To complete the transformation, aspirants must
+fulfill a personal and often profane ritual. The Lich                   You take the first steps toward lichdom, which
+Rites table contains examples of such rituals to                        involve creating your spirit jar, a magical vessel that
+inspire your journey.                                                   anchors your soul to the world of the living in the
+                                                                        event of your body’s destruction.
+LICH RITES                                                                 You gain the following benefits.
+ 1d6    To Conduct Your Ritual, You Must…                                  Ability Score Increase. Increase your Intelligence,
+  1     Consume one hundred souls to strengthen                         Wisdom, or Charisma score by 1, to a maximum of
+        your magic.                                                     20.
+  2     Decipher and recite a forbidden incantation                        Creating Your Spirit Jar. Choose a Tiny object of
+                                                                        great significance to you. Roll on or choose from the
+        from a lost tome written in a dead language.
+                                                                        Spirit Jars table to inspire this object. You spend a
+  3     Use ancient abjuration magic to conceal
+                                                                        Long Rest anchoring your soul to this object,
+        yourself from the gods of death.
+                                                                        allowing you to consume the souls of the living to
+  4     Pen a blasphemous verse and perform it in a                     bolster your own power. You can have only one
+        defiled temple.                                                 spirit jar at a time. If you create a second spirit jar,
+  5     Craft a potion from your victims’ remains and                   the old one is destroyed.
+        imbibe it beneath a full moon.
+  6     Corrupt your soul so completely no afterlife                    SPIRIT JARS
+        will accept it.                                                  1d6    Your Spirit Jar Is …
+                                                                          1     An acorn from a forest destroyed long ago.
+                                                                          2     A love letter from a deceased paramour.
+LICHES ACROSS THE MULTIVERSE                                              3     The inkwell that you used to scribe your first
+While the most infamous liches in D&D represent evil                            spell or prayer.
+incarnate, liches can vary in alignments, motivations,                    4     The defaced holy symbol of a god you’ve
+and deeds. Those who achieve lichdom make their                                 denounced.
+mark on the multiverse as demigods and despots,                           5     A bell whose toll becomes lower with each
+mentors and protectors, masters and manipulators.                               soul you collect.
+These storied beings include the following:                               6     A desiccated body part—such as an eye,
+Renwick Caradoon, founder of the Knights of Samular                             finger, or horn—that was once part of you or
+  in the city of Waterdeep                                                      someone you knew.
+Szass Tam, Thay’s zulkir of necromancy
+Vecna the Archlich, Oerthian king and demigod of                          Spirit Jar Destruction. Your spirit jar’s Armor
+  secrets and evil magic                                                Class equals your spell save DC, and it has a number
+Vlaakith the Lich-Queen, the ironfisted leader of the                   of Hit Points equal to your spellcasting ability
+  githyanki                                                             modifier plus your character level. If your spirit jar is
+Zlan, the frozen amalgamation of the seven liches who                   destroyed, you gain 2 Exhaustion levels, and you
+  created the Crystal Shard                                             can’t use the Soul Siphon ability until you create a
+                                                                        new one.
+All liches have in common their arcane prowess, their
+undead nature, and the sequestering of their souls. For
+more on liches, see the Monster Manual.
+
+
+
+
+©2026 Wizards of the Coast LLC. Permission granted to print and photocopy this page for personal use.                            11
+  Soul Siphon. When you reduce a Humanoid                               LICH ASCENSION
+enemy to 0 Hit Points, you can consume its soul and
+                                                                        Path of the Lich Feat (Prerequisite: Level 12+, at least
+gain a boost of arcane energy (no action required).
+                                                                        two Path of the Lich Feats)
+On your next turn, the first creature you hit with an
+attack takes extra Necrotic damage equal to 1d6 plus                    Your path to lichdom is complete. You gain the
+your spellcasting ability modifier. You also gain this                  following benefits.
+benefit if someone else reduces a Humanoid enemy                           Ability Score Increase. Increase your Intelligence,
+within 10 feet of you to 0 Hit Points. A soul                           Wisdom, or Charisma score by 1, to a maximum of
+consumed in this way can be restored only by a True                     20.
+Resurrection or Wish spell.                                                Undead. Your creature type is Undead.
+                                                                           Unholy Anatomy. You have Resistance to Necrotic
+ARCANE RESTORATION                                                      and Poison damage. You don’t gain Exhaustion levels
+Path of the Lich Feat (Prerequisite: Lich Initiate Feat)                from dehydration, malnutrition, or suffocation.
+                                                                           Frightening Gaze. You learn the Fear spell if you
+You gain the following benefits.                                        don’t already know it, and you always have it
+   Ability Score Increase. Increase your Intelligence,                  prepared. Intelligence, Wisdom, or Charisma is your
+Wisdom, or Charisma score by 1, to a maximum of                         spellcasting ability for this spell (choose when you
+20.                                                                     select this feat). You can cast the spell without
+   Essence Rejuvenation. When you use Soul Siphon                       expending a spell slot a number of times equal to
+to consume a soul, you can choose one or more                           your spellcasting ability modifier (minimum of
+expended spell slots to recover. The spell slots can                    once), and you regain all expended uses when you
+have a combined level equal to no more than 4. Once                     finish a Long Rest.
+you use this feature, you can’t use it again until you                     Rejuvenation. If you die, you re-form in 1d10 days
+finish a Short or Long Rest.                                            if you have a spirit jar and aren’t revived before
+                                                                        then. You gain a new body, appearing with all your
+TRANSFER LIFE                                                           Hit Points in the nearest unoccupied space within 5
+Path of the Lich Feat (Prerequisite: Lich Initiate Feat)                feet of your spirit jar.
+
+You gain the following benefits.
+  Ability Score Increase. Increase your Intelligence,
+Wisdom, or Charisma score by 1, to a maximum of
+20.
+  Soul Transference. When you use Soul Siphon to
+consume a soul, you can choose a creature within 60
+feet of yourself to gain Temporary Hit Points equal
+to your Proficiency Bonus plus your spellcasting
+ability modifier (minimum of 1 Temporary Hit
+Point).
+
+UNDEAD GRASP
+Path of the Lich Feat (Prerequisite: Lich Initiate Feat)
+You gain the following benefits.
+  Ability Score Increase. Increase your Intelligence,
+Wisdom, or Charisma score by 1, to a maximum of
+20.
+  Paralyzing Touch. You know the Chill Touch
+cantrip. If you already know it, you learn another
+cantrip of your choice. Intelligence, Wisdom, or
+Charisma is your spellcasting ability for this spell
+(choose when you select this feat).
+  When you deal damage with Chill Touch, you can
+expend a level 1+ spell slot to attempt to paralyze
+the target. The target takes an extra 1d10 Necrotic
+damage per level of the spell slot expended and must
+succeed on a Constitution saving throw against your
+spell save DC or have the Paralyzed condition until
+the start of your next turn.
+
+
+
+
+©2026 Wizards of the Coast LLC. Permission granted to print and photocopy this page for personal use.                         12
+

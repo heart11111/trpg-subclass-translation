@@ -1,0 +1,948 @@
+UNEARTHED ARCANA 2025                                                  PSION
+PSION UPDATE                                                           A Master of Psionic Power
+                                                                       Psions wield magic and extraordinary powers
+This playtest document is part of a series of                          through the power of thought. They develop their
+Unearthed Arcana articles that present material                        minds as fonts of power that manifest spells and
+designed for upcoming products. The material here                      grow stronger over the course of their adventuring
+uses the rules in the 2024 Player’s Handbook.                          careers. You can find everything you need to play
+                                                                       one of these psionic powerhouses in the next few
+LEARN MORE ON YOUTUBE                                                  sections.
+To learn more about the design in this article, we invite
+you to view the videos about it on YouTube                             WHAT IS A PSION?
+(www.youtube.com/DNDWizards).                                          Psions are spellcasters who use innate mental powers
+                                                                       to gain extraordinary abilities and unleash the magic of
+WHAT’S INSIDE                                                          their minds. Psions and their magic (sometimes called
+                                                                       “psionics”) can trace their history back to the appendix
+Psion. The first new class since the Artificer, the                    of the first edition Player’s Handbook, and a psionics-
+  Psion has received numerous changes based on                         using class first appeared in The Complete Psionics
+  your feedback.                                                       Handbook in 1991. Psionics have taken numerous
+Subclasses. Three subclasses return with changes:                      forms in D&D, from alternative magic systems to
+  Metamorph, Psykinetic, and Telepath.                                 options that dovetail with other D&D rules. In the fifth
+Spells. A collection of spells, both familiar and new,                 edition, psychic power is synonymous with magic, and
+  enhance the options available to the Psion.                          the magic of the mind flavors numerous spells,
+THIS IS PLAYTEST MATERIAL                                              monsters, and subclasses—like the Psi Warrior Fighter
+This article is presented for playtesting and feedback.                and the Aberrant Sorcery Sorcerer in the Player’s
+The options here are experimental and in draft form.                   Handbook. In this edition, the Psion is a spellcaster
+They aren’t officially part of the game. Your feedback                 who interfaces with magic and spellcasting similarly to
+will help determine whether we adopt it as official.                   other classes in the game.
+   How to Playtest This UA. We invite you to try out                     This UA provides the Psion with unique twists to
+this material in play. To play with this material, you                 spellcasting using Psionic Energy Dice and the Psionic
+may either incorporate it into your campaign or run                    Spellcasting feature, carving out a space to make the
+one or more special playtest sessions. For such a                      Psion stand out from its spellcasting peers.
+session, you may create an adventure of your own or                    CORE PSION TRAITS
+use a short adventure from a source like Quests from                     Primary Ability        Intelligence
+the Infinite Staircase.                                                  Hit Point Die          D6 per Psion level
+   Power Level. The character options you read here                      Saving Throw           Intelligence and Wisdom
+might be more or less powerful than options in the                       Proficiencies
+2024 Player’s Handbook. If a design survives                             Skill Proficiencies    Choose 2: Arcana, Insight,
+playtesting, we adjust its power to the desirable level                                         Intimidation, Investigation,
+before publication. This means an option could be                                               Medicine, Perception,
+more or less powerful in its final form.                                                        Persuasion
+   Feedback. The best way for you to give us feedback                    Weapon                 Simple weapons
+on this material is in the survey we’ll release on D&D                   Proficiencies
+Beyond. If we make this material official, it will be                    Armor Training         None
+refined based on your feedback, and then it will appear                  Starting               Choose A or B: (A) Spear, 2
+in a D&D book.                                                           Equipment              Daggers, Light Crossbow, 20
+   Providing feedback on this document is one way you                                           Bolts, Case, Dungeoneer’s Pack,
+can help shape the future of D&D!                                                               and 6 GP; or (B) 50 GP
+
+                                                                       BECOMING A PSION …
+                                                                       AS A LEVEL 1 CHARACTER
+                                                                       • Gain all the traits in the Core Psion Traits table.
+                                                                       • Gain the Psion’s level 1 features, which are listed
+                                                                         in the Psion Features table.
+
+
+
+
+©2025 Wizards of the Coast LLC. Permission granted to print and photocopy this page for personal use.                             1
+AS A MULTICLASS CHARACTER                                              • Psionic Modes have been removed. Aspects of the
+                                                                         design can be seen in other features like Psionic
+• Gain the Hit Point Die from the Core Psion Traits
+                                                                         Discipline.
+  table.
+                                                                       • Psionic Discipline now gives you additional
+• Gain the Psion’s level 1 features, which are listed
+  in the Psion Features table. See the multiclassing                     disciplines at earlier levels, but you gain only one.
+  rules in the Player’s Handbook to determine your                     • Psionic Restoration has been redesigned to quickly
+  available spell slots, adding all your Psion levels.                   regain expended Psionic Energy Dice.
+                                                                       • Psionic Reserves is a new feature that allows the
+PSION CLASS FEATURES                                                     Psion to keep a minimum amount of Psionic Energy
+                                                                         Dice.
+As a Psion, you gain the following class features                      • Enkindled Life Force is now more flexible in the
+when you reach the specified Psion levels. These                         amount of Hit Point Dice that can be expended and
+features are listed on the Psion Features table.                         clarifies the additional Psionic Energy Die aren’t
+                                                                         expended.
+DESIGN NOTE: PSION UPDATES
+Here are the main updates in this class since its last                 LEVEL 1: PSIONIC POWER
+appearance in Unearthed Arcana:                                        You harbor a wellspring of psionic energy within
+                                                                       yourself. This energy is represented by your Psionic
+• Psionic Power now has a free baseline ability in
+                                                                       Energy Dice. Your Psion level determines the die
+  Telekinetic Propel and Telepathic Connection.
+                                                                       size and number of Psionic Energy Dice you have, as
+• Spellcasting now provides new cantrips at levels 4                   shown in the Energy Dice column of the Psion
+  and 10.                                                              Features table.
+
+
+PSION FEATURES
+           Proficiency    Class                     Energy                    Prepared       —Spell Slots per Spell Level—
+ Level     Bonus          Features                  Dice        Cantrips      Spells         1 2 3 4 5 6 7 8 9
+   1       +2             Psionic Power,              4d6       2                  4         2 — — — — — — — —
+                          Spellcasting, Subtle
+                          Telekinesis
+    2      +2             Psionic Discipline          4d6       2                  5         3 — — — — — — — —
+    3      +2             Psion Subclass              4d6       2                  6         4 2 — — — — — — —
+    4      +2             Ability Score               4d6       3                  7         4 3 — — — — — — —
+                          Improvement
+    5      +3             Psionic Discipline,         6d8       3                  9         4 3 2 — — — — — —
+                          Psionic Restoration
+    6      +3             Subclass Feature            6d8       3                  10        4 3 3 — — — — — —
+    7      +3             Psionic Surge               6d8       3                  11        4 3 3 1 — — — — —
+    8      +3             Ability Score               6d8       3                  12        4 3 3 2 — — — — —
+                          Improvement
+    9      +4             —                           8d8       3                  14        4 3 3 3 1 — — — —
+   10      +4             Psionic Discipline,         8d8       4                  15        4 3 3 3 2 — — — —
+                          Subclass Feature
+   11      +4             —                           8d10      4                  16        4 3 3 3 2 1 — — —
+   12      +4             Ability Score               8d10      4                  16        4 3 3 3 2 1 — — —
+                          Improvement
+   13      +5             Psionic Discipline         10d10      4                  17        4 3 3 3 2 1 1 — —
+   14      +5             Subclass Feature           10d10      4                  17        4 3 3 3 2 1 1 — —
+   15      +5             —                          10d10      4                  18        4 3 3 3 2 1 1 1 —
+   16      +5             Ability Score              10d10      4                  18        4 3 3 3 2 1 1 1 —
+                          Improvement
+   17      +6             Psionic Discipline         12d12      4                  19        4 3 3 3 2 1 1 1 1
+   18      +6             Psionic Reserves           12d12      4                  20        4 3 3 3 3 1 1 1 1
+   19      +6             Epic Boon                  12d12      4                  21        4 3 3 3 3 2 1 1 1
+   20      +6             Enkindled Life Force       12d12      4                  22        4 3 3 3 3 2 2 1 1
+©2025 Wizards of the Coast LLC. Permission granted to print and photocopy this page for personal use.                            2
+   Your Psionic Energy Dice are used to enhance or                     spells. Charm Person, Command, Dissonant Whispers,
+fuel certain Psion features. You start with two such                   and Mage Armor are recommended.
+features: Telekinetic Propel and Telepathic                               The number of spells on your list increases as you
+Connection, each of which is detailed below. Some of                   gain Psion levels, as shown in the Prepared Spells
+your powers expend the Psionic Energy Dice, as                         column of the Psion Features table. Whenever that
+specified in a power’s description, and you can’t use                  number increases, choose additional Psion spells
+a power if it requires you to use a die when all your                  until the number of spells on your list matches the
+Psionic Energy Dice are expended.                                      number in the table. The chosen spells must be of a
+   You regain one expended Psionic Energy Die when                     level for which you have spell slots. For example, if
+you finish a Short Rest, and you regain all of them                    you’re a level 3 Psion, your list of prepared spells
+when you finish a Long Rest.                                           can include six Psion spells of levels 1 and 2 in any
+   Some features that use Psionic Energy Dice                          combination.
+require your target to make a saving throw. The save                      If another Psion feature gives you spells that you
+DC equals the spell save DC from this class’s                          always have prepared, those don’t count against the
+Spellcasting feature.                                                  number of spells you can prepare with this feature,
+   Telekinetic Propel. As a Bonus Action, choose one                   but those spells otherwise count as Psion spells for
+Large or smaller creature other than you that you                      you.
+can see within 30 feet of yourself. When you do so,                       Changing Your Prepared Spells. Whenever you
+the target must succeed on a Strength saving throw                     gain a Psion level, you can replace one spell on your
+or be moved 5 feet straight toward you or straight                     list with another Psion spell of an eligible level.
+away from you. Alternatively, you can roll one                            Spellcasting Ability. Intelligence is your
+Psionic Energy Die when you take this Bonus Action,                    spellcasting ability for your Psion spells.
+and the distance moved is equal to 5 times the                            Psionic Spellcasting. When you cast a Psion spell,
+number rolled. The die is expended only if the target                  that spell doesn’t require a Verbal or Material
+fails the saving throw.                                                component, even if the spell includes “V” or “M” in
+   Telepathic Connection. You have telepathy with a                    its “Components” entry, except Material components
+range of 30 feet. As a Bonus Action, you can roll one                  that are consumed by the spell or have a cost
+Psionic Energy Die. For the next hour, the range of                    specified in the spell.
+your telepathy increases by a number of feet equal
+to 10 times the number rolled. The first time you use                  LEVEL 1: SUBTLE TELEKINESIS
+this Bonus Action after each Long Rest, you don’t                      You know the Mage Hand cantrip. You can cast it
+expend the Psionic Energy Die. All other times you                     without Somatic components, and you can make the
+use this feature, you expend the die.                                  spectral hand Invisible when you cast it.
+LEVEL 1: SPELLCASTING                                                  LEVEL 2: PSIONIC DISCIPLINE
+You have learned how to channel magical energy                         You learn further psionic techniques that are fueled
+using the power of your mind. See the Player’s                         by your Psionic Energy Dice. You gain two
+Handbook for the rules on spellcasting. The                            disciplines of your choice, such as Expanded
+information below details how you use those rules                      Awareness and Id Insinuation. Disciplines are
+with Psion spells, which appear in the Psion spell list                described in the “Psionic Discipline Options” section
+later in the class’s description.                                      later in this class’s description.
+   Cantrips. You know two Psion cantrips of your                          You can use only one Discipline each turn and only
+choice. Minor Illusion and Telekinetic Fling are                       once per turn unless otherwise noted in one of those
+recommended.                                                           options.
+   Whenever you gain a Psion level, you can replace                       Whenever you gain a Psion level, you can replace
+one of your cantrips from this feature with another                    one of your Psionic Discipline options with one you
+Psion cantrip of your choice.                                          don’t know. You gain one additional option at Psion
+   When you reach Psion levels 4 and 10, you learn                     levels 5, 10, 13, and 17.
+another Psion cantrip of your choice, as shown in
+the Cantrips column of the Psion Features table.
+                                                                       LEVEL 3: PSION SUBCLASS
+   Spell Slots. The Psion Features table shows how
+many spell slots you have to cast your level 1+                        You gain a Psion subclass of your choice. The
+spells. You regain all expended spell slots when you                   Metamorph, Psykinetic, and Telepath subclasses are
+finish a Long Rest.                                                    detailed after this class’s description. A subclass is a
+   Prepared Spells of Level 1+. You prepare the list                   specialization that grants you features at certain
+of level 1+ spells that are available for you to cast                  Psion levels. For the rest of your career, you gain
+with this feature. To start, choose four level 1 Psion                 each of your subclass’s features that are of your
+                                                                       Psion level or lower.
+
+
+
+
+©2025 Wizards of the Coast LLC. Permission granted to print and photocopy this page for personal use.                         3
+LEVEL 4: ABILITY SCORE IMPROVEMENT                                     • Devilish Tongue, Expanded Awareness, and
+                                                                         Observant Mind (formerly Tactical Mind) now
+You gain the Ability Score Improvement feat or
+another feat of your choice for which you qualify.                       expend the Psionic Energy Die only on a success.
+You gain this feature again at Psion levels 8, 12, and                 • Sharpened Mind is a new discipline, and Ego Whip
+16.                                                                      has been redesigned as a spell.
+
+                                                                       BIOFEEDBACK
+LEVEL 5: PSIONIC RESTORATION
+                                                                       When you cast a Psion spell from the Necromancy or
+You can perform a meditation that focuses the mind                     Transmutation school, you can expend a number of
+for 1 minute. At the end of it, you regain expended                    Psionic Energy Dice up to your Intelligence modifier,
+Psionic Energy Dice. Once you use this feature, you                    roll them, and gain a number of Temporary Hit
+can’t do so again until you finish a Long Rest.                        Points equal to the total number rolled plus your
+                                                                       Intelligence modifier (minimum of one).
+LEVEL 7: PSIONIC SURGE
+You can push your psionic powers using your life                       BOLSTERING PRECOGNITION
+force. After you roll one or more Psionic Energy                       When you cast a Psion spell from the Abjuration or
+Dice, you can expend one of your Hit Point Dice and                    Divination school, you can expend one Psionic
+treat any roll of 1, 2, or 3 on those Psionic Energy                   Energy Die. Roll the die and choose a creature you
+Dice as a 4.                                                           can see within 60 feet (which can be yourself). Until
+                                                                       the end of your next turn, the creature gains a bonus
+LEVEL 18: PSIONIC RESERVES                                             to the next D20 Test it makes equal to the number
+When you roll Initiative, you regain expended uses                     rolled.
+of Psionic Energy Dice until you have four if you
+have fewer than that.                                                  DESTRUCTIVE THOUGHTS
+                                                                       When you cast a Psion spell from the Conjuration or
+LEVEL 19: EPIC BOON                                                    Evocation school that forces a creature you can see
+You gain an Epic Boon feat or another feat of your                     to make a saving throw against the spell, you can
+choice for which you qualify. Boon of Energy                           expend a number of Psionic Energy Dice up to your
+Resistance is recommended.                                             Intelligence modifier, and roll them. The creature
+                                                                       takes Psychic damage equal to the total number
+LEVEL 20: ENKINDLED LIFE FORCE                                         rolled plus your Intelligence modifier (minimum of
+You burn your life force to achieve greater psionics.                  one), regardless of the result of the saving throw.
+Once per turn, when you roll one or more Psionic
+Energy Dice for a Psion feature or Psionic Discipline,                 DEVILISH TONGUE
+you can expend one or two of your Hit Point Dice.                      When you take the Influence action, you can roll one
+For each Hit Point Die expended, roll an additional                    Psionic Energy Die and add the number rolled to the
+Psionic Energy Die and add the numbers rolled to                       ability check. If this causes you to succeed on the
+the total. This roll does not expend the Psionic                       ability check, the die is expended.
+Energy Die.
+                                                                       EXPANDED AWARENESS
+PSIONIC DISCIPLINE OPTIONS                                             When you take the Search action, you can roll one
+                                                                       Psionic Energy Die and add the number rolled to the
+Psionic Discipline options appear in alphabetical                      ability check. If this causes you to succeed on the
+order.                                                                 ability check, the die is expended.
+DESIGN NOTE: PSION UPDATES
+                                                                       ID INSINUATION
+Here are the main updates in this feature since its last
+appearance in Unearthed Arcana:                                        When you cast a Psion spell from the Enchantment
+                                                                       or Illusion school that forces a creature to make a
+• Biofeedback and Destructive Thoughts are now                         saving throw, you can expend one Psionic Energy
+  more flexible in the number of Psionic Energy Dice                   Dice and roll it. One target of the spell you can see
+  you can expend.                                                      subtracts half the number rolled (round up) from its
+• Bolstering Precognition (formerly Swift                              saving throw against the spell.
+  Precognition) now provides a bonus to your or an
+  ally’s next D20 Test.
+
+
+
+
+©2025 Wizards of the Coast LLC. Permission granted to print and photocopy this page for personal use.                       4
+INERRANT AIM                                                           PSION SPELL LIST
+When you make an attack roll against a creature and
+miss, you can roll one Psionic Energy Die and add                      This section presents the Psion spell list. The spells
+the number rolled to the attack roll. If this causes the               are organized by spell level and then alphabetized,
+attack to hit, the die is expended.                                    and each spell’s school of magic is listed. In the
+                                                                       Special column, C means the spell requires
+                                                                       Concentration, R means it’s a Ritual, and M means it
+OBSERVANT MIND
+                                                                       requires a specific Material component.
+When you take the Study action, you can roll one
+Psionic Energy Die and add the number rolled to the                    DESIGN NOTE: SPELL LIST UPDATES
+ability check. If this causes you to succeed on the                    The Psion spell list includes the following new spells:
+ability check, the die is expended.
+                                                                       • Level 1: Life Siphon, Sanctuary, Shield, Thunderwave
+PSIONIC BACKLASH                                                       • Level 2: Ectoplasmic Trail, Ego Whip
+Immediately after a creature you can see hits you                      • Level 3: Bleeding Darkness, Enemies Abound
+with an attack roll, you can take a Reaction to                        • Level 4: Life Inversion Field
+expend one Psionic Energy Die, roll it, and reduce                     • Level 6: Mental Prison, Psionic Blast, Thought Form
+the damage you take from the attack equal to two                       • Level 8: Abi-Dalzim’s Horrid Wilting
+times the number rolled plus your Intelligence                         The list includes only spells from the Player’s Handbook
+modifier (minimum of two). In addition, you can
+                                                                       and in this article.
+force the attacker to make a Wisdom saving throw.
+On a failed save, the target takes Psychic damage
+equal to the amount of damage you reduced.                             CANTRIPS (LEVEL 0 PSION SPELLS)
+                                                                         Spell                          School           Special
+PSIONIC GUARDS                                                           Blade Ward                     Abjuration       C
+At the start of your turn, you can expend one Psionic                    Dancing Lights                 Illusion         C
+Energy Die. Until the start of your next turn, you                       Friends                        Enchantment      C
+have Immunity to the Charmed and Frightened                              Light                          Evocation        —
+conditions and Advantage on Intelligence saving                          Mage Hand                      Conjuration      —
+throws. If you are Charmed or Frightened when you                        Mending                        Transmutation    —
+use this discipline, the condition ends on you.                          Message                        Transmutation    —
+  When you use Psionic Guards, you can also use a                        Mind Sliver                    Enchantment      —
+different Psionic Discipline this turn.                                  Minor Illusion                 Illusion         —
+                                                                         Prestidigitation               Transmutation    —
+SHARPENED MIND                                                           Telekinetic Fling              Evocation        —
+At the start of your turn, you can expend one Psionic                    (appears in this UA)
+Energy Die to hone your destructive psionics. Roll                       True Strike                    Divination       —
+the die and record the number rolled. You gain the
+following benefits for 1 minute or until you have the
+                                                                       LEVEL 1 PSION SPELLS
+Incapacitated condition.
+                                                                         Spell                          School            Special
+  Bypassing Psionics. Damage from your weapon
+attacks, Psion spells, and Psion features ignores                        Animal Friendship              Enchantment       —
+Resistance to Psychic damage.                                            Charm Person                   Enchantment       —
+  Attack Mode. Once per turn, when you deal                              Command                        Enchantment       —
+Psychic damage to one or more creatures, you can                         Comprehend                     Divination        R
+replace the number rolled on one of the damage dice                      Languages
+with the number recorded when you activated this                         Detect Magic                   Divination        C, R
+Psionic Discipline.                                                      Dissonant Whispers             Enchantment       —
+  When you use Sharpened Mind, you can also use a                        Feather Fall                   Transmutation     —
+different Psionic Discipline this turn.                                  Identify                       Divination        R, M
+                                                                         Jump                           Transmutation     —
+                                                                         Life Siphon                    Evocation         —
+                                                                         (appears in this UA)
+                                                                         Longstrider                    Transmutation     —
+                                                                         Mage Armor                     Abjuration        —
+                                                                         Sanctuary                      Abjuration        —
+                                                                         Shield                         Abjuration        —
+
+
+
+
+©2025 Wizards of the Coast LLC. Permission granted to print and photocopy this page for personal use.                            5
+ Silent Image                Illusion                C                   Major Image                    Illusion         C
+ Sleep                       Enchantment             C                   Nondetection                   Abjuration       M
+ Speak with Animals          Divination              R                   Sending                        Divination       —
+ Tasha’s Hideous             Enchantment             C                   Summon Astral Entity           Conjuration      C, M
+ Laughter                                                                (appears in this UA)
+ Tenser’s Floating Disk      Conjuration             R                   Telekinetic Crush              Transmutation    —
+ Thunderwave                 Evocation               —                   (appears in this UA)
+                                                                         Tongues                        Divination       —
+LEVEL 2 PSION SPELLS
+ Spell                       School                Special             LEVEL 4 PSION SPELLS
+ Animal Messenger            Enchantment           R                     Spell                          School          Special
+ Blindness/Deafness          Transmutation         —                     Arcane Eye                     Divination      C
+ Calm Emotions               Enchantment           C                     Banishment                     Abjuration      C
+ Crown of Madness            Enchantment           C                     Charm Monster                  Enchantment     —
+ Detect Thoughts             Divination            C                     Compulsion                     Enchantment     C
+ Ectoplasmic Trail           Necromancy            —                     Confusion                      Enchantment     C
+ (appears in this UA)                                                    Dimension Door                 Conjuration     —
+ Ego Whip (appears in        Enchantment           —                     Freedom of Movement            Abjuration      —
+ this UA)                                                                Greater Invisibility           Illusion        C
+ Enhance Ability             Transmutation         C                     Hallucinatory Terrain          Illusion        —
+ Enlarge/Reduce              Transmutation         C                     Life Inversion Field           Abjuration      C
+ Enthrall                    Enchantment           C                     (appears in this UA)
+ Heat Metal                  Transmutation         C                     Locate Creature                Divination      C
+ Hold Person                 Enchantment           C                     Phantasmal Killer              Illusion        C
+ Invisibility                Illusion              C                     Polymorph                      Transmutation   C
+ Knock                       Transmutation         —                     Raulothim’s Psychic            Enchantment     —
+ Levitate                    Transmutation         C                     Lance (appears in this
+ Locate Animals or           Divination            R                     UA)
+ Plants                                                                  Summon Aberration              Conjuration     C, M
+ Locate Object               Divination            C
+ Magic Mouth                 Illusion              R, M                LEVEL 5 PSION SPELLS
+ Mind Spike                  Divination            C                     Spell                          School          Special
+ Mirror Image                Illusion              —                     Animate Objects                Transmutation   C
+ Phantasmal Force            Illusion              C                     Awaken                         Transmutation   M
+ See Invisibility            Divination            —                     Contact Other Plane            Divination      R
+ Shatter                     Evocation             —                     Dominate Person                Enchantment     C
+ Silence                     Illusion              C, R                  Dream                          Illusion        —
+ Suggestion                  Enchantment           C                     Geas                           Enchantment     —
+ Tasha’s Mind Whip           Enchantment           —                     Hold Monster                   Enchantment     C
+ (appears in this UA)                                                    Legend Lore                    Divination      M
+ Zone of Truth               Enchantment           —                     Mislead                        Illusion        C
+                                                                         Modify Memory                  Enchantment     C
+LEVEL 3 PSION SPELLS                                                     Rary’s Telepathic Bond         Divination      R
+ Spell                       School                Special               Scrying                        Divination      C, M
+ Bestow Curse                Necromancy            C                     Seeming                        Illusion        —
+ Bleeding Darkness           Evocation             C, M                  Synaptic Static                Enchantment     —
+ (appears in this UA)                                                    Telekinesis                    Transmutation   C
+ Clairvoyance                Divination            C, M                  Teleportation Circle           Conjuration     M
+ Dispel Magic                Abjuration            —
+ Enemies Abound              Enchantment           C                   LEVEL 6 PSION SPELLS
+ (appears in this UA)                                                    Spell                          School           Special
+ Fear                        Illusion              C                     Blade Barrier                  Evocation        C
+ Fly                         Transmutation         C                     Disintegrate                   Transmutation    —
+ Hypnotic Pattern            Illusion              C                     Eyebite                        Necromancy       C
+ Intellect Fortress          Abjuration            C                     Find the Path                  Divination       C, M
+ (appears in this UA)
+
+
+
+©2025 Wizards of the Coast LLC. Permission granted to print and photocopy this page for personal use.                             6
+ Mass Suggestion             Enchantment           —
+ Mental Prison               Illusion              C                   PSION SUBCLASSES
+ (appears in this UA)                                                  A Psion subclass is a specialization that grants you
+ Move Earth                  Transmutation         C                   features at certain Psion levels, as specified in the
+ Otto’s Irresistible         Enchantment           C                   subclass. This section presents the Metamorph,
+ Dance                                                                 Psykinetic, and Telepath subclasses.
+ Programmed Illusion         Illusion              M
+ Psionic Blast (appears      Evocation             —                   DESIGN NOTE: THE PSI WARPER
+ in this UA)                                                           The Psi Warper subclass scored exceptionally well and
+ Thought Form                Transmutation         C, M                doesn’t need to go through another playtest.
+ (appears in this UA)
+ True Seeing                 Divination            M                   METAMORPH
+                                                                       Psychically Sculpt Life and Flesh
+LEVEL 7 PSION SPELLS
+ Spell                       School                Special             Your mastery of psionic powers turns inward. Your
+ Etherealness                Conjuration           —                   own flesh becomes like clay to you, and you mold it
+ Forcecage                   Evocation             C, M                into the perfect vessel for your psionic powers.
+                                                                       Experience in manipulating your life energy also
+ Mirage Arcane               Illusion              —
+                                                                       enables you to adjust the life force of friends and
+ Plane Shift                 Conjuration           M
+                                                                       foes.
+ Power Word Fortify          Enchantment           —
+ Project Image               Illusion              C, M                DESIGN NOTE: METAMORPH UPDATES
+ Reverse Gravity             Transmutation         C                   Here are the main updates in this subclass since its last
+ Teleport                    Conjuration           —                   appearance in Unearthed Arcana:
+
+LEVEL 8 PSION SPELLS                                                   • Mutable Form (formerly Extend Limbs) now grants
+ Spell                       School                Special               Temporary Hit Points from the expended Psionic
+ Abi-Dalzim’s Horrid         Necromancy            —                     Energy Die.
+ Wilting (appears in                                                   • Organic Weapons now regains its form until you
+ this UA)                                                                change it or have the Unconscious condition. In
+ Antimagic Field             Abjuration            C                     addition, magic items that provide benefits to
+ Antipathy/Sympathy          Enchantment           —                     Organic Weapons will appear in a future product if
+ Befuddlement                Enchantment           —                     this subclass is printed.
+ Dominate Monster            Enchantment           C                   • Flesh Weaver is a new feature.
+ Glibness                    Enchantment           —                   • Life-Bending Weapons now provides additional
+ Maze                        Conjuration           C                     damage without expending a Psionic Energy Die.
+ Mind Blank                  Abjuration            —
+                                                                       LEVEL 3: METAMORPH SPELLS
+ Power Word Stun             Enchantment           —
+ Telepathy                   Divination            —                   When you reach a Psion level specified in the
+                                                                       Metamorph Spells table, you thereafter always have
+                                                                       the listed spells prepared.
+LEVEL 9 PSION SPELLS
+ Spell                       School                 Special            METAMORPH SPELLS
+ Astral Projection           Necromancy             M                    Psion Level     Spells
+ Foresight                   Divination             —                    3               Alter Self, Cure Wounds, Inflict
+ Power Word Heal             Enchantment            —                                    Wounds, Lesser Restoration
+ Power Word Kill             Enchantment            —                    5               Aura of Vitality, Haste
+ Psychic Scream              Enchantment            —                    7               Polymorph, Stoneskin
+ (appears in this UA)                                                    9               Contagion, Mass Cure Wounds
+ Shapechange                 Transmutation          C, M
+ Time Stop                   Transmutation          —
+                                                                       LEVEL 3: MUTABLE FORM
+ Weird                       Illusion               C
+                                                                       As a Bonus Action, you can expend one Psionic
+                                                                       Energy Die to psionically stretch your limbs for 1
+                                                                       minute. Roll the expended Psionic Energy Die and
+                                                                       gain a number of Temporary Hit Points equal to the
+                                                                       number rolled plus your Intelligence modifier
+                                                                       (minimum of 1 Temporary Hit Point). In addition,
+
+
+
+©2025 Wizards of the Coast LLC. Permission granted to print and photocopy this page for personal use.                          7
+you gain the following benefits while this feature is                  LEVEL 6: FLESH WEAVER
+active.
+                                                                       When you use Mutable Form, you can expend an
+  Reach. Your reach increases by 5 feet.
+                                                                       additional Psionic Energy Die to gain the following
+  Speed. Your Speed increases by 5 feet.
+                                                                       benefits while the feature is active.
+  Touch. When you cast a spell that has a range of
+                                                                         Organic Defense. You gain a +2 bonus to AC.
+Touch and a casting time of an action, you can make
+                                                                         Empowered Healing. When you cast a spell with a
+the spell’s range 10 feet.
+                                                                       spell slot that restores Hit Points to one or more
+                                                                       creatures, you can expend one Psionic Energy Die,
+LEVEL 3: ORGANIC WEAPONS                                               roll it, and add the number rolled to the number of
+You can shape your limbs into weapons. As a Magic                      Hit Points regained.
+action, you can reform your free hand into one of the
+following organic weapons: Bone Blade, Flesh Maul,                     LEVEL 10: IMPROVED MUTABLE FORM
+or Viscera Launcher. When you take the Attack
+                                                                       When you use Mutable Form, the duration increases
+action, you can use this feature before you make the
+                                                                       to 10 minutes and you gain one of the following
+attack roll. Your limb retains the form of the organic
+                                                                       benefits of your choice, the effects of which last until
+weapon until you take a Magic action to change it
+                                                                       Mutable Form ends.
+into another organic weapon, you have the
+                                                                         Stony Epidermis. You have Advantage on
+Unconscious condition, or you return the limb to its
+                                                                       Constitution saving throws to maintain
+previous form (no action required).
+                                                                       Concentration. In addition, choose one of the
+  Whenever you attack with the weapon, you can
+                                                                       following damage types: Acid, Bludgeoning, Cold,
+use your Intelligence modifier for the attack and
+                                                                       Fire, Lightning, Piercing, Poison, Slashing, or
+damage rolls instead of using Strength or Dexterity.
+                                                                       Thunder. You gain Resistance to the chosen damage
+  Bone Blade. A blade made of bone springs from
+                                                                       type.
+your forearm or extends from your hand. The blade
+                                                                         Superior Stride. While you aren’t wearing armor,
+counts as a Simple Melee weapon with the Finesse
+                                                                       you can take the Dash action as a Bonus Action, and
+property, and it deals 1d8 Piercing damage on a hit.
+                                                                       you have a Climb Speed and Swim Speed equal to
+You have Advantage on the attack roll you make
+                                                                       your Speed.
+with the blade if at least one of your allies is within 5
+                                                                         Unnatural Flexibility. You gain a +1 bonus to AC,
+feet of the target and the ally doesn’t have the
+                                                                       and your body—along with any equipment you’re
+Incapacitated condition.
+                                                                       wearing or carrying—becomes pliable. You can
+  Flesh Maul. Your fist and forearm coalesce into a
+                                                                       move through any space as narrow as 1 inch, and
+hardened mass of flesh and bone. The maul counts
+                                                                       you can spend 5 feet of movement to escape from
+as a Simple Melee weapon and deals 1d10
+                                                                       nonmagical restraints or end the Grappled
+Bludgeoning damage on a hit. A creature hit by the
+                                                                       condition.
+maul has Disadvantage on the next Strength or
+Constitution saving throw it makes before the start
+of its next turn.                                                      LEVEL 14: LIFE-BENDING WEAPONS
+  Viscera Launcher. Your hand and forearm                              Your weapon becomes wreathed in negative energy,
+transform into a crossbow made of muscle and                           and you radiate life-mending psionic energy. When
+sinew that fires bolts of bile. The launcher counts as                 you hit a target with an attack roll using your
+a Simple Ranged weapon with a normal range of 30                       Organic Weapon, roll one Psionic Energy Die. The
+feet and a long range of 90 feet, and it deals 1d6 Acid                target takes extra Necrotic damage equal to the
+damage on a hit. Once on each of your turns when                       number rolled. This roll doesn’t expend the die.
+you hit a creature with an attack roll using the                         Alternatively, when you hit a creature with your
+launcher, you can deal an extra 1d6 Acid damage to                     Organic Weapon, you can instead expend one
+the target.                                                            Psionic Energy Die and roll it. The target takes extra
+                                                                       Necrotic damage equal to the roll, and each creature
+LEVEL 6: EXTRA ATTACK                                                  of your choice in a 30-foot Emanation originating
+                                                                       from you regains Hit Points equal the number rolled
+You can attack twice instead of once whenever you
+                                                                       plus your Intelligence modifier. Once you use this
+take the Attack action on your turn.
+                                                                       feature, you can’t do so again until the start of your
+  In addition, you can cast one of your Psion
+                                                                       next turn.
+cantrips that has a casting time of an action in place
+of one of those attacks.
+
+
+
+
+©2025 Wizards of the Coast LLC. Permission granted to print and photocopy this page for personal use.                         8
+PSYKINETIC                                                               Boost. The target’s Speed increases by 10 feet
+                                                                       until the start of your next turn.
+Mold Psionic Force for Creation and Destruction                          Disorient. The target can’t make Opportunity
+                                                                       Attacks until the start of its next turn.
+A Psykinetic controls their psionic powers like a                        Telekinetic Bolt. The target takes Force damage
+malleable force. They bend their telekinetic energies                  equal to the number rolled on the Psionic Energy
+into sturdy barriers and strike with the force of a                    Die.
+battering ram.
+                                                                       LEVEL 6: DESTRUCTIVE TRANCE
+DESIGN NOTE: PSYKINETIC UPDATES
+Here are the main updates in this subclass since its last              At the start of your turn, you can expend one Psionic
+appearance in Unearthed Arcana:                                        Energy Die to enter a destructive state. For the next
+                                                                       10 minutes, you gain a Fly Speed of 20 feet and can
+• Stronger Telekinesis is a new feature.                               hover, and when you cast a Psion spell that expends
+• Telekinetic Techniques now allows the Psion to use                   a spell slot, you can roll your Psionic Energy Die and
+  Telekinetic Propel more than any other Psion.                        add the number rolled to one damage roll of that
+• Destructive Trance (formerly Empowered Attack                        spell. This roll doesn’t expend the Psionic Energy
+  Mode) no longer uses Psionic Modes, and you can                      Die.
+  add one Psionic Energy Die to your spell damage
+  without expending it.                                                LEVEL 6: REBOUNDING FIELD
+• Rebounding Field grants Temporary Hit Points                         When you cast Shield in response to being hit by an
+  whether the target fails or succeeds on its saving                   attack roll and cause the triggering attack to miss,
+  throw.                                                               you can expend one Psionic Energy Die to launch the
+• Enhanced Telekinetic Crush now adds the Psionic                      force back at the attacker. The attacker makes a
+  Energy Die expended to the modified spell’s                          Dexterity saving throw. Roll one Psionic Energy Die.
+  damage.                                                              On a failed save, the attacker takes Force damage
+• Heightened Telekinesis now only requires Psionic                     equal to the amount rolled plus your Intelligence
+  Energy Dice and doesn’t expend a spell slot.                         modifier. On a successful save, the attacker takes
+                                                                       half as much damage only. Whether the target fails
+LEVEL 3: PSYKINETIC SPELLS                                             or succeeds on the saving throw, you gain
+                                                                       Temporary Hit Points equal to the amount of
+When you reach a Psion level specified in the
+Psykinetic Spells table, you thereafter always have                    damage dealt.
+the listed spells prepared.
+                                                                       LEVEL 10: ENHANCED TELEKINETIC CRUSH
+PSYKINETIC SPELLS                                                      When you cast Telekinetic Crush, you can expend one
+ Psion Level      Spells                                               Psionic Energy Die to modify the spell so that
+ 3                Cloud of Daggers, Levitate, Shield,                  whether a creature fails or succeeds on the saving
+                  Thunderwave                                          throw against the spell, its Speed is halved until the
+ 5                Slow, Telekinetic Crush (included in                 start of your next turn. In addition, you can roll the
+                  this UA)                                             expended Psionic Energy Die and add the number
+ 7                Otiluke’s Resilient Sphere, Stone                    rolled to one damage roll of the spell.
+                  Shape
+ 9                Telekinesis, Wall of Force                           LEVEL 14: HEIGHTENED TELEKINESIS
+                                                                       You can cast Telekinesis without expending a spell
+LEVEL 3: STRONGER TELEKINESIS                                          slot by instead expending four Psionic Energy Dice.
+                                                                       When you cast Telekinesis without expending a spell
+When you cast Mage Hand, its range increases by 30                     slot using this feature, you can modify the spell so
+feet when you cast it, and the hand can carry up to                    that it doesn’t require Concentration. If you do so,
+20 pounds.                                                             the spell’s duration becomes 1 minute for that
+                                                                       casting, and you can target Gargantuan creatures
+LEVEL 3: TELEKINETIC TECHNIQUES                                        and objects.
+When you use Telekinetic Propel, you can roll 1d4
+and use the number rolled instead of expending a
+Psionic Energy Die.
+  In addition, when a target fails the saving throw
+against your Telekinetic Propel, you can impose one
+of the following effects on that target.
+
+
+
+
+©2025 Wizards of the Coast LLC. Permission granted to print and photocopy this page for personal use.                       9
+TELEPATH                                                               LEVEL 3: TELEPATHIC DISTRACTION
+                                                                       When a creature you can see within range of your
+Master Tactics in the Landscape of the Mind                            telepathy hits with an attack roll, you can take a
+Telepaths are masters of mind magic. They use their                    Reaction to roll one Psionic Energy Die and subtract
+psionic powers for all matters of the mind, whether                    the number rolled from attack roll, potentially
+they bolster the mental defenses of allies or probe                    causing the attack to miss. The die is expended only
+the thoughts of others undetected. A telepath can be                   if the target misses the attack.
+a bastion of psionic aid or a crafty manipulator.
+                                                                       LEVEL 6: BULWARK MIND
+DESIGN NOTE: TELEPATH UPDATES                                          At the start of your turn, you can expend one Psionic
+Here are the main updates in this subclass since its last              Energy Die to strengthen your mind and enter a
+appearance in Unearthed Arcana:                                        fortified state. For the next 10 minutes, you have
+• Mind Infiltrator now expends only one Psionic                        Resistance to Psychic damage; and whenever you
+  Energy Die.                                                          make an Intelligence, Wisdom, or Charisma saving
+                                                                       throw, you add a roll of your Psionic Energy Die to
+• Telepath Spells has new spells.
+                                                                       the save. Rolling the Psionic Energy Die doesn’t
+• Telepathic Distraction is a new feature replacing                    expend it. You can’t use this benefit if you have the
+  Telepathic Hub.                                                      Incapacitated condition.
+• Bulwark Mind (formerly Empowered Defense Mode)
+  no longer uses Psionic Modes, and you can add one                    LEVEL 6: POTENT THOUGHTS
+  Psionic Energy Die to a saving throw without
+                                                                       You have telepathy with a range of 60 feet. In
+  expending it.
+                                                                       addition, you add your Intelligence modifier to the
+• Potent Thoughts now also increases the range of
+                                                                       damage you deal with any Psion cantrip.
+  your telepathy.
+• Scramble Minds now doesn’t expend a spell slot and                   LEVEL 10: TELEPATHIC BOLSTERING
+  allows the Psion to choose the behavior of the target
+  instead of rolling dice.                                             When you or a creature you can see within range of
+                                                                       your telepathy fails an ability check or misses with
+LEVEL 3: MIND INFILTRATOR                                              an attack roll, you can take a Reaction to expend one
+When you cast Detect Thoughts, you can expend one                      Psionic Energy Die. Roll the die and add the number
+Psionic Energy Die to modify the spell so that the                     rolled to the d20, potentially turning a failed check
+spell doesn’t require spell components or                              into a success or a miss into a hit. The Psionic
+Concentration. In addition, when you use the Read                      Energy Die is expended only if the check succeeds or
+Thoughts effect of the spell, the target doesn’t know                  the attack hits.
+you’re probing its mind if it fails the Wisdom saving
+throw.                                                                 LEVEL 14: SCRAMBLE MINDS
+                                                                       You can cast Confusion without expending a spell
+LEVEL 3: TELEPATH SPELLS                                               slot by instead expending four Psionic Energy Dice.
+When you reach a Psion level specified in the                          When you cast Confusion without a spell slot using
+Telepath Spells table, you thereafter always have the                  this feature, you can modify the spell so that the
+                                                                       radius of the spell’s Sphere becomes 30 feet and you
+listed spells prepared.
+                                                                       can choose one creature you can see in the spell’s
+TELEPATH SPELLS                                                        area to automatically succeed on their saving throw
+                                                                       against the spell.
+ Psion Level      Spells
+                                                                         In addition, when a creature under the effect of
+ 3                Bane, Command, Detect Thoughts,
+                                                                       the spell starts its turn, you choose their behavior
+                  Mind Spike
+                                                                       from the table for the turn instead of the creature
+ 5                Counterspell, Slow                                   rolling to determine its behavior.
+ 7                Compulsion, Confusion
+ 9                Modify Memory, Yolande’s Regal
+                  Presence
+
+
+
+
+©2025 Wizards of the Coast LLC. Permission granted to print and photocopy this page for personal use.                        10
+SPELLS                                                                 the area. When the Darkness appears, each creature
+                                                                       in the area must succeed on a Constitution saving
+Spells are presented in alphabetical order. If a spell                 throw or take 3d8 Cold damage and have the
+includes the Artificer in the parentheses after the                    Blinded condition until the end of its next turn. A
+spell’s school of magic, that spell is added to the                    creature also makes this save when it enters the
+Artificer’s spell list (use the most recent version of                 spell’s area for the first time on a turn or ends its
+the Artificer that appeared in Unearthed Arcana).                      turn there. A creature makes this save only once per
+                                                                       turn.
+DESIGN NOTE: SPELL UPDATES                                               Until the spell ends, you can take a Magic action to
+Several spells from Tasha’s Cauldron of Everything                     move the Sphere up to 20 feet horizontally and
+return in this article, alongside some new spells. Here                cause the Sphere to pour magical Darkness until the
+are the main updates to spells in this article:                        start of your next turn.
+                                                                          Using a Higher-Level Spell Slot. The damage
+General Updates. Returning spells have been refined                    increases by 1d8 for each spell slot level above 3.
+  and brought in line with revisions in the 2024
+  Player’s Handbook.                                                   ECTOPLASMIC TRAIL
+New Spells. New spells in this article—Bleeding                        Level 2 Necromancy (Psion, Warlock)
+  Darkness, Ectoplasmic Trail, Life Inversion Field,
+  Summon Astral Entity, and Telekinetic Crush—add                      Casting Time: Bonus Action
+  new options to various classes’ spell lists. The Psion               Range: Self
+  also receives unique spells: Ego Whip, Life Siphon,                  Components: V, S
+                                                                       Duration: Instantaneous
+  Psionic Blast, and Thought Form.
+                                                                       You cloak yourself in spirits that leave ectoplasm in
+Telekinetic Fling. This cantrip no longer requires
+                                                                       your wake until the end of your turn. While cloaked,
+  ammunition and doesn’t destroy the object.
+                                                                       you can move through occupied spaces as if they
+Tasha’s Mind Whip. The spell now restricts the target’s
+                                                                       were Difficult Terrain, and moving doesn’t provoke
+  turn options as before.
+                                                                       Opportunity Attacks. If you end your turn in such a
+ABI-DALZIM’S HORRID WILTING                                            space, you are returned to the last unoccupied space
+                                                                       you were in.
+Level 8 Necromancy (Psion, Sorcerer, Wizard)                             While cloaked, whenever you enter the space of a
+Casting Time: Action                                                   creature, the creature becomes covered in
+Range: 150 feet                                                        ectoplasm until the end of your next turn. A creature
+Components: V, S, M (a bit of sponge)                                  covered in ectoplasm has its Speed reduced by 10
+Duration: Instantaneous                                                feet and takes 2d8 Necrotic damage at the start of its
+You draw the moisture from every creature in a 30-                     turn. A creature can be covered in ectoplasm only
+foot Cube centered on a point within range. Each                       once during a turn.
+creature in that area makes a Constitution saving                        Using a Higher-Level Spell Slot. While cloaked,
+throw, taking 12d8 Necrotic damage on a failed save                    your Speed increases by 10 feet for each spell slot
+or half as much damage on a successful one.                            level above 2.
+Constructs automatically succeed at the save, and
+Plant creatures automatically fail the save.                           EGO WHIP
+  Nonmagical plants in the area that aren’t                            Level 2 Enchantment Spell (Psion)
+creatures, such as trees and shrubs, wither and die
+instantly.                                                             Casting Time: Reaction, which you take when a creature
+                                                                         you can see within 30 feet of yourself makes a
+BLEEDING DARKNESS                                                        Charisma-based ability check or saving throw
+                                                                       Range: 120 feet
+Level 3 Evocation (Psion, Warlock, Wizard)                             Components: V
+Casting Time: Action                                                   Duration: Instantaneous
+Range: 60 feet                                                         The creature makes Charisma saving throw. On a
+Components: V, S, M (a vial of rare ink worth 50+ GP)                  failed save, the target must subtract 1d8 from the
+Duration: Concentration, up to 1 minute                                ability check or saving throw.
+You create an inky void in a 10-foot-radius Sphere at
+a point you can see above yourself within range.
+   When you cast the spell, magical Darkness pours
+from the sphere, filling a 10-foot-radius, 40-foot-tall
+Cylinder originating from the Sphere until the start
+of your next turn. The Cylinder is Difficult Terrain,
+and no light—magical or otherwise—can illuminate
+
+
+
+©2025 Wizards of the Coast LLC. Permission granted to print and photocopy this page for personal use.                       11
+ENEMIES ABOUND                                                         LIFE INVERSION FIELD
+Level 3 Enchantment (Bard, Psion, Sorcerer, Warlock,                   Level 4 Abjuration (Cleric, Psion, Sorcerer)
+Wizard)
+                                                                       Casting Time: Action
+Casting Time: Action                                                   Range: Self
+Range: 120 feet                                                        Components: V, S
+Components: V, S                                                       Duration: Concentration, up to 1 minute
+Duration: Concentration, up to 1 minute                                An aura radiates from you in a 30-foot Emanation
+Choose a creature you can see within range. The                        for the duration. When you create the aura, you
+target must succeed on an Intelligence saving throw                    regain 4d8 Hit Points. Whenever you regain Hit
+or have the Frightened condition for the duration.                     Points, you can choose a creature you can see in the
+While Frightened, the target loses the ability to                      aura and force it to make a Constitution saving
+distinguish friend from foe and is affected in the                     throw. On a failed save, the creature takes Necrotic
+following ways:                                                        damage equal to half the amount of Hit Points you
+                                                                       regained (round up). A creature makes this save
+• The target regards all creatures it can see as                       only once per turn.
+   enemies.                                                              Using a Higher-Level Spell Slot. The healing
+• Whenever the target chooses a creature other                         increase by 1d8 for each spell slot level above 4.
+   than itself for an attack, spell, or other ability, it
+   must choose at random from among the                                LIFE SIPHON
+   creatures it can see within range of that attack,
+                                                                       Level 1 Evocation (Psion)
+   spell, or other ability.
+• The target must make an Opportunity Attack each                      Casting Time: Action
+    time it is able to.                                                Range: 120 feet
+                                                                       Components: S
+Each time the target takes damage, it makes another                    Duration: Instantaneous
+Intelligence saving throw. On a successful save, the                   You fire an orb of psionic energy fueled by your life
+spell ends.                                                            force at a creature you can see within range. Make a
+                                                                       ranged spell attack against the target. On a hit, the
+INTELLECT FORTRESS                                                     target takes 1d10 Psychic damage and you can
+Level 3 Abjuration (Artificer, Bard, Psion, Sorcerer,                  expend one Hit Point Die to increase the damage by
+Warlock, Wizard)                                                       1d10.
+                                                                         Using a Higher-Level Spell Slot. The damage
+Casting Time: Action                                                   increases by 1d10 and the number of Hit Dice you
+Range: 30 feet                                                         can expend increases by one for each spell slot level
+Components: V                                                          above 1.
+Duration: Concentration, up to 1 hour
+For the duration, one willing creature you can see
+within range has Resistance to Psychic damage as
+well as Advantage on Intelligence, Wisdom, and
+Charisma saving throws.
+  Using a Higher-Level Spell Slot. You can target
+one additional creature for each spell slot level
+above 3.
+
+
+
+
+©2025 Wizards of the Coast LLC. Permission granted to print and photocopy this page for personal use.                     12
+MENTAL PRISON                                                          damage only. If the target is reduced to 0 Hit Points
+                                                                       by this damage, its head explodes if it has one.
+Level 6 Illusion (Bard, Psion, Sorcerer, Wizard)
+                                                                         At the end of each of its turns, the Stunned target
+Casting Time: Action                                                   repeats the save, ending the condition on itself on a
+Range: 60 feet                                                         success.
+Components: S
+Duration: Concentration, up to 1 minute                                RAULOTHIM’S PSYCHIC LANCE
+You attempt to bind a creature within an illusory cell                 Level 4 Enchantment (Bard, Psion, Sorcerer, Warlock,
+that only it perceives. One creature you can see                       Wizard)
+within range must succeed on an Intelligence saving
+throw or take 8d10 Psychic damage and have the                         Casting Time: Action
+Charmed condition for the duration. On a successful                    Range: 120 feet
+save, the target takes half damage only and the spell                  Components: V
+ends.                                                                  Duration: Instantaneous
+   While Charmed, the target has the Restrained                        You unleash a shimmering lance of psychic power
+condition and perceives the area around its space as                   from your forehead at a creature that you can see
+dangerous to it in some way you create. You might                      within range. Alternatively, you can utter a
+cause the target to perceive itself as being                           creature’s name (a pseudonym, title, or nickname
+surrounded by fire, floating razors, or hideous maws                   doesn’t work). If the named target is within range, it
+filled with dripping teeth. Whatever form the                          becomes the spell’s target even if you can’t see it. If
+illusion takes, the target can’t see or hear anything                  the named target isn’t within range or you use an
+beyond it. If the target is moved from the illusion,                   invalid name, the lance dissipates without effect.
+makes a melee attack through it, or reaches any part                     The target must make an Intelligence saving
+of its body through it, the target takes 5d10 Psychic                  throw. On a failed save, the target takes 7d6 Psychic
+damage and the spell ends.                                             damage and has the Incapacitated condition until
+                                                                       the start of your next turn. On a successful save, the
+PSIONIC BLAST                                                          target takes half as much damage only.
+                                                                         Using a Higher-Level Spell Slot. The damage
+Level 6 Evocation (Psion, Wizard)
+                                                                       increases by 1d6 for each spell slot level above 4.
+Casting Time: Action
+Range: Self
+Components: V, S, M
+Duration: Instantaneous
+You unleash a concussive burst of psionic energy.
+Each creature in a 60-foot Cone originating from you
+makes an Intelligence saving throw. On a failed save,
+the creature takes 6d8 Psychic damage and has the
+Stunned condition until the start of your next turn.
+On a successful save, the creature takes half as much
+damage only.
+  Using a Higher-Level Spell Slot. The damage
+increases by 1d8 for each spell slot level above 6.
+
+PSYCHIC SCREAM
+Level 9 Enchantment (Bard, Psion, Sorcerer, Warlock)
+Casting Time: Action
+Range: 90 feet
+Components: S
+Duration: Instantaneous
+You unleash the power of your mind to blast the
+intellect of up to ten creatures of your choice that
+you can see within range. Creatures that have an
+Intelligence score of 2 or lower are unaffected.
+  Each target must make an Intelligence saving
+throw. On a failed save, the target takes 14d6
+Psychic damage and has the Stunned condition. On a
+successful save, the target takes half as much
+
+
+
+
+©2025 Wizards of the Coast LLC. Permission granted to print and photocopy this page for personal use.                       13
+SUMMON ASTRAL ENTITY                                                   PSIONIC SPIRIT
+Level 3 Conjuration (Psion, Sorcerer, Warlock,                         Medium Aberration, Neutral
+Wizard)                                                                AC 11 + the spell’s level + 2 (Crystal Entity only)
+                                                                       HP 40 + 10 for each spell level above 3
+Casting Time: Action
+                                                                       Speed 30 ft.; Fly 30 ft. (Ghostly Entity only)
+Range: 90 feet                                                                   MOD   SAVE             MOD   SAVE           MOD   SAVE
+Components: V, S, M (a gem or crystal worth 300+ GP)                   STR 16 +3 +3 DEX 12 +1 +1 CON 11 +0                           +0
+Duration: Concentration, up to 1 hour                                  INT 16 +3 +3 WIS 12 +1 +1 CHA 10 +0                           +0
+You call forth the spirit of a psionic entity. It                      Immunities Psychic
+manifests in an unoccupied space that you can see                      Senses Darkvision 60 ft.; Passive Perception 11
+within range and uses the Psionic Spirit stat block.                   Languages Deep Speech, Telepathy 60 ft.
+When you cast the spell, choose Crystal Entity,                        CR None (XP 0; PB equals your Proficiency Bonus)
+Ectoplasmic Entity, or Ghostly Entity. The creature
+resembles an astral entity of that kind, which                         TRAITS
+determines certain details in its stat block. The
+                                                                       Incorporeal Passage (Ectoplasmic Entity and Ghostly
+creature disappears when it drops to 0 Hit Points or
+                                                                       Entity Only). The spirit can move through other creatures
+when the spell ends.
+                                                                       and objects as if they were Difficult Terrain. If the spirit
+   The creature is an ally to you and your allies. In
+                                                                       ends its turn in such a space, it is shunted to the nearest
+combat, the creature shares your Initiative count,
+                                                                       unoccupied space and takes 1d10 Force damage for every
+but it takes its turn immediately after yours. It obeys
+                                                                       5 feet traveled.
+your verbal commands (no action required by you).
+If you don’t issue any, it takes the Dodge action and
+uses its movement to avoid danger.
+                                                                       ACTIONS
+   Using a Higher-Level Spell Slot. Use the spell                      Multiattack. The spirit makes a number of attacks equal
+slot’s level for the spell’s level in the stat block.                  to half this spell’s level (round down).
+                                                                       Crystal Strike (Crystal Entity Only). Melee Attack Roll:
+                                                                       Bonus equals your spell attack modifier, reach 5 ft. Hit:
+                                                                       1d10 + 3 + the spell’s level Piercing damage.
+                                                                       Ectoplasmic Splash (Ectoplasmic Entity Only). Ranged
+                                                                       Attack Roll: Bonus equals your spell attack modifier, range
+                                                                       30 feet. Hit: 1d6 + 3 + the spell’s level Psychic damage. Hit
+                                                                       or Miss: Each creature in a 5-foot Emanation originating
+                                                                       from and including the target has its Speed reduced by 5
+                                                                       feet until the end of its next turn.
+                                                                       Ephemeral Ray (Ghostly Entity Only). Ranged Attack Roll:
+                                                                       Bonus equals your spell attack modifier, range 120 ft. Hit:
+                                                                       1d8 + 3 + the spell’s level Psychic damage.
+
+                                                                       REACTIONS
+                                                                       Shard Swarm (Crystal Entity Only). Trigger: The spirit is
+                                                                       hit by a melee attack roll. Response: The spirit halves the
+                                                                       damage (round down) it takes from that attack. The spirit
+                                                                       can then teleport to an unoccupied space it can see within
+                                                                       30 feet of itself.
+
+
+
+
+©2025 Wizards of the Coast LLC. Permission granted to print and photocopy this page for personal use.                              14
+TASHA’S MIND WHIP                                                      THOUGHT FORM
+Level 2 Enchantment (Psion, Sorcerer, Wizard)                          Level 6 Transmutation (Psion)
+Casting Time: Action                                                   Casting Time: Bonus Action
+Range: 90 feet                                                         Range: Self
+Components: V                                                          Components: V, M (brain matter in a vessel worth 500+
+Duration: Instantaneous                                                  GP)
+You psychically lash out at one creature you can see                   Duration: Concentration, up to 1 minute
+within range. The target must make an Intelligence                     You briefly transform into a psionic spirit. You gain
+saving throw. On a failed save, the target takes 3d6                   the following benefits until the spell ends.
+Psychic damage and can’t make Opportunity Attacks                         Ghostly Form. You have Immunity to Poison and
+until the end of its next turn. On its next turn, it must              Psychic damage, and you have Immunity to the
+choose whether it gets a move, an action, or a Bonus                   Exhaustion condition.
+Action; it gets only one of the three. On a successful                    Incorporeal Movement. You have a Fly Speed of
+save, the target takes half as much damage only.                       60 feet and can hover. You can move through
+  Using a Higher-Level Spell Slot. You can target                      occupied spaces as if they were Difficult Terrain. If
+one additional creature for each spell slot level                      you end your turn in such a space, you take 1d10
+above 2.                                                               Force damage. If the spell ends in such a space, you
+                                                                       are returned to the last unoccupied space you were
+TELEKINETIC CRUSH                                                      in.
+Level 3 Transmutation (Psion, Sorcerer, Warlock)                          Psionic Recharge. As a Magic action, you can
+                                                                       touch a creature (which can be yourself) and roll
+Casting Time: Action                                                   1d6. The creature regains one expended spell slot,
+Range: 120 feet                                                        the level of which equals half the number rolled
+Components: V                                                          (round up) or lower. Once a creature regains a spell
+Duration: Instantaneous                                                slot from this spell, that creature can’t do so again
+You create a field of crushing telekinetic force in a                  until it finishes a Long Rest.
+30-foot Cube within range. Each creature in the area
+makes a Strength saving throw. On a failed save, the
+target takes 5d6 Force damage and has the Prone
+condition. On a successful save, the target takes half
+as much damage only.
+  Using a Higher-Level Spell Slot. The damage
+increases by 1d6 for each spell slot level above 3.
+
+TELEKINETIC FLING
+Evocation Cantrip (Psion)
+Casting Time: Action
+Range: 60 feet
+Components: S
+Duration: Instantaneous
+Choose one nonmagical object weighing 1 to 5
+pounds within 10 feet of you that isn’t being worn or
+carried to wreathe in psionic energy and fire at a
+creature within range. Make a ranged spell attack
+against the target. On a hit, the target takes 1d10
+Force damage. On a hit or miss, the object falls to the
+ground undamaged.
+  Cantrip Upgrade. The damage increases by 1d10
+when you reach levels 5 (2d10), 11 (3d10), and 17
+(4d10).
+
+
+
+
+©2025 Wizards of the Coast LLC. Permission granted to print and photocopy this page for personal use.                          15
+

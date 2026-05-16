@@ -42,13 +42,18 @@ const classArt = {
 const subclassArt = {
   '마녀 집회 후원자 - Coven Patron: Spin the Threads of Fate': 'assets/images/subclasses-v2/coven-patron.jpg',
   '진홍 갈증의 워록 - Warlock of the Crimson Thirst': 'assets/images/subclasses-v2/crimson-thirst-warlock.jpg',
+  'UA 원시 후원자 - Primordial Patron': 'assets/images/homebrew-classes/warlock.jpg',
+  'UA 흔적 후원자 - Vestige Patron': 'assets/images/homebrew-classes/warlock.jpg',
   '크라켄 - Kraken': 'assets/images/subclasses-v2/kraken.jpg',
   '정신의 칼날 - The Mind Blade': 'assets/images/subclasses-v2/mind-blade.png',
+  'UA 지옥 기사 - Hell Knight': 'assets/images/homebrew-classes/fighter.jpg',
   '전투 의무병 - Combat Medic': 'assets/images/subclasses-v2/combat-medic.jpg',
   '질풍 - Zephyr': 'assets/images/subclasses-v2/zephyr.jpg',
   '드래곤 권역 - Dragon Domain': 'assets/images/subclasses-v2/dragon-domain.jpg',
+  'UA 역병 권역 - Pestilence Domain': 'assets/images/homebrew-tome-v2.jpg',
   '약탈자 - Marauder': 'assets/images/homebrew-classes/barbarian.jpg',
   '사랑의 맹세 - Oath of Love': 'assets/images/subclasses-v2/oath-of-love.jpg',
+  'UA 주문수호자의 맹세 - Oath of the Spellguard': 'assets/images/homebrew-classes/paladin.jpg',
   '전승지기의 맹세 - Oath of the Lore-Keeper': 'assets/images/subclasses-v2/oath-of-the-lore-keeper.jpg',
   '슬픔의 맹세 - Oath of Sorrows': 'assets/images/subclasses-v2/oath-of-sorrows.jpg',
   '국경의 맹세 - Oath of Frontiers': 'assets/images/subclasses-v2/oath-of-frontiers.jpg',
@@ -57,14 +62,18 @@ const subclassArt = {
   '위치 헌터 - Witch Hunter': 'assets/images/subclasses-v2/witch-hunter.jpg',
   '모기의 회합 - Circle of the Mosquito': 'assets/images/subclasses-v2/circle-of-the-mosquito.jpg',
   '잿더미의 회합 - Circle of Ashes': 'assets/images/subclasses-v2/circle-of-ashes.jpg',
+  'UA 타이탄의 회합 - Circle of the Titan': 'assets/images/homebrew-classes/druid.jpg',
   '장난의 회합 - Circle of Mischief': 'assets/images/homebrew-classes/druid.jpg',
   '파수꾼의 회합 - Circle of the Warden': 'assets/images/subclasses-v2/circle-of-the-warden.jpg',
   '악몽의 회합 - Circle of Nightmares': 'assets/images/homebrew-classes/druid.jpg',
   '브리딩의 회합 - Circle of Breeding': 'assets/images/subclasses-v2/circle-of-breeding.jpg',
   '어린양의 회합 - Circle of the Lamb': 'assets/images/subclasses-v2/circle-of-the-lamb.jpg',
   '내면의 빛의 전사 - Warrior of the Inner Light': 'assets/images/subclasses-v2/warrior-of-the-inner-light.jpg',
+  'UA 신비술 전사 - Warrior of the Mystic Arts': 'assets/images/homebrew-classes/monk.jpg',
+  'UA 독의 전사 - Warrior of Venom': 'assets/images/homebrew-classes/monk.jpg',
   '엑상귀네이터 로그 - Exsanguinator Rogue': 'assets/images/homebrew-classes/rogue.jpg',
   '조디악 아키타입 - Zodiac Archetype': 'assets/images/subclasses-v2/zodiac-archetype.jpg',
+  'UA 마법 도둑 - Magic Stealer': 'assets/images/homebrew-classes/rogue.jpg',
   '펜서 - Fencer': 'assets/images/homebrew-classes/rogue.jpg',
   '사보추어 - Saboteur': 'assets/images/subclasses-v2/saboteur.jpg',
   '외과의 - Surgeon': 'assets/images/subclasses-v2/surgeon.jpg',
@@ -73,14 +82,16 @@ const subclassArt = {
   '스워시버클러 - Swashbuckler': 'assets/images/subclasses-v2/swashbuckler-2024.jpg',
   '야전 의무병 - Field Medic': 'assets/images/homebrew-classes/fighter.jpg',
   '지옥불의 길 - Path of the Inferno': 'assets/images/subclasses-v2/path-of-the-inferno.jpg',
+  'UA 비탄의 길 - Path of Lament': 'assets/images/homebrew-classes/barbarian.jpg',
   '라이칸의 길 - Path of the Lycan': 'assets/images/subclasses-v2/path-of-the-lycan.jpg',
   '돌연변이의 길 - Path of the Mutant': 'assets/images/subclasses-v2/path-of-the-mutant.jpg',
   '잉걸심장 - Emberheart': 'assets/images/subclasses-v2/emberheart.jpg',
+  'UA 악마 혈통 마법 - Demonic Sorcery': 'assets/images/homebrew-tome-v2.jpg',
   '지맥술 학파 - School of Geomancy': 'assets/images/subclasses-v2/school-of-geomancy.jpg',
   '전격술사 - Electromancer': 'assets/images/subclasses-v2/electromancer.jpg',
   '재야 마법 - Hedge Magic': 'assets/images/subclasses-v2/hedge-magic.jpg',
   '위치 - Witch': 'assets/images/subclasses-v2/witch.jpg',
-  '사이언 - The Psion': 'assets/images/subclasses-v2/psion.png',
+  'UA 사이언 - Psion': 'assets/images/subclasses-v2/psion.png',
 };
 
 const classNotes = {
@@ -119,13 +130,18 @@ const slugOverrides = new Map([
   ['아타메 반사', 'athame-reflection'],
   ['마녀 집회 후원자 - Coven Patron: Spin the Threads of Fate', 'coven-patron'],
   ['진홍 갈증의 워록 - Warlock of the Crimson Thirst', 'crimson-thirst-warlock'],
+  ['UA 원시 후원자 - Primordial Patron', 'ua-primordial-patron'],
+  ['UA 흔적 후원자 - Vestige Patron', 'ua-vestige-patron'],
   ['크라켄 - Kraken', 'kraken'],
   ['정신의 칼날 - The Mind Blade', 'mind-blade'],
+  ['UA 지옥 기사 - Hell Knight', 'ua-hell-knight'],
   ['전투 의무병 - Combat Medic', 'combat-medic'],
   ['질풍 - Zephyr', 'zephyr'],
   ['드래곤 권역 - Dragon Domain', 'dragon-domain'],
+  ['UA 역병 권역 - Pestilence Domain', 'ua-pestilence-domain'],
   ['약탈자 - Marauder', 'marauder'],
   ['사랑의 맹세 - Oath of Love', 'oath-of-love'],
+  ['UA 주문수호자의 맹세 - Oath of the Spellguard', 'ua-oath-of-the-spellguard'],
   ['전승지기의 맹세 - Oath of the Lore-Keeper', 'oath-of-the-lore-keeper'],
   ['슬픔의 맹세 - Oath of Sorrows', 'oath-of-sorrows'],
   ['국경의 맹세 - Oath of Frontiers', 'oath-of-frontiers'],
@@ -133,6 +149,7 @@ const slugOverrides = new Map([
   ['감시자 - The Sentinel', 'sentinel'],
   ['위치 헌터 - Witch Hunter', 'witch-hunter'],
   ['잿더미의 회합 - Circle of Ashes', 'circle-of-ashes'],
+  ['UA 타이탄의 회합 - Circle of the Titan', 'ua-circle-of-the-titan'],
   ['모기의 회합 - Circle of the Mosquito', 'circle-of-the-mosquito'],
   ['장난의 회합 - Circle of Mischief', 'circle-of-mischief'],
   ['파수꾼의 회합 - Circle of the Warden', 'circle-of-the-warden'],
@@ -140,8 +157,11 @@ const slugOverrides = new Map([
   ['브리딩의 회합 - Circle of Breeding', 'circle-of-breeding'],
   ['어린양의 회합 - Circle of the Lamb', 'circle-of-the-lamb'],
   ['내면의 빛의 전사 - Warrior of the Inner Light', 'warrior-of-the-inner-light'],
+  ['UA 신비술 전사 - Warrior of the Mystic Arts', 'ua-warrior-of-the-mystic-arts'],
+  ['UA 독의 전사 - Warrior of Venom', 'ua-warrior-of-venom'],
   ['엑상귀네이터 로그 - Exsanguinator Rogue', 'exsanguinator-rogue'],
   ['조디악 아키타입 - Zodiac Archetype', 'zodiac-archetype'],
+  ['UA 마법 도둑 - Magic Stealer', 'ua-magic-stealer'],
   ['펜서 - Fencer', 'fencer'],
   ['사보추어 - Saboteur', 'saboteur'],
   ['외과의 - Surgeon', 'surgeon'],
@@ -150,14 +170,16 @@ const slugOverrides = new Map([
   ['스워시버클러 - Swashbuckler', 'swashbuckler-2024'],
   ['야전 의무병 - Field Medic', 'field-medic'],
   ['지옥불의 길 - Path of the Inferno', 'path-of-the-inferno'],
+  ['UA 비탄의 길 - Path of Lament', 'ua-path-of-lament'],
   ['라이칸의 길 - Path of the Lycan', 'path-of-the-lycan'],
   ['돌연변이의 길 - Path of the Mutant', 'path-of-the-mutant'],
   ['잉걸심장 - Emberheart', 'emberheart'],
+  ['UA 악마 혈통 마법 - Demonic Sorcery', 'ua-demonic-sorcery'],
   ['지맥술 학파 - School of Geomancy', 'school-of-geomancy'],
   ['전격술사 - Electromancer', 'electromancer'],
   ['재야 마법 - Hedge Magic', 'hedge-magic'],
   ['위치 - Witch', 'witch'],
-  ['사이언 - The Psion', 'psion'],
+  ['UA 사이언 - Psion', 'psion'],
   ['마우스포크 - Mousefolk', 'mousefolk'],
   ['라크샤사 - Rakshasa', 'rakshasa-tiefling'],
   ['타나루크 - Tanarukk', 'tanarukk'],
@@ -805,7 +827,7 @@ const raceArt = {
 };
 
 const cardSynopsisOverrides = {
-  '사이언 - The Psion': '내면의 사이오닉 힘으로 주문과 현실 조작을 발현하는 laserllama의 완전 클래스입니다.',
+  'UA 사이언 - Psion': 'UA 2025 기준의 사이오닉 에너지 주사위와 지능 기반 주문시전을 쓰는 완전 클래스입니다.',
   '정신의 칼날 - The Mind Blade': 'psi 포인트와 지능 기반 사이오닉 검술로 현실을 베어내는 파이터 무술 원형입니다.',
   '내면의 빛의 전사 - Warrior of the Inner Light': '빛과 생명력을 무술 에너지로 다루는 몽크 서브클래스입니다.',
   '재야 마법 - Hedge Magic': '정규 학파 밖에서 낮은 마법을 실전으로 익힌 위저드 서브클래스입니다.',
@@ -967,7 +989,7 @@ function enhanceRuleHtml(html) {
 
 function synopsis(markdownLines) {
   const paragraph = markdownLines
-    .filter(line => line && !/^#|^\||^-|^---/.test(line))
+    .filter(line => line && !/^#|^\||^-|^---|^>/.test(line))
     .find(line => /[가-힣]/.test(line));
   return paragraph ? paragraph.replace(/\*\*/g, '').trim() : '번역문과 플레이용 룰 검토를 함께 정리한 서브클래스입니다.';
 }
@@ -996,7 +1018,7 @@ function artPathFor(className, prefix = '', title = '') {
 }
 
 function documentKind(subclass) {
-  return ['위치 - Witch', '사이언 - The Psion'].includes(subclass.title) ? 'CLASS' : 'SUBCLASS';
+  return ['위치 - Witch', 'UA 사이언 - Psion'].includes(subclass.title) ? 'CLASS' : 'SUBCLASS';
 }
 
 function subclassCard(subclass) {
@@ -1218,7 +1240,7 @@ const homeContent = `<main id="top" class="brew-index">
             <div>
               <span class="section-number">CLASS</span>
               <h2>클래스</h2>
-              <p>완전 클래스 문서입니다. 위치 - Witch와 사이언 - The Psion을 별도 클래스 문서로 관리합니다.</p>
+              <p>완전 클래스 문서입니다. 위치 - Witch와 UA 사이언 - Psion을 별도 클래스 문서로 관리합니다.</p>
             </div>
           </div>
           <div class="brew-card-grid">${classDocuments.map(subclassCard).join('\n') || '<p class="empty-note">등록된 클래스가 없습니다.</p>'}</div>
