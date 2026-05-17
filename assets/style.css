@@ -1601,12 +1601,24 @@ tbody td:first-child { font-weight:700; color:var(--accent); white-space:nowrap;
   margin: 0 auto;
   padding: 0 0 28px;
 }
+.background-entry {
+  display: grid;
+  grid-template-columns: minmax(170px, 220px) minmax(0, 1fr);
+  align-items: start;
+}
 .background-art {
-  margin: 0;
+  grid-row: 1 / span 4;
+  margin: 24px 0 24px 24px;
   aspect-ratio: 4 / 5;
-  max-height: 520px;
-  background: #111;
+  max-height: none;
+  background: #17120d;
+  border: 1px solid rgba(125,23,23,.22);
+  box-shadow:
+    0 0 0 4px rgba(251,248,239,.82),
+    0 0 0 5px rgba(197,173,67,.3),
+    0 16px 34px rgba(42,32,21,.18);
   overflow: hidden;
+  clip-path: polygon(0 0, calc(100% - 16px) 0, 100% 16px, 100% 100%, 16px 100%, 0 calc(100% - 16px));
 }
 .background-art img {
   width: 100%;
@@ -1740,8 +1752,11 @@ tbody td:first-child { font-weight:700; color:var(--accent); white-space:nowrap;
   margin-bottom: 0;
 }
 .background-stats {
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   border-bottom-color: #7d1717;
+}
+.background-stats .bg-stat-item:nth-child(5) {
+  grid-column: 1 / -1;
 }
 .background-stats dd {
   font-size: .84rem;
@@ -1758,6 +1773,7 @@ tbody td:first-child { font-weight:700; color:var(--accent); white-space:nowrap;
 .background-stats div:nth-child(4n) {
   border-right: 1px solid rgba(62,45,24,.1);
 }
+.background-stats div:nth-child(2n),
 .background-stats div:nth-child(5n) {
   border-right: none;
 }
@@ -2046,6 +2062,13 @@ tbody td:first-child { font-weight:700; color:var(--accent); white-space:nowrap;
   .credit-card .doc-content {
     padding-left: 20px;
     padding-right: 20px;
+  }
+  .background-entry {
+    display: block;
+  }
+  .background-art {
+    width: min(260px, calc(100% - 40px));
+    margin: 22px auto 0;
   }
   .spell-stats {
     grid-template-columns: 1fr 1fr;
