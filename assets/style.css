@@ -1605,20 +1605,31 @@ tbody td:first-child { font-weight:700; color:var(--accent); white-space:nowrap;
   display: grid;
   grid-template-columns: minmax(170px, 220px) minmax(0, 1fr);
   align-items: start;
+  column-gap: 10px;
+  clip-path: none;
+  border-radius: 10px;
 }
 .background-art {
   grid-row: 1 / span 4;
-  margin: 24px 0 24px 24px;
+  position: relative;
+  margin: 26px 0 26px 26px;
   aspect-ratio: 4 / 5;
   max-height: none;
-  background: #17120d;
-  border: 1px solid rgba(125,23,23,.22);
-  box-shadow:
-    0 0 0 4px rgba(251,248,239,.82),
-    0 0 0 5px rgba(197,173,67,.3),
-    0 16px 34px rgba(42,32,21,.18);
+  padding: 7px;
+  background: #f3eadb;
+  border: 1px solid rgba(62,45,24,.18);
+  box-shadow: 0 16px 34px rgba(42,32,21,.14);
   overflow: hidden;
-  clip-path: polygon(0 0, calc(100% - 16px) 0, 100% 16px, 100% 100%, 16px 100%, 0 calc(100% - 16px));
+  clip-path: none;
+  border-radius: 8px;
+}
+.background-art::after {
+  content: '';
+  position: absolute;
+  inset: 7px;
+  border: 1px solid rgba(255,255,255,.32);
+  pointer-events: none;
+  border-radius: 4px;
 }
 .background-art img {
   width: 100%;
@@ -1626,6 +1637,8 @@ tbody td:first-child { font-weight:700; color:var(--accent); white-space:nowrap;
   display: block;
   object-fit: cover;
   object-position: center;
+  border: 1px solid rgba(62,45,24,.24);
+  border-radius: 4px;
 }
 .dndb-spell {
   background: #fbf8ef;
@@ -1650,6 +1663,7 @@ tbody td:first-child { font-weight:700; color:var(--accent); white-space:nowrap;
     radial-gradient(circle at 88% 34%, rgba(143,147,216,.45) 0 1px, transparent 2px),
     linear-gradient(180deg, rgba(12,15,36,.98), rgba(6,9,25,.98));
   border-bottom-color: var(--astro-gold);
+  border-top-right-radius: 9px;
 }
 .dndb-spell h2 {
   margin: 6px 0 0;
@@ -2069,6 +2083,9 @@ tbody td:first-child { font-weight:700; color:var(--accent); white-space:nowrap;
   .background-art {
     width: min(260px, calc(100% - 40px));
     margin: 22px auto 0;
+  }
+  .background-head {
+    border-top-right-radius: 0;
   }
   .spell-stats {
     grid-template-columns: 1fr 1fr;
