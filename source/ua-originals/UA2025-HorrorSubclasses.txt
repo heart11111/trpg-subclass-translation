@@ -1,0 +1,583 @@
+UNEARTHED ARCANA 2025
+HORROR SUBCLASSES
+This playtest document is part of a series of
+Unearthed Arcana articles that present material
+                                                            ARTIFICER: REANIMATOR
+designed for upcoming products. The material here           Reassemble Corpses to Raise the Dead
+uses the rules in the 2024 Player’s Handbook.
+                                                            Reanimators defy the laws of nature in pursuit of
+LEARN MORE ON YOUTUBE                                       gruesome experiment. These grim Artificers stitch
+To learn more about the design in this article, we invite   together servants from disparate corpses, use foul
+you to view the videos about it on YouTube                  magic to strengthen the living, and transform the art
+(www.youtube.com/DNDWizards).                               of necromancy into a terrifying science.
+
+                                                            LEVEL 3: REANIMATOR SPELLS
+WHAT’S INSIDE                                               When you reach an Artificer level specified in the
+This document presents eight subclasses: revised            Reanimator Spells table, you thereafter always have
+subclasses for the Bard (College of Spirits), Cleric        the listed spells prepared.
+(Grave Domain), Rogue (Phantom), Sorcerer
+(Shadow Sorcery), and Warlock (Hexblade Patron              REANIMATOR SPELLS
+and Undead Patron) as well as new subclasses for             Artificer Level   Spells
+the Artificer (Reanimator) and Ranger (Hollow                       3          False Life, Spare the Dying, Witch
+Warden).                                                                       Bolt
+                                                                    5          Blindness/Deafness, Enhance
+THIS IS PLAYTEST MATERIAL                                                      Ability
+This article is presented for playtesting and feedback.
+                                                                    9          Animate Dead, Lightning Bolt
+The options here are experimental and in draft form.               13          Blight, Death Ward
+They aren’t officially part of the game. Your feedback             17          Antilife Shell, Raise Dead
+will help determine whether we adopt it as official.
+   How to Playtest This UA. We invite you to try out
+this material in play. To play with this material, you      LEVEL 3: JOLT TO LIFE
+may either incorporate it into your campaign or run
+one or more special playtest sessions. For such a           When you cast Spare the Dying, you can modify the
+session, you may create an adventure of your own or         spell so that it sends a jolt of electricity through the
+use a short adventure from a source like Quests from        target, reviving it. The target regains 1 Hit Point, and
+                                                            each creature in a 10-foot Emanation originating
+the Infinite Staircase.
+                                                            from the target makes a Dexterity saving throw
+   Power Level. The character options you read here
+                                                            against your spell save DC, taking Lightning damage
+might be more or less powerful than options in the
+                                                            equal to 1d4 plus half your Artificer level (round up)
+2024 Player’s Handbook. If a design survives                on a failed save or half as much damage on a
+playtesting, we adjust its power to the desirable level     successful one.
+before publication. This means an option could be             You can modify the spell this way a number of
+more or less powerful in its final form.                    times equal to your Intelligence modifier, and you
+   Feedback. The best way for you to give us feedback       regain all expended uses when you finish a Long
+on this material is in the survey we’ll release on D&D      Rest.
+Beyond. If we make this material official, it will be
+refined based on your feedback, and then it will appear     LEVEL 3: REANIMATED COMPANION
+in a D&D book.
+                                                            Using Tinker’s Tools or another type of Artisan’s
+   Providing feedback on this document is one way you
+                                                            Tools with which you have proficiency, you can take
+can help shape the future of D&D!                           a Magic action to create a Reanimated Companion
+                                                            (see the stat block) through the power of
+SUBCLASSES                                                  necromancy and science. The companion manifests
+                                                            in an unoccupied space within 5 feet of you. You
+This section presents the following subclasses: the
+                                                            determine the companion’s appearance; your
+Reanimator, College of Spirits, Grave Domain,
+Hollow Warden, Phantom, Shadow Sorcery,                     choices don’t affect the companion’s game statistics.
+Hexblade Patron, and Undead Patron.
+
+
+
+©2025 Wizards of the Coast LLC                                                                                      1
+   The companion is Friendly to you and your allies                 Artificer spell from the Evocation or Necromancy
+and obeys you. It lasts until you finish a Long Rest or             schools and deal damage while your companion is
+until you take a Magic action to dismiss it early, at               within 120 feet of you, you can add your Intelligence
+which point it harmlessly collapses into a pile of                  modifier to one damage roll of that spell.
+viscera. It immediately drops to 0 Hit Points and dies                Ferocity. When you command your companion to
+(triggering its Death Burst trait) if you die.                      take the Dreadful Swipe action, the companion can
+   Once you create a companion, you can’t do so                     use it twice.
+again until you finish a Long Rest or expend a spell
+slot to create one. You can have only one companion                 LEVEL 9: IMPROVED REANIMATION
+at a time and can’t create one while your companion                 You experiment and alter your companion further.
+is present.                                                         Whenever you create a Reanimated Companion, it
+   The Companion in Combat. In combat, the                          gains one of the following options of your choice;
+companion acts during your turn. It can move and                    choose when you create the companion.
+take its Reaction on its own, but the only action it                    Bloated. The companion becomes Large or
+takes is the Dodge action unless you take a Bonus                   Medium (your choice). Whenever it hits a Large or
+Action to command it to take an action. If you have                 smaller creature with its Dreadful Swipe action, that
+the Incapacitated condition, the companion acts on                  creature can also be pushed up to 10 feet away from
+its own and isn’t limited to the Dodge action.                      the companion. Additionally, you can add your
+                                                                    Intelligence modifier to the damage dealt by the
+REANIMATED COMPANION                                                companion’s Death Burst.
+Small Undead, Neutral                                                   Gaunt. The companion’s Speed increases to 45
+AC 10 + your Intelligence modifier                                  feet, and it gains a Climb Speed equal to its Speed. It
+HP 4 + four times your Artificer level (the companion has           can climb difficult surfaces, including along ceilings,
+  a number of Hit Dice [d6s] equal to your Artificer level)         without needing to make an ability check. In
+Speed 30 ft.                                                        addition, whenever a creature of your choice starts
+         MOD   SAVE           MOD   SAVE            MOD      SAVE
+                                                                    its turn within a 10-foot Emanation originating from
+STR 14 +2 +2 DEX 10 +0 +0 CON 16 +3 +3
+                                                                    your companion, the creature must succeed on a
+INT 4   −3 −3 WIS 10 +0 +0 CHA 6 −2 −2
+                                                                    Wisdom saving throw against your spell save DC or
+Resistances Necrotic, Poison
+                                                                    have the Frightened condition until the start of its
+Immunities Lightning; Charmed, Exhaustion, Poisoned
+                                                                    next turn.
+Senses Blindsight 60 ft.; Passive Perception 10
+                                                                        Moist. The companion gains a Swim Speed equal
+Languages Understands the languages you know
+                                                                    to its Speed. In addition, whenever the companion is
+CR None (XP 0; PB equals your Proficiency Bonus)
+                                                                    hit by an attack roll from a creature within 10 feet of
+                                                                    it, the attacker takes Acid damage equal to your
+TRAITS                                                              Intelligence modifier.
+Death Burst. The companion explodes when it dies.
+Dexterity Saving Throw: DC equals your spell save DC,               LEVEL 15: PROMETHEAN REANIMATION
+each creature in a 10-foot Emanation originating from the
+                                                                    You have mastered the science of revivification,
+companion. Failure: 2d6 Necrotic damage.
+                                                                    granting you the following benefits.
+Lightning Absorption. Whenever the companion is                       Facilitated Revival. When you cast Revivify or
+subjected to Lightning damage, it regains a number of Hit           Raise Dead, the cost of any Material components
+Points equal to the Lightning damage dealt.                         needed for that spell is halved.
+                                                                      Improved Companion. The damage of your
+ACTIONS                                                             Reanimated Companion’s Death Burst increases to
+                                                                    4d6. Necrotic damage dealt by your companion
+Dreadful Swipe. Melee Attack Roll: Bonus equals your
+                                                                    ignores Resistance.
+spell attack modifier, reach 5 ft. Hit: 1d4 + 2 plus your
+                                                                      Life Transfer. You can siphon the animating magic
+Intelligence modifier Necrotic damage, and the target
+                                                                    of your companion to bolster yourself. When you
+can’t take Opportunity Attacks until the start of its next
+turn.
+                                                                    take damage, you can take a Reaction to cause your
+                                                                    Reanimated Companion to drop to 0 Hit Points. The
+LEVEL 5: STRANGE MODIFICATIONS                                      companion immediately dies (triggering its Death
+                                                                    Burst trait), and you regain a number of Hit Points
+Whenever you create a Reanimated Companion, it
+                                                                    equal to your Artificer level.
+gains one of the following options of your choice;
+choose when you create the companion.
+  Arcane Conduit. You can cast spells as though you
+were in the companion’s space, but you must use
+your own senses. Once per turn, when you cast an
+
+
+©2025 Wizards of the Coast LLC                                                                                            2
+BARD: COLLEGE OF SPIRITS                                   SPIRITS FROM BEYOND
+                                                             Bardic
+Call Forth Spirits from Beyond the Grave                    Insp. Die   Spirit
+Using occult trappings, Bards of the College of Spirits         1       Beloved. The target regains Hit Points
+conjure legendary and long-dead spirits to change                       equal to one roll of your Bardic
+the world once more. But such entities are                              Inspiration die plus your Charisma
+capricious, and what a Bard summons isn’t always                        modifier.
+entirely under their control.                                   2       Sharpshooter. The target takes Force
+                                                                        damage equal to one roll of your
+DESIGN NOTE: COLLEGE OF SPIRITS UPDATES                                 Bardic Inspiration die plus your
+Here are the main updates in this subclass since its                    Charisma modifier.
+appearance in Van Richten’s Guide to Ravenloft:                 3       Avenger. Until the end of your next
+                                                                        turn, any creature that hits the target
+• Guiding Whispers and Spiritual Focus are now                          with a melee attack roll takes Force
+  combined into a single feature, Channeler. This new                   damage equal to a roll of your Bardic
+  feature also grants you proficiency with playing                      Inspiration die.
+  cards.                                                        4       Renegade. The target can immediately
+• Spirits from Beyond (formerly Tales from Beyond)                      take a Reaction to teleport up to 30
+  has been reworked to improve its action economy                       feet to an unoccupied space it can see.
+  and produce more immediate effects. The options               5       Fortune Teller. The target has
+  on the feature’s table have been revised as well.                     Advantage on D20 Tests until the start
+• Empowered Channeling is a new feature that allows                     of your next turn.
+  the Bard to cast and alter the Spirit Guardians spell.        6       Wayfarer. The target gains Temporary
+                                                                        Hit Points equal to a roll of your Bardic
+LEVEL 3: CHANNELER
+                                                                        Inspiration die plus your Bard level.
+You learn how to contact spirits beyond the grave,                      While it has these Temporary Hit
+letting their power and knowledge flow through you.                     Points, the target’s Speed increases by
+You gain the following benefits.                                        10 feet.
+   Guiding Whispers. You know the Guidance                      7       Trickster. The target makes a Wisdom
+cantrip. It has a range of 60 feet when you cast it.
+                                                                        saving throw. On a failed save, the
+   Spiritual Focus. You employ tools that aid you in
+                                                                        target takes Psychic damage equal to
+channeling spirits. You gain a Gaming Set (Playing
+                                                                        two rolls of your Bardic Inspiration die
+Cards). You have proficiency with this Gaming Set,
+                                                                        and has the Charmed condition until
+and you can use the cards or one of the following
+items as a Spellcasting Focus for your Bard spells:                     the start of your next turn. On a
+Arcane Focus (Crystal or Orb), Candle, or Ink Pen.                      successful save, the target takes half as
+                                                                        much damage only.
+LEVEL 3: SPIRITS FROM BEYOND                                    8       Shade. The target gains the Invisible
+                                                                        condition until the end of its next turn
+While holding a Spellcasting Focus, you can take a                      or until the target makes an attack roll,
+Bonus Action to expend one use of your Bardic
+                                                                        deals damage, or casts a spell. When
+Inspiration and call forth the powers of a spirit. Roll
+                                                                        the invisibility ends, each creature in a
+the Bardic Inspiration die and refer to the Spirits
+                                                                        5-foot Emanation originating from the
+from Beyond table to determine the spirit you
+channel, then choose one creature you can see                           target must succeed on a Constitution
+within 30 feet of yourself as the spirit’s target. The                  saving throw or take Necrotic damage
+spirit immediately takes effect; if a spirit’s effect                   equal to two rolls of your Bardic
+requires a saving throw, the DC equals your Bard                        Inspiration die.
+spell save DC.                                                  9       Arsonist. The target makes a Dexterity
+                                                                        saving throw, taking Fire damage equal
+                                                                        to four rolls of your Bardic Inspiration
+                                                                        die on a failed save or half as much on
+                                                                        a successful one.
+
+
+
+
+©2025 Wizards of the Coast LLC                                                                                      3
+     10        Coward. The target and each creature        spirits to the afterlife (whether those spirits want to
+               of your choice in a 30-foot Emanation       go or not).
+               originating from the target must              The magic of this domain also allows these Clerics
+               succeed on a Wisdom saving throw or         to stave off death for a time, particularly for those
+               have the Frightened condition until the     who still have some great work to accomplish in the
+               start of your next turn. While              world. But this is merely a delay of death, not a
+               Frightened, a creature’s Speed is           denial of it, for the grave will always claim its due.
+               halved, and it can take either an action
+               or a Bonus Action, not both.                DESIGN NOTE: GRAVE DOMAIN UPDATES
+     11        Brute. Each creature of your choice in      Here are the main updates in this subclass since its
+               a 30-foot Emanation originating from        appearance in Xanathar’s Guide to Everything:
+               the target makes a Strength saving          • Circle of Mortality now also grants you a small
+               throw. On a failed save, a creature           damage boost against Bloodied creatures.
+               takes Thunder damage equal to three         • Grave Domain Spells has been updated to include
+               rolls of your Bardic Inspiration die and      more versatility and combat-relevant spells.
+               has the Prone condition. On a               • Path to the Grave now produces an ongoing curse
+               successful save, a creature takes half as     effect in addition to boosting the damage of an
+               much damage only.                             attack.
+     12        Controlled Channeling. You determine        • Sentinel at Death’s Door now can trigger on any
+               the spirit’s effect by choosing one of        attack, not just Critical Hits.
+               the other rows in this table.               • Divine Reaper is a new feature that absorbs the
+                                                             previous benefits of Keeper of Souls and provides a
+LEVEL 6: EMPOWERED CHANNELING                                boost to the Cleric’s Necromancy spells.
+Your ability to channel spirits improves. You gain the
+following benefits.
+                                                           LEVEL 3: CIRCLE OF MORTALITY
+  Power from Beyond. Once per turn, when you               You gain the ability to manipulate the balance
+cast a Bard spell that deals damage or restores Hit        between life and death, granting you the following
+Points, roll a d6. You gain a bonus to one of the          benefits.
+spell’s damage rolls or to the total Hit Points the          Pull of Death. Once per turn, when you cast a spell
+spell restores equal to the number rolled.                 or hit with an attack roll and deal damage to a
+  Spiritual Manifestation. You always have the             Bloodied creature, that creature takes an extra 1d4
+Spirit Guardians spell prepared. You can cast the          Necrotic damage.
+spell once without a spell slot, and you regain the          Return to Life. When you would normally roll one
+ability to cast it in this way when you finish a Long      or more dice to restore Hit Points to a creature at 0
+Rest.                                                      Hit Points with a spell or Channel Divinity, don’t roll
+  Whenever you start casting the spell, you can            those dice for the healing; instead use the highest
+modify it so the spirits also guard against worldly        number possible for each die. For example, instead
+threats. When cast in this way, you and allies within      of restoring 2d4 Hit Points to a creature at 0 Hit
+the spell’s Emanation have Half Cover. Once you            Points with a spell, you restore 8.
+modify the spell in this way, you can’t do so again
+until you finish a Short or Long Rest.                     LEVEL 3: GRAVE DOMAIN SPELLS
+                                                           Your connection to this divine domain ensures you
+LEVEL 14: MYSTICAL CONNECTION                              always have certain spells ready. When you reach a
+You gain mastery over the spirits you call forth.          Cleric level specified in the Grave Domain Spells
+Whenever you roll on the Spirits from Beyond table,        table, you thereafter always have the listed spells
+you can roll the die twice and choose which of the         prepared.
+two effects to bestow.
+                                                           GRAVE DOMAIN SPELLS
+CLERIC: GRAVE DOMAIN                                          Cleric Level    Spells
+                                                                   3          Bane, Chill Touch, Detect Evil and
+Embody Deific Forces of Death                                                 Good, Gentle Repose, Ray of
+                                                                              Enfeeblement
+The Grave Domain concerns itself with the boundary
+between life and death. To those who tap into this                 5          Revivify, Vampiric Touch
+domain’s power, death is a foundational, natural,                  7          Blight, Dispel Evil and Good
+and inevitable part of the multiverse. Such Clerics                9          Hold Monster, Raise Dead
+seek to destroy Undead and strive to shepherd
+
+
+©2025 Wizards of the Coast LLC                                                                                     4
+LEVEL 3: PATH TO THE GRAVE                                LEVEL 3: HOLLOW WARDEN SPELLS
+As a Bonus Action, you present your Holy Symbol           When you reach a Ranger level specified in the
+and expend a use of your Channel Divinity to curse        Hollow Warden Spells table, you thereafter always
+one creature you can see within 30 feet of yourself       have the listed spell prepared.
+until the start of your next turn. While cursed, the
+creature has Disadvantage on attack rolls and saving      HOLLOW WARDEN SPELLS
+throws.                                                     Ranger Level    Spells
+  When you or an ally you can see hits the cursed                3          Wrathful Smite
+target with an attack roll, you can end the curse                5          Spike Growth
+early (no action required) to make the attack deal               9          Phantom Steed
+extra Necrotic or Radiant damage (your choice)                  13          Hallucinatory Terrain
+equal to 1d8 plus your Cleric level.                            17          Awaken
+
+LEVEL 6: SENTINEL AT DEATH’S DOOR
+When you or a Bloodied creature you can see within        LEVEL 3: WRATH OF THE WILD
+30 feet of yourself is hit with an attack roll, you can   You draw on the strange and ancient horrors of the
+take a Reaction to halve that attack’s damage.            land for power. When you cast Hunter’s Mark, you
+  You can use this feature a number of times equal        transform, gaining the following benefits for the
+to your Wisdom modifier (minimum of once). You            duration of the spell.
+regain all expended uses when you finish a Long             Ancient Armor. You gain a bonus to your AC equal
+Rest.                                                     to your Wisdom modifier (minimum of +1). Your
+                                                          body is wreathed in rotten bark or beastly bristles.
+LEVEL 17: DIVINE REAPER                                     Unnerving Aura. When an enemy starts its turn
+Your deep connection to this domain renders you a         within a 10-foot Emanation originating from you, it
+hallowed harbinger of death, granting you the             makes a Wisdom saving throw against your spell
+following benefits.                                       save DC. On a failed save, it can take either an action
+  Enhanced Necromancy. When you cast a spell of           or a Bonus Action on this turn, not both. Your
+level 5 or lower from the Necromancy school that          shadow lengthens and twists around you, or you
+targets one creature or a spell from the Grave            sprout unnatural growths like bloody antlers or
+Domain Spells table, you can expend a use of              putrid fangs.
+Channel Divinity to target a second creature within
+the spell’s range. If the spell requires costly or        LEVEL 7: HUNGERING MIGHT
+consumed Material components, you must provide            You gain a bonus to Constitution saving throws
+Material components for each target.                      equal to your Wisdom modifier (minimum of +1).
+  Keeper of Souls. When an enemy dies within 60             In addition, once per turn when you hit a creature
+feet of you, you or one creature you can see within       with an attack roll while you are transformed using
+60 feet of yourself regains Hit Points equal to three     Wrath of the Wild, you regain a number of Hit Points
+times your Cleric level. You can’t use this feature if    equal to 1d10 plus your Wisdom modifier, provided
+you have the Incapacitated condition. Once you use        you are Bloodied when you hit.
+this feature, you can’t use it again until you finish a
+Short or Long Rest.                                       LEVEL 11: ROT AND VIOLENCE
+                                                          Your dedication to eldritch forest beings alters you
+RANGER: HOLLOW WARDEN                                     further. When transformed using Wrath of the Wild,
+                                                          you gain the following additional benefits.
+Draw on the Might of Ancient Wild Terrors                   Eerie Aura. When a creature fails its saving throw
+Legends tell that the most ancient and fearsome           against your Unnerving Aura, it also takes Necrotic,
+terrors lurk deep within the old places of the earth—     Poison, or Psychic damage (your choice) equal to
+unfathomable and bloodthirsty entities of fallow soil     your Ranger level. This damage ignores Resistance.
+and sharpened claws. Hollow Wardens venerate and            Strangling Roots. When you hit a creature with
+draw power from such beings, transforming                 an attack roll using a weapon, you can activate the
+themselves into similarly merciless and monstrous         Sap or Slow mastery property in addition to a
+guardians that stalk along jagged coastlines, across      different mastery property you’re using with that
+steep mountain crags, and through other dark and          weapon.
+wild places.
+
+
+
+
+©2025 Wizards of the Coast LLC                                                                                  5
+LEVEL 15: ANCIENT ENDURANCE                              gain it, as a ghostly presence shares its knowledge
+                                                         with you. You lose this proficiency when you use this
+You become wholly suffused with the forest’s
+                                                         benefit again to choose a different proficiency.
+ancient power, granting you the following benefits.
+  Persistent Hunt. If you drop to 0 Hit Points while
+transformed using Wrath of the Wild and don’t die
+                                                         LEVEL 9: TOKENS OF THE DEPARTED
+outright, you can expend a level 4+ spell slot (no       The spirits of the dead are drawn to you, and echoes
+action required). Your Hit Points then instead           of their past lives magically manifest as strange
+change to an amount equal to five times the level of     curios with resonant power.
+the spell slot expended.                                    Whenever you finish a Long Rest, you gain two
+  Timeless. You have Immunity to the Exhaustion          soul trinkets; each soul trinket is a Tiny object (the
+condition.                                               DM determines the trinket’s form or has you roll on
+                                                         the Trinkets table in the Player’s Handbook to
+ROGUE: PHANTOM                                           generate it). These trinkets last until you finish
+                                                         another Long Rest, at which point they disintegrate.
+Embrace Death and Wield Ghostly Power                    If you ever move more than 30 feet from a trinket,
+                                                         the trinket immediately teleports to you, appearing
+Some Rogues walk along the veil between life and         somewhere on your person.
+death, shepherding opponents to the grave and               The number of soul trinkets you gain when you
+slipping through the world as undetectable as a          finish a Long Rest increases when you reach Rogue
+spirit. In these pursuits, a Rogue might discover a      levels 13 (three trinkets) and 17 (four trinkets).
+mystical connection to death itself. Such an                Using Soul Trinkets. You can use soul trinkets in
+individual becomes immersed in negative energy,          the following ways:
+infusing their strikes with deathly energy and
+stealing knowledge from souls who have passed on.        Death’s Knell. When you deal Sneak Attack damage
+Thieves’ guilds value Rogues of this persuasion as         on your turn, you can expend one soul trinket and
+highly effective information gatherers and spies.          immediately use Wails from the Grave without
+                                                           expending a use of that feature. The expended
+DESIGN NOTE: PHANTOM UPDATES                               trinket is destroyed.
+Here are the main updates in this subclass since its     Life Essence. While you have at least one soul
+appearance in Tasha’s Cauldron of Everything:              trinket, you have Advantage on Death Saving
+                                                           Throws and Constitution saving throws.
+• Wails from the Grave now links its number of uses
+                                                         Spirit Query. You can take a Magic action to expend
+  to the Rogue’s Dexterity modifier.
+                                                           one soul trinket and immediately cast the Augury
+• Tokens of the Departed now provides soul trinkets        spell, requiring no spell components and using
+  whenever you finish a Long Rest, allowing more           Dexterity as the spellcasting modifier. The
+  reliable usage of the feature’s benefits.                expended trinket is destroyed.
+• Voice of Death is a new feature that allows you to
+  cast Speak with Dead.                                    Regaining Soul Trinkets. When a creature you
+• Death’s Friend now lets you gain a soul trinket when   can see within 30 feet of you dies, you can take a
+                                                         Reaction to regain one expended soul trinket.
+  you roll Initiative and have no soul trinkets.
+
+LEVEL 3: WAILS FROM THE GRAVE                            LEVEL 9: VOICE OF DEATH
+Immediately after you deal your Sneak Attack             You can cast Speak with Dead once without a spell
+damage to a creature on your turn, you can target a      slot, requiring no spell components and using
+second creature that you can see within 30 feet of       Dexterity as the spellcasting modifier. You regain the
+the first creature. Roll half the number of Sneak        ability to cast it this way when you finish a Short or
+Attack dice for your level (round up), and the second    Long Rest.
+creature takes Necrotic damage equal to the roll’s
+total as wails of the dead momentarily sound around      LEVEL 13: GHOST WALK
+them.                                                    As a Bonus Action, you assume a spectral form,
+  You can use this feature a number of times equal       gaining the benefits below for 10 minutes or until
+to your Dexterity modifier (minimum of once), and        you end them (no action required). Once you use
+you regain all expended uses when you finish a Long      this feature, you can’t use it again until you finish a
+Rest.                                                    Long Rest unless you expend and destroy one of
+                                                         your soul trinkets from Tokens of the Departed (no
+LEVEL 3: WHISPERS OF THE DEAD                            action required) to restore your use of it.
+Whenever you finish a Short or Long Rest, you can          Flight. You gain a Fly Speed of 10 feet and can
+choose one skill or tool proficiency that you lack and   hover.
+
+
+©2025 Wizards of the Coast LLC                                                                                     6
+  Hazy Form. Attack rolls have Disadvantage                SHADOW SPELLS
+against you.                                                Sorcerer Level    Spells
+  Incorporeal Movement. You can move through                      3           Bane, Darkness, Inflict Wounds,
+occupied spaces as if they were Difficult Terrain. If                         Pass Without Trace
+you end your turn in such a space, you take 1d10                   5          Hunger of Hadar, Summon Undead
+Force damage.                                                      7          Greater Invisibility, Phantasmal
+                                                                              Killer
+LEVEL 17: DEATH’S FRIEND                                           9          Contagion, Creation
+Your association with death has become so close
+that you gain the following benefits.                      LEVEL 6: SPIRITS OF ILL OMEN
+  Death’s Lament. When you use your Wails from
+the Grave feature, you can deal the Necrotic damage        You can cast Summon Undead without a Material
+to both the first and the second creature.                 component. You can also cast it once without a spell
+  Draw of Death. When you roll Initiative, you             slot, and you regain the ability to cast it in this way
+regain one soul trinket for your Tokens of the             when you finish a Long Rest.
+Departed if you have none remaining.                         Whenever you start casting the spell, you can
+                                                           modify it so that it doesn’t require Concentration. If
+                                                           you do so, the spell’s duration becomes 1 minute for
+SORCERER: SHADOW SORCERY                                   that casting, and the spell ends early if you cast it
+Bend Darkness and Doom to Your Will                        again.
+
+Your innate magic comes from the Shadowfell itself.        LEVEL 14: SHADOW WALK
+You might trace your lineage to an entity from that
+                                                           While you are in Dim Light or Darkness, you can take
+place, or perhaps you were exposed to the
+                                                           a Bonus Action to teleport up to 120 feet to an
+Shadowfell’s sinister energy and were transformed
+                                                           unoccupied space you can see that is also in Dim
+by it. Your shadowy magic allows you to command
+                                                           Light or Darkness.
+darkness, undeath, and woe with ease.
+
+DESIGN NOTE: SHADOW SORCERY UPDATES                        LEVEL 18: UMBRAL FORM
+Here are the main updates in this subclass since its       As a Bonus Action, you adopt a shadowy form,
+appearance in Xanathar’s Guide to Everything:              gaining the benefits below for 1 minute, until you
+                                                           have the Incapacitated condition, or until you end
+• Eyes of the Dark now also grants you Blindsight and      the form (no action required). Once you use this
+  the ability to see through the Darkness of any spell     feature, you can’t use it again until you finish a Long
+  you cast.                                                Rest unless you spend 6 Sorcery Points (no action
+• Shadow Spells is a new feature that provides a list of   required) to restore your use of it.
+  always prepared spells.                                    Incorporeal Movement. You can move through
+• Spirits of Ill Omen (formerly Hound of Ill Omen) now     occupied spaces as if they were Difficult Terrain. If
+  uses the Summon Undead spell, allowing for more          you end your turn in such a space, you take 1d10
+  versatility and scaling.                                 Force damage.
+• Umbral Form now gives you one free use of the form         Shadow Resilience. You have Resistance to all
+  per Long Rest. Strength of the Grave has been            damage except Force and Radiant damage.
+  improved and moved to the benefits of this form.           Strength of the Grave. If you would drop to 0 Hit
+                                                           Points and not die outright, you can make a
+LEVEL 3: EYES OF THE DARK                                  Charisma saving throw (DC 5 plus half the damage
+You have Darkvision with a range of 120 feet and           taken). If you succeed, your Hit Points instead
+Blindsight with a range of 10 feet.                        change to a number equal to three times your
+  In addition, if a spell you cast creates an area of      Sorcerer level.
+Darkness, you can see normally through that spell’s
+Darkness.                                                  WARLOCK: HEXBLADE PATRON
+LEVEL 3: SHADOW SPELLS                                     You’ve made a pact with a sentient magic weapon
+                                                           and the cursed forces contained within its blade.
+When you reach a Sorcerer level specified in the           Such a weapon could be the sword sheathed at a
+Shadow Spells table, you thereafter always have the        Warlock’s side, or it could be an infamous magic
+listed spells prepared.                                    weapon stored elsewhere, projecting its power
+                                                           across the multiverse to further its cunning plans. To
+                                                           those who are willing to follow this weapon’s whims,
+                                                           these inscrutable patrons offer the power to bestow
+
+
+©2025 Wizards of the Coast LLC                                                                                       7
+malignant curses, deliver punishing blows, and             Harrowing Blade. The target makes a Wisdom
+bolster the wielder.                                         saving throw against your spell save DC. On a
+                                                             failed save, the next time the target makes an
+DESIGN NOTE: HEXBLADE PATRON UPDATES                         attack roll against a creature other than you
+Here are the main updates in this subclass since its         before the start of your next turn, the target takes
+appearance in Xanathar’s Guide to Everything:                Necrotic damage equal to your Charisma modifier.
+                                                           Stymying Mark. The target has Disadvantage on the
+• Hexblade Spells (formerly Expanded Spell List) now         next saving throw it makes before the start of your
+  gives you a list of always prepared spells. The spells     next turn.
+  granted have been revised.
+• Hexblade Manifest is a new feature, allowing you to      LEVEL 6: LIFE STEALER
+  cast Hex a number of times without a spell slot. It      Your patron’s might allows you to drain vitality from
+  also grants you a handful of unique ways to interact     those you curse, granting you the following benefits.
+  with your cursed target.                                   Hungering Hex. Whenever the target cursed by
+• Life Stealer is a new feature that interacts with the    your Hex drops to 0 Hit Points, you regain Hit Points
+  Hex spell to provide healing and reliable damage.        equal to 1d8 plus your Charisma modifier.
+• Armor of Hexes now more reliably reduces damage            Inevitable Blade. Once per turn, if you make an
+  taken.                                                   attack roll against the target cursed by your Hex and
+• Masterful Hex is a new feature that boosts the           miss, you can deal Necrotic damage to that creature
+  power of Hexblade Manifest.                              equal to your Charisma modifier (minimum of 1
+                                                           Necrotic damage).
+LEVEL 3: HEXBLADE SPELLS
+The magic of your patron ensures you always have           LEVEL 10: ARMOR OF HEXES
+certain spells ready; when you reach a Warlock level       When you take damage from the cursed target of
+specified in the Hexblade Spells table, you thereafter     your Hex, you can take a Reaction to reduce the
+always have the listed spells prepared.                    damage taken by an amount equal to 2d8 plus your
+                                                           Charisma modifier. You can use this feature a
+HEXBLADE SPELLS                                            number of times equal to your Charisma modifier,
+ Warlock Level     Spells                                  and you regain all expended uses when you finish a
+      3            Arcane Vigor, Hex, Magic Weapon,        Long Rest.
+                   Shield, Wrathful Smite
+        5          Conjure Barrage, Dispel Magic           LEVEL 14: MASTERFUL HEX
+        7          Freedom of Movement, Staggering         Your patron’s accursed might flows even more
+                   Smite                                   strongly through you, granting the following
+        9          Animate Objects, Steel Wind Strike      benefits.
+                                                             Accursed Critical. Any attack roll you make
+                                                           against the target cursed by your Hex scores a
+LEVEL 3: HEXBLADE MANIFEST                                 Critical Hit on a roll of a 19 or 20 on the d20.
+Your patron grants you the power to summon                   Infectious Hex. When you use one of your
+cursed echoes of its blade to hinder your foes. You        Hexblade’s Maneuvers, you can target one additional
+gain the following benefits.                               creature within 30 feet of the cursed target. The
+  Hexblade’s Curse. You can cast Hex without               additional target takes 1d6 Necrotic damage.
+expending a spell slot a number of times equal to            Resilient Hex. Taking damage can’t break your
+your Charisma modifier (minimum of once), and you          Concentration on Hex.
+regain all expended uses when you finish a Long
+Rest. When you cast Hex, a spectral weapon                 WARLOCK: UNDEAD PATRON
+resembling your patron orbits the cursed target.
+  Hexblade’s Maneuvers. Once per turn, when you            Defy Death for Profane Power
+hit a target cursed by your Hex with an attack roll,       You’ve made a pact with a creature that defies the
+you can cause one of these additional effects:             cycle of life and death: a powerful lich, vampire, or
+                                                           other entity of undeath. Having once been mortal
+Draining Slash. The target makes a Constitution            themselves, these ancient patrons know firsthand
+ saving throw against your spell save DC. On a             the paths of ambition and the routes past the doors
+ failed save, the target can’t make Opportunity            of death. They eagerly share this profane knowledge,
+ Attacks and its Speed is halved until the start of        along with other secrets, with those who work their
+ your next turn.                                           will among the living.
+
+
+
+©2025 Wizards of the Coast LLC                                                                                  8
+DESIGN NOTE: UNDEAD PATRON                                   Additionally, once per turn when you cast a spell
+Here are the main updates in this subclass since its       that deals damage while using your Form of Dread,
+appearance in Van Richten’s Guide to Ravenloft:            you can change that spell’s damage type to Necrotic.
+                                                             Undead Endurance. You don’t gain Exhaustion
+• Undead Spells (formerly Expanded Spell List) now         levels from dehydration, malnutrition, or
+  gives you a list of always prepared spells.              suffocation. In addition, you don’t need to sleep, and
+• Grave Touched now allows your spells and attacks to      magic can’t put you to sleep.
+  ignore Resistance to Necrotic damage.
+• Necrotic Husk no longer requires a Reaction to use       LEVEL 10: NECROTIC HUSK
+  its secondary feature, and it restores you to a          Your connection to undeath now saturates your
+  number of Hit Points equal to 10 times your              body. You gain the following benefits.
+  Charisma modifier.                                         Necrotic Resilience. You have Resistance to
+• Superior Dread is a new feature that improves your       Necrotic damage. While using your Form of Dread,
+  Form of Dread, allowing you to fly, regain Hit Points,   you have Immunity to Necrotic damage.
+  and improve your spellcasting.                             Unholy Resuscitation. If you drop to 0 Hit Points
+                                                           and don’t die outright, you can cause your body to
+LEVEL 3: FORM OF DREAD                                     erupt with deathly energy. Each creature of your
+As a Bonus Action, you transform into an avatar of         choice in a 30-foot Emanation originating from you
+your patron’s dreadful power, gaining the benefits         makes a Constitution saving throw against your spell
+below for 1 minute, until you have the Incapacitated       save DC, taking Necrotic damage equal to 2d10 plus
+condition, or until you end the form (no action            your Warlock level on a failure or half as much
+required). You can transform a number of times             damage on a success. Your Hit Points then change to
+equal to your Charisma modifier (minimum of once),         10 times your Charisma modifier (minimum of 10
+and you regain all expended uses when you finish a         Hit Points), and you gain 1 Exhaustion level.
+Long Rest.                                                   Once you use this benefit, you can’t use it again
+  Facsimile of Life. You gain Temporary Hit Points         until you finish a Short or Long Rest.
+equal to 1d10 plus your Warlock level.
+  Frightful Avatar. You have Immunity to the               LEVEL 14: SUPERIOR DREAD
+Frightened condition. Additionally, once per turn,         Your Form of Dread improves, granting you the
+when you hit a creature with an attack roll, you can       following benefits while you are using it.
+force it to make a Wisdom saving throw against your          Flight. You have a Fly Speed equal to your Speed
+spell save DC. On a failed save, the target has the        and can hover.
+Frightened condition until the end of your next turn.        Profane Casting. Whenever you cast a Warlock
+                                                           spell from the Conjuration or Necromancy school,
+LEVEL 3: UNDEAD SPELLS                                     you cast it without any Verbal, Somatic, or Material
+The magic of your patron ensures you always have           components, except Material components that are
+certain spells ready; when you reach a Warlock level       consumed by the spell or that have a cost specified
+specified in the Undead Spells table, you thereafter       in the spell.
+always have the listed spells prepared.                      Vitality Siphon. Once per turn when you deal
+                                                           Necrotic damage to a creature, you regain Hit Points
+UNDEAD SPELLS                                              equal to your Charisma modifier (minimum of 1 Hit
+ Warlock Level     Spells                                  Point).
+      3            Blindness/Deafness, False Life,
+                   Phantasmal Force, Ray of Sickness
+        5          Speak with Dead, Vampiric Touch
+        7          Death Ward, Phantasmal Killer
+        9          Antilife Shell, Cloudkill
+
+LEVEL 6: GRAVE TOUCHED
+Your patron’s powers have a profound effect on your
+body and magic, granting you the following benefits.
+   Arcane Necrosis. Whenever you cast a spell or hit
+a creature with an attack roll and deal Necrotic
+damage, the damage dealt ignores Resistance to
+Necrotic damage.
+
+
+
+
+©2025 Wizards of the Coast LLC                                                                                  9
+
