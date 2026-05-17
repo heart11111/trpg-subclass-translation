@@ -84,7 +84,7 @@ const subclassArt = {
   'UA 역병 권역 - Pestilence Domain': 'assets/images/subclasses-v2/ua-pestilence-domain.jpg',
   'UA 무덤 권역 - Grave Domain': 'assets/images/subclasses-v2/ua-grave-domain.jpg',
   '약탈자 - Marauder': 'assets/images/homebrew-classes/barbarian.jpg',
-  '사랑의 맹세 - Oath of Love': 'assets/images/subclasses-v2/oath-of-love.jpg',
+  '사랑의 맹세 - Oath of Love': 'assets/images/subclasses-v2/oath-of-love.png',
   'UA 주문수호자의 맹세 - Oath of the Spellguard': 'assets/images/subclasses-v2/ua-oath-of-the-spellguard.jpg',
   '전승지기의 맹세 - Oath of the Lore-Keeper': 'assets/images/subclasses-v2/oath-of-the-lore-keeper.jpg',
   '슬픔의 맹세 - Oath of Sorrows': 'assets/images/subclasses-v2/oath-of-sorrows.jpg',
@@ -1116,6 +1116,8 @@ function levelSummaryHtml(markdownLines) {
 function enhanceRuleHtml(html) {
   return html
     .replace(/<section\s+id="[^"]*총평[^"]*"[\s\S]*?<\/section>\s*/g, '')
+    .replace(/<section\s+id="[^"]*이미지-생성-메모[^"]*"[\s\S]*?<\/section>\s*/g, '')
+    .replace(/<section\s+id="[^"]+"\s+class="level4">\s*<h4>이미지 생성 메모<\/h4>[\s\S]*?<\/section>\s*/g, '')
     .replace(/<p>((?:쉽게 말해|다만|원문상|보통은|즉,|주의:)[\s\S]*?)<\/p>/g, '<p class="rule-note">$1</p>')
     .replace(/<section\s+id="([^"]+)"\s+class="level4">\s*<h4>([\s\S]*?)<\/h4>/g, '<section id="$1" class="level4 feature-block"><h4>$2</h4>');
 }
