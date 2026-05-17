@@ -28,9 +28,9 @@
       <p class="brew-lede">홈브류는 좌측 탭에서 클래스, 서브클래스, 피트, 종족, 서브레이스, 백그라운드, 주문을 바로 오가며 읽도록 정리했습니다. 플레이 중 필요한 항목을 빠르게 찾을 수 있게 목록과 규칙 카드를 분리했습니다.</p>
     </div>
     <div class="brew-index-panel">
-      <span>1</span>
+      <span>2</span>
       <strong>클래스</strong>
-      <span>37</span>
+      <span>34</span>
       <strong>서브클래스</strong>
       <span>7</span>
       <strong>피트</strong>
@@ -40,18 +40,18 @@
       <strong>서브레이스</strong>
       <span>12</span>
       <strong>주문</strong>
-      <span>12</span>
+      <span>26</span>
       <strong>백그라운드</strong>
       <a href="spells.html">주문 보기</a>
     </div>
   </header>
-  <div class="homebrew-shell tabs-ready" data-tabs="true" data-default-tab="subclasses">
+  <div class="homebrew-shell tabs-ready" data-tabs="true" data-default-tab="classes">
     <aside class="homebrew-side-tabs" aria-label="홈브류 분류">
     <p class="homebrew-side-title">Homebrew</p>
-    <a data-tab="classes" href="#classes"><span>클래스</span><strong>1</strong></a><a class="active" data-tab="subclasses" href="#subclasses"><span>서브클래스</span><strong>37</strong></a><a data-tab="feats" href="#feats"><span>피트</span><strong>7</strong></a><a data-tab="races" href="#races"><span>종족</span><strong>2</strong></a><a data-tab="subraces" href="#subraces"><span>서브레이스</span><strong>3</strong></a><a  href="backgrounds.html"><span>백그라운드</span><strong>12</strong></a><a  href="spells.html"><span>주문</span><strong>12</strong></a><a  href="credits.html"><span>출처</span><strong>8</strong></a>
+    <a class="active" data-tab="classes" href="#classes"><span>클래스</span><strong>2</strong></a><a data-tab="subclasses" href="#subclasses"><span>서브클래스</span><strong>34</strong></a><a data-tab="feats" href="#feats"><span>피트</span><strong>7</strong></a><a data-tab="races" href="#races"><span>종족</span><strong>2</strong></a><a data-tab="subraces" href="#subraces"><span>서브레이스</span><strong>3</strong></a><a  href="backgrounds.html"><span>백그라운드</span><strong>26</strong></a><a  href="spells.html"><span>주문</span><strong>12</strong></a><a  href="credits.html"><span>출처</span><strong>8</strong></a>
   </aside>
     <div class="homebrew-tab-content">
-      <section id="classes" class="homebrew-pane" data-pane="classes">
+      <section id="classes" class="homebrew-pane active" data-pane="classes">
         <section class="brew-class-section">
           <div class="brew-class-head no-art">
             <div>
@@ -60,17 +60,23 @@
               <p>완전 클래스 문서입니다. 위치 - Witch와 UA 사이언 - Psion을 별도 클래스 문서로 관리합니다.</p>
             </div>
           </div>
-          <div class="brew-card-grid"><a class="brew-card" href="subclasses/witch.html">
+          <div class="brew-card-grid"><a class="brew-card" href="classes/witch.html">
     <span class="brew-card-art" style="--brew-card-image: url('assets/images/subclasses-v2/witch.jpg?v=b3aa77f7')"><img src="assets/images/subclasses-v2/witch.jpg?v=b3aa77f7" alt="위치 분위기 이미지"></span>
     <strong>위치</strong>
     <em>Witch</em>
     <p>위치는 자연 비전 마법의 가장 오래된 형태를 익힌 주문 사용자입니다.</p>
+  </a>
+<a class="brew-card" href="classes/psion.html">
+    <span class="brew-card-art" style="--brew-card-image: url('assets/images/subclasses-v2/psion.png?v=2e1997d7')"><img src="assets/images/subclasses-v2/psion.png?v=2e1997d7" alt="UA 사이언 분위기 이미지"></span>
+    <strong>UA 사이언</strong>
+    <em>Psion</em>
+    <p>UA 2025 기준의 사이오닉 에너지 주사위와 지능 기반 주문시전을 쓰는 완전 클래스입니다.</p>
   </a></div>
         </section>
       </section>
-      <section id="subclasses" class="homebrew-pane active" data-pane="subclasses">
+      <section id="subclasses" class="homebrew-pane" data-pane="subclasses">
         <nav class="brew-toc compact-toc" aria-label="클래스별 서브클래스 목차">
-          <a href="#warlock">워록</a><a href="#fighter">파이터</a><a href="#cleric">클레릭</a><a href="#paladin">팔라딘</a><a href="#ranger">레인저</a><a href="#druid">드루이드</a><a href="#monk">몽크</a><a href="#rogue">로그</a><a href="#bard">바드</a><a href="#barbarian">바바리안</a><a href="#sorcerer">소서러</a><a href="#wizard">위저드</a><a href="#witch">위치</a><a href="#">아티피서</a>
+          <a href="#warlock">워록</a><a href="#fighter">파이터</a><a href="#cleric">클레릭</a><a href="#paladin">팔라딘</a><a href="#ranger">레인저</a><a href="#druid">드루이드</a><a href="#monk">몽크</a><a href="#rogue">로그</a><a href="#barbarian">바바리안</a><a href="#sorcerer">소서러</a><a href="#wizard">위저드</a><a href="#">아티피서</a><a href="#bard">바드</a>
         </nav>
         <section id="warlock" class="brew-class-section" style="--i:0">
     <div class="brew-class-head no-art">
@@ -221,12 +227,6 @@
     <em>Circle of Ashes</em>
     <p>잿더미의 회합 드루이드는 오래되고 썩은 것은 불태워야 그 재에서 더 나은 것이 일어설 수 있다고 믿습니다.</p>
   </a>
-<a class="brew-card" href="subclasses/circle-of-the-mosquito.html">
-    <span class="brew-card-art" style="--brew-card-image: url('assets/images/subclasses-v2/circle-of-the-mosquito.jpg?v=18b647e8')"><img src="assets/images/subclasses-v2/circle-of-the-mosquito.jpg?v=18b647e8" alt="모기의 회합 분위기 이미지"></span>
-    <strong>모기의 회합</strong>
-    <em>Circle of the Mosquito</em>
-    <p>모기의 회합 드루이드는 자연의 흡혈성 기생충을 받아들입니다.</p>
-  </a>
 <a class="brew-card" href="subclasses/circle-of-the-warden.html">
     <span class="brew-card-art" style="--brew-card-image: url('assets/images/subclasses-v2/circle-of-the-warden.jpg?v=7109931c')"><img src="assets/images/subclasses-v2/circle-of-the-warden.jpg?v=7109931c" alt="파수꾼의 회합 분위기 이미지"></span>
     <strong>파수꾼의 회합</strong>
@@ -269,13 +269,7 @@
         <p>피, 별자리, 의무병처럼 전문 기술의 성격이 강한 아키타입입니다.</p>
       </div>
     </div>
-    <div class="brew-card-grid"><a class="brew-card" href="subclasses/zodiac-archetype.html">
-    <span class="brew-card-art" style="--brew-card-image: url('assets/images/subclasses-v2/zodiac-archetype.jpg?v=bbba6ae4')"><img src="assets/images/subclasses-v2/zodiac-archetype.jpg?v=bbba6ae4" alt="조디악 아키타입 분위기 이미지"></span>
-    <strong>조디악 아키타입</strong>
-    <em>Zodiac Archetype</em>
-    <p>더 큰 별자리의 표식을 지닌 당신의 영혼은 더 높은 힘의 축복을 받았습니다.</p>
-  </a>
-<a class="brew-card" href="subclasses/saboteur.html">
+    <div class="brew-card-grid"><a class="brew-card" href="subclasses/saboteur.html">
     <span class="brew-card-art" style="--brew-card-image: url('assets/images/subclasses-v2/saboteur.jpg?v=422c1b1b')"><img src="assets/images/subclasses-v2/saboteur.jpg?v=422c1b1b" alt="사보추어 분위기 이미지"></span>
     <strong>사보추어</strong>
     <em>Saboteur</em>
@@ -300,31 +294,10 @@
     <p>일부 로그는 삶과 죽음 사이의 장막을 따라 걷습니다.</p>
   </a></div>
   </section>
-<section id="bard" class="brew-class-section" style="--i:8">
+<section id="barbarian" class="brew-class-section" style="--i:8">
     <div class="brew-class-head no-art">
       <div>
         <span class="section-number">09</span>
-        <h2>바드</h2>
-        <p>공연, 풍자, 애도, 감정 조작을 마법과 결합하는 바드 대학입니다.</p>
-      </div>
-    </div>
-    <div class="brew-card-grid"><a class="brew-card" href="subclasses/college-of-eulogies.html">
-    <span class="brew-card-art" style="--brew-card-image: url('assets/images/subclasses-v2/college-of-eulogies.jpg?v=8f2fd8c6')"><img src="assets/images/subclasses-v2/college-of-eulogies.jpg?v=8f2fd8c6" alt="추도사 대학 분위기 이미지"></span>
-    <strong>추도사 대학</strong>
-    <em>College of Eulogies</em>
-    <p>바드는 음악으로 온갖 감정을 불러일으키는 달인입니다.</p>
-  </a>
-<a class="brew-card" href="subclasses/ua-college-of-spirits.html">
-    <span class="brew-card-art" style="--brew-card-image: url('assets/images/subclasses-v2/ua-college-of-spirits.jpg?v=f6f048fa')"><img src="assets/images/subclasses-v2/ua-college-of-spirits.jpg?v=f6f048fa" alt="UA 영혼 대학 분위기 이미지"></span>
-    <strong>UA 영혼 대학</strong>
-    <em>College of Spirits</em>
-    <p>영혼 대학의 바드는 오컬트 도구를 사용해 전설 속 존재와 오래전에 죽은 영혼을 불러내, 그들이 다시 한번 세상에 영향을 미치게 합니다.</p>
-  </a></div>
-  </section>
-<section id="barbarian" class="brew-class-section" style="--i:9">
-    <div class="brew-class-head no-art">
-      <div>
-        <span class="section-number">10</span>
         <h2>바바리안</h2>
         <p>피와 폭풍을 전투 지속력으로 바꾸는 공격적 길입니다.</p>
       </div>
@@ -348,10 +321,10 @@
     <p>이 원시 길을 따르는 바바리안은 연금술과 어두운 변환 마법을 사용해 자신의 신체를 변이시킵니다.</p>
   </a></div>
   </section>
-<section id="sorcerer" class="brew-class-section" style="--i:10">
+<section id="sorcerer" class="brew-class-section" style="--i:9">
     <div class="brew-class-head no-art">
       <div>
-        <span class="section-number">11</span>
+        <span class="section-number">10</span>
         <h2>소서러</h2>
         <p>타고난 비전 기원을 통해 주문과 몸 자체를 변화시키는 선택지입니다.</p>
       </div>
@@ -369,52 +342,37 @@
     <p>당신의 타고난 마법은 어둠그림자계 자체에서 비롯됩니다.</p>
   </a></div>
   </section>
-<section id="wizard" class="brew-class-section" style="--i:11">
+<section id="wizard" class="brew-class-section" style="--i:10">
     <div class="brew-class-head no-art">
       <div>
-        <span class="section-number">12</span>
+        <span class="section-number">11</span>
         <h2>위저드</h2>
         <p>학파 자체의 계산과 환경 조작이 강한 주문 사용자 선택지입니다.</p>
       </div>
     </div>
     <div class="brew-card-grid"><a class="brew-card" href="subclasses/school-of-geomancy.html">
-    <span class="brew-card-art" style="--brew-card-image: url('assets/images/subclasses-v2/school-of-geomancy.jpg?v=cc5eb2bc')"><img src="assets/images/subclasses-v2/school-of-geomancy.jpg?v=cc5eb2bc" alt="지맥술 학파 분위기 이미지"></span>
+    <span class="brew-card-art" style="--brew-card-image: url('assets/images/subclasses-v2/school-of-geomancy.png?v=d3ac4c0e')"><img src="assets/images/subclasses-v2/school-of-geomancy.png?v=d3ac4c0e" alt="지맥술 학파 분위기 이미지"></span>
     <strong>지맥술 학파</strong>
     <em>School of Geomancy</em>
     <p>원소를 자기 의지대로 다루는 것은 비전 마법 사용자에게 드문 일이 아닙니다.</p>
   </a>
 <a class="brew-card" href="subclasses/electromancer.html">
-    <span class="brew-card-art" style="--brew-card-image: url('assets/images/subclasses-v2/electromancer.jpg?v=90bb2eae')"><img src="assets/images/subclasses-v2/electromancer.jpg?v=90bb2eae" alt="전격술사 분위기 이미지"></span>
+    <span class="brew-card-art" style="--brew-card-image: url('assets/images/subclasses-v2/electromancer.png?v=951538ef')"><img src="assets/images/subclasses-v2/electromancer.png?v=951538ef" alt="전격술사 분위기 이미지"></span>
     <strong>전격술사</strong>
     <em>Electromancer</em>
     <p>전격술사는 번개를 튕기고, 주문에 전류를 섞으며, 전격 주문의 출발점을 자기 몸 밖으로 옮기는 위저드입니다.</p>
   </a>
 <a class="brew-card" href="subclasses/hedge-magic.html">
-    <span class="brew-card-art" style="--brew-card-image: url('assets/images/subclasses-v2/hedge-magic.jpg?v=bb3a2c2b')"><img src="assets/images/subclasses-v2/hedge-magic.jpg?v=bb3a2c2b" alt="재야 마법 분위기 이미지"></span>
+    <span class="brew-card-art" style="--brew-card-image: url('assets/images/subclasses-v2/hedge-magic.png?v=2b8fb9cc')"><img src="assets/images/subclasses-v2/hedge-magic.png?v=2b8fb9cc" alt="재야 마법 분위기 이미지"></span>
     <strong>재야 마법</strong>
     <em>Hedge Magic</em>
     <p>정규 학파 밖에서 낮은 마법을 실전으로 익힌 위저드 서브클래스입니다.</p>
   </a></div>
   </section>
-<section id="witch" class="brew-class-section" style="--i:12">
+<section id="" class="brew-class-section" style="--i:11">
     <div class="brew-class-head no-art">
       <div>
-        <span class="section-number">13</span>
-        <h2>위치</h2>
-        <p>사역마, 주술, 포션, 달의 코븐을 중심으로 움직이는 자연 비전 계열 완전 클래스입니다.</p>
-      </div>
-    </div>
-    <div class="brew-card-grid"><a class="brew-card" href="subclasses/witch.html">
-    <span class="brew-card-art" style="--brew-card-image: url('assets/images/subclasses-v2/witch.jpg?v=b3aa77f7')"><img src="assets/images/subclasses-v2/witch.jpg?v=b3aa77f7" alt="위치 분위기 이미지"></span>
-    <strong>위치</strong>
-    <em>Witch</em>
-    <p>위치는 자연 비전 마법의 가장 오래된 형태를 익힌 주문 사용자입니다.</p>
-  </a></div>
-  </section>
-<section id="" class="brew-class-section" style="--i:13">
-    <div class="brew-class-head no-art">
-      <div>
-        <span class="section-number">14</span>
+        <span class="section-number">12</span>
         <h2>아티피서</h2>
         <p>마법공학 장치와 제작 기법으로 전투 역할을 바꾸는 발명가 계열 서브클래스입니다.</p>
       </div>
@@ -424,6 +382,21 @@
     <strong>UA 되살림술사</strong>
     <em>Reanimator</em>
     <p>되살림술사는 자연 법칙을 거슬러 끔찍한 실험을 추구하는 아티피서입니다. 여러 시체의 일부를 꿰매 하수인을 만들고, 불길한 마법으로 산 자를 강화하며, 강령술을 무시무시한 과학으로 바꿉니다.</p>
+  </a></div>
+  </section>
+<section id="bard" class="brew-class-section" style="--i:12">
+    <div class="brew-class-head no-art">
+      <div>
+        <span class="section-number">13</span>
+        <h2>바드</h2>
+        <p>공연, 풍자, 애도, 감정 조작을 마법과 결합하는 바드 대학입니다.</p>
+      </div>
+    </div>
+    <div class="brew-card-grid"><a class="brew-card" href="subclasses/ua-college-of-spirits.html">
+    <span class="brew-card-art" style="--brew-card-image: url('assets/images/subclasses-v2/ua-college-of-spirits.jpg?v=f6f048fa')"><img src="assets/images/subclasses-v2/ua-college-of-spirits.jpg?v=f6f048fa" alt="UA 영혼 대학 분위기 이미지"></span>
+    <strong>UA 영혼 대학</strong>
+    <em>College of Spirits</em>
+    <p>영혼 대학의 바드는 오컬트 도구를 사용해 전설 속 존재와 오래전에 죽은 영혼을 불러내, 그들이 다시 한번 세상에 영향을 미치게 합니다.</p>
   </a></div>
   </section>
       </section>
@@ -457,7 +430,7 @@
     </header>
     <div class="feat-used-by">
       <span>포함 백그라운드</span>
-      <strong>여관 주인 - Innkeeper</strong>
+      <strong>여관 주인 - Innkeeper</strong><strong>요리사 - Cook</strong>
     </div>
     <div class="spell-body doc-content feat-body"><p>출신 재주. 당신은 자신과 당신의 음식을 먹는 이들을 북돋우는 식사를 준비하는 데 능숙합니다.</p>
 <ul><li><strong>예리한 요리사 - Keen Cooker.</strong> 요리도구에 숙련을 얻습니다. 이미 숙련이 있다면 이 항목은 추가 숙련을 주지 않습니다.</li><li><strong>생존 요리사 - Survivalist Chief.</strong> 생존 기술에 숙련을 얻습니다.</li><li><strong>든든한 식사 - Hearty Meal.</strong> 긴 휴식의 일부로 든든한 식사를 조리할 수 있습니다. 그렇게 하면 당신의 숙련 보너스 + 4명까지의 크리처에게 식사를 제공할 수 있습니다. 이 식사를 먹은 크리처는 24시간 동안 당신 캐릭터 레벨의 절반(내림, 최소 1) + 당신의 숙련 보너스만큼 임시 HP를 얻습니다.</li></ul></div>
@@ -496,34 +469,36 @@
     </header>
     <div class="feat-used-by">
       <span>포함 백그라운드</span>
-      <strong>순례자 - Pilgrim</strong>
+      <strong>순례자 - Pilgrim</strong><strong>밀수업자 - Smuggler</strong>
     </div>
     <div class="spell-body doc-content feat-body"><p>당신은 혹독한 환경에서도 살아남는 기술을 갈고닦았습니다.</p>
 <ul><li><strong>기습에도 흔들리지 않음 - Unshaken by Surprise.</strong> 당신이 기습당했을 때, 우선권 굴림에 불리점을 받지 않습니다.</li><li><strong>야생의 달인 - Master of the Wilds.</strong> 어려운 지형은 당신의 이동을 늦추지 않으며, 극심한 추위나 더위 같은 환경 위험에 저항하기 위한 내성 굴림에 이점을 얻습니다.</li><li><strong>채집 전문가 - Forager's Expertise.</strong> 채집할 때, 당신은 두 배의 음식과 물을 찾습니다.</li></ul></div>
   </article>
-<article id="skilled" class="dndb-spell origin-feat-card">
+<article id="linguist" class="dndb-spell origin-feat-card">
     <header class="dndb-spell-head background-head">
       <p class="spell-source">ORIGIN FEAT · 출신 재주</p>
-      <h2>숙련자</h2>
-      <p class="spell-subtitle">Skilled</p>
+      <h2>언어학자</h2>
+      <p class="spell-subtitle">Linguist</p>
     </header>
     <div class="feat-used-by">
       <span>포함 백그라운드</span>
-      <strong>신학자 - Theologian</strong>
+      <strong>고고학자 - Archaeologist</strong><strong>외교관 - Diplomat</strong><strong>첩자 - Spy</strong>
     </div>
-    <div class="spell-body doc-content feat-body"><p>2024 플레이어스 핸드북의 출신 재주인 숙련자 - Skilled를 사용합니다.</p></div>
+    <div class="spell-body doc-content feat-body"><p>출신 재주. 당신은 다음 혜택을 얻습니다.</p>
+<ul><li><strong>유창한 말솜씨 - Well Spoken.</strong> 원하는 언어 세 가지를 배웁니다.</li><li><strong>숨은 의미 - Hidden Meaning.</strong> 당신은 암호문을 만들 수 있습니다. 당신이 가르쳐 주지 않은 크리처는 <code>당신의 지능 점수 + 숙련 보너스</code>를 DC로 하는 지능 판정에 성공하거나 마법을 사용해야 해독할 수 있습니다.</li><li><strong>설득력 - Persuasive.</strong> 설득 기술에 숙련을 얻습니다. 이미 숙련이 있다면 원하는 다른 기술 하나에 숙련을 얻습니다.</li><li><strong>반복 가능 - Repeatable.</strong> 이 재주는 여러 번 선택할 수 있습니다.</li></ul></div>
   </article>
-<article id="magic-initiate-cleric" class="dndb-spell origin-feat-card">
+<article id="watchful" class="dndb-spell origin-feat-card">
     <header class="dndb-spell-head background-head">
       <p class="spell-source">ORIGIN FEAT · 출신 재주</p>
-      <h2>마법 입문(클레릭)</h2>
-      <p class="spell-subtitle">Magic Initiate (Cleric)</p>
+      <h2>관찰자</h2>
+      <p class="spell-subtitle">Watchful</p>
     </header>
     <div class="feat-used-by">
       <span>포함 백그라운드</span>
-      <strong>퇴마사 - Exorcist</strong>
+      <strong>조사관 - Investigator</strong>
     </div>
-    <div class="spell-body doc-content feat-body"><p>2024 플레이어스 핸드북의 출신 재주인 마법 입문(클레릭) - Magic Initiate (Cleric)를 사용합니다.</p></div>
+    <div class="spell-body doc-content feat-body"><p>출신 재주. 당신은 다음 혜택을 얻습니다.</p>
+<ul><li><strong>입술 읽기 - Lip Reader.</strong> 볼 수 있는 크리처가 당신이 이해하는 언어로 말하고 있다면, 그 입술을 읽어 내용을 해석할 수 있습니다.</li><li><strong>세부 관찰 - Eye for Detail.</strong> 수동 지혜(감지) 점수에 +5 보너스를 얻습니다.</li><li><strong>예리한 관찰자 - Keen Observer.</strong> 통찰, 조사, 감지 중 하나에 숙련을 얻습니다.</li></ul></div>
   </article></div>
         </section>
       </section>
@@ -537,7 +512,7 @@
             </div>
           </div>
           <div class="brew-card-grid"><a class="brew-card" href="races/half-orc.html">
-    <span class="brew-card-art" style="--brew-card-image: url('assets/images/races-v2/half-orc.jpg?v=1e98a880')"><img src="assets/images/races-v2/half-orc.jpg?v=1e98a880" alt="하프오크 분위기 이미지"></span>
+    <span class="brew-card-art" style="--brew-card-image: url('assets/images/races-v2/half-orc.png?v=e0ca4789')"><img src="assets/images/races-v2/half-orc.png?v=e0ca4789" alt="하프오크 분위기 이미지"></span>
     <strong>하프오크</strong>
     <em>Half Orc</em>
     <span class="race-card-lineage"><span>종족 옵션</span></span>

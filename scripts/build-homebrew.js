@@ -7,6 +7,7 @@ const root = path.resolve(__dirname, '..');
 const sourcePath = path.join(root, 'source', 'subclass-translation.md');
 const backgroundSourcePath = path.join(root, 'source', 'backgrounds.md');
 const raceSourcePath = path.join(root, 'source', 'races.md');
+const classOutDir = path.join(root, 'classes');
 const outDir = path.join(root, 'subclasses');
 const raceOutDir = path.join(root, 'races');
 const source = fs.readFileSync(sourcePath, 'utf8').replace(/\r\n/g, '\n');
@@ -40,6 +41,35 @@ const classArt = {
   '사이언': 'assets/images/subclasses-v2/psion.png',
 };
 
+const backgroundArt = {
+  '시정 의원 - Alderman': 'assets/images/backgrounds-v2/alderman.png',
+  '여관 주인 - Innkeeper': 'assets/images/backgrounds-v2/innkeeper.png',
+  '전령 - Courier': 'assets/images/backgrounds-v2/courier.png',
+  '추방 귀족 - Exiled Noble': 'assets/images/backgrounds-v2/exiled-noble.png',
+  '도굴꾼 - Graverobber': 'assets/images/backgrounds-v2/graverobber.png',
+  '쥐잡이 - Rat Catcher': 'assets/images/backgrounds-v2/rat-catcher.png',
+  '상단장 - Caravan Master': 'assets/images/backgrounds-v2/caravan-master.png',
+  '마차꾼 - Coach Driver': 'assets/images/backgrounds-v2/coach-driver.png',
+  '순례자 - Pilgrim': 'assets/images/backgrounds-v2/pilgrim.png',
+  '신학자 - Theologian': 'assets/images/backgrounds-v2/theologian.png',
+  '퇴마사 - Exorcist': 'assets/images/backgrounds-v2/exorcist.png',
+  '묘지기 - Gravekeeper': 'assets/images/backgrounds-v2/gravekeeper.png',
+  '고고학자 - Archaeologist': 'assets/images/backgrounds-v2/archaeologist.png',
+  '예술가 - Artist': 'assets/images/backgrounds-v2/artist.png',
+  '요리사 - Cook': 'assets/images/backgrounds-v2/cook.png',
+  '궁정인 - Courtier': 'assets/images/backgrounds-v2/courtier.png',
+  '사교도 - Cultist': 'assets/images/backgrounds-v2/cultist.png',
+  '외교관 - Diplomat': 'assets/images/backgrounds-v2/diplomat.png',
+  '조사관 - Investigator': 'assets/images/backgrounds-v2/investigator.png',
+  '기사 - Knight': 'assets/images/backgrounds-v2/knight.png',
+  '밀수업자 - Smuggler': 'assets/images/backgrounds-v2/smuggler.png',
+  '주문방패 - Spellshield': 'assets/images/backgrounds-v2/spellshield.png',
+  '학생 - Student': 'assets/images/backgrounds-v2/student.png',
+  '첩자 - Spy': 'assets/images/backgrounds-v2/spy.png',
+  '생존자 - Survivor': 'assets/images/backgrounds-v2/survivor.png',
+  '마녀 - Witch': 'assets/images/backgrounds-v2/witch-background.png',
+};
+
 const subclassArt = {
   '진홍 갈증의 워록 - Warlock of the Crimson Thirst': 'assets/images/subclasses-v2/crimson-thirst-warlock.jpg',
   'UA 원시 후원자 - Primordial Patron': 'assets/images/subclasses-v2/ua-primordial-patron.jpg',
@@ -62,7 +92,6 @@ const subclassArt = {
   'UA 공허의 파수꾼 - Hollow Warden': 'assets/images/subclasses-v2/hollow-warden.jpg',
   '감시자 - The Sentinel': 'assets/images/subclasses-v2/sentinel.jpg',
   '위치 헌터 - Witch Hunter': 'assets/images/subclasses-v2/witch-hunter.jpg',
-  '모기의 회합 - Circle of the Mosquito': 'assets/images/subclasses-v2/circle-of-the-mosquito.jpg',
   '잿더미의 회합 - Circle of Ashes': 'assets/images/subclasses-v2/circle-of-ashes.jpg',
   'UA 타이탄의 회합 - Circle of the Titan': 'assets/images/subclasses-v2/ua-circle-of-the-titan.jpg',
   '장난의 회합 - Circle of Mischief': 'assets/images/homebrew-classes/druid.jpg',
@@ -74,14 +103,12 @@ const subclassArt = {
   'UA 신비술 전사 - Warrior of the Mystic Arts': 'assets/images/subclasses-v2/ua-warrior-of-the-mystic-arts.jpg',
   'UA 독의 전사 - Warrior of Venom': 'assets/images/subclasses-v2/ua-warrior-of-venom.jpg',
   '엑상귀네이터 로그 - Exsanguinator Rogue': 'assets/images/homebrew-classes/rogue.jpg',
-  '조디악 아키타입 - Zodiac Archetype': 'assets/images/subclasses-v2/zodiac-archetype.jpg',
   'UA 마법 도둑 - Magic Stealer': 'assets/images/subclasses-v2/ua-magic-stealer.jpg',
   'UA 팬텀 - Phantom': 'assets/images/subclasses-v2/ua-phantom.jpg',
   '펜서 - Fencer': 'assets/images/homebrew-classes/rogue.jpg',
   '사보추어 - Saboteur': 'assets/images/subclasses-v2/saboteur.jpg',
   '외과의 - Surgeon': 'assets/images/subclasses-v2/surgeon.jpg',
   '광대 대학 - College of Fools': 'assets/images/homebrew-classes/warlock.jpg',
-  '추도사 대학 - College of Eulogies': 'assets/images/subclasses-v2/college-of-eulogies.jpg',
   'UA 영혼 대학 - College of Spirits': 'assets/images/subclasses-v2/ua-college-of-spirits.jpg',
   '스워시버클러 - Swashbuckler': 'assets/images/subclasses-v2/swashbuckler-2024.jpg',
   '야전 의무병 - Field Medic': 'assets/images/homebrew-classes/fighter.jpg',
@@ -92,9 +119,9 @@ const subclassArt = {
   '잉걸심장 - Emberheart': 'assets/images/subclasses-v2/emberheart.jpg',
   'UA 악마 혈통 마법 - Demonic Sorcery': 'assets/images/subclasses-v2/ua-demonic-sorcery.jpg',
   'UA 그림자 마법 - Shadow Sorcery': 'assets/images/subclasses-v2/ua-shadow-sorcery.jpg',
-  '지맥술 학파 - School of Geomancy': 'assets/images/subclasses-v2/school-of-geomancy.jpg',
-  '전격술사 - Electromancer': 'assets/images/subclasses-v2/electromancer.jpg',
-  '재야 마법 - Hedge Magic': 'assets/images/subclasses-v2/hedge-magic.jpg',
+  '지맥술 학파 - School of Geomancy': 'assets/images/subclasses-v2/school-of-geomancy.png',
+  '전격술사 - Electromancer': 'assets/images/subclasses-v2/electromancer.png',
+  '재야 마법 - Hedge Magic': 'assets/images/subclasses-v2/hedge-magic.png',
   '위치 - Witch': 'assets/images/subclasses-v2/witch.jpg',
   'UA 사이언 - Psion': 'assets/images/subclasses-v2/psion.png',
   'UA 되살림술사 - Reanimator': 'assets/images/subclasses-v2/ua-reanimator.jpg',
@@ -159,7 +186,6 @@ const slugOverrides = new Map([
   ['위치 헌터 - Witch Hunter', 'witch-hunter'],
   ['잿더미의 회합 - Circle of Ashes', 'circle-of-ashes'],
   ['UA 타이탄의 회합 - Circle of the Titan', 'ua-circle-of-the-titan'],
-  ['모기의 회합 - Circle of the Mosquito', 'circle-of-the-mosquito'],
   ['장난의 회합 - Circle of Mischief', 'circle-of-mischief'],
   ['파수꾼의 회합 - Circle of the Warden', 'circle-of-the-warden'],
   ['악몽의 회합 - Circle of Nightmares', 'circle-of-nightmares'],
@@ -169,14 +195,12 @@ const slugOverrides = new Map([
   ['UA 신비술 전사 - Warrior of the Mystic Arts', 'ua-warrior-of-the-mystic-arts'],
   ['UA 독의 전사 - Warrior of Venom', 'ua-warrior-of-venom'],
   ['엑상귀네이터 로그 - Exsanguinator Rogue', 'exsanguinator-rogue'],
-  ['조디악 아키타입 - Zodiac Archetype', 'zodiac-archetype'],
   ['UA 마법 도둑 - Magic Stealer', 'ua-magic-stealer'],
   ['UA 팬텀 - Phantom', 'ua-phantom'],
   ['펜서 - Fencer', 'fencer'],
   ['사보추어 - Saboteur', 'saboteur'],
   ['외과의 - Surgeon', 'surgeon'],
   ['광대 대학 - College of Fools', 'college-of-fools'],
-  ['추도사 대학 - College of Eulogies', 'college-of-eulogies'],
   ['UA 영혼 대학 - College of Spirits', 'ua-college-of-spirits'],
   ['스워시버클러 - Swashbuckler', 'swashbuckler-2024'],
   ['야전 의무병 - Field Medic', 'field-medic'],
@@ -220,7 +244,6 @@ const removedSubclassTitles = new Set([
   'UA 마법 도둑 - Magic Stealer',
   'UA 비탄의 길 - Path of Lament',
   'UA 악마 혈통 마법 - Demonic Sorcery',
-  'UA 사이언 - Psion',
 ]);
 
 function escapeHtml(value) {
@@ -675,7 +698,7 @@ function spellCardHtml(spell) {
   const availableFor = parsed.classes || spell.className;
   return `<article id="${spell.slug}" class="dndb-spell spell-card spell-dndb-card">
     <header class="dndb-spell-head spell-dndb-head">
-      <p class="spell-source">${escapeHtml(spell.className)} · <a href="subclasses/${spell.sourceSlug}.html">${escapeHtml(sourceName)}</a></p>
+      <p class="spell-source">${escapeHtml(spell.className)} · <a href="${documentHrefByTitle(spell.sourceTitle)}">${escapeHtml(sourceName)}</a></p>
       <h2>${escapeHtml(displayName(parsed.title))}</h2>
       <p class="spell-subtitle">${escapeHtml(parsed.level)} · ${escapeHtml(parsed.school)}</p>
     </header>
@@ -722,15 +745,43 @@ function parseBackgroundSections() {
 function parseBackground(background) {
   const meta = {};
   const body = [];
-  for (const line of background.lines.slice(1)) {
+  let featTitle = '';
+  const featLines = [];
+  const contentLines = background.lines.slice(1);
+  for (let i = 0; i < contentLines.length; i += 1) {
+    const line = contentLines[i];
     const match = line.match(/^\*\*(능력치|재주|기술 숙련|도구 숙련|장비):\*\*\s*(.+)$/);
-    if (match) meta[match[1]] = match[2];
-    else body.push(line);
+    if (match) {
+      meta[match[1]] = match[2].trim();
+      continue;
+    }
+    if (/^#### 설명\s*$/.test(line)) {
+      continue;
+    }
+    const phbFeatHeading = line.match(/^#### 재주:\s*(.+)$/);
+    if (phbFeatHeading) {
+      const headingTitle = phbFeatHeading[1].trim();
+      if (isPhbOriginFeatTitle(headingTitle)) {
+        while (i + 1 < contentLines.length && !/^#### /.test(contentLines[i + 1])) {
+          i += 1;
+        }
+        continue;
+      }
+      featTitle = headingTitle;
+      while (i + 1 < contentLines.length && !/^#### /.test(contentLines[i + 1])) {
+        i += 1;
+        featLines.push(contentLines[i]);
+      }
+      continue;
+    }
+    body.push(line);
   }
   return {
     title: background.title,
     meta,
     body: body.join('\n').trim(),
+    featTitle,
+    featBody: featLines.filter(line => line.trim() !== '---').join('\n').trim(),
   };
 }
 
@@ -754,11 +805,28 @@ function extractOriginFeat(background) {
   };
 }
 
+const phbOriginFeatTitles = new Set([
+  '경계심 - Alert',
+  '마법 입문(드루이드) - Magic Initiate (Druid)',
+  '마법 입문(위저드) - Magic Initiate (Wizard)',
+  '마법 입문(클레릭) - Magic Initiate (Cleric)',
+  '숙련자 - Skilled',
+  '음악가 - Musician',
+  '제작자 - Crafter',
+  '튼튼함 - Tough',
+  '행운아 - Lucky',
+]);
+
+function isPhbOriginFeatTitle(title) {
+  return phbOriginFeatTitles.has(title);
+}
+
 function collectOriginFeats(backgrounds) {
   const byTitle = new Map();
   for (const background of backgrounds) {
     const feat = extractOriginFeat(background);
     if (!feat?.title) continue;
+    if (isPhbOriginFeatTitle(feat.title)) continue;
     const backgroundName = displayName(background.title);
     if (!byTitle.has(feat.title)) {
       byTitle.set(feat.title, {
@@ -775,12 +843,28 @@ function collectOriginFeats(backgrounds) {
   return [...byTitle.values()];
 }
 
+function backgroundStatHtml(label, value) {
+  if (label !== '재주' || !value || value === '-' || isPhbOriginFeatTitle(value)) {
+    return escapeHtml(value || '-');
+  }
+  return `<a class="background-feat-link" href="homebrew.html#${escapeHtml(slugify(value))}">${escapeHtml(value)}</a>`;
+}
+
 function backgroundCardHtml(background) {
   const parsed = parseBackground(background);
   const { ko, en } = titleParts(background.title);
   const bodyHtml = enhanceRuleHtml(mdToHtml(parsed.body || ''));
+  const featHtml = parsed.featTitle
+    ? `<section class="background-feat-card">
+        <p class="background-feat-kicker">ORIGIN FEAT · 출신 재주</p>
+        <h3>${escapeHtml(displayName(parsed.featTitle))}</h3>
+        <div class="doc-content">${enhanceRuleHtml(mdToHtml(parsed.featBody || '이 피트의 규칙 본문은 연결된 백그라운드 항목에 포함되어 있습니다.'))}</div>
+      </section>`
+    : '';
   const stats = ['능력치', '재주', '기술 숙련', '도구 숙련', '장비'];
+  const art = backgroundArtPath(background);
   return `<article id="${escapeHtml(background.slug)}" class="dndb-spell bg-card background-entry">
+    ${art ? `<figure class="background-art"><img src="${escapeHtml(assetUrl(art))}" alt="${escapeHtml(ko)} 배경 이미지"></figure>` : ''}
     <header class="dndb-spell-head background-head">
       <div>
         <p class="spell-source">BACKGROUND · 백그라운드</p>
@@ -789,9 +873,10 @@ function backgroundCardHtml(background) {
       </div>
     </header>
     <dl class="spell-stats background-stats">
-      ${stats.map(label => `<div class="bg-stat-item"><dt>${label}</dt><dd>${escapeHtml(parsed.meta[label] || '-')}</dd></div>`).join('')}
+      ${stats.map(label => `<div class="bg-stat-item"><dt>${label}</dt><dd>${backgroundStatHtml(label, parsed.meta[label] || '-')}</dd></div>`).join('')}
     </dl>
     <div class="spell-body doc-content background-body">${bodyHtml}</div>
+    ${featHtml}
   </article>`;
 }
 
@@ -846,7 +931,7 @@ function parseRaceSections() {
 }
 
 const raceArt = {
-  '하프오크 - Half Orc': 'assets/images/races-v2/half-orc.jpg',
+  '하프오크 - Half Orc': 'assets/images/races-v2/half-orc.png',
   '마우스포크 - Mousefolk': 'assets/images/races-v2/mousefolk.jpg',
   '라크샤사 - Rakshasa': 'assets/images/races-v2/rakshasa.jpg',
   '타나루크 - Tanarukk': 'assets/images/races-v2/tanarukk.jpg',
@@ -941,6 +1026,26 @@ function raceSummaryHtml(race) {
           <tbody>${rows.map(([key, value]) => `<tr><td>${escapeHtml(key)}</td><td>${escapeHtml(value)}</td></tr>`).join('')}</tbody>
         </table>
       </section>`;
+}
+
+function cleanRaceDetailLines(race) {
+  const cleaned = [];
+  const intro = raceIntro(race);
+  let skippedIntro = false;
+  for (let i = 1; i < race.lines.length; i += 1) {
+    if (/^#### 이미지 생성 메모\s*$/.test(race.lines[i])) {
+      while (i + 1 < race.lines.length && !/^#### /.test(race.lines[i + 1])) {
+        i += 1;
+      }
+      continue;
+    }
+    if (!skippedIntro && race.lines[i].trim() === intro) {
+      skippedIntro = true;
+      continue;
+    }
+    cleaned.push(race.lines[i]);
+  }
+  return cleaned;
 }
 
 function raceCardHtml(race) {
@@ -1045,14 +1150,34 @@ function artPathFor(className, prefix = '', title = '') {
   return `${prefix}${subclassArt[title] || classArt[className] || 'assets/images/homebrew-tome-v2.jpg'}`;
 }
 
+function backgroundArtPath(background, prefix = '') {
+  return backgroundArt[background.title] ? `${prefix}${backgroundArt[background.title]}` : '';
+}
+
+function isClassDocumentTitle(title) {
+  return ['위치 - Witch', 'UA 사이언 - Psion'].includes(title);
+}
+
 function documentKind(subclass) {
-  return ['위치 - Witch', 'UA 사이언 - Psion'].includes(subclass.title) ? 'CLASS' : 'SUBCLASS';
+  return isClassDocumentTitle(subclass.title) ? 'CLASS' : 'SUBCLASS';
+}
+
+function documentFolderByTitle(title) {
+  return isClassDocumentTitle(title) ? 'classes' : 'subclasses';
+}
+
+function documentHref(subclass, prefix = '') {
+  return `${prefix}${documentFolderByTitle(subclass.title)}/${subclass.slug}.html`;
+}
+
+function documentHrefByTitle(title, prefix = '') {
+  return `${prefix}${documentFolderByTitle(title)}/${slugify(title)}.html`;
 }
 
 function subclassCard(subclass) {
   const { ko, en } = titleParts(subclass.title);
   const art = artPathFor(subclass.className, '', subclass.title);
-  return `<a class="brew-card" href="subclasses/${subclass.slug}.html">
+  return `<a class="brew-card" href="${documentHref(subclass)}">
     ${cardArtHtml(art, `${ko} 분위기 이미지`)}
     <strong>${escapeHtml(ko)}</strong>
     ${en ? `<em>${escapeHtml(en)}</em>` : ''}
@@ -1062,6 +1187,8 @@ function subclassCard(subclass) {
 
 fs.rmSync(outDir, { recursive: true, force: true });
 fs.mkdirSync(outDir, { recursive: true });
+fs.rmSync(classOutDir, { recursive: true, force: true });
+fs.mkdirSync(classOutDir, { recursive: true });
 fs.writeFileSync(path.join(outDir, 'path-of-the-bloodstained-hurricane.html'), `<!doctype html>
 <html lang="ko">
 <head>
@@ -1086,6 +1213,11 @@ const backgroundSections = parseBackgroundSections();
 const raceSections = parseRaceSections();
 const classDocuments = subclasses.filter(item => documentKind(item) === 'CLASS');
 const subclassDocuments = subclasses.filter(item => documentKind(item) === 'SUBCLASS');
+const subclassesByClass = new Map();
+for (const subclass of subclassDocuments) {
+  if (!subclassesByClass.has(subclass.className)) subclassesByClass.set(subclass.className, []);
+  subclassesByClass.get(subclass.className).push(subclass);
+}
 const originFeats = collectOriginFeats(backgroundSections);
 const raceDocuments = raceSections.filter(item => !isSubraceOption(item));
 const subraceDocuments = raceSections.filter(item => isSubraceOption(item));
@@ -1127,7 +1259,12 @@ for (const subclass of subclasses) {
     hasRelatedSpells ? `<a class="side-action" href="../spells.html">관련 주문 보기</a>` : '',
     related.length ? `<div class="brew-side-box">
         <p class="side-label">같은 클래스</p>
-        ${related.map(item => `<a class="side-link" href="${item.slug}.html">${escapeHtml(titleParts(item.title).ko)}</a>`).join('')}
+        ${related.map(item => {
+          const href = kind === 'SUBCLASS' && documentKind(item) === 'SUBCLASS'
+            ? `${item.slug}.html`
+            : `../${documentHref(item)}`;
+          return `<a class="side-link" href="${href}">${escapeHtml(titleParts(item.title).ko)}</a>`;
+        }).join('')}
       </div>` : '',
   ].filter(Boolean).join('\n      ');
   const content = `<main id="top" class="brew-detail">
@@ -1158,7 +1295,8 @@ for (const subclass of subclasses) {
     </article>
   </div>
 </main>`;
-  fs.writeFileSync(path.join(outDir, `${subclass.slug}.html`), pageShell({
+  const detailOutDir = kind === 'CLASS' ? classOutDir : outDir;
+  fs.writeFileSync(path.join(detailOutDir, `${subclass.slug}.html`), pageShell({
     title: `${ko} - 화살성채 홈브류`,
     bodyClass: 'brew-page subclass-page',
     active: 'homebrew',
@@ -1179,7 +1317,7 @@ for (const race of raceSections) {
   const related = isSubrace
     ? raceSections.filter(item => item.slug !== race.slug && isSubraceOption(item) && parentRaceLabel(item) === parentRace).slice(0, 5)
     : raceDocuments.filter(item => item.slug !== race.slug).slice(0, 5);
-  const bodyHtml = enhanceRuleHtml(mdToHtml(race.lines.slice(1).join('\n')));
+  const bodyHtml = enhanceRuleHtml(mdToHtml(cleanRaceDetailLines(race).join('\n')));
   const content = `<main id="top" class="brew-detail">
   <header class="brew-detail-hero">
     <div class="brew-hero-copy">
@@ -1191,7 +1329,6 @@ for (const race of raceSections) {
       <div class="brew-meta-row">
         <span>${escapeHtml(isSubrace ? `기본 종족: ${parentRace}` : race.category)}</span>
         <span>${escapeHtml(raceKindLabel(race))}</span>
-        <span>2024 구조</span>
       </div>
     </div>
     <figure class="brew-art-frame compact">
@@ -1206,14 +1343,13 @@ for (const race of raceSections) {
       </div>
     </aside>` : ''}
     <article class="content doc-content brew-article">
-      ${raceSummaryHtml(race)}
       ${bodyHtml}
     </article>
   </div>
 </main>`;
   fs.writeFileSync(path.join(raceOutDir, `${race.slug}.html`), pageShell({
     title: `${ko} - 화살성채 홈브류`,
-    bodyClass: 'brew-page subclass-page',
+    bodyClass: 'brew-page subclass-page race-page',
     active: 'homebrew',
     prefix: '../',
     description: `${race.category} ${ko} 번역`,
@@ -1221,7 +1357,7 @@ for (const race of raceSections) {
   }));
 }
 
-const classSectionsHtml = [...byClass.entries()].map(([className, items], index) => {
+const classSectionsHtml = [...subclassesByClass.entries()].map(([className, items], index) => {
   return `<section id="${slugify(className)}" class="brew-class-section" style="--i:${index}">
     <div class="brew-class-head no-art">
       <div>
@@ -1259,10 +1395,10 @@ const homeContent = `<main id="top" class="brew-index">
       <a href="spells.html">주문 보기</a>
     </div>
   </header>
-  <div class="homebrew-shell tabs-ready" data-tabs="true" data-default-tab="subclasses">
-    ${homebrewSideTabs('subclasses', { switchLocal: true })}
+  <div class="homebrew-shell tabs-ready" data-tabs="true" data-default-tab="classes">
+    ${homebrewSideTabs('classes', { switchLocal: true })}
     <div class="homebrew-tab-content">
-      <section id="classes" class="homebrew-pane" data-pane="classes">
+      <section id="classes" class="homebrew-pane active" data-pane="classes">
         <section class="brew-class-section">
           <div class="brew-class-head no-art">
             <div>
@@ -1274,9 +1410,9 @@ const homeContent = `<main id="top" class="brew-index">
           <div class="brew-card-grid">${classDocuments.map(subclassCard).join('\n') || '<p class="empty-note">등록된 클래스가 없습니다.</p>'}</div>
         </section>
       </section>
-      <section id="subclasses" class="homebrew-pane active" data-pane="subclasses">
+      <section id="subclasses" class="homebrew-pane" data-pane="subclasses">
         <nav class="brew-toc compact-toc" aria-label="클래스별 서브클래스 목차">
-          ${[...byClass.keys()].map(className => `<a href="#${slugify(className)}">${escapeHtml(className)}</a>`).join('')}
+          ${[...subclassesByClass.keys()].map(className => `<a href="#${slugify(className)}">${escapeHtml(className)}</a>`).join('')}
         </nav>
         ${classSectionsHtml}
       </section>
@@ -1412,7 +1548,7 @@ fs.writeFileSync(path.join(root, 'backgrounds.html'), pageShell({
 const creditBlocks = creditSections.map(section => {
   const html = mdToHtml(section.lines.join('\n'));
   return `<section class="credit-source-block">
-    <h3><a href="subclasses/${section.slug}.html">${escapeHtml(titleParts(section.title).ko)}</a></h3>
+    <h3><a href="${documentHrefByTitle(section.title)}">${escapeHtml(titleParts(section.title).ko)}</a></h3>
     ${html}
   </section>`;
 }).join('\n');
@@ -1447,4 +1583,4 @@ fs.writeFileSync(path.join(root, 'credits.html'), pageShell({
   content: creditsContent,
 }));
 
-console.log(`Built ${subclasses.length} subclass pages, ${raceSections.length} race pages, ${spellSections.length} spell entries, and ${creditSections.length} credit entries.`);
+console.log(`Built ${classDocuments.length} class pages, ${subclassDocuments.length} subclass pages, ${raceSections.length} race pages, ${backgroundSections.length} backgrounds, ${spellSections.length} spell entries, and ${creditSections.length} credit entries.`);
