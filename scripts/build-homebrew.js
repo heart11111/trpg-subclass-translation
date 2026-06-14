@@ -7,6 +7,7 @@ const root = path.resolve(__dirname, '..');
 const sourcePath = path.join(root, 'source', 'subclass-translation.md');
 const backgroundSourcePath = path.join(root, 'source', 'backgrounds.md');
 const raceSourcePath = path.join(root, 'source', 'races.md');
+const featSourcePath = path.join(root, 'source', 'feats.md');
 const classOutDir = path.join(root, 'classes');
 const outDir = path.join(root, 'subclasses');
 const raceOutDir = path.join(root, 'races');
@@ -17,11 +18,15 @@ const backgroundSource = fs.existsSync(backgroundSourcePath)
 const raceSource = fs.existsSync(raceSourcePath)
   ? fs.readFileSync(raceSourcePath, 'utf8').replace(/\r\n/g, '\n')
   : '';
+const featSource = fs.existsSync(featSourcePath)
+  ? fs.readFileSync(featSourcePath, 'utf8').replace(/\r\n/g, '\n')
+  : '';
 const pandocPath = process.env.PANDOC_PATH
   || (fs.existsSync('C:\\Program Files\\Pandoc\\pandoc.exe') ? 'C:\\Program Files\\Pandoc\\pandoc.exe' : 'pandoc');
 const lines = source.split('\n');
 const backgroundLines = backgroundSource.split('\n');
 const raceLines = raceSource.split('\n');
+const featLines = featSource.split('\n');
 
 const classArt = {
   '워록': 'assets/images/homebrew-classes/warlock.jpg',
@@ -843,6 +848,34 @@ function collectOriginFeats(backgrounds) {
   return [...byTitle.values()];
 }
 
+function parseStandaloneFeats() {
+  const entries = [];
+  for (let i = 0; i < featLines.length; i += 1) {
+    const match = featLines[i].match(/^### (.+)$/);
+    if (!match) continue;
+    const start = i;
+    let end = featLines.length;
+    for (let j = i + 1; j < featLines.length; j += 1) {
+      if (/^### /.test(featLines[j]) || /^## /.test(featLines[j])) {
+        end = j;
+        break;
+      }
+    }
+    const sectionLines = featLines.slice(start + 1, end);
+    const categoryLine = sectionLines.find(line => /^\*\*분류:\*\*/.test(line));
+    const prerequisiteLine = sectionLines.find(line => /^\*\*전제조건:\*\*/.test(line));
+    entries.push({
+      title: match[1],
+      slug: slugify(match[1]),
+      category: categoryLine ? categoryLine.replace(/^\*\*분류:\*\*\s*/, '').trim() : '피트',
+      prerequisite: prerequisiteLine ? prerequisiteLine.replace(/^\*\*전제조건:\*\*\s*/, '').trim() : '',
+      lines: sectionLines.filter(line => !/^\*\*(분류|전제조건):\*\*/.test(line)),
+    });
+    i = end - 1;
+  }
+  return entries;
+}
+
 function backgroundStatHtml(label, value) {
   if (label !== '재주' || !value || value === '-' || isPhbOriginFeatTitle(value)) {
     return escapeHtml(value || '-');
@@ -886,16 +919,27 @@ function featCardHtml(feat) {
     ? feat.lines.join('\n')
     : '이 피트의 규칙 본문은 연결된 백그라운드 항목에 포함되어 있습니다.';
   const bodyHtml = enhanceRuleHtml(mdToHtml(body));
+  const category = feat.category || '출신 재주';
+  const usedBy = feat.backgrounds?.length
+    ? `<div class="feat-used-by">
+      <span>포함 백그라운드</span>
+      ${feat.backgrounds.map(item => `<strong>${escapeHtml(item)}</strong>`).join('')}
+    </div>`
+    : '';
+  const prerequisite = feat.prerequisite
+    ? `<div class="feat-used-by feat-prerequisite">
+      <span>전제조건</span>
+      <strong>${escapeHtml(feat.prerequisite)}</strong>
+    </div>`
+    : '';
   return `<article id="${escapeHtml(feat.slug)}" class="dndb-spell origin-feat-card">
     <header class="dndb-spell-head background-head">
-      <p class="spell-source">ORIGIN FEAT · 출신 재주</p>
+      <p class="spell-source">FEAT · ${escapeHtml(category)}</p>
       <h2>${escapeHtml(ko)}</h2>
       ${en ? `<p class="spell-subtitle">${escapeHtml(en)}</p>` : ''}
     </header>
-    <div class="feat-used-by">
-      <span>포함 백그라운드</span>
-      ${feat.backgrounds.map(item => `<strong>${escapeHtml(item)}</strong>`).join('')}
-    </div>
+    ${usedBy}
+    ${prerequisite}
     <div class="spell-body doc-content feat-body">${bodyHtml}</div>
   </article>`;
 }
@@ -1213,6 +1257,7 @@ for (const subclass of subclasses) {
 }
 const backgroundSections = parseBackgroundSections();
 const raceSections = parseRaceSections();
+const standaloneFeats = parseStandaloneFeats();
 const classDocuments = subclasses.filter(item => documentKind(item) === 'CLASS');
 const subclassDocuments = subclasses.filter(item => documentKind(item) === 'SUBCLASS');
 const subclassesByClass = new Map();
@@ -1221,13 +1266,14 @@ for (const subclass of subclassDocuments) {
   subclassesByClass.get(subclass.className).push(subclass);
 }
 const originFeats = collectOriginFeats(backgroundSections);
+const allFeats = [...originFeats, ...standaloneFeats];
 const raceDocuments = raceSections.filter(item => !isSubraceOption(item));
 const subraceDocuments = raceSections.filter(item => isSubraceOption(item));
 
 const homebrewTabItems = [
   ['classes', '클래스', classDocuments.length, '#classes'],
   ['subclasses', '서브클래스', subclassDocuments.length, '#subclasses'],
-  ['feats', '피트', originFeats.length, '#feats'],
+  ['feats', '피트', allFeats.length, '#feats'],
   ['races', '종족', raceDocuments.length, '#races'],
   ['subraces', '서브레이스', subraceDocuments.length, '#subraces'],
   ['backgrounds', '백그라운드', backgroundSections.length, 'backgrounds.html'],
@@ -1384,7 +1430,7 @@ const homeContent = `<main id="top" class="brew-index">
       <strong>클래스</strong>
       <span>${subclassDocuments.length}</span>
       <strong>서브클래스</strong>
-      <span>${originFeats.length}</span>
+      <span>${allFeats.length}</span>
       <strong>피트</strong>
       <span>${raceDocuments.length}</span>
       <strong>종족</strong>
@@ -1424,10 +1470,10 @@ const homeContent = `<main id="top" class="brew-index">
             <div>
               <span class="section-number">FEAT</span>
               <h2>피트</h2>
-              <p>백그라운드에 포함된 출신 재주도 플레이 중 바로 찾을 수 있도록 별도 규칙 카드로 분리했습니다.</p>
+              <p>백그라운드 출신 재주와 종족 피트를 플레이 중 바로 찾을 수 있도록 별도 규칙 카드로 분리했습니다.</p>
             </div>
           </div>
-          <div class="feat-list">${originFeats.map(featCardHtml).join('\n') || '<p class="empty-note">등록된 피트가 없습니다.</p>'}</div>
+          <div class="feat-list">${allFeats.map(featCardHtml).join('\n') || '<p class="empty-note">등록된 피트가 없습니다.</p>'}</div>
         </section>
       </section>
       <section id="races" class="homebrew-pane" data-pane="races">
@@ -1517,8 +1563,8 @@ const backgroundsContent = `<main id="top" class="background-index">
     <div class="brew-index-panel">
       <span>${backgroundSections.length}</span>
       <strong>백그라운드</strong>
-      <span>${originFeats.length}</span>
-      <strong>출신 재주</strong>
+      <span>${allFeats.length}</span>
+      <strong>피트</strong>
       <a href="homebrew.html">홈브류로 돌아가기</a>
     </div>
   </header>
