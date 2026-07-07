@@ -79,7 +79,6 @@ const subclassArt = {
   '진홍 갈증의 워록 - Warlock of the Crimson Thirst': 'assets/images/subclasses-v2/crimson-thirst-warlock.jpg',
   'UA 원시 후원자 - Primordial Patron': 'assets/images/subclasses-v2/ua-primordial-patron.jpg',
   'UA 흔적 후원자 - Vestige Patron': 'assets/images/subclasses-v2/ua-vestige-patron.jpg',
-  'UA 언데드 후원자 - Undead Patron': 'assets/images/subclasses-v2/ua-undead-patron.jpg',
   '크라켄 - Kraken': 'assets/images/subclasses-v2/kraken.jpg',
   '정신의 칼날 - The Mind Blade': 'assets/images/subclasses-v2/mind-blade.png',
   'UA 지옥 기사 - Hell Knight': 'assets/images/subclasses-v2/ua-hell-knight.jpg',
@@ -87,14 +86,12 @@ const subclassArt = {
   '질풍 - Zephyr': 'assets/images/subclasses-v2/zephyr.jpg',
   '드래곤 권역 - Dragon Domain': 'assets/images/subclasses-v2/dragon-domain.jpg',
   'UA 역병 권역 - Pestilence Domain': 'assets/images/subclasses-v2/ua-pestilence-domain.jpg',
-  'UA 무덤 권역 - Grave Domain': 'assets/images/subclasses-v2/ua-grave-domain.jpg',
   '약탈자 - Marauder': 'assets/images/homebrew-classes/barbarian.jpg',
   '사랑의 맹세 - Oath of Love': 'assets/images/subclasses-v2/oath-of-love.png',
   'UA 주문수호자의 맹세 - Oath of the Spellguard': 'assets/images/subclasses-v2/ua-oath-of-the-spellguard.jpg',
   '전승지기의 맹세 - Oath of the Lore-Keeper': 'assets/images/subclasses-v2/oath-of-the-lore-keeper.jpg',
   '슬픔의 맹세 - Oath of Sorrows': 'assets/images/subclasses-v2/oath-of-sorrows.jpg',
   '국경의 맹세 - Oath of Frontiers': 'assets/images/subclasses-v2/oath-of-frontiers.jpg',
-  'UA 공허의 파수꾼 - Hollow Warden': 'assets/images/subclasses-v2/hollow-warden.jpg',
   '감시자 - The Sentinel': 'assets/images/subclasses-v2/sentinel.jpg',
   '위치 헌터 - Witch Hunter': 'assets/images/subclasses-v2/witch-hunter.jpg',
   '잿더미의 회합 - Circle of Ashes': 'assets/images/subclasses-v2/circle-of-ashes.jpg',
@@ -109,12 +106,10 @@ const subclassArt = {
   'UA 독의 전사 - Warrior of Venom': 'assets/images/subclasses-v2/ua-warrior-of-venom.jpg',
   '엑상귀네이터 로그 - Exsanguinator Rogue': 'assets/images/homebrew-classes/rogue.jpg',
   'UA 마법 도둑 - Magic Stealer': 'assets/images/subclasses-v2/ua-magic-stealer.jpg',
-  'UA 팬텀 - Phantom': 'assets/images/subclasses-v2/ua-phantom.jpg',
   '펜서 - Fencer': 'assets/images/homebrew-classes/rogue.jpg',
   '사보추어 - Saboteur': 'assets/images/subclasses-v2/saboteur.jpg',
   '외과의 - Surgeon': 'assets/images/subclasses-v2/surgeon.jpg',
   '광대 대학 - College of Fools': 'assets/images/homebrew-classes/warlock.jpg',
-  'UA 영혼 대학 - College of Spirits': 'assets/images/subclasses-v2/ua-college-of-spirits.jpg',
   '스워시버클러 - Swashbuckler': 'assets/images/subclasses-v2/swashbuckler-2024.jpg',
   '야전 의무병 - Field Medic': 'assets/images/homebrew-classes/fighter.jpg',
   '지옥불의 길 - Path of the Inferno': 'assets/images/subclasses-v2/path-of-the-inferno.jpg',
@@ -123,13 +118,11 @@ const subclassArt = {
   '돌연변이의 길 - Path of the Mutant': 'assets/images/subclasses-v2/path-of-the-mutant.jpg',
   '잉걸심장 - Emberheart': 'assets/images/subclasses-v2/emberheart.jpg',
   'UA 악마 혈통 마법 - Demonic Sorcery': 'assets/images/subclasses-v2/ua-demonic-sorcery.jpg',
-  'UA 그림자 마법 - Shadow Sorcery': 'assets/images/subclasses-v2/ua-shadow-sorcery.jpg',
   '지맥술 학파 - School of Geomancy': 'assets/images/subclasses-v2/school-of-geomancy.png',
   '전격술사 - Electromancer': 'assets/images/subclasses-v2/electromancer.png',
   '재야 마법 - Hedge Magic': 'assets/images/subclasses-v2/hedge-magic.png',
   '위치 - Witch': 'assets/images/subclasses-v2/witch.jpg',
   'UA 사이언 - Psion': 'assets/images/subclasses-v2/psion.png',
-  'UA 되살림술사 - Reanimator': 'assets/images/subclasses-v2/ua-reanimator.jpg',
 };
 
 const classNotes = {
@@ -170,7 +163,6 @@ const slugOverrides = new Map([
   ['진홍 갈증의 워록 - Warlock of the Crimson Thirst', 'crimson-thirst-warlock'],
   ['UA 원시 후원자 - Primordial Patron', 'ua-primordial-patron'],
   ['UA 흔적 후원자 - Vestige Patron', 'ua-vestige-patron'],
-  ['UA 언데드 후원자 - Undead Patron', 'ua-undead-patron'],
   ['크라켄 - Kraken', 'kraken'],
   ['정신의 칼날 - The Mind Blade', 'mind-blade'],
   ['UA 지옥 기사 - Hell Knight', 'ua-hell-knight'],
@@ -178,7 +170,6 @@ const slugOverrides = new Map([
   ['질풍 - Zephyr', 'zephyr'],
   ['드래곤 권역 - Dragon Domain', 'dragon-domain'],
   ['UA 역병 권역 - Pestilence Domain', 'ua-pestilence-domain'],
-  ['UA 무덤 권역 - Grave Domain', 'ua-grave-domain'],
   ['약탈자 - Marauder', 'marauder'],
   ['사랑의 맹세 - Oath of Love', 'oath-of-love'],
   ['UA 주문수호자의 맹세 - Oath of the Spellguard', 'ua-oath-of-the-spellguard'],
@@ -186,7 +177,6 @@ const slugOverrides = new Map([
   ['슬픔의 맹세 - Oath of Sorrows', 'oath-of-sorrows'],
   ['국경의 맹세 - Oath of Frontiers', 'oath-of-frontiers'],
   ['공허의 파수꾼 - Hollow Warden', 'hollow-warden'],
-  ['UA 공허의 파수꾼 - Hollow Warden', 'hollow-warden'],
   ['감시자 - The Sentinel', 'sentinel'],
   ['위치 헌터 - Witch Hunter', 'witch-hunter'],
   ['잿더미의 회합 - Circle of Ashes', 'circle-of-ashes'],
@@ -201,12 +191,10 @@ const slugOverrides = new Map([
   ['UA 독의 전사 - Warrior of Venom', 'ua-warrior-of-venom'],
   ['엑상귀네이터 로그 - Exsanguinator Rogue', 'exsanguinator-rogue'],
   ['UA 마법 도둑 - Magic Stealer', 'ua-magic-stealer'],
-  ['UA 팬텀 - Phantom', 'ua-phantom'],
   ['펜서 - Fencer', 'fencer'],
   ['사보추어 - Saboteur', 'saboteur'],
   ['외과의 - Surgeon', 'surgeon'],
   ['광대 대학 - College of Fools', 'college-of-fools'],
-  ['UA 영혼 대학 - College of Spirits', 'ua-college-of-spirits'],
   ['스워시버클러 - Swashbuckler', 'swashbuckler-2024'],
   ['야전 의무병 - Field Medic', 'field-medic'],
   ['지옥불의 길 - Path of the Inferno', 'path-of-the-inferno'],
@@ -215,13 +203,11 @@ const slugOverrides = new Map([
   ['돌연변이의 길 - Path of the Mutant', 'path-of-the-mutant'],
   ['잉걸심장 - Emberheart', 'emberheart'],
   ['UA 악마 혈통 마법 - Demonic Sorcery', 'ua-demonic-sorcery'],
-  ['UA 그림자 마법 - Shadow Sorcery', 'ua-shadow-sorcery'],
   ['지맥술 학파 - School of Geomancy', 'school-of-geomancy'],
   ['전격술사 - Electromancer', 'electromancer'],
   ['재야 마법 - Hedge Magic', 'hedge-magic'],
   ['위치 - Witch', 'witch'],
   ['UA 사이언 - Psion', 'psion'],
-  ['UA 되살림술사 - Reanimator', 'ua-reanimator'],
   ['하프오크 - Half Orc', 'half-orc'],
   ['마우스포크 - Mousefolk', 'mousefolk'],
   ['라크샤사 - Rakshasa', 'rakshasa-tiefling'],
@@ -238,17 +224,16 @@ const removedSubclassTitles = new Set([
   '엑상귀네이터 로그 - Exsanguinator Rogue',
   '펜서 - Fencer',
   '광대 대학 - College of Fools',
-  'UA 원시 후원자 - Primordial Patron',
-  'UA 흔적 후원자 - Vestige Patron',
+  'UA 헥스블레이드 후원자 - Hexblade Patron',
+  'UA 언데드 후원자 - Undead Patron',
   'UA 지옥 기사 - Hell Knight',
-  'UA 역병 권역 - Pestilence Domain',
-  'UA 주문수호자의 맹세 - Oath of the Spellguard',
+  'UA 무덤 권역 - Grave Domain',
+  'UA 공허의 파수꾼 - Hollow Warden',
   'UA 타이탄의 회합 - Circle of the Titan',
-  'UA 신비술 전사 - Warrior of the Mystic Arts',
-  'UA 독의 전사 - Warrior of Venom',
-  'UA 마법 도둑 - Magic Stealer',
-  'UA 비탄의 길 - Path of Lament',
-  'UA 악마 혈통 마법 - Demonic Sorcery',
+  'UA 팬텀 - Phantom',
+  'UA 영혼 대학 - College of Spirits',
+  'UA 그림자 마법 - Shadow Sorcery',
+  'UA 되살림술사 - Reanimator',
 ]);
 
 function escapeHtml(value) {
@@ -1193,7 +1178,9 @@ function badgeFor(subclass) {
 }
 
 function artPathFor(className, prefix = '', title = '') {
-  return `${prefix}${subclassArt[title] || classArt[className] || 'assets/images/homebrew-tome-v2.jpg'}`;
+  const configured = subclassArt[title];
+  if (configured && assetVersion(configured)) return `${prefix}${configured}`;
+  return `${prefix}${classArt[className] || 'assets/images/homebrew-tome-v2.jpg'}`;
 }
 
 function backgroundArtPath(background, prefix = '') {

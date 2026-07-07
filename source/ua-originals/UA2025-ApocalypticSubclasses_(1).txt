@@ -1,0 +1,430 @@
+
+
+=== PAGE 1 ===
+ 
+©2025 Wizards of the Coast LLC. Permission granted to print and photocopy this page for personal use. 
+1 
+UNEARTHED ARCANA 2025 
+APOCALYPTIC SUBCLASSES 
+This playtest document is part of a series of 
+Unearthed Arcana articles that present material 
+designed for upcoming products. The material here 
+uses the rules in the 2024 Player’s Handbook. 
+WHAT’S INSIDE 
+This document presents four new subclasses for the 
+Druid (Circle of Preservation), Fighter (Gladiator), 
+Sorcerer (Defiled Sorcery), and Warlock (Sorcerer-
+King Patron).  
+THIS IS PLAYTEST MATERIAL 
+This article is presented for playtesting and feedback. 
+The options here are experimental and in draft form. 
+They aren’t officially part of the game. Your feedback 
+will help determine whether we adopt it as official. 
+ How to Playtest This UA. We invite you to try out 
+this material in play. To play with this material, you 
+may either incorporate it into your campaign or run 
+one or more special playtest sessions. For such a 
+session, you may create an adventure of your own or 
+use a short adventure from a source like Quests from 
+the Infinite Staircase. 
+ Power Level. The character options you read here 
+might be more or less powerful than options in the 
+2024 Player’s Handbook. If a design survives 
+playtesting, we adjust its power to the desirable level 
+before publication. This means an option could be 
+more or less powerful in its final form. 
+ Feedback. The best way for you to give us feedback 
+on this material is in the survey we’ll release on D&D 
+Beyond. If we make this material official, it will be 
+refined based on your feedback, and then it will appear 
+in a D&D book. 
+ Providing feedback on this document is one way you 
+can help shape the future of D&D! 
+SUBCLASSES 
+The following section presents the following 
+subclasses: Circle of Preservation, Gladiator, Defiled 
+Sorcery, and Sorcerer-King Patron. 
+ 
+These subclasses are presented starting on the 
+following page.  
+
+
+=== PAGE 2 ===
+ 
+©2025 Wizards of the Coast LLC. Permission granted to print and photocopy this page for personal use. 2 
+CIRCLE OF PRESERVATION (DRUID) 
+Safeguard Nature and Heal the World 
+Druids of the Circle of Preservation work tirelessly 
+to conserve natural resources and restore places 
+once ruined by greed and exploitation. Through a 
+combination of conservation and restorative magic, 
+Druids of this order shield and spread life across the 
+land. The most powerful members of this order can 
+return vitality to barren fields, transforming 
+wastelands into thriving wildernesses once more. 
+LEVEL 3: CIRCLE OF PRESERVATION SPELLS 
+When you reach a Druid level specified in the Circle 
+of Preservation Spells table, you thereafter always 
+have the listed spells prepared.  
+CIRCLE OF PRESERVATION SPELLS 
+Druid 
+Level 
+Spells 
+3 Bless, Lesser Restoration, Protection 
+from Poison, Sanctuary 
+5 Beacon of Hope, Plant Growth 
+7 Aura of Life, Death Ward 
+9 Greater Restoration, Hallow 
+ 
+LEVEL 3: PRESERVED LAND 
+As a Bonus Action, you can expend a use of your 
+Wild Shape to fill a 15-foot Cube originating from a 
+point on the ground you can see within 120 feet of 
+yourself with revitalizing energy. The effect lasts for 
+1 minute or until you have the Incapacitated 
+condition, are more than 120 feet away from the 
+Cube, or die.  
+ Whenever a creature (including you) ends its turn 
+in the Cube, you can grant the creature one of the 
+following benefits: 
+Bolster. The creature gains Temporary Hit Points 
+equal to 1d4 plus your Druid level. 
+Purify. You end one effect on the creature causing it 
+to have the Frightened or Poisoned condition.  
+In addition, nonmagical vegetation native to the 
+region sprouts on ground within the Cube. This 
+vegetation disappears when the effect ends. 
+ As a Bonus Action on subsequent turns, you can 
+move the Cube up to 30 feet to another area on the 
+ground within 120 feet of yourself.  
+LEVEL 3: STUDENT OF PRESERVATION 
+Your studies have improved your understanding of 
+the order and resilience of nature, granting you the 
+following benefits. 
+ Frugal Casting. When you cast a Druid spell, you 
+can cast it without Material components, except 
+Material components that are consumed by the spell 
+or that have a cost specified in the spell. 
+ Additionally, whenever you cast a Druid spell that 
+requires a Material component that is consumed by 
+the spell, there is a 10 percent chance that the 
+component isn’t consumed as part of that casting. 
+ Tool Proficiency. You gain proficiency with one 
+type of Artisan’s Tools of your choice.  
+LEVEL 6: IMPROVED PRESERVATION 
+Your Preserved Land becomes more powerful in the 
+following ways. 
+ Fortify Protectors. While inside the Cube created 
+by your Preserved Land, you and your allies gain a 
+bonus to Constitution saving throws equal to your 
+Wisdom modifier (minimum of +1). 
+ Reject Desecrators. Whenever the Cube created 
+by your Preserved Land enters an enemy’s space 
+and whenever an enemy enters the Cube or ends its 
+turn there, that enemy makes a Wisdom saving 
+throw against your spell save DC. On a failed save, 
+the enemy takes 2d10 Radiant damage, and its 
+Speed is halved until the end of its next turn as new 
+growth rises to hinder it. On a successful save, the 
+enemy takes half as much damage only. An enemy 
+makes this save only once per turn. 
+LEVEL 10: FACILITATED RESTORATION 
+You can cast Lesser Restoration or Greater 
+Restoration without expending a spell slot or 
+requiring spell components. You can use this feature 
+to cast a spell in this way a number of times equal to 
+your Wisdom modifier (minimum of once), and you 
+regain all expended uses when you finish a Long 
+Rest.  
+LEVEL 14: SACROSANCT LAND 
+The size of the Cube created by your Preserved Land 
+increases to a 30-foot Cube. 
+ In addition, when a creature you can see in the 
+area of your Preserved Land is hit by an attack roll, 
+you can take a Reaction to halve that attack’s 
+damage against the creature.  
+  
+
+
+=== PAGE 3 ===
+ 
+©2025 Wizards of the Coast LLC. Permission granted to print and photocopy this page for personal use. 3 
+GLADIATOR (FIGHTER) 
+Master Brutality and Blood Sport 
+Gladiators are just as much performers as they are 
+warriors. Whether brawling in underground fighting 
+rings or fighting for survival in bloodstained arenas, 
+a Gladiator combines martial skill with theatrics to 
+awe and intimidate their audiences.  
+LEVEL 3: BRUTALITY 
+Shaped by the intensity of the arena, you’ve learned 
+to execute brutal martial moves. Once per turn, 
+when you hit a creature with an attack roll using a 
+Melee weapon, you can add one of the following 
+Brutality effects of your choice. You can do this a 
+number of times equal to your Charisma modifier 
+(minimum of once), and you regain all expended 
+uses when you finish a Short or Long Rest. 
+ Bleed. You can activate the Sap mastery property 
+in addition to a different mastery property you’re 
+using with that weapon, and the target takes extra 
+damage equal to your Charisma modifier (minimum 
+of 1 damage). The extra damage’s type is the same 
+type as the weapon’s type.  
+ Bluff. You can activate the Vex mastery property 
+in addition to a different mastery property you’re 
+using with that weapon, and you have Advantage on 
+the next saving throw you make before the end of 
+your next turn. 
+ Stumble. You can activate the Topple mastery 
+property in addition to a different mastery property 
+you’re using with that weapon, and on its next turn, 
+the target can take only an action or a Bonus Action, 
+not both. 
+LEVEL 3: COMBAT THEATRICS 
+You’ve honed your combat skills to entertain, 
+devastating opponents and dazzling onlookers. You 
+gain the following benefits. 
+ Athletic Flair. Whenever you make a Dexterity 
+(Acrobatics) or Strength (Athletics) check, you gain a 
+bonus to the check equal to your Charisma modifier 
+(minimum of +1). 
+ Bonus Proficiency. You gain proficiency in one of 
+these skills of your choice: Acrobatics, Athletics, 
+Deception, Intimidation, or Performance. 
+LEVEL 7: FLOURISH PARRY 
+You’ve learned to stylishly counter blows from your 
+opponents. When an enemy hits you with a melee 
+attack roll, you can take a Reaction to add your 
+Charisma modifier (minimum of +1) to your AC 
+against the attack, potentially causing the attack to 
+miss.  
+ Flourish Counter. If this Reaction causes the 
+attack to miss, you can retaliate with a powerful 
+counterattack as part of the same Reaction. Make an 
+attack roll with a Melee weapon against the 
+triggering creature. If this attack hits, you can use 
+one of your Brutality effects on the target without 
+expending a use of that feature.  
+ Once this counterattack hits, you can’t use this 
+feature to make another counterattack until you 
+finish a Long Rest. You can also restore your use of 
+this counterattack by expending a use of Second 
+Wind (no action required). 
+LEVEL 10: BOLDER BRUTALITIES 
+Your brutal martial prowess has improved. The 
+following effects are added to your Brutality options.  
+ Rive. You can activate the Cleave mastery 
+property in addition to a different mastery property 
+you’re using with that weapon, and you can add your 
+ability modifier to the damage of the additional 
+attack made as part of that property’s activation.  
+ Rush. You can activate the Push mastery property 
+in addition to a different mastery property you’re 
+using with that weapon, and you can immediately 
+move up to your Speed without provoking 
+Opportunity Attacks.  
+ Stagger. You can activate the Slow mastery 
+property in addition to a different mastery property 
+you’re using with that weapon, and the target has 
+Disadvantage on the next saving throw it makes 
+before the end of your next turn.  
+LEVEL 15: BRUTAL RESURGENCE 
+Whenever you use your Second Wind to regain Hit 
+Points, you regain an expended use of Brutality. You 
+also regain an expended use of Brutality whenever 
+you use your Action Surge.   
+LEVEL 18: MUTILATE 
+When you hit a Bloodied creature with an attack roll, 
+you can attempt to critically injure it. The target 
+makes a Constitution saving throw (DC 8 plus your 
+Charisma modifier and Proficiency Bonus). On a 
+failed save, the target suffers the following effects: 
+Maimed. If the target takes the Attack action, it can 
+make only one attack. 
+Sluggish. The target’s Speed is halved, and it has a 
+−2 penalty to its Armor Class. 
+These effects last until the target regains Hit Points. 
+ Once a target fails its saving throw against this 
+feature, you can’t use it again until you finish a Long 
+Rest. 
+  
+
+
+=== PAGE 4 ===
+ 
+©2025 Wizards of the Coast LLC. Permission granted to print and photocopy this page for personal use. 4 
+DEFILED SORCERY (SORCERER) 
+Siphon Life into Catastrophic Spells 
+Your innate power siphons life essence from the 
+surrounding world. At your command, creatures 
+grow sick and plants wither to husks. You draw 
+power from the corruption of life itself, draining 
+vitality to fuel destructive magic. 
+LEVEL 3: DEFILE AND EMPOWER 
+Once per turn when you roll damage for a spell you 
+cast using a spell slot, you can siphon your life 
+energy into the spell and empower it. Roll a number 
+of your unexpended Hit Point Dice, up to a number 
+equal to half the level of spell slot expended (round 
+up, minimum of one die), and add the total rolled to 
+one damage roll of the spell. Those Hit Point Dice are 
+then expended.  
+ Life Steal. Instead of drawing on your own life 
+force when you use this feature, you can try to steal 
+life from another creature you can see within 30 feet 
+of yourself. That creature makes a Constitution 
+saving throw against your spell save DC; creatures 
+that have Immunity to the Exhaustion condition 
+automatically succeed on the save. On a failed save, 
+in place of rolling your Hit Point Dice, roll a number 
+of the creature’s unexpended Hit Point Dice, up to a 
+number equal to half the level of slot expended 
+(round down, minimum of one die); you then add 
+that total rolled to one damage roll of the spell, and 
+those Hit Point Dice are expended for the creature.  
+ Once a creature fails its save against Life Steal, you 
+can’t use Life Steal again until you finish a Long Rest 
+unless you expend 3 Sorcery Points (no action 
+required) to restore your use of it. 
+DESIGN NOTE: HIT POINT DICE 
+Monsters, like player characters, have Hit Point Dice. 
+The size and number of a monster’s Hit Dice are 
+typically denoted in the monster’s stat block as part of 
+the parenthetical after the monster’s average Hit 
+Points. Any creature— both characters and monsters—
+can expend Hit Dice during a Short Rest to regain Hit 
+Points. 
+ When a monster is first encountered, assume that it 
+hasn’t expended any of its Hit Dice.  
+LEVEL 3: DEFILER SPELLS 
+Whenever you reach a Sorcerer level specified in the 
+Defiler Spells table, you thereafter always have the 
+listed spells prepared.  
+DEFILER SPELLS 
+Sorcerer 
+Level 
+Spells 
+3 Blindness/Deafness, Inflict Wounds, Ray 
+of Enfeeblement, Ray of Sickness 
+5 Bestow Curse, Vampiric Touch 
+7 Blight, Hallucinatory Terrain 
+9  Antilife Shell, Contagion 
+ 
+LEVEL 6: CORRUPTED CASTER 
+You learn further ways to tap into the corrupting 
+magic within yourself, granting you the following 
+benefits. 
+  Defiler’s Ward. When you take a Bonus Action to 
+transform Sorcery Points into a spell slot, you can 
+wreathe your body in a protective web of defiling 
+energy. Roll a number of d6s equal to the level of 
+spell slot created. You gain Temporary Hit Points 
+equal to the total rolled.  
+ If a creature hits you with a melee attack roll while 
+you have Temporary Hit Points, the creature takes 
+Necrotic or Poison damage (your choice) equal to 
+your Charisma modifier. 
+ Strengthened Rot. Damage dealt by your Sorcerer 
+spells and Sorcerer features ignores Resistance to 
+Necrotic and Poison damage. 
+LEVEL 14: WITHERING AURA 
+When you use your Innate Sorcery, an aura of 
+defiling magic fills a 15-foot Emanation originating 
+from you while your Innate Sorcery is active, 
+granting you the following additional benefits. 
+ Defiling Shroud. When an enemy within the aura 
+hits you with an attack roll, you can reduce that 
+attack’s total damage against you. The reduction 
+equals your Charisma modifier. 
+ Essence Siphon. When an enemy dies within the 
+aura, you regain 1d4 Sorcery Points. Once you use 
+this benefit, you can’t regain Sorcery Points in this 
+way until you use Innate Sorcery again.  
+LEVEL 18: SUPERIOR DEFILER 
+You’ve perfected your ability to control and channel 
+defiling magic, granting you the following benefits. 
+ Fouled Soul. You have Immunity to the Poisoned 
+and Exhaustion conditions.  
+ Furthered Defilement. The size of your Withering 
+Aura increases to a 30-foot Emanation. In addition, 
+enemies can’t regain Hit Points while in your aura. 
+
+
+=== PAGE 5 ===
+ 
+©2025 Wizards of the Coast LLC. Permission granted to print and photocopy this page for personal use. 5 
+SORCERER-KING PATRON 
+Herald Tyrannical Might of Monstrous Rulers 
+Your pact draws from the power of a monstrous, 
+tyrannical force akin to a demigod or an 
+overwhelmingly powerful magic-user. Through your 
+pact, you herald this tyrant’s interests in the world, 
+channeling their influence and mind-bending, 
+psionic power. 
+LEVEL 3: SORCERER-KING SPELLS 
+The magic of your patron ensures you always have 
+certain spells ready; whenever you reach a Warlock 
+level specified in the Sorcerer-King Spells table, you 
+thereafter always have the listed spells prepared. 
+ Psionic Casting. When you cast a spell from the 
+Sorcerer-King Spells table, you can do so without 
+Verbal or Material components, except Material 
+components that are consumed by the spell or that 
+have a cost specified in the spell. 
+SORCERER-KING SPELLS 
+Warlock 
+Level 
+Spells 
+3 Command, Compelled Duel, Hold 
+Person, Mind Spike, Wrathful Smite  
+5 Fear, Sending 
+7 Compulsion, Staggering Smite 
+9 Dominate Person, Synaptic Static 
+ 
+LEVEL 3: TYRANT’S HERALD 
+You gain the following benefits. 
+ Intimidating Presence. You gain proficiency in 
+the Intimidation skill if you don’t already have it. 
+You also have Expertise in Intimidation.  
+ Voice of Tyranny. You can cast Command as a 
+Bonus Action without expending a spell slot. You can 
+do so a number of times equal to your Charisma 
+modifier (minimum of once), and you regain all 
+expended uses when you finish a Long Rest. 
+LEVEL 6: DECISIVE EDICT 
+Your patron’s power surges through you, allowing 
+you to rally your allies and subjugate your enemies. 
+When you cast a spell using a Pact Magic spell slot, 
+you can cause profane power to erupt in a 30-foot 
+Emanation originating from you. For each creature 
+you can see in the Emanation, choose one of the 
+following effects: 
+Marshal. The creature has Advantage on attack rolls 
+until the end of its next turn.  
+Oppress. The creature must succeed on a Wisdom 
+saving throw against your spell save DC or have 
+the Frightened condition until the end of its next 
+turn.  
+Once you use this feature, you can’t do so again until 
+you finish a Short or Long Rest. You also regain use 
+of this feature when you use Magical Cunning.  
+LEVEL 10: VINDICTIVE REBUKE 
+You learn to rebuff those who challenge you or the 
+might of your patron. When an enemy hits you with 
+an attack roll, you can take a Reaction to force the 
+enemy to reroll the d20, and the enemy must use the 
+new roll. If this Reaction turns the attack roll into a 
+miss, the triggering creature takes Psychic damage 
+equal to your Warlock level. 
+ You can use this feature a number of times equal 
+to your Charisma modifier (minimum of once), and 
+you regain all expended uses when you finish a Long 
+Rest. 
+LEVEL 14: ABSOLUTE TYRANNY 
+You wield your patron’s tyrannical might with 
+absolute conviction. Whenever you cast Command, 
+you can target one additional creature within the 
+spell’s range. Additionally, a creature Frightened by 
+you automatically fails its saving throw against any 
+Command you cast.  

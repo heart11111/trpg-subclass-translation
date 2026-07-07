@@ -1,0 +1,1013 @@
+
+
+=== PAGE 1 ===
+©2025 Wizards of the Coast LLC 1 
+UNEARTHED ARCANA 2025 
+ARCANE SUBCLASSES  
+This playtest document is part of a series of 
+Unearthed Arcana articles that present material 
+designed for upcoming products. The material 
+here uses the rules in the 2024 Player’s 
+Handbook. 
+LEARN MORE ON YOUTUBE 
+To learn more about the design in this article, we 
+invite you to view the videos about it on YouTube 
+(www.youtube.com/DNDWizards). 
+WHAT’S INSIDE 
+This document presents nine subclasses: revised 
+subclasses for the Cleric (Arcana Domain), 
+Fighter (Arcane Archer), Warlock (Hexblade 
+Patron), and Wizard (Conjurer, Enchanter, 
+Necromancer, and Transmuter) and new 
+subclasses for the Monk (Tattooed Warrior) and 
+Sorcerer (Ancestral Sorcery). 
+THIS IS PLAYTEST MATERIAL 
+This article is presented for playtesting and 
+feedback. The options here are experimental and 
+in draft form. They aren’t officially part of the 
+game. Your feedback will help determine whether 
+we adopt it as official. 
+ How to Playtest This UA. We invite you to try 
+out this material in play. To play with this material, 
+you may either incorporate it into your campaign 
+or run one or more special playtest sessions. For 
+such a session, you may create an adventure of 
+your own or use a short adventure from a source 
+like Quests from the Infinite Staircase. 
+ Power Level. The character options you read 
+here might be more or less powerful than options 
+in the 2024 Player’s Handbook. If a design survives 
+playtesting, we adjust its power to the desirable 
+level before publication. This means an option 
+could be more or less powerful in its final form. 
+ Feedback. The best way for you to give us 
+feedback on this material is in the survey we’ll 
+release on D&D Beyond. If we make this material 
+official, it will be refined based on your feedback, 
+and then it will appear in a D&D book. 
+ Providing feedback on this document is one way 
+you can help shape the future of D&D! 
+SUBCLASSES 
+This section presents the following subclasses: 
+Arcana Domain, Arcane Archer, Tattooed 
+Warrior, Ancestral Sorcery, Hexblade Patron, 
+Conjurer, Enchanter, Necromancer, and 
+Transmuter. 
+ARCANA DOMAIN (CLERIC) 
+Blend Conviction with Arcane Power 
+Magic suffuses the multiverse and fuels both 
+destruction and creation. Clerics with this 
+domain view magical knowledge not as power to 
+be used in pursuit of personal ends, but as a gift 
+they have the responsibility to share. 
+ Gods associated with the Arcana Domain know 
+the secrets and potential of magic intimately. 
+These gods are often connected to knowledge, as 
+learning and arcane power tend to go hand-in-
+hand, or to secrecy or power. 
+DESIGN NOTE: ARCANA DOMAIN UPDATES 
+Here are the main updates in this subclass since its 
+appearance in the Sword Coast Adventurer’s Guide: 
+• Arcane Domain Spells have been revised. 
+• Arcane Initiate now gives you Expertise in the 
+Arcana skill. 
+• Modify Magic is a new feature that replaces 
+Arcane Abjuration. 
+• Dispelling Recovery (formerly named Spell 
+Breaker) now uses Dispel Magic and also triggers 
+when you remove a condition from a creature. 
+• Arcane Mastery now lets you change the Wizard 
+spells you choose. 
+LEVEL 3: ARCANA DOMAIN SPELLS 
+Your connection to this divine domain means 
+you always have certain spells ready. When you 
+reach a Cleric level specified in the Arcana 
+Domain Spells table, you thereafter always have 
+the listed spells prepared.  
+  
+
+
+=== PAGE 2 ===
+©2025 Wizards of the Coast LLC 2 
+ARCANA DOMAIN SPELLS 
+Cleric Level Prepared Spells 
+3 Detect Magic, Magic Missile, Magic 
+Weapon, Nystul’s Magic Aura 
+5 Counterspell, Dispel Magic 
+7 Arcane Eye, Leomund’s Secret Chest 
+9 Bigby’s Hand, Teleportation Circle 
+ 
+LEVEL 3: ARCANE INITIATE 
+You gain the following benefits.  
+ Arcane Knowledge. You gain proficiency in 
+the Arcana skill if you don’t have it already. You 
+also gain Expertise in the Arcana skill. 
+ Cantrips. You learn two Wizard cantrips of 
+your choice. Whenever you gain a Cleric level, 
+you can replace one of these cantrips with 
+another Wizard cantrip. 
+LEVEL 3: MODIFY MAGIC 
+You can use your Channel Divinity to alter your 
+spells as you cast them. When you cast a spell, 
+you can expend one use of your Channel Divinity 
+and change the spell in one of the following ways 
+(no action required). 
+ Fortifying Spell. One target of the spell gains a 
+number of Temporary Hit Points equal to 2d8 
+plus your Cleric level. 
+ Tenacious Spell. When you cast a spell that 
+forces a creature to make a saving throw, choose 
+one target of the spell you can see. Roll 1d6 and 
+apply the number rolled as a penalty to the 
+target’s saving throw.  
+LEVEL 6: DISPELLING RECOVERY 
+Immediately after you cast a spell with a spell 
+slot that restores Hit Points to a creature or ends 
+a condition on a creature, you can cast Dispel 
+Magic on the creature as a Bonus Action without 
+expending a spell slot. 
+ You can use this feature a number of times 
+equal to your Wisdom modifier (minimum of 
+once), and you regain all expended uses when 
+you finish a Long Rest. 
+LEVEL 17: ARCANE MASTERY 
+You learn four Wizard spells, one from each of 
+levels 6, 7, 8, and 9. You thereafter always have 
+those spells prepared. Whenever you gain a 
+Cleric level, you can replace one of these spells 
+with another Wizard spell of the same level. 
+ARCANE ARCHER (FIGHTER) 
+Deploy Magical Effects through Enchanted 
+Ammunition 
+An Arcane Archer studies a unique elven method 
+of archery that weaves magic into attacks to 
+produce supernatural effects. The first Arcane 
+Archers stood watch over their communities, 
+keeping a keen eye out for dangers and using 
+magic-infused arrows to defeat monsters and 
+invaders. Over the centuries, other species have 
+learned the elves’ mystical methods of blending 
+arcane aptitude with archery and broadened 
+their application to ranged weapons of many 
+kinds while applying those talents to an 
+adventuring life. 
+DESIGN NOTE: ARCANE ARCHER UPDATES 
+Here are the main updates in this subclass since its 
+appearance in Xanathar’s Guide to Everything: 
+• Arcane Archer Lore now gives you proficiency in 
+both the Arcana and Nature skills. 
+• Arcane Shot has been redesigned. The feature 
+now allows you to use any weapon with the 
+Ammunition property. You now use the Arcane 
+Shot Die it grants for extra damage in the options 
+you select. 
+• Ever Ready Shot is now available at a lower level. 
+• Improved Shots, Powerful Shots, and Masterful 
+Shots are new features that improve your Arcane 
+Shot Die. They incorporate prior damage 
+increases to your Arcane Shot options but spread 
+the increases across more levels of play. 
+LEVEL 3: ARCANE ARCHER LORE 
+You learn magical theory and secrets of nature, 
+granting you the following benefits.  
+ Cantrip. You know either the Druidcraft or 
+Prestidigitation cantrip. Intelligence is your 
+spellcasting ability for it. 
+ Skills. You gain proficiency in the Arcana and 
+Nature skills. If you already have one of these 
+proficiencies, you instead gain proficiency in a 
+different skill of your choice (or with two other 
+skills if you have both). 
+LEVEL 3: ARCANE SHOT 
+You learn to unleash special magical effects with 
+some of your shots.  
+ Arcane Shot Options. You learn two Arcane 
+Shot options of your choice from the “Arcane 
+
+
+=== PAGE 3 ===
+©2025 Wizards of the Coast LLC 3 
+Shot Options” section later in this subclass’s 
+description.  
+ You learn an additional Arcane Shot option of 
+your choice when you reach Fighter levels 7, 10, 
+15, and 18. Each time you learn a new Arcane 
+Shot option, you can also replace one option you 
+know with a different one.  
+ Using Arcane Shot. Once per turn when you 
+make a ranged attack using a weapon with the 
+Ammunition property, you can apply one of your 
+Arcane Shot options to that attack. You decide to 
+use the option when you hit a creature and deal 
+damage to it unless the option doesn’t involve an 
+attack roll. 
+ You can use this feature a number of times 
+equal to your Intelligence modifier (minimum of 
+once). You regain all expended uses when you 
+finish a Short or Long Rest.  
+ Arcane Shot Die. Arcane Shot options refer to 
+your Arcane Shot Die. Your Arcane Shot Die is a 
+d6.  
+ Saving Throws. If an Arcane Shot option 
+requires a saving throw, the DC equals 8 plus 
+your Intelligence modifier plus your Proficiency 
+Bonus.  
+LEVEL 7: CURVING SHOT 
+You learn how to direct an errant shot toward a 
+new target. If you make an attack roll with a 
+weapon with the Ammunition property and 
+miss, as a Bonus Action immediately after the 
+attack, you can make an extra attack with the 
+same weapon against a different target that you 
+can see, that is within the weapon’s long range, 
+and that isn’t behind Total Cover. This extra 
+attack doesn’t require ammunition.  
+LEVEL 7: EVER READY SHOT 
+When you roll Initiative and have no uses of 
+Arcane Shot left, you regain one expended use of 
+it.  
+LEVEL 10: IMPROVED SHOTS 
+Your Arcane Shot Die becomes a d8. 
+LEVEL 15: POWERFUL SHOTS 
+Your Arcane Shot Die becomes a d10. 
+LEVEL 18: MASTERFUL SHOTS 
+Your Arcane Shot Die becomes a d12. 
+ARCANE SHOT OPTIONS 
+The Arcane Shot options are presented here in 
+alphabetical order. 
+ Banishing Shot. Your magic temporarily 
+sequesters your target in a harmless demiplane. 
+The creature you hit takes additional Psychic 
+damage equal to one roll of your Arcane Shot Die 
+and must succeed on a Charisma saving throw or 
+be banished. While banished, the creature has 
+the Incapacitated condition and a Speed of 0. At 
+the end of its next turn, the target reappears in 
+the space it left or, if that space is occupied, in 
+the nearest unoccupied space.  
+ Beguiling Shot. Your magic causes the 
+ammunition to temporarily beguile your target. 
+The creature you hit takes additional Psychic 
+damage equal to two rolls of your Arcane Shot 
+Die and must succeed on a Wisdom saving throw 
+or have the Charmed condition until the start of 
+your next turn, treating either you or one of your 
+allies within 30 feet of the target (your choice) as 
+the charmer. The Charmed condition ends early 
+if the charmer attacks the target, deals damage 
+to it, or forces it to make a saving throw. 
+ Bursting Shot. You imbue your ammunition 
+with explosive force energy. Immediately after 
+you deal damage to the creature, your target and 
+each creature within a 10-foot Emanation 
+originating from the target takes Force damage 
+equal to two rolls of your Arcane Shot Die. 
+ Enfeebling Shot. Your ammunition saps your 
+target’s strength. The creature you hit takes 
+additional Necrotic damage equal to two rolls of 
+your Arcane Shot Die. The target must also 
+succeed on a Constitution saving throw or have 
+the Poisoned condition until the end of its next 
+turn. Whenever a target Poisoned in this way 
+hits with an attack roll, it subtracts an amount 
+equal to one roll of your Arcane Shot Die from 
+the total damage of that attack. 
+ Grasping Shot. Your ammunition creates 
+clutching brambles around your target. The 
+creature you hit takes additional Slashing 
+damage equal to one roll of your Arcane Shot Die 
+and must succeed on a Strength saving throw or 
+have the Restrained condition until the start of 
+your next turn. The target or a creature within 
+reach of it can take an action to make a Strength 
+(Athletics) check against your Arcane Shot DC, 
+removing the brambles and ending the 
+Restrained condition on the target on a 
+successful check. 
+
+
+=== PAGE 4 ===
+©2025 Wizards of the Coast LLC 4 
+ Piercing Shot. You give your ammunition an 
+ethereal quality. When you use this option, you 
+don’t make an attack roll for the attack. Instead, 
+the ammunition shoots forward in a 30-foot Line 
+that is 1 foot wide, originating from you, then 
+vanishes. The Line ignores cover, as the 
+ammunition phases through solid objects. Each 
+creature in the Line must make a Dexterity 
+saving throw. On a failed save, a creature takes 
+damage as if it were hit plus additional Piercing 
+damage equal to two rolls of your Arcane Shot 
+Die. On a successful save, a creature takes half as 
+much damage.  
+ Seeking Shot. You grant your ammunition the 
+ability to seek out a target. When you use this 
+option, you don’t make an attack roll for the 
+attack. Instead, choose one creature you have 
+seen in the last minute. The ammunition flies 
+toward that creature, moving around corners if 
+necessary and ignoring Half Cover and Three-
+Quarters Cover. If the target is within your 
+weapon’s long range, the target must make a 
+Dexterity saving throw. Otherwise, the 
+ammunition disappears after traveling as far as 
+it can. On a failed save, the target takes damage 
+as if it were hit plus additional Force damage 
+equal to two rolls of your Arcane Shot Die, and 
+you learn the target’s current location. On a 
+successful save, the target takes half as much 
+damage only. 
+ Shadow Shot. Your magic occludes your foe’s 
+vision with shadows. The creature you hit takes 
+additional Psychic damage equal to one roll of 
+your Arcane Shot Die, and it must succeed on a 
+Wisdom saving throw or have the Blinded 
+condition until the end of its next turn.  
+TATTOOED WARRIOR (MONK) 
+Enhance Martial Arts with Your Magic Tattoos 
+Drawing from diverse body-marking traditions 
+from across the multiverse, Tattooed Warriors 
+can use arcane power imbued in their magic 
+tattoos. These Monks gain tattoos as they grow 
+in martial prowess and insight. Tattooed 
+Warriors can cause their tattoos to change shape 
+to access a versatile suite of physical and magical 
+effects to overcome foes.  
+LEVEL 3: MAGIC TATTOOS 
+You gain the magic tattoos described by other 
+features of this subclass. The tattoos appear on 
+your body wherever you wish. Damage or injury 
+doesn’t impair your magic tattoos’ function. A 
+magic tattoo’s depiction can look like a brand, 
+scarification, a birthmark, patterns of scale, or 
+any other cosmetic alteration. 
+ If a tattoo’s effect requires a saving throw, the 
+DC equals 8 plus your Wisdom modifier plus 
+your Proficiency Bonus. Your spellcasting ability 
+for spells granted by a tattoo is Wisdom. 
+ Whenever you finish a Long Rest, you can 
+reshape one of your magic tattoos, changing the 
+option you chose from one list to another option 
+on the same list. 
+LEVEL 3: BEAST TATTOOS  
+You gain two animal tattoos. Choose two tattoos 
+from the following options.  
+ Bat. You know the Dancing Lights cantrip. 
+When you expend 1 Focus Point to use Patient 
+Defense or Step of the Wind, you gain Blindsight 
+with a range of 10 feet for 1 minute. 
+ Butterfly. You know the Light cantrip. You can 
+expend 1 Focus Point to cast Silent Image 
+without Material components. 
+ Chameleon. You know the Minor Illusion 
+cantrip. You can expend 1 Focus Point to cast 
+Disguise Self. 
+ Crane. You know the Guidance cantrip. When 
+you miss a creature with an attack granted by 
+your Flurry of Blows, you have Advantage on 
+attack rolls for any remaining Unarmed Strikes 
+with that use of Flurry of Blows. 
+ Horse. You know the Message cantrip. You can 
+expend 1 Focus Point to cast Longstrider without 
+Material components. 
+ Spider. You know the Mending cantrip. When 
+you hit a creature with an attack granted by your 
+Flurry of Blows, the creature has Disadvantage 
+on its next attack roll before the start of your 
+next turn. 
+ Tortoise. You know the Spare the Dying 
+cantrip. You can expend 1 Focus Point to cast 
+False Life without Material components. 
+LEVEL 6: CELESTIAL TATTOO 
+You gain an additional magic tattoo depicting a 
+celestial phenomenon. Choose a tattoo from the 
+following options. 
+ Comet.  You can expend 2 Focus Points to cast 
+Find Traps. 
+
+
+=== PAGE 5 ===
+©2025 Wizards of the Coast LLC 5 
+ Crescent Moon. You can expend 2 Focus 
+Points to cast Misty Step. 
+ Eclipse. You can expend 2 Focus Points to cast 
+Invisibility without Material components. 
+ Sunburst. You can expend 2 Focus Points to 
+cast Lesser Restoration. 
+LEVEL 11: NATURE TATTOO  
+You gain an additional magic tattoo depicting a 
+natural feature. Choose a tattoo from the 
+following options. 
+ Mountain. As a Magic action, you can expend 3 
+Focus Points to gain Resistance to Acid damage 
+and Advantage on Constitution saving throws for 
+1 minute. 
+ Storm. As a Magic action, you can expend 3 
+Focus Points to gain Resistance to Lightning 
+damage and Advantage on Dexterity saving 
+throws for 1 minute. 
+ Volcano. As a Magic action, you can expend 3 
+Focus Points to gain Resistance to Fire damage 
+and Advantage on Strength saving throws for 1 
+minute. 
+ Wave. As a Magic action, you can expend 3 
+Focus Points to gain Resistance to Cold damage 
+and Advantage on Wisdom saving throws for 1 
+minute. 
+LEVEL 17: MONSTER TATTOO  
+You gain a magic tattoo depicting a supernatural 
+creature. Choose a tattoo from the following 
+options. 
+ Beholder. You have a Fly Speed of 10 feet and 
+can hover. Additionally, you can expend 3 Focus 
+Points to cast Counterspell. 
+ Blink Dog. When you expend a Focus Point to 
+use Patient Defense, you can expend 3 Focus 
+Points to cast Blink immediately after that Bonus 
+Action. 
+ Displacer Beast. When you expend a Focus 
+Point to use Flurry of Blows or Step of the Wind, 
+you can expend 2 Focus Points to cast Mirror 
+Image immediately after that Bonus Action. 
+ Guardian Naga. When you would be reduced 
+to 0 Hit Points but not killed outright, your Hit 
+Points instead change to a number equal to twice 
+your Monk level. Once you use this benefit, you 
+can’t use it again until you finish a Long Rest.  
+ANCESTRAL SORCERY (SORCERER) 
+Bear the Power of a Spellcasting Lineage 
+Your innate magic comes from a specific 
+ancestor who wielded such awesome magical 
+power that a fragment of their personality 
+guides you. This ancestor grants you guidance 
+and direction as you explore your innate magical 
+abilities. You might be the ancestor’s sole 
+surviving descendant, a reincarnation who bears 
+an eerie resemblance to your ancestor, or a 
+victim of a curse gained from handling your 
+ancestor’s personal effects.  
+LEVEL 3: ANCESTOR’S LORE 
+You use your force of personality to channel 
+your ancestor’s knowledge. When you make an 
+Intelligence check, you gain a bonus to the check 
+equal to your Charisma modifier (minimum of 
++1). 
+ You also gain proficiency in one of these skills 
+of your choice: Arcana, History, Investigation, 
+Nature, or Religion.  
+LEVEL 3: ANCESTRAL SPELLS 
+When you reach the Sorcerer level specified in 
+the Ancestral Spells table, you thereafter always 
+have the listed spells prepared.  
+LINEAGE SPELLS 
+Sorcerer Level Spells 
+3 Command, Guidance, Locate 
+Object, Protection from Evil and 
+Good, Resistance, Spiritual Weapon 
+5 Magic Circle, Spirit Guardians  
+7 Divination, Locate Creature 
+9 Legend Lore, Yolande’s Regal 
+Presence 
+ 
+LEVEL 3: VISAGE OF THE ANCESTOR 
+Choose the form your ancestor takes, which 
+might resemble the ancestor in life or a symbolic 
+creature. While your Innate Sorcery feature is 
+active, this form appears in a spectral haze 
+around you, and you have Advantage on any 
+ability check you make as part of the Influence 
+action. 
+LEVEL 6: SUPERIOR SPELL DISRUPTION 
+Your ancestor’s spellcasting mastery aids you in 
+breaking spells. You always have Counterspell 
+and Dispel Magic prepared.  
+
+
+=== PAGE 6 ===
+©2025 Wizards of the Coast LLC 6 
+ While your Innate Sorcery feature is active, 
+you can cast each spell without expending a spell 
+slot. If you cast Counterspell in this way, the 
+target has Disadvantage on its Constitution 
+saving throw. If you cast Dispel Magic in this 
+way, you have Advantage on your ability checks 
+to end ongoing spells. Once you cast either spell 
+without a spell slot, you must finish a Long Rest 
+before you can cast the spell in this way again. 
+LEVEL 14: ANCESTRAL MAJESTY 
+Your ancestor’s visage evokes awe or dread. 
+While your Innate Sorcery feature is active, you 
+are surrounded by a magical aura in a 5-foot 
+Emanation. Whenever a creature you can see 
+enters the Emanation or ends its turn there, you 
+can force that creature to make a Charisma 
+saving throw. On a failed save, the target has the 
+Prone condition or has the Frightened condition 
+until the end of your next turn (your choice). A 
+creature makes this save only once per turn.  
+LEVEL 14: STEADY SPELLCASTER 
+Your deep connection with your ancestor 
+steadies you. Taking damage can’t break your 
+Concentration on Sorcerer spells.  
+LEVEL 18: ANCESTOR’S WARD 
+Your ancestor’s protection redirects harmful 
+magic away from you. While your Innate Sorcery 
+feature is active, you gain Advantage on saving 
+throws against spells. Once during your use of 
+Innate Sorcery, when you fail a saving throw 
+against a spell, you can choose to succeed 
+instead. 
+HEXBLADE PATRON (WARLOCK) 
+Forge a Pact with a Cursed Blade 
+You’ve made a pact with a sentient magic 
+weapon and the cursed forces contained within 
+its blade. Such a weapon could be the sword 
+sheathed at your side, or it could be a 
+manifestation of an infamous magic weapon like 
+Blackrazor or the Sword of Kas projecting its 
+power to further its legend. To those willing to 
+follow this weapon’s whims, these inscrutable 
+patrons offer the power to bestow malignant 
+curses, deliver punishing blows, and bolster the 
+wielder.  
+DESIGN NOTE: HEXBLADE PATRON UPDATES 
+Here are the main updates in this subclass since its 
+latest appearance in Unearthed Arcana: 
+• Hexblade Spells have been revised. 
+• Hexblade’s Curse has returned as a feature in its 
+own right but can also loop through spells that 
+place a curse on a creature, such as Bestow Curse 
+and Hex. Hungering Hex has been moved to this 
+level, and Accursed Shield is a new feature. 
+• Unyielding Will is a new feature that grants you 
+benefits when maintaining Concentration on 
+spells. 
+• Malign Brutality is a new feature that gives you 
+additional benefits. Hindering Curse (formerly 
+the Stymieing Mark maneuver) has been moved 
+here. 
+• Armor of Hexes no longer has limited uses and 
+scales with your Warlock level. 
+• Masterful Hex now increases the power and 
+usability of the updated Hexblade’s Curse 
+feature. 
+LEVEL 3: HEXBLADE SPELLS 
+The magic of your patron ensures you always 
+have certain spells ready; when you reach a 
+Warlock level specified in the Hexblade Spells 
+table, you thereafter always have the listed 
+spells prepared. 
+HEXBLADE SPELLS 
+Warlock Level Spells 
+3 Arcane Vigor, Hex, Shield, 
+Wrathful Smite 
+5 Bestow Curse, Conjure Barrage 
+7 Freedom of Movement, Staggering 
+Smite 
+9 Animate Objects, Steel Wind Strike 
+ 
+LEVEL 3: HEXBLADE’S CURSE  
+Your patron grants you the power to curse and 
+hinder your foes. As a Bonus Action, choose one 
+creature you can see within 30 feet of yourself. 
+The target is cursed for 1 minute, during which 
+you gain the benefits below. The curse ends early 
+if you use this feature again, if you dismiss it (no 
+action required), or die. 
+ You can use this feature a number of times 
+equal to your Charisma modifier (minimum of 
+once), and you regain all expended uses when 
+you finish a Long Rest. When you cast a spell 
+using a spell slot that curses a target, you can use 
+
+
+=== PAGE 7 ===
+©2025 Wizards of the Coast LLC 7 
+your Hexblade’s Curse as a part of casting that 
+spell instead of taking a Bonus Action. When you 
+do so, the target of the spell is the target of your 
+Hexblade’s Curse, and your Hexblade’s Curse’s 
+duration is either 1 minute or the spell’s 
+duration, whichever is longer. 
+ Hungering Hex. When the target cursed by 
+your Hexblade’s Curse drops to 0 Hit Points, you 
+regain Hit Points equal to 1d8 plus your 
+Charisma modifier.  
+ Accursed Shield. While you aren’t wearing 
+armor or wielding a Shield, you gain a +2 bonus 
+to AC while you are within10 feet of the target 
+cursed by your Hexblade’s Curse.  
+LEVEL 3: UNYIELDING WILL 
+When you succeed on a saving throw to maintain 
+Concentration, each creature of your choice in a 
+10-foot Emanation originating from you takes 
+2d6 Necrotic damage. Once you use this benefit, 
+you can’t do so again until the start of your next 
+turn. 
+ In addition, when you fail a saving throw to 
+maintain Concentration, you can choose to 
+succeed instead, and you gain a number of 
+Temporary Hit Points equal to 1d10 plus your 
+Warlock level. Once you use this feature, you 
+can’t do so again until you finish a Long Rest. 
+LEVEL 6: MALIGN BRUTALITY 
+Your patron’s might furthers your bloodthirst, 
+granting you the following benefits. 
+ Harrowing Hex. After you cast a level 1+ spell 
+that has a casting time of an action, you can 
+make one attack with a weapon as a Bonus 
+Action. 
+ Hindering Curse. When you hit the target 
+cursed by your Hexblade’s Curse with an attack 
+roll, the target has Disadvantage on the next 
+saving throw it makes before the start of your 
+next turn. 
+ Inescapable Hex. When the target of your 
+Hexblade’s Curse ends its turn 30 feet or further 
+from you, you can move up to your Speed 
+straight toward the target.  
+LEVEL 10: ARMOR OF HEXES 
+When you take damage from the target cursed 
+by your Hexblade’s Curse, you can take a 
+Reaction to reduce the damage taken by an 
+amount equal to your Warlock level.  
+LEVEL 14: MASTERFUL HEX 
+The power of your Hexblade’s Curse increases, 
+granting the following benefits. 
+ Accursed Critical. Any attack roll you make 
+against the target cursed by your Hexblade’s 
+Curse scores a Critical Hit on a roll of a 19 or 20 
+on the d20. 
+ Explosive Hex. When you deal damage to the 
+target cursed by your Hexblade’s Curse, you can 
+cause your curse to explode with sinister energy. 
+The target and each creature of your choice in a 
+30-foot Emanation originating from the target 
+take 3d6 Necrotic, Psychic, or Radiant damage 
+(your choice), and their Speed is reduced by 10 
+feet until the start of your next turn. Once you 
+use this benefit, you can’t use it again until you 
+finish a Long Rest unless you expend a Pact 
+Magic slot (no action required) to restore your 
+use of it.  
+ Hex Restoration. You regain one expended 
+use of Hexblade’s Curse when you finish a Short 
+Rest or use your Magical Cunning feature. 
+CONJURER (WIZARD) 
+Step Across Space and Call Creatures from Thin 
+Air 
+You consider distance and matter to be flexible 
+guidelines rather than physical laws. Conjurers 
+harness the power of magic that moves 
+creatures instantly through space and summons 
+creatures to fight on their behalf.  
+DESIGN NOTE: CONJURER UPDATES 
+Here are the main updates in this subclass since its 
+appearance in the 2014 Player’s Handbook: 
+• Benign Transposition is now available at a lower 
+level, and the new Distant Transposition and 
+Quick Teleportation features improve it. 
+• Conjuration Savant now gives you free 
+Conjuration spells to add to your spellbook. 
+• Durable Summons is now available at a lower 
+level, and the Temporary Hit Points it grants are 
+based on your Wizard level. 
+  
+
+
+=== PAGE 8 ===
+©2025 Wizards of the Coast LLC 8 
+LEVEL 3: BENIGN TRANSPOSITION 
+As a Magic action, you teleport up to 30 feet to 
+an unoccupied space that you can see. 
+Alternatively, you can choose a space within 
+range that is occupied by a Medium or smaller 
+creature. If that creature is willing, you both 
+teleport, swapping places. 
+ Once you use this feature, you can’t use it again 
+until you finish a Long Rest. You can also restore 
+your use of it by expending a level 2+ spell slot 
+(no action required).  
+LEVEL 3: CONJURATION SAVANT 
+Choose two Wizard spells from the Conjuration 
+school, each of which must be no higher than 
+level 2, and add them to your spellbook for free.  
+ In addition, whenever you gain access to a new 
+level of spell slots in this class, you can add one 
+Wizard spell from the Conjuration school to your 
+spellbook for free. The chosen spell must be of a 
+level for which you have spell slots.  
+LEVEL 6: DISTANT TRANSPOSITION 
+The range of your Benign Transposition feature 
+increases to 60 feet. Additionally, you regain 
+your expended use of it when you finish a Short 
+or Long Rest.  
+ LEVEL 6: DURABLE SUMMONS 
+When you cast a Conjuration spell to summon or 
+create another creature using a spell slot, that 
+creature gains Temporary Hit Points equal to 
+twice your Wizard level when it first appears. 
+LEVEL 10: FOCUSED CONJURATION 
+Taking damage can’t break your Concentration 
+on Conjuration spells. 
+LEVEL 14: QUICK TRANSPOSITION 
+You can use Benign Transposition as a Bonus 
+Action.  
+ You can also use Benign Transposition as a 
+Reaction when a creature you can see makes an 
+attack roll against you, but only to swap places 
+with a willing creature. The creature that swaps 
+places with you becomes the target of that attack 
+instead. 
+ENCHANTER (WIZARD) 
+Entrance and Beguile Others 
+Your magic clouds or captivates minds. Some 
+Enchanters use their abilities to encourage peace 
+and soften cruelty, while others use their mind-
+altering magic for selfish ends. Many Enchanters 
+fall somewhere in between. 
+DESIGN NOTE: ENCHANTER UPDATES 
+Here are the main updates in this subclass since its 
+appearance in the 2014 Player’s Handbook: 
+• Enchantment Savant now gives you free 
+Enchantment spells to add to your spellbook. 
+• Enchanting Talker and Vexing Movement are 
+new features that replace Hypnotic Gaze, giving 
+the Wizard new options to use in and out of 
+combat. 
+• Reflecting Charm replaces the former Instinctive 
+Charm feature; instead of compelling an attacker 
+to choose a new target, the feature now reliably 
+reduces the damage you take and might harm 
+the attacker. 
+• Bolstering Belief is a new feature to aid yourself 
+and allies in many situations. 
+LEVEL 3: ENCHANTING TALKER 
+Whenever you make a Charisma check, you gain 
+a bonus to the check equal to your Intelligence 
+modifier (minimum of +1). 
+ You also gain proficiency in one of these skills 
+of your choice: Deception, Intimidation, or 
+Persuasion. 
+LEVEL 3: ENCHANTMENT SAVANT 
+Choose two Wizard spells from the Enchantment 
+school, each of which must be no higher than 
+level 2, and add them to your spellbook for free.  
+ In addition, whenever you gain access to a new 
+level of spell slots in this class, you can add one 
+Wizard spell from the Enchantment school to 
+your spellbook for free. The chosen spell must be 
+of a level for which you have spell slots.  
+  
+
+
+=== PAGE 9 ===
+©2025 Wizards of the Coast LLC 9 
+LEVEL 3: VEXING MOVEMENT 
+Immediately after you cast an Enchantment spell 
+using an action and a spell slot, you can take 
+both the Disengage and Dash actions as a Bonus 
+Action. 
+ You can use this Bonus Action a number of 
+times equal to your Intelligence modifier 
+(minimum of once). You regain all expended 
+uses when you finish a Long Rest. 
+LEVEL 6: REFLECTING CHARM 
+When a creature within 30 feet of you that you 
+can see hits you with an attack roll, you can take 
+a Reaction to reduce the damage you take by half 
+(round down), and you can force the attacker to 
+make a Wisdom saving throw against your spell 
+save DC. On a failed save, the attacker takes 
+Psychic damage equal to half your Wizard level 
+plus your Intelligence modifier. Once you use 
+this Reaction, you can’t do so again until you 
+finish a Long Rest. You can also restore your use 
+of it by expending a level 2+ spell slot (no action 
+required). 
+LEVEL 10: SPLIT ENCHANTMENT 
+When you cast an Enchantment spell, such as 
+Charm Person, that can be cast with a higher-
+level spell slot to target an additional creature, 
+increase the spell’s effective level by 1. 
+LEVEL 14: BOLSTERING BELIEF 
+Your enchantments fortify your allies’ bodies 
+and minds. You always have Power Word Fortify 
+prepared. With this feature, you can cast the 
+spell without expending a spell slot, and each 
+target of the spell has Advantage on saving 
+throws to avoid or end the Charmed and 
+Frightened conditions while it has Temporary 
+Hit Points granted by this spell. 
+ Once you cast the spell with this feature, you 
+can’t do so in this way again until you finish a 
+Long Rest. 
+NECROMANCER (WIZARD) 
+Command the Powers of Death and Undeath 
+You explore the cosmic forces of life, death, and 
+undeath. As a Necromancer, you learn to 
+manipulate the energy that animates all 
+creatures. As you progress, you learn to use 
+magic to drain the life force from a creature, 
+transforming its vital energy into magical power. 
+Many see Necromancers as menacing or 
+villainous, though not all Necromancers are evil. 
+Nevertheless, the manipulation of life and death 
+is considered taboo in many societies. 
+DESIGN NOTE: NECROMANCER UPDATES 
+Here are the main updates in this subclass since its 
+appearance in the 2014 Player’s Handbook: 
+• Necromancy Savant now gives you free 
+Necromancy spells to add to your spellbook. 
+• Necromancy Spellbook is a new feature that 
+incorporates a redesigned version of the prior 
+Grim Harvest feature. 
+• Grave Power, Undead Secrets, and Death’s 
+Master are new features. 
+• Undead Thralls has been redesigned to utilize 
+the Summon Undead spell. 
+LEVEL 3: NECROMANCY SAVANT 
+Choose two Wizard spells from the Necromancy 
+school, each of which must be no higher than 
+level 2, and add them to your spellbook for free.  
+ In addition, whenever you gain access to a new 
+level of spell slots in this class, you can add one 
+Wizard spell from the Necromancy school to 
+your spellbook for free. The chosen spell must be 
+of a level for which you have spell slots.  
+LEVEL 3: NECROMANCY SPELLBOOK 
+Secrets of necromancy magic in your spellbook 
+grant you additional powers. You gain the 
+following benefits.  
+ Necrotic Resistance. You have Resistance to 
+Necrotic damage.  
+ Grim Harvest. When you cast a Necromancy 
+spell using a spell slot, choose yourself or a 
+creature you can see within 30 feet of yourself to 
+gain a number of Temporary Hit Points equal to 
+the level of the spell slot plus your Intelligence 
+modifier (minimum 1 Temporary Hit Point). 
+LEVEL 6: GRAVE POWER 
+You have discovered more necromantic insights 
+and inscribed them into your spellbook. While 
+holding your spellbook, you gain the following 
+benefits. 
+ Grave Resilience. When you use Arcane 
+Recovery, your Exhaustion level, if any, 
+decreases by 1.  
+ Overwhelming Necrosis. Damage from your 
+Wizard spells and Wizard features ignores 
+Resistance to Necrotic damage.  
+
+
+=== PAGE 10 ===
+©2025 Wizards of the Coast LLC 10 
+LEVEL 6: UNDEAD THRALLS 
+You always have Summon Undead prepared and 
+can cast it once without expending a spell slot.  
+ When you cast Summon Undead without a spell 
+slot, you can regain Hit Points equal to half the 
+summoned creature’s total Hit Points, but doing 
+so halves the creature’s Hit Points. Once you cast 
+the spell without a spell slot, you must finish a 
+Long Rest before you can cast the spell in this 
+way again. 
+LEVEL 10: UNDEAD SECRETS 
+You have learned more secrets about the 
+nuances of life and death. When you finish a 
+Long Rest, you can expend a level 4+ spell slot to 
+protect yourself from death. Until you finish a 
+Long Rest, the next time you would drop to 0 Hit 
+Points, your Hit Points instead change to a 
+number equal to ten times the spell slot 
+expended. 
+ In addition, immediately after you take 
+damage and are Bloodied after taking that 
+damage but not killed outright, you can take a 
+Reaction and teleport to an unoccupied space up 
+to 60 feet from yourself, and each creature 
+within 10 feet of the space you left takes 2d10 
+Necrotic damage. 
+LEVEL 14: DEATH’S MASTER 
+Abstruse rituals within your spellbook allow you 
+mastery over forces of death. While holding your 
+spellbook, you gain the following benefits. 
+ Bolster Undead. As a Bonus Action, choose 
+any number of Undead you have created or 
+summoned with a Necromancy spell that are 
+within 60 feet of yourself. Those Undead each 
+gain Temporary Hit Points equal to your Wizard 
+level. Once an Undead gains Temporary Hit 
+Points from this feature, it can’t gain them in this 
+way again for the next 24 hours. 
+ Harvest Power. When you use Grim Harvest, 
+the creature that gains Temporary Hit Points 
+gains one of the following benefits of your 
+choice, which lasts until the end of the target’s 
+next turn: 
+• The target has Advantage on attack rolls. 
+• The target has Advantage on the next saving 
+throw it makes. 
+TRANSMUTER (WIZARD) 
+Transform Energy and Matter 
+You study spells that modify energy and matter. 
+To you, the world is not a fixed thing, but 
+eminently mutable. Your magic gives you the 
+tools to become a smith on reality’s forge. 
+ Some Transmuters are tinkerers and 
+pranksters. Others pursue their magical studies 
+with deadly seriousness, seeking the power of 
+the gods to make and destroy worlds. 
+DESIGN NOTE: TRANSMUTER UPDATES 
+Here are the main updates in this subclass since its 
+appearance in the 2014 Player’s Handbook: 
+• Transmutation Savant now gives you free 
+Transmutation spells to add to your spellbook. 
+• Transmuter’s Stone is now available at a lower 
+level. You create the stone when you finish a 
+Long Rest. 
+• Wondrous Enhancement and Split 
+Transmutation are new features. 
+• Potent Stone is a new feature that gives you 
+more options with your transmuter’s stone. 
+• Master Transmuter is revised; its Panacea choice 
+now restores Hit Points and can remove a curse. 
+LEVEL 3: TRANSMUTATION SAVANT 
+Choose two Wizard spells from the 
+Transmutation school, each of which must be no 
+higher than level 2, and add them to your 
+spellbook for free.  
+ In addition, whenever you gain access to a new 
+level of spell slots in this class, you can add one 
+Wizard spell from the Transmutation school to 
+your spellbook for free. The chosen spell must be 
+of a level for which you have spell slots.  
+LEVEL 3: TRANSMUTER’S STONE 
+When you finish a Long Rest, you can create a 
+magic pebble called a transmuter’s stone that 
+lasts until you use this feature again. A creature 
+with the stone in its possession gains a benefit 
+from one of the following options, which you 
+choose when you create the stone. You can 
+change the stone’s benefit when you cast a 
+Transmutation spell using a spell slot.  
+ Darkvision. The bearer gains Darkvision with 
+a range of 60 feet or increases the range of its 
+Darkvision by 60 feet.  
+ Speed. The bearer’s Speed increases by 10 
+feet. 
+
+
+=== PAGE 11 ===
+©2025 Wizards of the Coast LLC 11 
+ Durability. The bearer gains proficiency in 
+Constitution saving throws. 
+ Resistance. The bearer gains Resistance to 
+Acid, Cold, Fire, Lightning, Poison, or Thunder 
+damage (your choice each time you choose this 
+benefit). 
+LEVEL 3: WONDROUS ENHANCEMENT  
+You always have Enhance Ability prepared and 
+can cast it once without a spell slot. You regain 
+the ability to cast it in this way when you finish a 
+Long Rest.  
+ Targets of your Enhance Ability also have 
+Advantage on saving throws using the chosen 
+ability. 
+LEVEL 6: SPLIT TRANSMUTATION 
+When you cast a Transmutation spell, such as 
+Fly, that can be cast with a higher-level spell slot 
+to target an additional creature, increase the 
+spell’s effective level by 1. 
+ You can use this feature a number of times 
+equal to your Intelligence modifier (minimum of 
+once), and you regain all expended uses when 
+you finish a Long Rest. 
+LEVEL 10: POTENT STONE 
+Your transmuter’s stone is more versatile. You 
+choose up to two options when you create your 
+transmuter’s stone. You can choose each option 
+other than Resistance only once. If you choose 
+Resistance twice, you must choose different 
+damage types. You can change either or both 
+benefits when you cast a Transmutation spell 
+using a spell slot. 
+LEVEL 14: MASTER TRANSMUTER 
+As a Magic action, you can consume the reserve 
+of transmutation magic stored in your 
+transmuter’s stone to choose one of the 
+following benefits. After using your transmuter’s 
+stone in this way, it crumbles to dust.  
+ Panacea. The bearer regains a number of Hit 
+Points equal to twice your Wizard level and ends 
+a curse, including the target’s Attunement to a 
+cursed item.  
+ Restore Life. You cast Raise Dead without a 
+spell slot, using the stone in place of the 
+normally required Material components. 
+ Restore Youth. The bearer permanently 
+appears 3d10 years younger, to a minimum of 
+young adulthood. 
+ 
+ 

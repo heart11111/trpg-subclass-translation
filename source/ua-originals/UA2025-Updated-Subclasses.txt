@@ -1,0 +1,544 @@
+
+
+=== PAGE 1 ===
+©2025 Wizards of the Coast LLC. Permission granted to print and photocopy this page for personal use. 1 
+UNEARTHED ARCANA 2025 
+SUBCLASSES UPDATE 
+This playtest document is part of a series of 
+Unearthed Arcana articles that present material 
+designed for upcoming products. The material 
+here uses the rules in the 2024 Player’s 
+Handbook. 
+WHAT’S INSIDE 
+This document presents five subclasses: revised 
+subclasses for the Barbarian (Path of the 
+Spiritual Guardian and Path of the Storm 
+Herald), Fighter (Cavalier), Monk (Warrior of 
+Intoxication), and Paladin (Oathbreaker). 
+THIS IS PLAYTEST MATERIAL 
+This article is presented for playtesting and 
+feedback. The options here are experimental and 
+in draft form. They aren’t officially part of the 
+game. Your feedback will help determine whether 
+we adopt it as official. 
+ How to Playtest This UA. We invite you to try 
+out this material in play. To play with this material, 
+you may either incorporate it into your campaign 
+or run one or more special playtest sessions. For 
+such a session, you may create an adventure of 
+your own or use a short adventure from a source 
+like Quests from the Infinite Staircase. 
+ Power Level. The character options you read 
+here might be more or less powerful than options 
+in the 2024 Player’s Handbook. If a design survives 
+playtesting, we adjust its power to the desirable 
+level before publication. This means an option 
+could be more or less powerful in its final form. 
+ Feedback. The best way for you to give us 
+feedback on this material is in the survey we’ll 
+release on D&D Beyond. If we make this material 
+official, it will be refined based on your feedback, 
+and then it will appear in a D&D book. 
+ Providing feedback on this document is one way 
+you can help shape the future of D&D! 
+SUBCLASSES 
+This section presents the following subclasses: 
+Path of the Spiritual Guardian, Path of the Storm 
+Herald, Cavalier, Warrior of Intoxication, and 
+Oathbreaker. 
+PATH OF THE SPIRITUAL GUARDIAN 
+(BARBARIAN) 
+Call on the Spirits for Combat Aid 
+Barbarians who walk the Path of the Spiritual 
+Guardian call upon spirits—whether bestial 
+spirits of nature, spirits of departed ancestors, or 
+spirits of raw elemental power—to guide and 
+protect them. When these Barbarians rage, they 
+contact the realm of the spirits and call on them 
+for aid. 
+DESIGN NOTE: PATH OF THE SPIRITUAL GUARDIAN 
+UPDATES 
+Here are the main updates in this subclass 
+(formerly Path of the Ancestral Guardian) since its 
+last appearance in Xanathar’s Guide to Everything: 
+• Spiritual Protectors (formerly Ancestral 
+Protectors) has been redesigned. The feature 
+now splits the effects of the original feature, 
+along with new effects, as options when you hit a 
+creature while your Rage is active. 
+• Spirit Shield now scales with your Rage Damage 
+bonus. 
+• Vengeful Spirits (formerly Vengeful Ancestors) is 
+a new feature that allows you to make an 
+additional attack when you roll an 18 or higher 
+on an attack roll. 
+LEVEL 3: SPIRITUAL PROTECTORS 
+Your Rage summons spectral warriors to your 
+aid. While your Rage is active, when you hit a 
+creature with a weapon or an Unarmed Strike, it 
+becomes the target of the spirits, which cause 
+one of the following effects of your choice.  
+ Distract. Until the start of your next turn, the 
+target has Disadvantage attack rolls against 
+targets other than you or another Barbarian who 
+has this feature. 
+ Protect. Until the end of the target’s next turn, 
+the next time it hits a creature other than you 
+with an attack roll, that creature has Resistance 
+to the damage dealt by the attack. 
+ Strike. The target takes an extra 1d6 damage, 
+which can be Acid, Cold, Fire, Force, Lightning, or 
+Thunder damage (your choice). 
+
+
+=== PAGE 2 ===
+©2025 Wizards of the Coast LLC. Permission granted to print and photocopy this page for personal use. 2 
+LEVEL 6: SPIRIT SHIELD 
+Your guardian spirits can provide supernatural 
+protection to those you defend. While your Rage 
+is active, when another creature you can see 
+within 30 feet of you takes damage, you can take 
+a Reaction to reduce that damage. To determine 
+the amount the damage is reduced by, roll a 
+number of d6s equal to your Rage Damage 
+bonus, and add them together. 
+LEVEL 10: CONSULT THE SPIRITS 
+You gain the ability to consult with your 
+guardian spirits. When you do so, you cast the 
+Augury or Clairvoyance spell, without expending 
+a spell slot or needing Material components. 
+Rather than creating a spherical sensor, this use 
+of Clairvoyance invisibly summons one of your 
+guardian spirits to the chosen location. Wisdom 
+is your spellcasting ability for these spells. 
+ After you cast either spell in this way, you can’t 
+use this feature again until you finish a Short or 
+Long Rest. 
+LEVEL 14: VENGEFUL SPIRITS 
+When you make an attack roll with a Melee 
+weapon as part of the Attack action and roll 18–
+20 on the d20, you can make one additional 
+attack roll with the same weapon as part of that 
+action. Once you use this feature, you can’t do so 
+again until the start of your next turn. 
+PATH OF THE STORM HERALD 
+(BARBARIAN) 
+Wield the Fury of the Storm 
+Barbarians who follow the Path of the Storm 
+Herald learn to harness their Rage into a mantle 
+of primal magic that swirls around them like a 
+storm. When in their Rage, these Barbarians tap 
+into the elemental forces of nature to create 
+powerful magical effects. 
+DESIGN NOTE: PATH OF THE STORM HERALD UPDATES 
+Here are the main updates in this subclass since its 
+appearance in Xanathar’s Guide to Everything: 
+• Storm Aura now scales with your Rage Damage 
+bonus. In addition, Tundra has been redesigned 
+to reduce a creature’s damage instead of 
+applying Temporary Hit Points. 
+• Raging Storm has each environment redesigned. 
+Desert now makes a creature that failed the 
+saving throw start burning. Sea can now chain 
+the lightning bolt to another creature. Tundra 
+now deals Cold damage and halves a creature’s 
+Speed. 
+LEVEL 3: STORM AURA 
+Whenever you activate your Rage, choose 
+Desert, Sea, or Tundra. You extend an aura in a 
+10-foot Emanation originating from yourself for 
+the duration of your Rage. 
+ Your aura has an effect that activates when 
+you enter your Rage, and you can activate the 
+effect again on each of your turns as a Bonus 
+Action. Your aura’s effect depends on the chosen 
+environment, as detailed below. 
+ If your aura’s effect requires a saving throw, 
+the DC equals 8 plus  your Proficiency bonus 
+plus your Constitution modifier. 
+ Desert. When this effect is activated, roll a 
+number of d4s equal to your Rage Damage 
+bonus, and add them together. Each creature in 
+the aura must succeed on a Dexterity saving 
+throw or take Fire damage equal to the number 
+rolled. You can choose one creature you can see 
+in your aura to automatically succeed on this 
+saving throw. 
+ Sea. When this effect is activated, roll a 
+number of d6s equal to your Rage Damage 
+bonus, and add them together. You can then hurl 
+a bolt of lightning at one other creature you can 
+see within your aura. The target makes a 
+Dexterity saving throw, taking Lightning damage 
+equal to the number rolled on a failed save, or 
+half as much damage on a successful one.  
+ Tundra. When this effect is activated, roll a 
+number of d4s equal to your Rage Damage 
+bonus, and add them together. You can choose 
+one other creature you can see within your aura 
+to harry with icy spirits. The target must succeed 
+on a Strength saving throw or it subtracts the 
+number rolled from the next damage roll it 
+makes before the start of your next turn. 
+LEVEL 6: STORM SOUL 
+The storm grants you benefits even when your 
+aura isn’t active. The benefits are based on the 
+environment you chose for your Storm Aura the 
+last time you entered your Rage. 
+ Desert. You gain Resistance to Fire damage. As 
+a Magic action, you can touch a flammable object 
+that isn’t being worn or carried by anyone else 
+fand cause the object to start burning. 
+
+
+=== PAGE 3 ===
+©2025 Wizards of the Coast LLC. Permission granted to print and photocopy this page for personal use. 3 
+ Sea. You gain Resistance to Lightning damage, 
+and you can breathe underwater. You also gain a 
+Swim Speed equal to your Speed. 
+ Tundra. You gain Resistance to Cold damage. 
+As a Magic action, you can touch water and turn 
+a 5-foot Cube of it into ice, which melts after 1 
+minute. This action fails if a creature is in the 
+Cube. 
+LEVEL 10: SHIELDING STORM 
+You can use your mastery of the storm to protect 
+others. Each creature of your choice within your 
+Storm Aura has the damage Resistance you have 
+from the Storm Soul feature. 
+LEVEL 14: RAGING STORM 
+The power of the storm you channel grows 
+mightier, lashing out at your foes. The effect is 
+based on the environment you choose for your 
+Storm Aura. 
+ Desert. Once per turn, when a creature you 
+can see fails its saving throw against your Storm 
+Aura effect, you can cause it to start burning for 
+1 minute or until your Rage ends. A burning 
+creature takes an extra 1d4 Fire damage (2d4 
+Fire damage total) at the start of each of its 
+turns. 
+ Sea. Whether the target fails or succeeds on its 
+saving throw against your Storm Aura effect, a 
+bolt of lightning leaps from the target to another 
+target of your choice, which must be within 30 
+feet of the first target. The new target makes the 
+same Dexterity saving throw as the first target. 
+ Tundra. Once per turn, when a creature you 
+can see fails its saving throw against your Storm 
+Aura effect, you can cause it to take 2d4 Cold 
+damage and its Speed is halved until the end of 
+its next turn. 
+CAVALIER (FIGHTER) 
+Defend Your Allies on Foot or from a Mount 
+Cavaliers excel at mounted combat and guard 
+those in their charge, often protecting their 
+superiors and the weak. A Cavalier is equally at 
+home leading a cavalry charge or exchanging 
+repartees at a state dinner. 
+DESIGN NOTE: CAVALIER UPDATES 
+Here are the main updates in this subclass since its 
+appearance in Xanathar’s Guide to Everything: 
+• Unwavering Mark no longer has limited uses. 
+• Ferocious Charger has been redesigned to give a 
+burst of speed during the first round of each 
+combat. 
+LEVEL 3: BONUS PROFICIENCY 
+You gain proficiency in one the following skills of 
+your choice: Animal Handling, History, Insight, 
+Performance, or Persuasion. Alternatively, you 
+learn one language of your choice. 
+LEVEL 3: BORN TO THE SADDLE 
+You have Advantage on saving throws made to 
+avoid falling off your mount. If you fall off your 
+mount and descend no more than 10 feet, you 
+can land on your feet if you don’t have the 
+Incapacitated condition. 
+ In addition, mounting or dismounting a 
+creature costs you only 5 feet of movement 
+rather than half your Speed. 
+LEVEL 3: UNWAVERING MARK 
+You can menace your foes, foiling their attacks 
+and punishing them for harming others. When 
+you hit a creature with a Melee weapon, you can 
+mark the creature until the end of your next 
+turn. This effect ends early if you have the 
+Incapacitated condition, you die, or someone 
+else marks the creature. 
+ While it is within 5 feet of you, a creature 
+marked by you has Disadvantage on attack rolls 
+against creatures other than you. 
+ In addition, if a creature marked by you hits a 
+creature other than you with an attack roll, you 
+have Advantage on attack rolls against the 
+marked creature until the end of your next turn. 
+LEVEL 7: WARDING MANEUVER 
+You learn to fend off strikes directed at you, your 
+mount, or other creatures nearby. If you or a 
+creature you can see within 5 feet of you is hit by 
+an attack roll, you can roll 1d8 as a Reaction if 
+you’re wielding a Melee weapon or a Shield. Roll 
+the die, and add the number rolled to the target’s 
+AC against the triggering attack. If the attack still 
+hits, the target has Resistance against the 
+attack’s damage. 
+ You can use this feature a number of times 
+equal to your Constitution modifier (minimum of 
+once), and you regain all expended uses when 
+you finish a Long Rest. 
+
+
+=== PAGE 4 ===
+©2025 Wizards of the Coast LLC. Permission granted to print and photocopy this page for personal use. 4 
+LEVEL 10: HOLD THE LINE 
+Creatures provoke an Opportunity Attack from 
+you when they move 5 feet or more while within 
+your reach. When you hit a creature with an 
+Opportunity Attack, the target’s Speed becomes 
+0 until the end of the current turn. 
+LEVEL 15: FEROCIOUS CHARGER 
+During the first round of each combat, you and 
+your mount’s Speed increases by 10 feet, and 
+your movement doesn’t provoke Opportunity 
+Attacks for that round. When you move within 5 
+feet of a creature this round, that creature must 
+succeed on a Strength saving throw (DC 8 plus 
+your Strength modifier and Proficiency Bonus) 
+or you either push it 5 feet away or cause it to 
+have the Prone condition. A creature makes this 
+save only once during a turn. 
+LEVEL 18: VIGILANT DEFENDER 
+In combat, you get a special Reaction that you 
+can take once on every creature’s turn except 
+your turn. You can take this Reaction only to 
+make an Opportunity Attack, and you can’t take 
+it on the same turn that you take your normal 
+Reaction. 
+WARRIOR OF INTOXICATION (MONK) 
+Drink Mystic Brews to Overwhelm and Confound 
+Foes 
+Warriors of Intoxication move with the jerky, 
+unpredictable movements typical of someone 
+who is intoxicated. These Monks sway on 
+unsteady feet to appear incompetent and then 
+prove themselves frustrating to engage. Their 
+apparently erratic stumbles conceal a carefully 
+executed dance of blocks, parries, advances, 
+attacks, and retreats. 
+ Warriors of Intoxication often enjoy playing 
+the fool to bring gladness to the downtrodden or 
+to teach humility to the arrogant, but these 
+Monks are maddening, masterful foes in battle. 
+DESIGN NOTE: WARRIOR OF INTOXICATION UPDATES 
+Here are the main updates in this subclass 
+(formerly Way of the Drunken Master) since its last 
+appearance in Xanathar’s Guide to Everything: 
+• Mystic Brew is a new feature that lets the Monk 
+create magical brews that they can drink to gain 
+long-lasting benefits. 
+• Master Brewer is a new feature that replaces 
+Drunkard’s Luck. The feature adds additional 
+beverage options to Mystic Brew. 
+LEVEL 3: BONUS PROFICIENCIES 
+You gain proficiency in the Performance skill, or 
+if you already have it, you gain proficiency in one 
+skill of your choice from the skills available to 
+Monks at level 1. You also gain proficiency with 
+Brewer’s Supplies if you don’t already have it. 
+LEVEL 3: DRUNKEN TECHNIQUE 
+You twist and turn quickly as part of your Flurry 
+of Blows. Whenever you use Flurry of Blows, 
+your Speed increases by 10 feet until the end of 
+the current turn and your movement during that 
+time doesn’t provoke Opportunity Attacks. 
+LEVEL 6: TIPSY SWAY 
+You can move in sudden, swaying ways. You gain 
+the following benefits. 
+Leap to Your Feet. When you have the Prone 
+condition, you can stand up by spending 5 feet 
+of movement, rather than half your Speed. 
+Redirect Attack. When a creature misses you 
+with a melee attack roll, you can spend 1 Focus 
+Point as a Reaction to cause that attack to hit 
+one creature of your choice, other than the 
+attacker, that you can see within 5 feet of 
+yourself. 
+LEVEL 6: MYSTIC BREW 
+Whenever you finish a Short or Long Rest while 
+holding Brewer’s Supplies, you can use that tool 
+to magically produce one magical beverage, 
+chosen from the following options: Cinnamon 
+Dragon, Heavenly Spirit, or Refreshing Dip. The 
+beverage appears in a bottle or cask, and the 
+bottle vanishes when the beverage is drunk or 
+poured out. If any beverage remains when you 
+finish a Short or Long Rest, the beverage and its 
+container vanish.  
+ Drinking a Magical Beverage. Only you can 
+gain the benefit of drinking the beverage. You 
+must drink at least a pint of the beverage before 
+gaining its benefit. You can spend 1 minute 
+drinking a pint of the beverage. You then gain 
+the benefits of the beverage for 1 hour, as 
+described below. 
+  
+
+
+=== PAGE 5 ===
+©2025 Wizards of the Coast LLC. Permission granted to print and photocopy this page for personal use. 5 
+Cinnamon Dragon. You can take a Magic action 
+to exhale toxic flames in a 30-foot Cone. Each 
+creature makes a Dexterity saving throw (DC 8 
+plus your Wisdom modifier and Proficiency 
+Bonus). On a failed save, a creature takes Fire 
+damage equal to four rolls of your Martial Arts 
+die and has the Poisoned condition until the 
+end of its next turn. On a successful save, a 
+creature takes half as much damage only. 
+Heavenly Spirit. You gain Resistance to Psychic 
+and Radiant damage. 
+Refreshing Dip. Whenever you regain Hit 
+Points, you regain additional Hit Points equal 
+to a roll of your Martial Arts die. 
+ Enhancing a Magical Beverage. When you 
+create a magical beverage, you can expend 1 
+Focus Point. When you do so, the benefit’s 
+duration extends to 8 hours. 
+LEVEL 11: MASTER BREWER 
+You learn more complex flavors. The following 
+beverages are added to your Mystic Brew 
+options. 
+Blue Lightning. Whenever you take a Reaction 
+that isn’t making an Opportunity Attack or 
+casting a spell, you can make one Unarmed 
+Strike as part of that Reaction. 
+Drunkard’s Luck. You gain Heroic Inspiration if 
+you don’t already have it. In addition, you can 
+give yourself Heroic Inspiration when you roll 
+Initiative without it. 
+LEVEL 17: INTOXICATED FRENZY 
+You make an overwhelming number of attacks 
+against a group of enemies. When you use Flurry 
+of Blows, you can make up to three additional 
+Unarmed Strikes with it (up to a total of six 
+Unarmed Strike), provided that each strike 
+targets a different creature this turn. 
+OATHBREAKER (PALADIN) 
+Obtain Great Power at Any Cost 
+The power of a Paladin’s oath is so great that it 
+holds a distorted power even when it is violated. 
+When a Paladin betrays the tenets of their oath 
+because of corruption, pride, or thirst for power, 
+they lose the blessing granted by their original 
+oath but sometimes take on the sinister blessing 
+of the Oathbreaker in its place. Oathbreakers use 
+fear and overwhelming power to achieve their 
+goals. While many Oathbreakers are beyond 
+redemption, some Paladins bend this oath to 
+achieve a great and noble deed to atone for their 
+past evils. 
+ At the DM’s discretion, a Paladin of any level 
+who violates the tenets of their oath can lose the 
+benefits granted by their original subclass and 
+gain the features of the Oathbreaker subclass 
+instead. Alternatively, a Paladin can choose this 
+subclass at level 3 based on the character’s 
+backstory of falling from grace. 
+ These Paladins often share the following 
+tenets: 
+• Fear is a tool in the hands of the powerful. 
+• Strive for power at any cost. 
+• Do what must be done, but never lose sight of 
+your goal. 
+DESIGN NOTE: OATHBREAKER UPDATES 
+Here are the main updates in this subclass since its 
+last appearance in the 2014 Dungeon Master’s 
+Guide: 
+• Conjure Undead (formerly Control Undead) now 
+lets you briefly summon Undead to aid you. 
+• Dreadful Aspect now loops through the Divine 
+Smite spell. 
+• Oathbreaker Spells has new spells. 
+• Aura of Hate now adds its effect to your Aura of 
+Protection. The aura now benefits only Fiends 
+and Undead that are your allies. 
+• Dread Lord now imbues your Aura of Protection 
+and can be recharged by expending a level 5 
+spell slot. 
+LEVEL 3: CONJURE UNDEAD 
+As a Bonus Action, you can expend one use of 
+your Channel Divinity to summon a number of 
+Undead equal to half your Charisma modifier 
+(round up; minimum of one Undead summoned). 
+Each Undead appears in an unoccupied space 
+you can see within 30 feet of you and is a type of 
+your choice: Skeleton or Zombie (see appendix 
+B of the Player’s Handbook for the stat blocks). 
+The Undead are under your control for 1 minute, 
+after which they dissolve into ash. 
+ Each Undead is an ally to you and your allies. 
+In combat, the Undead shares your Initiative 
+count, but it takes its turn immediately after 
+yours. It obeys your verbal commands (no action 
+required by you). If you don’t issue any, it takes 
+the Dodge action and uses its movement to avoid 
+danger. 
+
+
+=== PAGE 6 ===
+©2025 Wizards of the Coast LLC. Permission granted to print and photocopy this page for personal use. 6 
+LEVEL 3: DREADFUL ASPECT 
+Immediately after you cast Divine Smite, you can 
+expend one use of your Channel Divinity to 
+channel a burst of magical menace. Each 
+creature of your choice in a 30-foot Emanation 
+originating from you must succeed on a Wisdom 
+saving throw or have the Frightened condition 
+for 1 minute. A Frightened creature repeats the 
+save at the end of each of its turns, ending the 
+effect on itself on a success. 
+LEVEL 3: OATHBREAKER SPELLS 
+The magic of your oath ensures you always have 
+certain spells ready; when you reach a Paladin 
+level specified in the Oathbreaker Spells table, 
+you thereafter always have the listed spells 
+prepared. 
+OATHBREAKER SPELLS 
+Paladin Level Spells 
+3 Hellish Rebuke, Witch Bolt 
+5 Crown of Madness, Darkness 
+9 Fear, Summon Undead 
+13 Blight, Phantasmal Killer 
+17 Contagion, Steel Wind Strike 
+ 
+LEVEL 7: AURA OF HATE 
+When you, as well as any Fiend or Undead in 
+your Aura of Protection that is an ally, hits a 
+creature with a melee attack, that attack deals 
+extra Necrotic damage equal to your Charisma 
+modifier. 
+LEVEL 15: SUPERNATURAL RESISTANCE 
+You gain Resistance to Bludgeoning, Piercing, 
+and Slashing damage. 
+LEVEL 20: DREAD LORD 
+As a Bonus Action, you can imbue your Aura of 
+Protection with unholy gloom, granting the 
+benefits below for 10 minutes or until you end 
+them (no action required). Once you use this 
+feature, you can’t use it again until you finish a 
+Long Rest. You can also restore your use of it by 
+expending a level 5 spell slot (no action 
+required). 
+ Darkness. Magical Darkness fills your Aura of 
+Protection. You and allies in your Aura of 
+Protection can see within this magical Darkness. 
+ Fear. Whenever a creature with the 
+Frightened condition starts its turn in your Aura 
+of Protection, that creature takes 4d10 Psychic 
+damage. 
+ Shadow Strike. As a Bonus Action, you can 
+make a melee spell attack, shaping the gloom 
+exuding from you into a blade that targets one 
+creature in your Aura of Protection. On a hit, the 
+attack deals Necrotic damage equal to 3d10 plus 
+your Charisma modifier. 
