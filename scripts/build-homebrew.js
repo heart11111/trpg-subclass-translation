@@ -448,10 +448,11 @@ function makeNav(prefix = '', active = 'homebrew') {
   const items = [
     ['index.html', '홈', 'home'],
     ['player-guide.html', '플레이어 가이드', 'guide'],
+    ['crossroads-guide.html', '크로스로드', 'crossroads'],
     ['world.html', '세계관 자료', 'world'],
     ['setting.html', '설정 정리', 'setting'],
     ['homebrew.html', '홈브류', 'homebrew'],
-  ['credits.html', '출처', 'credits'],
+    ['credits.html', '출처', 'credits'],
   ];
   return `<nav class="site-nav" aria-label="주요 문서">
   <a class="brand" href="${prefix}index.html">화살성채</a>
