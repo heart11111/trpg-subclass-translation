@@ -329,6 +329,44 @@ tbody td:first-child { font-weight:700; color:var(--accent); white-space:nowrap;
 .rumor-list li::before { content:'◆'; position:absolute; left:0; font-size:.55em; top:10px; opacity:.7; }
 .rumor-list li:last-child { border-bottom:none; }
 
+/* ── GUIDE IMAGES ── */
+.guide-image-grid {
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:18px;
+  margin:26px 0 8px;
+}
+.guide-image-card {
+  background:rgba(255,255,255,.62);
+  border:1px solid rgba(197,173,67,.42);
+  border-top:3px solid var(--astro-gold);
+  border-radius:22px 4px 22px 4px;
+  overflow:hidden;
+  box-shadow:0 16px 34px rgba(9,12,29,.12);
+}
+.guide-image-card img {
+  display:block;
+  width:100%;
+  aspect-ratio:16 / 9;
+  object-fit:cover;
+  background:var(--astro-ink);
+}
+.guide-image-card figcaption {
+  padding:13px 15px 15px;
+}
+.guide-image-card strong {
+  display:block;
+  color:var(--accent);
+  font-size:.9em;
+  margin-bottom:2px;
+}
+.guide-image-card span {
+  display:block;
+  color:var(--muted);
+  font-size:.8em;
+  line-height:1.55;
+}
+
 /* ── CARDS ── */
 .card-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(220px,1fr)); gap:14px; margin:20px 0 28px; }
 .card {
@@ -362,6 +400,7 @@ tbody td:first-child { font-weight:700; color:var(--accent); white-space:nowrap;
   .content{padding:40px 22px 52px;}
   .detail-grid{grid-template-columns:1fr;}
   .card-grid{grid-template-columns:1fr;}
+  .guide-image-grid{grid-template-columns:1fr;}
   .rule-grid,
   .tool-grid,
   .start-grid{grid-template-columns:1fr;}
