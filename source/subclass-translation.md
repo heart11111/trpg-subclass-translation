@@ -5651,79 +5651,198 @@ Psion 주문 목록에는 다음과 같은 새로운 주문이 포함됩니다.
 
 목록에는 플레이어스 핸드북과 이 문서에 있는 주문만 포함되어 있습니다.
 
-#### CANTRIPS (LEVEL 0 PSION SPELLS) - Cantrips (Level 0 Psion Spells)
+#### 소마법 (0레벨 사이언 주문) - Cantrips (Level 0 Psion Spells)
 
-주문 학교 특수 블레이드 와드 절제 C 춤추는 빛 환영 C 친구 마법 부여 C 빛 소환 — 마법사 손 창조 — 치료 변환 — 메시지 변환 — 정신 조각 마법 — 사소한 환영 환상 — 요술 변환 — 염동력 플링(이 UA에 나타남)
+| 주문 | 학파 | 특수 |
+|---|---|---|
+| 블레이드 워드 - Blade Ward | 방호 | C |
+| 춤추는 빛 - Dancing Lights | 환영 | C |
+| 친구 - Friends | 환혹 | C |
+| 빛 - Light | 방출 | — |
+| 마법 손 - Mage Hand | 조형 | — |
+| 수선 - Mending | 변환 | — |
+| 전언 - Message | 변환 | — |
+| 정신 조각 - Mind Sliver | 환혹 | — |
+| 하급 환영 - Minor Illusion | 환영 | — |
+| 요술 - Prestidigitation | 변환 | — |
+| 염동력 던지기 - Telekinetic Fling (이 UA 수록) | 방출 | — |
+| 트루 스트라이크 - True Strike | 예지 | — |
 
-소환 — 진정한 일격 점술 — L
+#### 1레벨 사이언 주문 - Level 1 Psion Spells
 
-#### EVEL 1 PSION SPELLS - Evel 1 Psion Spells
+| 주문 | 학파 | 특수 |
+|---|---|---|
+| 동물 우정 - Animal Friendship | 환혹 | — |
+| 인간형 매혹 - Charm Person | 환혹 | — |
+| 명령 - Command | 환혹 | — |
+| 언어 이해 - Comprehend Languages | 예지 | R |
+| 마법 탐지 - Detect Magic | 예지 | C, R |
+| 불협화음의 속삭임 - Dissonant Whispers | 환혹 | — |
+| 깃털 낙하 - Feather Fall | 변환 | — |
+| 식별 - Identify | 예지 | R, M |
+| 점프 - Jump | 변환 | — |
+| 생명 흡수 - Life Siphon (이 UA 수록) | 방출 | — |
+| 장보 - Longstrider | 변환 | — |
+| 마법 갑옷 - Mage Armor | 방호 | — |
+| 성역 - Sanctuary | 방호 | — |
+| 방패 - Shield | 방호 | — |
+| 무성 환영 - Silent Image | 환영 | C |
+| 수면 - Sleep | 환혹 | C |
+| 동물과 대화 - Speak with Animals | 예지 | R |
+| 타샤의 끔찍한 웃음 - Tasha's Hideous Laughter | 환혹 | C |
+| 텐서의 부유 원반 - Tenser's Floating Disk | 조형 | R |
+| 천둥파 - Thunderwave | 방출 | — |
 
-주문 학교 특수 동물 우정 마법 부여 — 참 사람 마법 부여 — 명령 마법 — 언어 이해 점술 R 마법 점술 감지 C, R 불협화음 속삭임 마법 — 깃털 가을 변환 — 점 식별 R, M 점프 변환 — 생명 흡수(이 UA에 나타남)
+#### 2레벨 사이언 주문 - Level 2 Psion Spells
 
-소환 — 롱스트라이더 변환 — 마법사 방어구 폐기 — 성역 폐기 — 방패 폐기 — 침묵의 환영 C 수면 마법 C 동물과의 대화 R 타샤의 흉측한 웃음 마법 C 텐서의 부유 디스크 마법 R 천둥파 소환 —
+| 주문 | 학파 | 특수 |
+|---|---|---|
+| 동물 전령 - Animal Messenger | 환혹 | R |
+| 실명/농아 - Blindness/Deafness | 변환 | — |
+| 감정 진정 - Calm Emotions | 환혹 | C |
+| 광기의 왕관 - Crown of Madness | 환혹 | C |
+| 생각 탐지 - Detect Thoughts | 예지 | C |
+| 심령체 흔적 - Ectoplasmic Trail (이 UA 수록) | 사령 | — |
+| 자아 채찍 - Ego Whip (이 UA 수록) | 환혹 | — |
+| 능력 강화 - Enhance Ability | 변환 | C |
+| 확대/축소 - Enlarge/Reduce | 변환 | C |
+| 매혹적 연설 - Enthrall | 환혹 | C |
+| 금속 가열 - Heat Metal | 변환 | C |
+| 인간형 포박 - Hold Person | 환혹 | C |
+| 투명화 - Invisibility | 환영 | C |
+| 개방 - Knock | 변환 | — |
+| 공중부양 - Levitate | 변환 | C |
+| 동식물 위치 파악 - Locate Animals or Plants | 예지 | R |
+| 물체 위치 파악 - Locate Object | 예지 | C |
+| 마법 입 - Magic Mouth | 환영 | R, M |
+| 정신 쐐기 - Mind Spike | 예지 | C |
+| 거울 이미지 - Mirror Image | 환영 | — |
+| 환영의 힘 - Phantasmal Force | 환영 | C |
+| 투명화 보기 - See Invisibility | 예지 | — |
+| 산산조각 - Shatter | 방출 | — |
+| 침묵 - Silence | 환영 | C, R |
+| 제안 - Suggestion | 환혹 | C |
+| 타샤의 정신 채찍 - Tasha's Mind Whip (이 UA 수록) | 환혹 | — |
+| 진실의 구역 - Zone of Truth | 환혹 | — |
 
-#### LEVEL 2 PSION SPELLS - Level 2 Psion Spells
+#### 3레벨 사이언 주문 - Level 3 Psion Spells
 
-주문 학교 특수 동물 전령 마법 부여 R 실명/청각 장애 변형 — 평온한 감정 마법 C 광기의 왕관 마법 C 생각 감지 점술 C 심령체 흔적(이 UA에 나타남)
+| 주문 | 학파 | 특수 |
+|---|---|---|
+| 저주 부여 - Bestow Curse | 사령 | C |
+| 피 흘리는 어둠 - Bleeding Darkness (이 UA 수록) | 방출 | C, M |
+| 천리안 - Clairvoyance | 예지 | C, M |
+| 마법 해제 - Dispel Magic | 방호 | — |
+| 적의 환영 - Enemies Abound (이 UA 수록) | 환혹 | C |
+| 공포 - Fear | 환영 | C |
+| 비행 - Fly | 변환 | C |
+| 최면 문양 - Hypnotic Pattern | 환영 | C |
+| 지능 요새 - Intellect Fortress (이 UA 수록) | 방호 | C |
+| 상급 환영 - Major Image | 환영 | C |
+| 탐지 방해 - Nondetection | 방호 | M |
+| 전언 - Sending | 예지 | — |
+| 별계 존재 소환 - Summon Astral Entity (이 UA 수록) | 조형 | C, M |
+| 염동력 분쇄 - Telekinetic Crush (이 UA 수록) | 변환 | — |
+| 통달 언어 - Tongues | 예지 | — |
 
-강령술 - Ego Whip(이 UA에 나타남)
+#### 4레벨 사이언 주문 - Level 4 Psion Spells
 
-인챈트 — 능력 강화 변환 C 확대/감소 변환 C 엔스랄 인챈트 C 열 금속 변환 C 홀드 사람 인챈트 C 투명화 환상 C 노크 변환 — 공중부양 변환 C 동물 또는 식물 위치 점술 R 위치 점술 C 마법 입 환상 R, M 마인드 스파이크 점술 C 거울 이미지 환상 — 환영의 힘 환상 C 투명화 참조 점술 — 파괴 환기 — 침묵 환상 C, R 제안 인챈트 C 타샤의 정신 채찍(이 UA에 나타남)
+| 주문 | 학파 | 특수 |
+|---|---|---|
+| 비전 눈 - Arcane Eye | 예지 | C |
+| 추방 - Banishment | 방호 | C |
+| 괴물 매혹 - Charm Monster | 환혹 | — |
+| 강제 - Compulsion | 환혹 | C |
+| 혼란 - Confusion | 환혹 | C |
+| 차원문 - Dimension Door | 조형 | — |
+| 이동의 자유 - Freedom of Movement | 방호 | — |
+| 상급 투명화 - Greater Invisibility | 환영 | C |
+| 환각 지형 - Hallucinatory Terrain | 환영 | — |
+| 생명 반전 장 - Life Inversion Field (이 UA 수록) | 방호 | C |
+| 크리처 위치 파악 - Locate Creature | 예지 | C |
+| 환영 살해자 - Phantasmal Killer | 환영 | C |
+| 변신 - Polymorph | 변환 | C |
+| 라울로심의 정신 창 - Raulothim's Psychic Lance (이 UA 수록) | 환혹 | — |
+| 이형체 소환 - Summon Aberration | 조형 | C, M |
 
-인챈트 — 진실의 영역 인챈트 — L
+#### 5레벨 사이언 주문 - Level 5 Psion Spells
 
-#### EVEL 3 PSION SPELLS - Evel 3 Psion Spells
+| 주문 | 학파 | 특수 |
+|---|---|---|
+| 물체 조종 - Animate Objects | 변환 | C |
+| 각성 - Awaken | 변환 | M |
+| 타 차원 접촉 - Contact Other Plane | 예지 | R |
+| 인간 지배 - Dominate Person | 환혹 | C |
+| 꿈 - Dream | 환영 | — |
+| 금제 - Geas | 환혹 | — |
+| 괴물 포박 - Hold Monster | 환혹 | C |
+| 전설 지식 - Legend Lore | 예지 | M |
+| 기만 - Mislead | 환영 | C |
+| 기억 수정 - Modify Memory | 환혹 | C |
+| 래리의 텔레파시 결속 - Rary's Telepathic Bond | 예지 | R |
+| 수정구 - Scrying | 예지 | C, M |
+| 겉모습 - Seeming | 환영 | — |
+| 시냅스 정전 - Synaptic Static | 환혹 | — |
+| 염동력 - Telekinesis | 변환 | C |
+| 순간이동 원 - Teleportation Circle | 조형 | M |
 
-마법 학교 특수 부여 저주 네크로맨시 C 출혈 어둠(이 UA에 나타남)
+#### 6레벨 사이언 주문 - Level 6 Psion Spells
 
-Evocation C, M Clairvoyance Divination C, M Dispel Magic Abjuration — Enemies Abound(이 UA에 나타남)
+| 주문 | 학파 | 특수 |
+|---|---|---|
+| 칼날 장벽 - Blade Barrier | 방출 | C |
+| 분해 - Disintegrate | 변환 | — |
+| 사안 - Eyebite | 사령 | C |
+| 길 찾기 - Find the Path | 예지 | C, M |
+| 대중 제안 - Mass Suggestion | 환혹 | — |
+| 정신 감옥 - Mental Prison (이 UA 수록) | 환영 | C |
+| 대지 이동 - Move Earth | 변환 | C |
+| 저항 불가 춤 - Otto's Irresistible Dance | 환혹 | C |
+| 예정된 환영 - Programmed Illusion | 환영 | M |
+| 사이오닉 폭발 - Psionic Blast (이 UA 수록) | 방출 | — |
+| 사고 형태 - Thought Form (이 UA 수록) | 변환 | C, M |
+| 진실 보기 - True Seeing | 예지 | M |
 
-인챈트 C 공포 환영 C 파리 변환 C 최면 패턴 환영 C 지능 요새(이 UA에 나타남)
+#### 7레벨 사이언 주문 - Level 7 Psion Spells
 
-Abjuration C Major Image Illusion C Non-Detection Abjuration M Sending Divination — Summon Astral Entity (이 UA에 나타남)
+| 주문 | 학파 | 특수 |
+|---|---|---|
+| 에테르화 - Etherealness | 조형 | — |
+| 역장 감옥 - Forcecage | 방출 | C, M |
+| 신기루 비전 - Mirage Arcane | 환영 | — |
+| 차원 이동 - Plane Shift | 조형 | M |
+| 강화의 권능어 - Power Word Fortify | 환혹 | — |
+| 투영 영상 - Project Image | 환영 | C, M |
+| 중력 반전 - Reverse Gravity | 변환 | C |
+| 순간이동 - Teleport | 조형 | — |
 
-Conjuration C, M 염동력 크러시(이 UA에 등장)
+#### 8레벨 사이언 주문 - Level 8 Psion Spells
 
-변환 - 방언 점술 - L
+| 주문 | 학파 | 특수 |
+|---|---|---|
+| 아비-달짐의 끔찍한 시듦 - Abi-Dalzim's Horrid Wilting (이 UA 수록) | 사령 | — |
+| 항마법장 - Antimagic Field | 방호 | C |
+| 반감/공감 - Antipathy/Sympathy | 환혹 | — |
+| 정신 혼미 - Befuddlement | 환혹 | — |
+| 괴물 지배 - Dominate Monster | 환혹 | C |
+| 능변 - Glibness | 환혹 | — |
+| 미로 - Maze | 조형 | C |
+| 정신 보호 - Mind Blank | 방호 | — |
+| 기절의 권능어 - Power Word Stun | 환혹 | — |
+| 텔레파시 - Telepathy | 예지 | — |
 
-#### EVEL 4 PSION SPELLS - Evel 4 Psion Spells
+#### 9레벨 사이언 주문 - Level 9 Psion Spells
 
-주문 학교 특수 아케인 아이 점술 C 추방 포기 C 참 몬스터 인챈트 — 강제 인챈트 C 혼란 인챈트 C 차원 문 소환 — 이동 자유 포기 — 상급 투명 환상 C 환각 지형 환상 — 생명 반전 필드(이 UA에 나타남)
-
-Abjuration C 위치 크리처 점술 C Phantasmal Killer Illusion C 변이형 변환 C Raulothim의 정신 창(이 UA에 나타남)
-
-인챈트 — 돌연변이 소환 소환 C, M L
-
-#### EVEL 5 PSION SPELLS - Evel 5 Psion Spells
-
-주문 학교 특수 애니메이션 개체 변환 C 깨우기 변환 M 다른 평면 점술 R 지배 인간 마법 부여 C 꿈의 환상 — 기아스 마법 — 홀드 몬스터 마법 부여 C 전설 지식 점술 M 오해의 환상 C 수정 기억 마법 C 래리의 텔레파시 결속 점술 R 점술 점술 C, M 가상의 환상 — 시냅스 정적 마법 — 염동력 변환 C 순간이동 서클 컨저레이션 M L
-
-#### EVEL 6 PSION SPELLS - Evel 6 Psion Spells
-
-주문 학교 특수 블레이드 배리어 소환 C 붕괴 변형 — 눈에 물린 강령술 C 경로 찾기 점술 C, M 대량 제안 인챈트 — 정신 감옥(이 UA에 나타남)
-
-Illusion C Move Earth Transmutation C Otto's Irresistible Dance Enchantment C Programmed Illusion Illusion M 사이오닉 폭발(이 UA에 나타남)
-
-환기 - 사고 양식(이 UA에 표시됨)
-
-변환 C, M 진시점 M
-
-#### LEVEL 7 PSION SPELLS - Level 7 Psion Spells
-
-스펠 스쿨 스페셜 에테리얼니스 컨저레이션 — 포스케이지 소환 C, M 미라지 아케인 일루전 — 플레인 시프트 컨저레이션 M 파워 워드 포트파이 인챈트 — 프로젝트 이미지 환상 C, M 역중력 변환 C 텔레포트 컨저레이션 — L
-
-#### EVEL 8 PSION SPELLS - Evel 8 Psion Spells
-
-주문 학교 특별 Abi-Dalzim의 Horrid Wilting (이 UA에 나타남)
-
-강령술 — 항마법 장 포기 C 반감/동정 마법 — 현혹 마법 — 지배 몬스터 마법 C Glibness 마법 — 미로 소환 C 정신 공백 포기 — 파워 워드 기절 마법 — 텔레파시 점술 — L
-
-#### EVEL 9 PSION SPELLS - Evel 9 Psion Spells
-
-주문 학교 특별 아스트랄 프로젝션 네크로맨시 M 선견지명 — 신의 권능 치유 인챈트 — 신의 권능 킬 인챈트 — 심령 비명(이 UA에 나타남)
-
-인챈트 — 변신 변환 C, M 시간 정지 변환 — 이상한 환상 C
+| 주문 | 학파 | 특수 |
+|---|---|---|
+| 별계 투사 - Astral Projection | 사령 | M |
+| 예지 - Foresight | 예지 | — |
+| 치유의 권능어 - Power Word Heal | 환혹 | — |
+| 살해의 권능어 - Power Word Kill | 환혹 | — |
+| 정신 비명 - Psychic Scream (이 UA 수록) | 환혹 | — |
+| 형상변화 - Shapechange | 변환 | C, M |
+| 시간 정지 - Time Stop | 변환 | — |
+| 괴이 - Weird | 환영 | C |
 
 #### 사이언 서브클래스 - Psion Subclasses
 
