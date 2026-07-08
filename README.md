@@ -9,3 +9,4 @@ GitHub Pages로 공유하는 화살성채 캠페인 자료 모음입니다.
 - `setting.html`: 설정 정리
 - `homebrew.html`: 홈브류 서브클래스 정리
 - `source/`: 원본 Markdown 자료
+- `docs/ima2-gen-guide.md`: ima2-gen(로컬 이미지 생성 도구)로 카드 아트를 만들어 이 저장소에 반영하는 절차
