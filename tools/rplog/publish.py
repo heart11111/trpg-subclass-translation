@@ -111,7 +111,9 @@ def ingest_local_images(log_html, max_px, data_dirs):
             continue
         rel = unquote(src.split('?')[0]).lstrip('/')
         found = None
-        for base in data_dirs:
+        if os.path.isabs(unquote(src.split('?')[0])) and os.path.isfile(unquote(src.split('?')[0])):
+            found = unquote(src.split('?')[0])
+        for base in (data_dirs if not found else []):
             cand = os.path.join(base, rel.replace('/', os.sep))
             if os.path.isfile(cand):
                 found = cand
@@ -131,33 +133,58 @@ PAGE_TEMPLATE = """<!doctype html>
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>{title} - 화살성채 RP 로그</title>
+<title>%%TITLE%% - 화살성채 RP 로그</title>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Cinzel:wght@400;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
 <style>
-  * {{ box-sizing: border-box; }}
-  body {{ margin: 0; background: #efece4; font-family: 'Pretendard', sans-serif; }}
-  .log-topbar {{ background: #0f0d0b; padding: 10px 20px; display: flex; align-items: baseline; gap: 16px; }}
-  .log-topbar a {{ color: #c9a84c; text-decoration: none; font-family: 'Cinzel', serif; font-size: 14px; }}
-  .log-topbar .t {{ color: #f8f3e8; font-size: 14px; }}
-  .log-head {{ max-width: 820px; margin: 28px auto 0; padding: 0 16px; }}
-  .log-head h1 {{ font-size: 24px; color: #2a2015; margin: 0 0 4px; }}
-  .log-head p {{ margin: 0; color: #6a5c47; font-size: 13px; }}
-  .log-body {{ max-width: 820px; margin: 18px auto 60px; padding: 18px 14px 30px;
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #efece4; font-family: 'Pretendard', sans-serif; }
+  .log-topbar { background: #0f0d0b; padding: 10px 20px; display: flex; align-items: baseline; gap: 16px; }
+  .log-topbar a { color: #c9a84c; text-decoration: none; font-family: 'Cinzel', serif; font-size: 14px; }
+  .log-topbar .t { color: #f8f3e8; font-size: 14px; }
+  .log-head { max-width: 820px; margin: 28px auto 0; padding: 0 16px; }
+  .log-head h1 { font-size: 24px; color: #2a2015; margin: 0 0 4px; }
+  .log-head p { margin: 0; color: #6a5c47; font-size: 13px; }
+  .log-body { max-width: 820px; margin: 18px auto 60px; padding: 18px 14px 30px;
                background: #ffffff; border-radius: 6px; box-shadow: 0 1px 6px rgba(0,0,0,.08);
-               overflow-wrap: break-word; }}
-  .log-body img {{ max-width: 100%; height: auto; }}
-  @font-face {{ font-family: 'Pretendard-Regular'; src: local('Pretendard Regular'), local('Pretendard'); }}
-  .log-body * {{ font-family: 'Pretendard', 'Pretendard-Regular', sans-serif !important; }}
-  .log-body .sheet-result span, .log-body .sheet-result * {{ font-family: 'Fraunces', serif !important; }}
+               overflow-wrap: break-word; }
+  .log-body img { max-width: 100%; height: auto; }
+  @font-face { font-family: 'Pretendard-Regular'; src: local('Pretendard Regular'), local('Pretendard'); }
+  .log-body * { font-family: 'Pretendard', 'Pretendard-Regular', sans-serif !important; }
+  .log-body .sheet-result span, .log-body .sheet-result * { font-family: 'Fraunces', serif !important; }
+  #img-zoom { position: fixed; top: 64px; left: 12px; width: calc(50vw - 430px); z-index: 99;
+              display: none; pointer-events: none; text-align: center; }
+  #img-zoom img { max-width: 100%; max-height: 82vh; border-radius: 8px;
+                  box-shadow: 0 4px 24px rgba(0,0,0,.35); background: #fff; }
+  @media (max-width: 1150px) { #img-zoom { display: none !important; } }
 </style>
 </head>
 <body>
-<nav class="log-topbar"><a href="../index.html">화살성채</a><a href="index.html">RP 로그</a><span class="t">{title}</span></nav>
-<header class="log-head"><h1>{title}</h1><p>{meta}</p></header>
+<nav class="log-topbar"><a href="../index.html">화살성채</a><a href="index.html">RP 로그</a><span class="t">%%TITLE%%</span></nav>
+<header class="log-head"><h1>%%TITLE%%</h1><p>%%META%%</p></header>
 <main class="log-body">
-{content}
+%%CONTENT%%
 </main>
+<div id="img-zoom" aria-hidden="true"></div>
+<script>
+(function () {
+  var zoom = document.getElementById('img-zoom');
+  var body = document.querySelector('.log-body');
+  body.addEventListener('mouseover', function (e) {
+    if (e.target.tagName !== 'IMG') return;
+    if (window.innerWidth < 1150) return;
+    var src = e.target.getAttribute('src');
+    if (!src) return;
+    zoom.innerHTML = '<img src="' + src + '" alt="">';
+    zoom.style.display = 'block';
+  });
+  body.addEventListener('mouseout', function (e) {
+    if (e.target.tagName !== 'IMG') return;
+    zoom.style.display = 'none';
+    zoom.innerHTML = '';
+  });
+})();
+</script>
 </body>
 </html>
 """
@@ -293,6 +320,15 @@ def publish(zip_path, slug=None, season=None, title=None, date=None,
     portraits = {name: (mapping.get(p, p) if p != 'noimg' else p)
                  for name, p in portraits.items()}
 
+    # GM 화자 전용 아이콘 (config gm_portrait: 로컬 파일 경로)
+    gm_icon_path = cfg.get('gm_portrait')
+    if gm_icon_path and os.path.isfile(gm_icon_path):
+        with open(gm_icon_path, 'rb') as f:
+            icon_asset = store_asset(f.read(), os.path.splitext(gm_icon_path)[1],
+                                     cfg.get('max_image_px', 1600))
+        for gm in cfg.get('gm_names', []):
+            portraits[gm] = icon_asset
+
     fragment, stats = heartformat.convert(
         log_html,
         portraits=portraits,
@@ -306,8 +342,10 @@ def publish(zip_path, slug=None, season=None, title=None, date=None,
         fragment = fragment.replace(f'src="{orig}"', f'src="{new}"')
 
     meta_bits = [b for b in (date, manifest.get('world'), season) if b]
-    page = PAGE_TEMPLATE.format(title=html_mod.escape(title),
-                                meta=' · '.join(meta_bits), content=fragment)
+    page = (PAGE_TEMPLATE
+            .replace('%%TITLE%%', html_mod.escape(title))
+            .replace('%%META%%', ' · '.join(meta_bits))
+            .replace('%%CONTENT%%', fragment))
 
     out_path = os.path.join(LOGS_DIR, slug + '.html')
     if dry_run:

@@ -3,6 +3,7 @@
   "speaker_map": {},
   "keep_whispers": true,
   "max_image_px": 1600,
+  "gm_portrait": "D:\\TRPG\\국경의모험가들\\로그\\DM_아이콘.jpg",
   "foundry_data_dirs": [
     "C:\\Users\\sj\\AppData\\Local\\FoundryVTT\\Data",
     "C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\public"
