@@ -1,0 +1,10 @@
+{
+  "gm_names": ["DM", "Gamemaster", "GM", "GM(2)", "claude"],
+  "speaker_map": {},
+  "keep_whispers": true,
+  "max_image_px": 1600,
+  "foundry_data_dirs": [
+    "C:\\Users\\sj\\AppData\\Local\\FoundryVTT\\Data",
+    "C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\public"
+  ]
+}
