@@ -55,21 +55,34 @@ def slugify(text):
     return text or 'log'
 
 
+KEEP_AS_IS = {'.gif', '.svg', '.webp'}  # 애니메이션/벡터는 원본 유지, webp는 이미 목표 포맷
+
+
 def process_image(data, ext, max_px):
-    """필요 시 리사이즈. (data, ext) 반환."""
-    if not HAS_PIL or ext.lower() == '.gif':
+    """리사이즈 + webp 변환. (data, ext) 반환."""
+    ext = ext.lower()
+    if not HAS_PIL or ext in KEEP_AS_IS:
+        if ext == '.webp' and HAS_PIL:
+            # webp는 포맷 변환 없이 리사이즈만
+            try:
+                img = Image.open(io.BytesIO(data))
+                if max(img.size) > max_px:
+                    img.thumbnail((max_px, max_px))
+                    out = io.BytesIO()
+                    img.save(out, 'WEBP', quality=90)
+                    return out.getvalue(), '.webp'
+            except Exception:
+                pass
         return data, ext
     try:
         img = Image.open(io.BytesIO(data))
-        if max(img.size) <= max_px:
-            return data, ext
-        img.thumbnail((max_px, max_px))
+        if img.mode == 'P':
+            img = img.convert('RGBA' if 'transparency' in img.info else 'RGB')
+        if max(img.size) > max_px:
+            img.thumbnail((max_px, max_px))
         out = io.BytesIO()
-        if img.mode in ('RGBA', 'P', 'LA'):
-            img.save(out, 'WEBP', quality=88)
-            return out.getvalue(), '.webp'
-        img.convert('RGB').save(out, 'JPEG', quality=88)
-        return out.getvalue(), '.jpg'
+        img.save(out, 'WEBP', quality=90)
+        return out.getvalue(), '.webp'
     except Exception:
         return data, ext
 
@@ -205,6 +218,8 @@ INDEX_TEMPLATE = """<!doctype html>
   .log-season {{ font-family: 'Cinzel', serif; color: var(--gold-light); font-size: 15px;
                  letter-spacing: 2px; margin: 36px 0 12px; border-bottom: 1px solid var(--gold-dim);
                  padding-bottom: 6px; }}
+  .log-arc {{ font-family: 'Cinzel', serif; color: var(--muted); font-size: 12.5px;
+              letter-spacing: 1px; margin: 20px 0 8px 4px; }}
   .log-item {{ display: flex; align-items: baseline; gap: 14px; padding: 12px 14px; margin: 6px 0;
                background: rgba(248,243,232,.05); border: 1px solid rgba(201,168,76,.18);
                border-radius: 4px; text-decoration: none; }}
@@ -260,15 +275,26 @@ def render_index(db):
     parts = []
     for season in order:
         items = sorted(seasons[season], key=lambda x: (x.get('date') or '', x['slug']))
-        rows = []
+        arcs = {}
+        arc_order = []
         for s in items:
-            esc = html_mod.escape
-            count = f"메시지 {s['cards']}" if s.get('cards') else ''
-            rows.append(
-                f'  <a class="log-item" href="{esc(s["slug"])}.html">'
-                f'<span class="d">{esc(s.get("date") or "")}</span>'
-                f'<span class="n">{esc(s["title"])}</span>'
-                f'<span class="s">{count}</span></a>')
+            arc = s.get('arc') or ''
+            if arc not in arcs:
+                arcs[arc] = []
+                arc_order.append(arc)
+            arcs[arc].append(s)
+        rows = []
+        for arc in arc_order:
+            if arc:
+                rows.append(f'  <div class="log-arc">{html_mod.escape(arc)}</div>')
+            for s in arcs[arc]:
+                esc = html_mod.escape
+                count = f"메시지 {s['cards']}" if s.get('cards') else ''
+                rows.append(
+                    f'  <a class="log-item" href="{esc(s["slug"])}.html">'
+                    f'<span class="d">{esc(s.get("date") or "")}</span>'
+                    f'<span class="n">{esc(s["title"])}</span>'
+                    f'<span class="s">{count}</span></a>')
         parts.append(f'  <div class="log-season">{html_mod.escape(season)}</div>\n'
                      + '\n'.join(rows))
     index_html = INDEX_TEMPLATE.format(sections='\n'.join(parts))
@@ -276,7 +302,7 @@ def render_index(db):
         f.write(index_html)
 
 
-def publish(zip_path, slug=None, season=None, title=None, date=None,
+def publish(zip_path, slug=None, season=None, arc=None, title=None, date=None,
             keep_whispers=None, dry_run=False):
     cfg = load_config()
     if keep_whispers is None:
@@ -360,6 +386,7 @@ def publish(zip_path, slug=None, season=None, title=None, date=None,
         db['sessions'].append({
             'slug': slug, 'title': title, 'date': date,
             'season': season or manifest.get('season') or '',
+            'arc': arc or '',
             'cards': stats['total'] - stats['removed'],
         })
         save_db(db)
@@ -378,10 +405,11 @@ if __name__ == '__main__':
     ap.add_argument('zip')
     ap.add_argument('--slug')
     ap.add_argument('--season')
+    ap.add_argument('--arc')
     ap.add_argument('--title')
     ap.add_argument('--date')
     ap.add_argument('--no-whispers', action='store_true')
     ap.add_argument('--dry-run', action='store_true')
     a = ap.parse_args()
-    publish(a.zip, slug=a.slug, season=a.season, title=a.title, date=a.date,
+    publish(a.zip, slug=a.slug, season=a.season, arc=a.arc, title=a.title, date=a.date,
             keep_whispers=(False if a.no_whispers else None), dry_run=a.dry_run)
