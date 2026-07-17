@@ -60,7 +60,7 @@ def _roll_blocks(msg):
     return blocks
 
 
-def message_to_li(msg, actors, users):
+def message_to_li(msg, actors, users, portrait_overrides=None):
     speaker = msg.get('speaker') or {}
     author_id = msg.get('author') or msg.get('user')
     if isinstance(author_id, dict):
@@ -77,7 +77,7 @@ def message_to_li(msg, actors, users):
     mrkb = (msg.get('flags') or {}).get('mrkb-chat-enhancements') or {}
     mrkb_type = mrkb.get('type')
 
-    portrait = _portrait(actors, speaker)
+    portrait = (portrait_overrides or {}).get(alias) or _portrait(actors, speaker)
     avatar = (f'<a class="avatar"><img src="{html_mod.escape(portrait)}"'
               f' alt="{html_mod.escape(alias)}"></a>') if portrait else ''
 
@@ -110,7 +110,7 @@ def message_to_li(msg, actors, users):
             f'</li>')
 
 
-def archive_to_html(json_path, actors, users):
+def archive_to_html(json_path, actors, users, portrait_overrides=None):
     with io.open(json_path, encoding='utf-8') as f:
         messages = json.load(f)
     if isinstance(messages, dict):
@@ -118,5 +118,5 @@ def archive_to_html(json_path, actors, users):
     messages = sorted(messages, key=lambda m: m.get('timestamp') or 0)
     messages = [m for m in messages
                 if (m.get('content') or '').strip() or m.get('rolls')]
-    lis = [message_to_li(m, actors, users) for m in messages]
+    lis = [message_to_li(m, actors, users, portrait_overrides) for m in messages]
     return ('<ol class="chat-log" id="df-chat-log">\n' + '\n'.join(lis) + '\n</ol>'), len(lis)
