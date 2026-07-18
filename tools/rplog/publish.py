@@ -116,8 +116,13 @@ def ingest_images(zf, names, max_px):
 
 def _fetch_url(url, timeout=8):
     import urllib.request
+    req = urllib.request.Request(url, headers={
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
+                      ' (KHTML, like Gecko) Chrome/124.0 Safari/537.36',
+        'Referer': url,
+    })
     try:
-        with urllib.request.urlopen(url, timeout=timeout) as resp:
+        with urllib.request.urlopen(req, timeout=timeout) as resp:
             return resp.read()
     except Exception:
         return None
@@ -183,6 +188,7 @@ PAGE_TEMPLATE = """<!doctype html>
                background: #ffffff; border-radius: 6px; box-shadow: 0 1px 6px rgba(0,0,0,.08);
                overflow-wrap: break-word; }
   .log-body img { max-width: 100%; height: auto; }
+  .log-body .message-content img { max-width: min(100%, 260px); }
   @font-face { font-family: 'Pretendard-Regular'; src: local('Pretendard Regular'), local('Pretendard'); }
   .log-body * { font-family: 'Pretendard', 'Pretendard-Regular', sans-serif !important; }
   .log-body .sheet-result span, .log-body .sheet-result * { font-family: 'Fraunces', serif !important; }
