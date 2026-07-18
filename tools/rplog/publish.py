@@ -114,13 +114,34 @@ def ingest_images(zf, names, max_px):
     return mapping
 
 
+def _fetch_url(url, timeout=8):
+    import urllib.request
+    try:
+        with urllib.request.urlopen(url, timeout=timeout) as resp:
+            return resp.read()
+    except Exception:
+        return None
+
+
 def ingest_local_images(log_html, max_px, data_dirs):
-    """맨 .html 입력용: img src를 로컬 Foundry Data 폴더에서 찾아 assets로 복사."""
+    """맨 .html 입력용: img src를 로컬 Foundry Data 폴더 또는 http(s) URL에서 가져와 assets로 복사.
+
+    사설 IP(로컬 이미지 생성 서버 등)나 외부 URL을 그대로 두면 GitHub Pages
+    등 외부에서 볼 때 이미지가 깨지므로(액박), 항상 다운로드해 로컬 asset으로 박아넣는다.
+    """
     from urllib.parse import unquote
     mapping = {}
     missing = []
     for src in heartformat.harvest_image_srcs(log_html):
-        if src.startswith(('http://', 'https://', 'data:')):
+        if src.startswith('data:'):
+            continue
+        if src.startswith(('http://', 'https://')):
+            data = _fetch_url(src)
+            if not data:
+                missing.append(src)
+                continue
+            ext = os.path.splitext(src.split('?')[0])[1] or '.webp'
+            mapping[src] = store_asset(data, ext, max_px)
             continue
         rel = unquote(src.split('?')[0]).lstrip('/')
         found = None
