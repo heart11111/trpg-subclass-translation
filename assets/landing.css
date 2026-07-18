@@ -1,0 +1,560 @@
+/* ============================================================
+   Arrowkeep cinematic landing
+   One pinned stage, scroll-driven 2.5D camera through the
+   existing v2 art family. Static stacked fallback for no-JS,
+   reduced motion, and small screens.
+   Layer bands: 0-9 world · 10-19 tint · 20-29 copy · 30-39 nav
+   ============================================================ */
+
+.lp-cinema {
+  --lp-ink: #f8f3e8;
+  --lp-ink-dim: rgba(248, 243, 232, .68);
+  --lp-gold: #e8cf82;
+  --lp-gold-dim: rgba(232, 207, 130, .4);
+  --lp-bg: #0a0714;
+  --lp-panel: rgba(13, 9, 24, .72);
+
+  /* JS-driven timeline props (safe defaults = p0 / static view) */
+  --sky-scale: 1;
+  --sky-y: 0px;
+  --sky-op: 1;
+  --pano-op: 0;
+  --pano-scale: 1.06;
+  --pano-blur: 0px;
+  --dim: 0;
+  --fg-split: 0;
+  --fg-op: 1;
+  --intro-op: 1;
+  --intro-y: 0px;
+  --na-op: 0;
+  --na-y: 24px;
+  --nb-op: 0;
+  --nb-y: 24px;
+  --cat-x: 110%;
+  --cat-op: 0;
+  --ctl-op: 0;
+  --mx: 0;
+  --my: 0;
+
+  background: var(--lp-bg);
+}
+
+.lp-cinema .site-nav {
+  background: rgba(8, 6, 16, .9);
+  border-bottom-color: rgba(232, 207, 130, .2);
+  position: sticky;
+  top: 0;
+  z-index: 30;
+}
+
+/* ---------- scroll container + stage ---------- */
+
+.cinema {
+  position: relative;
+}
+
+html.lp-js .lp-cinema .cinema {
+  height: calc(100svh + var(--travel, 4200px));
+}
+
+.stage {
+  position: relative;
+  min-height: 100svh;
+  overflow: clip;
+  isolation: isolate;
+  color: var(--lp-ink);
+}
+
+html.lp-js .lp-cinema .stage {
+  position: sticky;
+  top: 0;
+  height: 100svh;
+  height: 100dvh;
+}
+
+/* ---------- world layers (band 0-9) ---------- */
+
+.world,
+.world .plate,
+.world .shade {
+  position: absolute;
+  inset: 0;
+}
+
+.world { z-index: 0; }
+
+.world .plate {
+  background-size: cover;
+  background-position: center 40%;
+  will-change: transform, opacity, filter;
+}
+
+.plate-keep {
+  background-image: url('images/cover-arrowkeep-v2.jpg');
+  opacity: var(--sky-op);
+  transform: translate3d(calc(var(--mx) * 10px), calc(var(--sky-y) + var(--my) * 6px), 0) scale(var(--sky-scale));
+  filter: saturate(.9) brightness(.82);
+}
+
+.plate-pano {
+  background-image: url('landing/panorama-walden.webp');
+  opacity: var(--pano-op);
+  transform: translate3d(calc(var(--mx) * 8px), calc(var(--my) * 5px), 0) scale(var(--pano-scale));
+  filter: blur(var(--pano-blur)) saturate(.94) brightness(.9);
+}
+
+.world .haze {
+  position: absolute;
+  inset: 0;
+  z-index: 5;
+  pointer-events: none;
+  background:
+    linear-gradient(180deg, rgba(10, 7, 20, .55) 0%, rgba(10, 7, 20, .1) 30%, rgba(10, 7, 20, .12) 62%, rgba(10, 7, 20, .78) 100%),
+    radial-gradient(ellipse at 50% 34%, rgba(143, 147, 216, .14), transparent 58%);
+}
+
+.fg {
+  position: absolute;
+  top: 0;
+  bottom: -2%;
+  width: clamp(300px, 38vw, 620px);
+  z-index: 8;
+  pointer-events: none;
+  opacity: var(--fg-op);
+  will-change: transform, opacity;
+}
+
+.fg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.fg-left {
+  left: 0;
+  object-position: left bottom;
+  transform-origin: left 80%;
+  transform:
+    translate3d(calc(var(--fg-split) * -78% + var(--mx) * -18px), calc(var(--my) * -10px), 0)
+    scale(calc(1 + var(--fg-split) * .85));
+}
+
+.fg-right {
+  right: 0;
+  transform-origin: right 80%;
+  transform:
+    translate3d(calc(var(--fg-split) * 78% + var(--mx) * 18px), calc(var(--my) * -10px), 0)
+    scale(calc(1 + var(--fg-split) * .85));
+}
+
+/* mirror the artwork itself so the cluster hugs the right edge */
+.fg-right img { transform: scaleX(-1); }
+
+/* cinematic dim that deepens for narrative + catalog beats (band 10) */
+.world .shade {
+  z-index: 10;
+  pointer-events: none;
+  background: #060410;
+  opacity: var(--dim);
+}
+
+/* ---------- copy beats (band 20) ---------- */
+
+.beat {
+  position: relative;
+  z-index: 20;
+}
+
+html.lp-js .lp-cinema .beat {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  /* minmax(0,1fr) keeps the track from growing to the rail's max-content */
+  grid-template-columns: minmax(0, 1fr);
+  padding: clamp(72px, 12vh, 130px) 28px clamp(28px, 6vh, 64px);
+}
+
+html.lp-js .lp-cinema .beat[hidden-beat] {
+  visibility: hidden;
+}
+
+/* intro */
+
+.intro {
+  place-items: end start;
+}
+
+.intro-copy {
+  width: min(1180px, 100%);
+  margin: 0 auto;
+  opacity: var(--intro-op);
+  transform: translate3d(0, var(--intro-y), 0);
+  will-change: transform, opacity;
+}
+
+.intro .campaign-mark { margin: 0 0 22px; }
+
+.intro .eyebrow {
+  margin: 0 0 14px;
+  color: rgba(232, 207, 130, .74);
+}
+
+.intro h1 {
+  font-family: 'Cinzel', serif;
+  font-size: clamp(3.6rem, 10.5vw, 8.4rem);
+  line-height: .92;
+  color: #fff;
+  text-shadow: 0 18px 46px rgba(0, 0, 0, .55);
+}
+
+.intro .landing-lede {
+  max-width: 560px;
+  margin: 24px 0 0;
+  color: var(--lp-ink-dim);
+  font-size: clamp(1rem, 1.5vw, 1.15rem);
+  line-height: 1.9;
+  word-break: keep-all;
+}
+
+.intro .landing-actions { margin-top: 28px; }
+
+.scroll-hint {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: clamp(22px, 4.5vh, 44px);
+  font-family: 'Cinzel', serif;
+  font-size: .68rem;
+  letter-spacing: .32em;
+  color: rgba(232, 207, 130, .6);
+}
+
+.scroll-hint::after {
+  content: '';
+  width: 1px;
+  height: 34px;
+  background: linear-gradient(180deg, var(--lp-gold), transparent);
+}
+
+html.lp-js .lp-cinema .scroll-hint::after {
+  animation: lp-hint 2.2s ease-in-out infinite;
+}
+
+@keyframes lp-hint {
+  0%, 100% { transform: translateY(0); opacity: 1; }
+  50% { transform: translateY(8px); opacity: .4; }
+}
+
+/* narrative panels */
+
+.nar { place-items: center; }
+
+.nar-inner {
+  width: min(620px, 100%);
+  padding: clamp(26px, 4vw, 44px);
+  border: 1px solid rgba(232, 207, 130, .34);
+  background: var(--lp-panel);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  text-align: center;
+  will-change: transform, opacity;
+}
+
+.nar-a .nar-inner { opacity: var(--na-op); transform: translate3d(0, var(--na-y), 0); }
+.nar-b .nar-inner { opacity: var(--nb-op); transform: translate3d(0, var(--nb-y), 0); }
+
+.nar .eyebrow {
+  margin: 0 0 14px;
+  color: rgba(232, 207, 130, .72);
+}
+
+.nar h2 {
+  font-family: 'Cinzel', serif;
+  font-size: clamp(1.7rem, 3.4vw, 2.5rem);
+  color: #fff7d8;
+  line-height: 1.25;
+}
+
+.nar p {
+  margin: 16px auto 0;
+  max-width: 480px;
+  color: var(--lp-ink-dim);
+  line-height: 1.95;
+  word-break: keep-all;
+}
+
+.nar-facts {
+  display: flex;
+  justify-content: center;
+  gap: 0;
+  margin: 24px 0 0;
+  padding: 0;
+  list-style: none;
+  border-top: 1px solid rgba(232, 207, 130, .22);
+}
+
+.nar-facts li {
+  flex: 1;
+  padding: 14px 8px 0;
+  border-left: 1px solid rgba(232, 207, 130, .18);
+}
+
+.nar-facts li:first-child { border-left: 0; }
+
+.nar-facts span {
+  display: block;
+  font-family: 'Cinzel', serif;
+  font-size: .64rem;
+  letter-spacing: .22em;
+  color: rgba(232, 207, 130, .58);
+}
+
+.nar-facts strong {
+  display: block;
+  margin-top: 6px;
+  color: #fff7d8;
+  font-size: .98rem;
+}
+
+.nar-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  margin-top: 24px;
+  padding: 10px 20px;
+  border: 1px solid rgba(232, 207, 130, .52);
+  color: var(--lp-ink);
+  font-weight: 700;
+  text-decoration: none;
+  background: rgba(232, 207, 130, .14);
+}
+
+.nar-link:hover,
+.nar-link:focus-visible {
+  border-color: rgba(232, 207, 130, .9);
+  background: rgba(232, 207, 130, .22);
+}
+
+/* ---------- catalog beat ---------- */
+
+.catalog {
+  place-items: end stretch;
+}
+
+.catalog-inner {
+  width: min(1240px, 100%);
+  margin: 0 auto;
+  opacity: var(--cat-op);
+  transform: translate3d(var(--cat-x), 0, 0);
+  will-change: transform, opacity;
+}
+
+.catalog-head {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 18px;
+  margin-bottom: 18px;
+}
+
+.catalog-head .eyebrow { margin: 0 0 10px; color: rgba(232, 207, 130, .72); }
+
+.catalog-head h2 {
+  font-family: 'Cinzel', serif;
+  font-size: clamp(1.5rem, 3vw, 2.2rem);
+  color: #fff7d8;
+}
+
+.cat-controls {
+  display: flex;
+  gap: 8px;
+  opacity: var(--ctl-op);
+}
+
+html:not(.lp-js) .cat-controls { display: none; }
+
+.cat-controls button {
+  width: 46px;
+  height: 46px;
+  border: 1px solid rgba(232, 207, 130, .5);
+  background: rgba(13, 9, 24, .7);
+  color: var(--lp-gold);
+  font-size: 1.05rem;
+  cursor: pointer;
+}
+
+.cat-controls button:hover,
+.cat-controls button:focus-visible {
+  border-color: rgba(232, 207, 130, .95);
+  background: rgba(232, 207, 130, .16);
+}
+
+.cat-rail {
+  display: flex;
+  gap: 14px;
+  margin: 0;
+  padding: 4px 4px 14px;
+  list-style: none;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(232, 207, 130, .4) transparent;
+}
+
+.cat-rail li {
+  flex: 0 0 clamp(228px, 24vw, 300px);
+  scroll-snap-align: start;
+}
+
+.cat-rail a {
+  display: block;
+  height: 100%;
+  border: 1px solid rgba(232, 207, 130, .32);
+  background: var(--lp-panel);
+  color: inherit;
+  text-decoration: none;
+  transition: border-color .18s ease, transform .18s ease;
+}
+
+.cat-rail a:hover,
+.cat-rail a:focus-visible {
+  border-color: rgba(232, 207, 130, .9);
+  transform: translateY(-4px);
+}
+
+.cat-rail img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  filter: saturate(.95);
+}
+
+.cat-body { padding: 14px 16px 16px; }
+
+.cat-body span {
+  font-family: 'Cinzel', serif;
+  font-size: .66rem;
+  letter-spacing: .24em;
+  color: rgba(232, 207, 130, .6);
+}
+
+.cat-body strong {
+  display: block;
+  margin-top: 6px;
+  color: #fff7d8;
+  font-size: 1.02rem;
+  line-height: 1.35;
+}
+
+.cat-body em {
+  display: block;
+  margin-top: 6px;
+  color: rgba(248, 243, 232, .6);
+  font-style: normal;
+  font-size: .84rem;
+  line-height: 1.6;
+}
+
+.cat-status {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+/* ============================================================
+   Static fallback: no JS, reduced motion, or small screens.
+   Everything stacks in normal flow; beats become sections.
+   ============================================================ */
+
+html:not(.lp-js) .lp-cinema .stage,
+html.lp-static .lp-cinema .stage {
+  display: block;
+}
+
+html:not(.lp-js) .lp-cinema .world,
+html.lp-static .lp-cinema .world {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+
+html:not(.lp-js) .lp-cinema .fg,
+html.lp-static .lp-cinema .fg,
+html:not(.lp-js) .lp-cinema .plate-pano,
+html.lp-static .lp-cinema .plate-pano,
+html:not(.lp-js) .lp-cinema .shade,
+html.lp-static .lp-cinema .shade {
+  display: none;
+}
+
+html:not(.lp-js) .lp-cinema .beat,
+html.lp-static .lp-cinema .beat {
+  padding: clamp(56px, 9vh, 96px) 28px;
+}
+
+html:not(.lp-js) .lp-cinema .intro,
+html.lp-static .lp-cinema .intro {
+  min-height: 82svh;
+  display: grid;
+  align-items: end;
+}
+
+html:not(.lp-js) .lp-cinema .nar,
+html.lp-static .lp-cinema .nar {
+  display: grid;
+  place-items: center;
+  background: var(--lp-bg);
+}
+
+html:not(.lp-js) .lp-cinema .nar-b,
+html.lp-static .lp-cinema .nar-b {
+  background: url('landing/panorama-walden.webp') center / cover fixed no-repeat;
+}
+
+html:not(.lp-js) .lp-cinema .nar .nar-inner,
+html.lp-static .lp-cinema .nar .nar-inner,
+html:not(.lp-js) .lp-cinema .intro-copy,
+html.lp-static .lp-cinema .intro-copy,
+html:not(.lp-js) .lp-cinema .catalog-inner,
+html.lp-static .lp-cinema .catalog-inner {
+  opacity: 1;
+  transform: none;
+}
+
+html:not(.lp-js) .lp-cinema .catalog,
+html.lp-static .lp-cinema .catalog {
+  background: var(--lp-bg);
+}
+
+/* ---------- responsive ---------- */
+
+@media (max-width: 900px) {
+  .fg { width: clamp(200px, 32vw, 340px); }
+
+  .catalog-head { flex-wrap: wrap; }
+}
+
+@media (max-width: 640px) {
+  .intro h1 { font-size: clamp(2.6rem, 15vw, 3.6rem); }
+
+  .nar-inner { padding: 22px 18px; }
+
+  .nar-facts { flex-direction: column; border-top: 0; }
+
+  .nar-facts li {
+    border-left: 0;
+    border-top: 1px solid rgba(232, 207, 130, .18);
+    padding: 10px 0;
+  }
+
+  .cat-rail li { flex-basis: 78vw; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .lp-cinema .scroll-hint::after { animation: none; }
+}

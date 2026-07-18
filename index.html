@@ -4,15 +4,17 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>화살성채 캠페인 자료집</title>
+<link rel="preload" as="image" href="assets/images/cover-arrowkeep-v2.jpg">
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Noto+Serif+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/style.css">
+<link rel="stylesheet" href="assets/landing.css">
 </head>
-<body class="hub-page">
+<body class="hub-page lp-cinema">
 <nav class="site-nav" aria-label="주요 문서">
   <a class="brand" href="index.html">화살성채</a>
   <div class="nav-links">
     <a href="player-guide.html">플레이어 가이드</a>
-    <a class="" href="crossroads-guide.html">크로스로드</a>
+    <a href="crossroads-guide.html">크로스로드</a>
     <a href="world.html">세계관 자료</a>
     <a href="setting.html">설정 정리</a>
     <a href="homebrew.html">홈브류</a>
@@ -21,57 +23,121 @@
   </div>
 </nav>
 
-<main id="top" class="hub-landing hero-visual cover-bg">
-  <section class="landing-hero" aria-labelledby="landing-title">
-    <div class="landing-copy">
-      <div class="campaign-mark" aria-hidden="true">
-        <span></span>
-      </div>
-      <p class="eyebrow">ARROWKEEP CAMPAIGN ARCHIVE</p>
-      <h1 id="landing-title">화살성채</h1>
-      <p class="landing-lede">카이엔 동부 국경지대 캠페인을 위한 플레이어용 자료집입니다. 시작 안내, 세계관, 설정 메모, 홈브류 규칙을 세션 중 바로 찾을 수 있게 묶었습니다.</p>
-      <div class="landing-actions" aria-label="주요 바로가기">
-        <a class="primary-action" href="player-guide.html">플레이어 가이드</a>
-        <a class="secondary-action" href="homebrew.html">홈브류 보기</a>
-      </div>
-    </div>
+<main id="top">
+  <section class="cinema" aria-label="화살성채 캠페인 소개">
+    <div class="stage">
 
-    <nav class="landing-index" aria-label="자료 바로가기">
-      <a href="player-guide.html">
-        <span>01</span>
-        <strong>플레이어 가이드</strong>
-        <em>시작점, 캐릭터 메이킹, 세션 규칙</em>
-      </a>
-      <a href="world.html">
-        <span>02</span>
-        <strong>세계관 자료</strong>
-        <em>세력, 국가, 종족 인식, 판테온</em>
-      </a>
-      <a href="setting.html">
-        <span>03</span>
-        <strong>설정 정리</strong>
-        <em>카이엔 동부 국경지대와 주요 사건</em>
-      </a>
-      <a href="homebrew.html">
-        <span>04</span>
-        <strong>룰/홈브류</strong>
-        <em>클래스, 서브클래스, 피트, 주문</em>
-      </a>
-      <a href="crossroads-guide.html">
-        <span>05</span>
-        <strong>크로스로드 가이드</strong>
-        <em>2부 무대, Lv.5 캐릭터 메이킹</em>
-      </a>
-      <a href="logs/index.html">
-        <span>06</span>
-        <strong>RP 로그</strong>
-        <em>지난 세션 채팅 로그 아카이브</em>
-      </a>
-    </nav>
+      <div class="world" aria-hidden="true">
+        <div class="plate plate-keep"></div>
+        <div class="plate plate-pano"></div>
+        <div class="haze"></div>
+        <div class="fg fg-left"><img src="assets/landing/fg-pines.svg" alt="" width="720" height="1080"></div>
+        <div class="fg fg-right"><img src="assets/landing/fg-pines.svg" alt="" width="720" height="1080"></div>
+        <div class="shade"></div>
+      </div>
+
+      <header class="beat intro" aria-labelledby="landing-title">
+        <div class="intro-copy">
+          <div class="campaign-mark" aria-hidden="true"><span></span></div>
+          <p class="eyebrow">ARROWKEEP CAMPAIGN ARCHIVE</p>
+          <h1 id="landing-title">화살성채</h1>
+          <p class="landing-lede">카이엔 동부 국경지대 캠페인을 위한 플레이어용 자료집입니다. 시작 안내, 세계관, 설정 메모, 홈브류 규칙을 세션 중 바로 찾을 수 있게 묶었습니다.</p>
+          <div class="landing-actions" aria-label="주요 바로가기">
+            <a class="primary-action" href="player-guide.html">플레이어 가이드</a>
+            <a class="secondary-action" href="homebrew.html">홈브류 보기</a>
+          </div>
+          <p class="scroll-hint" aria-hidden="true">SCROLL</p>
+        </div>
+      </header>
+
+      <article class="beat nar nar-a" aria-labelledby="nar-a-title">
+        <div class="nar-inner">
+          <p class="eyebrow">PART I — ARROWKEEP</p>
+          <h2 id="nar-a-title">국경의 모험가들</h2>
+          <p>카이엔 동부, 화살성채. 국경 너머의 위협과 마주하는 모험가 길드의 이야기가 여기서 시작됩니다. 첫 캐릭터는 3레벨에서 출발합니다.</p>
+          <ul class="nar-facts">
+            <li><span>SYSTEM</span><strong>D&amp;D 5e</strong></li>
+            <li><span>START</span><strong>Lv.3</strong></li>
+            <li><span>STAGE</span><strong>카이엔 동부 국경지대</strong></li>
+          </ul>
+          <a class="nar-link" href="player-guide.html">플레이어 가이드 열기</a>
+        </div>
+      </article>
+
+      <article class="beat nar nar-b" aria-labelledby="nar-b-title">
+        <div class="nar-inner">
+          <p class="eyebrow">PART II — CROSSROADS</p>
+          <h2 id="nar-b-title">크로스로드에서 만나요</h2>
+          <p>2부의 무대는 물길과 뭍길이 교차하는 도시 크로스로드. 5레벨 캐릭터로 새 여정을 준비하세요. 지난 세션의 기록은 RP 로그 아카이브에 쌓여 있습니다.</p>
+          <ul class="nar-facts">
+            <li><span>START</span><strong>Lv.5</strong></li>
+            <li><span>GUIDE</span><strong>크로스로드 가이드</strong></li>
+            <li><span>ARCHIVE</span><strong>RP 로그</strong></li>
+          </ul>
+          <a class="nar-link" href="crossroads-guide.html">크로스로드 가이드 열기</a>
+        </div>
+      </article>
+
+      <section class="beat catalog" aria-labelledby="catalog-title">
+        <div class="catalog-inner">
+          <div class="catalog-head">
+            <div>
+              <p class="eyebrow">ARCHIVE INDEX</p>
+              <h2 id="catalog-title">자료 서고</h2>
+            </div>
+            <div class="cat-controls">
+              <button class="cat-prev" type="button" aria-label="이전 자료 보기">←</button>
+              <button class="cat-next" type="button" aria-label="다음 자료 보기">→</button>
+            </div>
+          </div>
+          <ul class="cat-rail" tabindex="0" aria-label="캠페인 자료 목록">
+            <li>
+              <a href="player-guide.html">
+                <img src="assets/landing/card-guide.webp" alt="" width="760" height="428" loading="lazy">
+                <span class="cat-body"><span>01</span><strong>플레이어 가이드</strong><em>시작점, 캐릭터 메이킹, 세션 규칙</em></span>
+              </a>
+            </li>
+            <li>
+              <a href="world.html">
+                <img src="assets/landing/card-world.webp" alt="" width="760" height="428" loading="lazy">
+                <span class="cat-body"><span>02</span><strong>세계관 자료</strong><em>세력, 국가, 종족 인식, 판테온</em></span>
+              </a>
+            </li>
+            <li>
+              <a href="setting.html">
+                <img src="assets/landing/card-setting.webp" alt="" width="760" height="428" loading="lazy">
+                <span class="cat-body"><span>03</span><strong>설정 정리</strong><em>카이엔 동부 국경지대와 주요 사건</em></span>
+              </a>
+            </li>
+            <li>
+              <a href="homebrew.html">
+                <img src="assets/landing/card-homebrew.webp" alt="" width="760" height="428" loading="lazy">
+                <span class="cat-body"><span>04</span><strong>룰/홈브류</strong><em>클래스, 서브클래스, 피트, 주문</em></span>
+              </a>
+            </li>
+            <li>
+              <a href="crossroads-guide.html">
+                <img src="assets/landing/card-crossroads.webp" alt="" width="760" height="507" loading="lazy">
+                <span class="cat-body"><span>05</span><strong>크로스로드 가이드</strong><em>2부 무대, Lv.5 캐릭터 메이킹</em></span>
+              </a>
+            </li>
+            <li>
+              <a href="logs/index.html">
+                <img src="assets/landing/card-logs.webp" alt="" width="760" height="507" loading="lazy">
+                <span class="cat-body"><span>06</span><strong>RP 로그</strong><em>지난 세션 채팅 로그 아카이브</em></span>
+              </a>
+            </li>
+          </ul>
+          <p class="cat-status" role="status" aria-live="polite"></p>
+        </div>
+      </section>
+
+    </div>
   </section>
 </main>
 
 <button id="back-top" class="back-top" type="button" aria-label="맨 위로">↑</button>
+<script src="assets/landing.js"></script>
 <script src="assets/app.js"></script>
 </body>
 </html>
