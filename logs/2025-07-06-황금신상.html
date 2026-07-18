@@ -23,9 +23,9 @@
   @font-face { font-family: 'Pretendard-Regular'; src: local('Pretendard Regular'), local('Pretendard'); }
   .log-body * { font-family: 'Pretendard', 'Pretendard-Regular', sans-serif !important; }
   .log-body .sheet-result span, .log-body .sheet-result * { font-family: 'Fraunces', serif !important; }
-  #img-zoom { position: fixed; top: 64px; left: 12px; width: calc(50vw - 430px); z-index: 99;
-              display: none; pointer-events: none; text-align: center; }
-  #img-zoom img { max-width: 100%; max-height: 82vh; border-radius: 8px;
+  #img-zoom { position: fixed; top: 64px; left: 12px; width: min(240px, calc(50vw - 430px));
+              z-index: 99; display: none; pointer-events: none; text-align: center; }
+  #img-zoom img { max-width: 100%; max-height: 320px; border-radius: 8px;
                   box-shadow: 0 4px 24px rgba(0,0,0,.35); background: #fff; }
   @media (max-width: 1150px) { #img-zoom { display: none !important; } }
 </style>
