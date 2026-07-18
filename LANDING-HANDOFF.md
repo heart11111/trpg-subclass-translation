@@ -1,75 +1,275 @@
-# 랜딩 페이지 후속 작업 지시서 (새 세션용)
+# 화살성채 랜딩 리뉴얼 — 작업 지시서
 
-> 이 문서는 클라우드 세션에서 만든 시네마틱 랜딩을,
-> **ima2(이미지 생성)와 Grok(영상 생성)이 연결된 로컬 세션**에서 이어받아
-> 마무리하기 위한 지시서다. 브랜치: `claude/landing-page-design-i03ffu`
+> **이 문서 하나만 읽으면 바로 착수할 수 있다.** ima2(이미지 생성)와
+> Grok(영상 생성)이 연결된 로컬 세션에서 실행할 것.
+> 필요한 모든 컨텍스트·금지사항·에셋 명세·구현 스펙 전문이 아래에 있다.
 
-## 0. 전제 조건 확인
+---
 
-1. 이 리포를 클론/체크아웃: `git checkout claude/landing-page-design-i03ffu`
-2. ima2 연결 확인 — `D:\TRPG\국경의모험가들` 폴더의 Codex/MCP 설정에 있음.
-   Claude Code라면 `claude mcp add`로 동일 서버를 등록하거나, 해당 폴더에서 세션을 시작.
-3. 미리보기: 리포 루트에서 `python3 -m http.server` → `http://localhost:8000`
+## 1. 미션 (사용자 원 지시)
 
-## 1. 현재 상태 (완료된 것)
+1. 사이트 **랜딩 페이지(index.html) 디자인을 새로 만든다.**
+2. 랜딩에 필요한 **이미지는 전부 ima2로 신규 생성**한다.
+3. 가능하면 **Grok으로 루프 영상**(앰비언트, 반복 재생)을 만들어 히어로에 쓴다.
+4. §7의 **스크롤 시네마틱 마이크로사이트 스펙**의 느낌을 버무린다
+   (스크롤로 하나의 세계를 카메라처럼 통과하는 2.5D 씬).
 
-- `index.html` + `assets/landing.css` + `assets/landing.js`:
-  스크롤 고정 스테이지 1개로 히어로 → 전경 분리+내러티브 A(1부, Lv.3)
-  → 파노라마 전환 → 내러티브 B(2부 크로스로드, Lv.5) → 가로 카탈로그(문서 6종).
-  타임라인 수치는 `landing.js`의 `BEAT` 객체. reduced-motion/no-JS 폴백 있음.
-- 임시 아트: 기존 v2 커버/왈든 파노라마 + 수제 SVG 소나무(`assets/landing/fg-pines.svg`)
-  + 기존 아트에서 뽑은 카드 webp 6장.
-- 데스크톱 8개 스크롤 체크포인트 + 모바일 검증 완료.
+## 2. 프로젝트 컨텍스트
 
-## 2. 해야 할 일 A — ima2로 레이어 아트 교체
+- 리포: `https://github.com/heart11111/trpg-subclass-translation`
+- 배포: GitHub Pages → `https://heart11111.github.io/trpg-subclass-translation/`
+- **작업 브랜치: `claude/landing-page-design-i03ffu`** — 여기에만 커밋/푸시.
+  PR은 사용자가 요청할 때만 생성.
+- 스택: 순수 HTML/CSS/JS 정적 사이트, 빌드 없음.
+  로컬 미리보기: 리포 루트에서 `python3 -m http.server` → `http://localhost:8000`
+- 내용: D&D 5e 캠페인 자료집. 1부 "화살성채"(Lv.3 시작), 2부 "크로스로드"(Lv.5 시작).
+- ima2 연결: `D:\TRPG\국경의모험가들` 폴더의 Codex/MCP 설정에 있음.
+  해당 폴더에서 세션을 열거나 같은 서버를 MCP로 등록해 사용.
 
-스타일 기준: `assets/images/cover-arrowkeep-v2.jpg` (보라/마젠타 밤하늘,
-골드 촛불 포인트, 굵은 외곽선의 챠비 동화풍). 모든 프롬프트에 스타일 참조로 사용.
+## 3. 금지 사항 — 반드시 지킬 것 (오인 방지)
 
-| # | 대상 파일(같은 이름으로 저장하면 코드 수정 불필요) | 규격 | 프롬프트 (영문 권장) |
+- **기존 아트 재사용 금지.** `assets/images/`의 보라색 챠비풍 이미지 전부
+  (cover-arrowkeep*, guide-*, world-map*, setting-guild*, homebrew-tome*,
+  backgrounds-v2, races-v2, subclasses-v2 등)와 `assets/crossroads/`의 실사풍
+  이미지를 **랜딩에 쓰지 않는다.** 사용자가 명시적으로 거부했다.
+  랜딩 비주얼은 100% ima2 신규 생성.
+- **이전 랜딩 레이아웃 재사용 금지.** 구버전 랜딩(정적 히어로+번호 목록)과
+  git 히스토리에 있는 폐기된 시네마틱 시안(커밋 `a55a138`, 기존 아트 재활용본)
+  모두 사용자 불승인. 그 구도·아트·비주얼을 가져오지 말 것.
+  (단, 해당 커밋의 **스크롤 엔진 JS 로직**을 코드 참고용으로 보는 것은 허용.)
+- **Magnific 등 외부 이미지 생성 서비스 사용 금지.** 이미지는 ima2, 영상은 Grok.
+- 현재 `index.html`은 임시 텍스트 허브다. 자유롭게 덮어쓴다.
+- 랜딩 외의 문서 페이지들(player-guide 등)은 건드리지 않는다.
+
+## 4. 콘텐츠 실데이터 (카피에 그대로 사용)
+
+- 사이트명: **화살성채** / 아이브로우: `ARROWKEEP CAMPAIGN ARCHIVE`
+- 소개문(lede): "카이엔 동부 국경지대 캠페인을 위한 플레이어용 자료집입니다.
+  시작 안내, 세계관, 설정 메모, 홈브류 규칙을 세션 중 바로 찾을 수 있게 묶었습니다."
+- 캠페인 팩트: 시스템 D&D 5e · 1부 화살성채 Lv.3 시작 · 2부 크로스로드 Lv.5 시작
+  · 무대 카이엔 동부 국경지대
+- 내러티브 비트 제안:
+  - A(1부): "국경의 모험가들" — 카이엔 동부 화살성채, 국경 너머의 위협과
+    마주하는 모험가 길드. CTA → `player-guide.html`
+  - B(2부): "크로스로드" — 물길과 뭍길이 교차하는 도시, Lv.5 새 여정.
+    CTA → `crossroads-guide.html`
+- 최종 카탈로그(가로 카드 레일) 6종:
+
+| # | 링크 | 제목 | 설명 |
 |---|---|---|---|
-| 1 | `assets/images/cover-arrowkeep-v2.jpg` 대체 또는 `assets/landing/hero-keep.jpg`* | 2400×1350 16:9 | Full establishing shot: arrow-shaped dark stone fortress "Arrowkeep" with candle-lit windows on a rocky cliff at center-right, candlelit stone stair path, pine forests and moonlit river valley below, large pink crescent moon upper left among swirling violet clouds, one shooting star. Keep lower-left third calm for overlay text. No text, no characters. |
-| 2 | `assets/landing/panorama-walden.webp` 대체(크로스로드 버전 권장) | 1920×1080 | Panoramic view of a river-crossing harbor town "Crossroads" where waterways and roads meet: stilt houses, floating market, warm window lights, dusk violet sky. Same chibi storybook style. No text. |
-| 3 | `assets/landing/fg-pines.png` (신규, 투명) | 1440×2160, 좌측 클러스터, **하단·좌측은 완전히 솔리드** | Foreground occluder: cluster of very dark silhouetted chunky pine trees and mossy rocks hugging the left edge and bottom, near-black deep purple with subtle pink moonlit rim light, few gold fireflies, transparent background elsewhere. |
-| 4 | `assets/landing/card-crossroads.webp` 대체 | 760×428 | Crossroads harbor town gate seen from the road, chibi storybook style (기존 카드는 실사풍이라 톤이 튐). |
-| 5 | `assets/landing/card-logs.webp` 대체 | 760×428 | Cozy tavern interior, adventurers sharing stories over a session journal, chibi storybook style. |
+| 01 | `player-guide.html` | 플레이어 가이드 | 시작점, 캐릭터 메이킹, 세션 규칙 |
+| 02 | `world.html` | 세계관 자료 | 세력, 국가, 종족 인식, 판테온 |
+| 03 | `setting.html` | 설정 정리 | 카이엔 동부 국경지대와 주요 사건 |
+| 04 | `homebrew.html` | 룰/홈브류 | 클래스, 서브클래스, 피트, 주문 |
+| 05 | `crossroads-guide.html` | 크로스로드 가이드 | 2부 무대, Lv.5 캐릭터 메이킹 |
+| 06 | `logs/index.html` | RP 로그 | 지난 세션 채팅 로그 아카이브 |
 
-\* 새 파일명을 쓰면 `assets/landing.css`의 `.plate-keep`/`.plate-pano` URL과
-`index.html` 카드 경로를 같이 수정.
+- 상단 내비게이션: 위 6종 + `credits.html` (크레딧)
 
-3번(투명 PNG)을 넣을 때는 CSS에서 `.fg img`가 `object-fit: cover`이므로
-비율이 다르면 `object-position: left bottom` 유지 확인.
-오른쪽은 CSS가 `scaleX(-1)`로 미러링하므로 좌측 기준 하나만 만들면 된다.
+## 5. 에셋 생성 (ima2) — 레이어 계약
 
-참고: 이전 세션에서 Magnific 경유 GPT 2로 생성한 유사 레이어 5장(히어로 합성컷,
-하늘 플레이트, 중경 계곡 마을, 성채 단독, 전경 나무 프레임)이 사용자 Magnific
-갤러리에 남아 있음. 마음에 들면 내려받아 위 파일명으로 써도 된다.
+**아트 디렉션은 새로 잡는다** (기존 보라 챠비풍 모방 금지). 착수 전에 사용자에게
+방향 1회 컨펌 권장 — 예: ① 회화적 다크 판타지(유화 텍스처, 촛불 골드),
+② 잉크+수채 지도풍, ③ 픽셀/도트 레트로. 컨펌 불가 시 ①로 진행.
+모든 레이어는 **같은 카메라·원근·광원·색보정·마스터 비율(16:9)** 을 공유해야 하며,
+모션에 노출될 가장자리는 10–20% 블리드를 포함한다. 텍스트 금지, 알파는 헤일로 없이.
 
-## 3. 해야 할 일 B — Grok 루프 영상 (선택)
+| 역할 | 파일 | 규격 | 내용 (프롬프트 뼈대 — 확정한 아트 디렉션 문구를 덧붙여 사용) |
+|---|---|---|---|
+| 00 하늘 플레이트 | `assets/landing/00-sky.webp` | 2560×1440 불투명 | Night sky only, no ground/horizon: layered clouds, crescent moon upper left, stars, one shooting star. Full-bleed background plate for a layered parallax scene. No text. |
+| 10 원경 | `assets/landing/10-ridge.png` | 2560×1440 투명 상단 | Distant border-mountain ridgeline with tiny pines, silhouette band occupying bottom 40%, transparent above, moonlit rim light. Same horizon as other layers. |
+| 20 중경 | `assets/landing/20-valley.png` | 2560×1440 투명 상단 | Midground river valley of the eastern Kaien borderlands: forested hills, winding moonlit river, small village lights, occupying bottom 55%, transparent above. |
+| 30 히어로 | `assets/landing/30-keep.png` | 2048×2048 투명 | Isolated arrow-shaped border fortress "Arrowkeep" on a rocky cliff, candle-lit windows, banners; generous empty canvas margin around for push-in zoom; bottom-anchored. |
+| 40 전경 좌 | `assets/landing/40-fg-left.png` | 1440×2160 투명, 좌·하단 솔리드 | Very dark foreground cluster (pines/rocks/gate edge) hugging left edge and bottom, subtle rim light; must be fully solid along left+bottom so nothing shows through. |
+| 41 전경 우 | `assets/landing/41-fg-right.png` | 1440×2160 투명, 우·하단 솔리드 | Mirror-composition counterpart of 40 (generate separately for variation). |
+| 50 프레임(선택) | `assets/landing/50-frame.png` | 2560×1440 투명 중앙 | Optional portal/arch edge frame (gate stones, hanging banner corners). Empty center. |
+| 카드 6장 | `assets/landing/card-01..06.webp` | 각 1520×856 | 표 §4의 각 문서 주제를 같은 아트 디렉션으로. (01 캐릭터 시트와 주사위가 있는 길드 테이블 / 02 국경 지도 / 03 의뢰 게시판 / 04 마법서와 주사위 / 05 크로스로드 항구도시 / 06 선술집의 기록장) |
+| 파노라마 | `assets/landing/60-panorama.webp` | 2560×1440 불투명 | Clean panoramic vista for the mid-scroll reveal: the borderlands at dawn 또는 크로스로드 도시 전경 — 히어로 씬과 같은 세계, 다른 시점. |
 
-- 목적: 히어로 배경에 생동감. **스크롤 타임라인 대체가 아니라 앰비언트 레이어.**
-- 스펙: 16:9, 720p+, 10–15초, 무한루프(시작·끝 구도 동일), mp4(h264) + 가능하면 webm.
-- 프롬프트: Static locked-off camera. Seamless ambient loop of the night-sky
-  castle illustration: clouds drift slowly left, stars twinkle, moon glow pulses,
-  one shooting star. Style/composition identical to start frame; clouds return
-  to start position by the final second. No new objects, no text.
-- 통합: `index.html`의 `.plate-keep` 바로 앞에
-  `<video class="plate plate-video" autoplay muted loop playsinline poster="...">`
-  추가, CSS는 `.plate-keep`과 동일 transform 변수 사용 + `prefers-reduced-motion`
-  및 `(max-width: 640px)`에서는 `display:none` (포스터 이미지로 대체).
-- 저장: `assets/landing/hero-loop.mp4` (5MB 이하 목표).
+## 6. Grok 루프 영상 (선택이지만 권장)
 
-## 4. 검증 (필수)
+- 용도: 히어로 배경 앰비언트. **스크롤 타임라인 대체 금지** (§7 스펙 준수).
+- 스펙: 16:9, 720p 이상, 10–15초, **무한루프**(시작=끝 구도), mp4(h264) ≤5MB.
+  파일: `assets/landing/hero-loop.mp4`, 포스터는 00-sky.webp.
+- 프롬프트: Static locked-off camera. Seamless ambient loop of the night sky
+  plate: clouds drift slowly, stars twinkle, moon glow gently pulses, one
+  shooting star; composition/style identical to the start frame; clouds return
+  to their starting position by the final second. No new objects, no text.
+- 통합: 00 플레이트 자리에 `<video autoplay muted loop playsinline poster=…>`.
+  `prefers-reduced-motion` 및 모바일(≤640px)에서는 영상 대신 00-sky.webp.
 
-1. `python3 -m http.server` 후 데스크톱 1440×900에서
-   p = 0 / 0.18 / 0.27 / 0.44 / 0.58 / 0.74 / 0.9 / 1.0 스크롤 체크포인트 확인
-   (스크롤량 = 섹션 top + `--travel` × p). 구멍·잘림·텍스트 충돌 없어야 함.
-2. 역방향 스크롤 시 모든 상태가 깨끗하게 되돌아가는지.
-3. 모바일 390×844, 그리고 OS 모션 축소 모드에서 정적 적층 폴백 확인.
-4. 콘솔 에러 0 (Google Fonts 차단 환경 제외).
+## 7. 구현 스펙 (전문 — 이 느낌으로 구현할 것)
 
-## 5. 마무리
+PROJECT INPUTS는 다음으로 채운다:
 
-- 같은 브랜치 `claude/landing-page-design-i03ffu`에 커밋, `git push -u origin`.
-- 커밋 메시지 예: `landing: ima2 레이어 아트 적용` / `landing: 히어로 루프 영상 추가`
-- PR은 사용자가 요청할 때만 생성.
+- Project name: Arrowkeep Landing (화살성채 캠페인 자료집 랜딩)
+- Subject: D&D 5e 캠페인 "화살성채" — 카이엔 동부 국경지대의 요새와 모험가 길드
+- Primary message: 세션 중 바로 꺼내 쓰는 캠페인 자료집 — 1부 화살성채, 2부 크로스로드
+- Audience: 캠페인 참여 플레이어 (데스크톱+모바일)
+- Visual direction: §5에서 확정한 새 아트 디렉션 (기존 아트 모방 금지)
+- Required narrative beats: §4의 A(1부), B(2부)
+- Final interaction/CTA: §4의 6종 문서 카드 가로 레일
+- Asset directory: `assets/landing/` (§5 명명 규칙)
+- Preferred implementation: 순수(vanilla) HTML/CSS/JS, 프레임워크·라이브러리 금지
+
+이하 스펙 원문:
+
+```
+You are a senior creative frontend engineer and motion systems designer.
+Build a production-quality scroll-driven cinematic microsite from the supplied
+brief, copy, visual references, and layered image assets.
+
+CORE EXPERIENCE
+Create one continuous 2.5D cinematic scene controlled by vertical scrolling.
+Do not build a conventional stack of unrelated full-screen sections. Do not use
+a prerecorded video as the visual timeline. Use one long scroll container and
+one pinned or sticky viewport-height stage. Compose aligned depth layers inside
+the stage and map scroll progress to transforms, opacity, blur, brightness,
+saturation, masks, and narrative text.
+
+The experience should feel like a camera moving through one coherent world:
+1. Establishing hero composition.
+2. Slow push-in while the opening title and copy leave.
+3. A foreground object opens, separates, or moves around the viewer.
+4. A focused narrative panel appears inside the newly revealed negative space.
+5. The foreground exits and reveals a clean panoramic scene.
+6. A second narrative beat appears over a subtly blurred or tinted background.
+7. The world returns to focus.
+8. A horizontal catalog / card rail enters over the same scene.
+9. The final state remains interactive.
+
+FIRST: INSPECT, THEN IMPLEMENT
+- Inspect the repository stack, scripts, conventions, and existing user changes.
+- Inspect every supplied image: dimensions, alpha, bounding box, intended depth,
+  anchor point, and role (background plate / midground / hero / occluder / frame).
+- Reuse the existing stack; do not add frameworks or animation libraries.
+- Preserve unrelated work. If an asset is missing, create a clearly named
+  placeholder layer, continue, and list it in the final handoff.
+
+ART DIRECTION
+- Large editorial composition, calm pacing, restrained typography, one dominant
+  visual idea. Minimal navigation and copy.
+- Refined display serif for major headlines, readable sans serif for UI text.
+- All text/nav/buttons/cards as semantic HTML; never bake UI or copy into images.
+- No generic gradient-heavy startup aesthetics, excessive glassmorphism, neon
+  glow, random floating objects, or motion that does not reinforce depth.
+- Explicit design tokens for ink, paper, background, tint, spacing, radii,
+  shadows, and type scale.
+
+ASSET CONTRACT (roles 00/10/20/30/40/41/50 + overlays)
+- All layers share one camera, perspective, light direction, color grade, and
+  master aspect ratio; 10–20% bleed where motion may expose an edge; clean
+  straight alpha without halos; stable bottom/center anchors; no text;
+  web-optimized; width/height attributes or aspect-ratio reservation.
+- Fix small misalignments in CSS; report assets that truly need recompositing.
+
+PAGE ARCHITECTURE
+main > section.cinematic-scroll > div.cinematic-stage
+  > div.world (background layers, midground group, hero+foreground, tint)
+  + intro copy + narrative panel A + narrative panel B + final catalog.
+- Virtual timeline typically 3,600–5,000 CSS px on desktop.
+- Stage: position sticky; top 0; 100svh/100dvh with fallback; overflow clip;
+  isolation isolate.
+- Documented z-index bands: 0–9 world, 10–19 tint, 20–29 copy, 30–39 nav, 40+.
+
+SCROLL ENGINE
+- Local scroll distance from the cinematic section, clamped; normalized p 0..1.
+- Scene boundaries in one readable configuration object; helpers clamp/lerp/
+  smoothstep/rangeProgress/segmentInOut.
+- requestAnimationFrame rendering; listeners only request frames; passive where
+  possible; smoothed visual playhead (disabled under reduced motion); pointer
+  input smoothed separately; stop frames once converged.
+- Write a small set of CSS custom properties; CSS owns final transforms.
+- transform/opacity for most motion; no synchronous layout in the frame loop;
+  cache geometry, recompute on resize/asset load.
+
+Suggested normalized timeline (tune, don't treat as magic numbers):
+0.00–0.03 hero hold · 0.03–0.18 title/intro exit · 0.15–0.25 foreground split
+and push-in · 0.25–0.35 narrative A hold · 0.35–0.44 A/foreground exit ·
+0.44–0.48 clean panorama hold · 0.48–0.58 narrative B enter · 0.58–0.69 B hold
+· 0.69–0.74 B exit, refocus · 0.75–0.96 catalog enters horizontally ·
+0.91–1.00 controls appear, final settle.
+
+DEPTH AND MOTION RULES
+- Background motion smallest, midground slightly larger, hero/foreground
+  largest. Pointer parallax subtle (6–24px), opposing directions far vs near.
+- Deliberate transform-origin per layer; never expose an empty canvas edge.
+- Blur only for focus transitions, minimum needed for legibility, with cheap
+  tint/opacity fallback for low-power devices. Composition must not drift.
+
+NARRATIVE TEXT
+- Each panel: clear headline, concise body, optional facts/CTA.
+- Animate text independently; opacity + small translation only.
+- Sufficient contrast; controlled line lengths; fluid type via clamp().
+- No simultaneous panels unless intentional.
+
+FINAL CATALOG
+- Horizontal card rail: prev/next controls, mouse + touch drag + keyboard,
+  visible focus states, semantic links; if infinite looping, hide the seam,
+  aria-hidden clones out of tab order; announce position accessibly; no fake
+  clickability; compensate scale if the rail lives inside a scaled group.
+
+RESPONSIVE (test 1440×900, 1280×720, 1024×768, 768×1024, 390×844)
+- svh/dvh-aware sizing, safe-area padding; preserve the main subject; smaller
+  headlines; reduce/disable pointer motion for coarse pointers; shorten travel
+  if exhausting; cards swipeable; no horizontal overflow; nav never covers copy.
+
+ACCESSIBILITY AND MOTION SAFETY
+- Semantic landmarks/headings/buttons/lists; empty alt for decorative images.
+- All controls keyboard reachable with visible focus.
+- Genuine prefers-reduced-motion mode: no inertial smoothing or parallax, no
+  aggressive zoom/blur/lateral travel; static hero + normal-flow content with
+  everything available. Contrast OK at 200% zoom. Never trap scrolling.
+
+LOADING AND PERFORMANCE
+- Preload only critical hero layers + above-the-fold font; readiness barrier
+  (image.decode) before revealing the stage; lazy-load late-timeline assets;
+  WebP/AVIF for large layers, PNG only where alpha demands; no 4K masters to
+  every device; no layout shifts; clean console; don't animate offscreen.
+
+INTERACTION INTEGRITY
+- Every nav link targets a real section/timeline marker (computed scroll,
+  reduced-motion-safe). Every visible button works. No placeholder labels,
+  dead controls, or fake switchers in the finished version.
+
+IMPLEMENTATION QUALITY
+- Small descriptive modules; timeline constants / selectors / state /
+  measurement / render calc / event wiring separated; comment non-obvious
+  coordinate compensation; data-driven scene configuration; content editable
+  without touching animation math; no GSAP/Lenis/Three.js.
+
+QA CHECKPOINTS — inspect p = 0.00 / 0.18 / 0.27 / 0.44 / 0.58 / 0.74 / 0.90 /
+1.00: no holes or unpainted edges, no layer-order accidents, no text
+collisions, no opacity pops, no stretching, no critical cropping, no loading
+flashes, no horizontal overflow. Test both scroll directions — the timeline
+must be fully reversible and deterministic.
+
+DELIVERABLES
+1. Working source. 2. Short README with run command. 3. Asset manifest (role,
+dimensions, anchor, depth per layer). 4. Timeline map. 5. Remaining-work notes.
+6. Verification results (desktop/tablet/mobile/keyboard/reduced-motion/console).
+
+DEFINITION OF DONE
+Polished editorial first screen; scrolling feels like camera choreography
+through one world; every beat has enter/hold/exit; reversing scroll is clean;
+catalog genuinely usable; mobile & reduced-motion preserve all content; assets
+load without popping; no dead controls; smooth on a normal laptop; another
+developer can retime or replace art without reverse-engineering.
+
+Do not stop at a rough scaffold. Implement, run it, inspect every checkpoint,
+fix visible defects, and provide a concise handoff.
+```
+
+## 8. 검증 (필수)
+
+1. `python3 -m http.server` 기동 후 §7의 QA 체크포인트 8곳을 실제 브라우저로
+   확인(가능하면 스크린샷). 스크롤량 = 섹션 top + travel × p.
+2. 역스크롤 복원, 모바일 390×844, reduced-motion 폴백, 콘솔 에러 0 확인.
+3. 완료 기준은 §7의 DEFINITION OF DONE.
+
+## 9. 마무리 (git)
+
+- 브랜치 `claude/landing-page-design-i03ffu`에 커밋 (예: `landing: ima2 아트
+  시네마틱 랜딩 구현`), `git push -u origin claude/landing-page-design-i03ffu`.
+- 이 지시서(LANDING-HANDOFF.md)는 작업 완료 후 결과 요약으로 갱신하거나 삭제.
+- PR은 사용자가 요청할 때만.
