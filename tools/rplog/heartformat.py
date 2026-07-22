@@ -336,13 +336,25 @@ def chatcard(card_item):
             card_data.append(turn_text)
             return card_data
 
-        # 이미지 메시지
-        for img in message_div.find_all('img'):
-            src = img.get('src')
-            if src:
-                card_data.append(title_text)
-                card_data.append(f'<img src="{src}" width="300">')
-                return card_data
+        # 이미지 메시지 — 이미지에 딸린 설명 텍스트(장면 묘사, 등장 캐릭터 등)를
+        # 버리지 않고 함께 보존한다. "새 창에서 이미지 열기" 같은 중복 링크
+        # 문단(created-gallery-image-open)은 제외.
+        imgs = [img.get('src') for img in message_div.find_all('img') if img.get('src')]
+        if imgs:
+            paragraphs = []
+            for p in message_div.find_all('p'):
+                classes = p.get('class') or []
+                if 'created-gallery-image-open' in classes:
+                    continue
+                text = p.get_text(strip=True)
+                if text:
+                    paragraphs.append(text)
+            text_part = '<br>'.join(paragraphs)
+            img_part = ''.join(f'<img src="{src}" width="300">' for src in imgs)
+            combined = (text_part + '<br>' if text_part else '') + img_part
+            card_data.append(title_text)
+            card_data.append(combined)
+            return card_data
 
     message_text = message_div.get_text(strip=True, separator=' ') if message_div else ''
     if title_text and message_text:
