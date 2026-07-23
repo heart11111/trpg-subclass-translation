@@ -20,6 +20,13 @@
                overflow-wrap: break-word; }
   .log-body img { max-width: 100%; height: auto; }
   .log-body .message-content img { max-width: min(100%, 260px); }
+  .log-body .scene-card { margin: 6px 0 2px; max-width: 340px; border-radius: 10px;
+                           overflow: hidden; background: #f7f5ef; border: 1px solid #e6e0d2;
+                           box-shadow: 0 1px 4px rgba(0,0,0,.06); }
+  .log-body .scene-card .scene-img { display: block; width: 100%; max-width: 100%;
+                                      margin: 0; border-radius: 0; }
+  .log-body .scene-caption { padding: 10px 14px 12px; font-size: 13.5px; line-height: 1.65;
+                              color: #4a4438; }
   @font-face { font-family: 'Pretendard-Regular'; src: local('Pretendard Regular'), local('Pretendard'); }
   .log-body * { font-family: 'Pretendard', 'Pretendard-Regular', sans-serif !important; }
   .log-body .sheet-result span, .log-body .sheet-result * { font-family: 'Fraunces', serif !important; }
@@ -613,7 +620,7 @@
                     <img style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; width: 28px; height: 28px; object-fit: cover; border-radius: 0%;" src="assets/15a4206ba6d4.webp" />
                 </div>
                 <span style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; font-weight: bold; position: relative; display: inline-block; left: -5px; vertical-align: top;" class="by">아르셀리아:</span>
-                <img src="assets/3fb0d73b65cc.webp" width="300"></div><div class="message general" style="font-family: Pretendard-Regular, sans-serif; padding: 0px 5px 6px 45px; margin: 0px; border: none; outline: none; position: relative; line-height: 1.25em; color: #3f3f3f; font-size: 16px;">
+                Spell Sniper General Feat 다음의 이점을 얻습니다. 능력치 증가. 지능, 지혜, 또는 매력 능력치를 1 올립니다. 최대 20까지 올릴 수 있습니다. 엄폐 무시. 주문의 공격 굴림은 Half Cover 및 Three-Quarters Cover 를 무시합니다. 근접 시전. 적으로부터 5피트 이내에 있어도 주문의 공격 굴림에 불유리함이 부여되지 않습니다. 사거리 증가. 사거리가 최소 10피트이고 공격 굴림이 필요한 주문을 시전할 때, 주문의 사거리를 60피트 늘릴 수 있습니다. Spellcasting or Pact Magic Feature</div><div class="message general" style="font-family: Pretendard-Regular, sans-serif; padding: 0px 5px 6px 45px; margin: 0px; border: none; outline: none; position: relative; line-height: 1.25em; color: #3f3f3f; font-size: 16px;">
                 <div class="spacer" style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px -5px 8px -45px; border: none; outline: none; background-color: #e1e1e1; height: 1px;">&nbsp;</div>
                 <div class="avatar" style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; position: absolute; top: 0.2rem; left: 5px; width: 28px; height: 28px; align-items: stretch;" aria-hidden="true">
                     <img style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; width: 28px; height: 28px; object-fit: cover; border-radius: 0%;" src="assets/9c284bb302f4.webp" />
@@ -2541,7 +2548,7 @@
                     <img style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; width: 28px; height: 28px; object-fit: cover; border-radius: 0%;" src="assets/a3787f65b7c5.webp" />
                 </div>
                 <span style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; font-weight: bold; position: relative; display: inline-block; left: -5px; vertical-align: top;" class="by">Beholder Zombie:</span>
-                <img src="assets/c542d9fb5375.webp" width="300"></div><div class="message general" style="font-family: Pretendard-Regular, sans-serif; padding: 0px 5px 6px 45px; margin: 0px; border: none; outline: none; position: relative; line-height: 1.25em; color: #3f3f3f; font-size: 16px;">
+                Eye Rays 특성 beholder zombie 은(는) 자신으로부터 300피트 이내에서 볼 수 있는 대상에게 다음 마법 광선 중 하나를 무작위로 발사합니다( 1d4 를 굴림; 비홀더가 이번 턴에 이미 사용한 광선이라면 다시 굴림): Eye Rays 1: Paralyzing Ray. 건강 내성 굴림: DC 14 . 실패: 대상은 Paralyzed 상태가 되며 각 턴 종료 시 내성 굴림을 반복하여 성공하면 효과가 종료됩니다. 1 minute 후에는 자동으로 성공합니다. 2: Fear Ray. 지혜 내성 굴림: DC 14 . 실패: 13 ( 3d8 ) Psychic 피해, 그리고 대상은 자신의 다음 턴 종료 시까지 Frightened 상태가 됩니다. 성공: 절반의 피해만. 3: Enervation Ray. 건강 내성 굴림: DC 14 . 실패: 10 ( 3d6 ) Poison 피해, 그리고 대상은 자신의 다음 턴 종료 시까지 Poisoned 상태가 됩니다. 중독된 동안, 대상은 생명점을 회복할 수 없습니다. 성공: 절반의 피해만. 4: Disintegration Ray. 민첩 내성 굴림: DC 14 . 실패: 27 ( 5d10 ) Force 피해. 대상이 비마법 물체이거나 마법 역장의 창조물이라면, 그것의 10 ft Cube 이(가) 먼지로 분해됩니다. 성공: Half 피해. 실패 또는 성공: 대상이 크리처이고 이 피해로 0 생명점이 되면, 먼지로 분해됩니다. Action 즉시 120ft 1 creatures</div><div class="message general" style="font-family: Pretendard-Regular, sans-serif; padding: 0px 5px 6px 45px; margin: 0px; border: none; outline: none; position: relative; line-height: 1.25em; color: #3f3f3f; font-size: 16px;">
         <div class="spacer" style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px -5px 8px -45px; border: none; outline: none; background-color: #e1e1e1; height: 1px;">&nbsp;</div>
         <div class="avatar" style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; position: absolute; top: 0.2rem; left: 5px; width: 28px; height: 28px; align-items: stretch;" aria-hidden="true">
             <img style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; width: 28px; height: 28px; object-fit: cover; border-radius: 0%;" src="assets/346184502f0a.webp" />
@@ -3049,7 +3056,7 @@
                     <img style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; width: 28px; height: 28px; object-fit: cover; border-radius: 0%;" src="assets/f15755b5b0ac.webp" />
                 </div>
                 <span style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; font-weight: bold; position: relative; display: inline-block; left: -5px; vertical-align: top;" class="by">Gamemaster:</span>
-                <img src="assets/2b25bd3e628a.webp" width="300"></div><div class="message general" style="font-family: Pretendard-Regular, sans-serif; padding: 0px 5px 6px 45px; margin: 0px; border: none; outline: none; position: relative; line-height: 1.25em; color: #3f3f3f; font-size: 16px;">
+                Moonbeam 2레벨 • 방출계 범위 내의 한 지점을 중심으로 반경 5피트, 높이 40피트의 원통에 창백한 은빛 빛 줄기가 내려비칩니다. 주문이 끝나기 전에 원통 내부는 희미한 빛으로 가득 차며, 이후 턴에 마법 행동을 취해 원통을 최대 60피트 이동시킬 수 있습니다. 원통이 나타날 때 그 안의 모든 크리쳐은 건강 내성 굴림을 합니다. 내성에 실패하면 2d10 광휘 피해를 받으며, 크리쳐이 형태 변환 중이라면(예: Polymorph 주문의 효과로) 본래 형태로 되돌아가고 원통을 벗어날 때까지 형태 변환을 할 수 없습니다. 내성에 성공하면 절반의 피해만 받습니다. 주문 구역이 크리쳐의 공간으로 이동하거나, 크리쳐이 주문 구역에 진입하거나, 그곳에서 턴을 마칠 때도 이 내성 굴림을 해야 합니다. 크리쳐은 턴당 한 번만 내성 굴림을 합니다. 고레벨 주문 슬롯 사용 시. 2레벨 초과 주문 슬롯을 사용할 때마다 피해가 1d10씩 증가합니다. 물질 a moonseed leaf Concentration 음, 동 및 물 Action 1분 120ft 5ft cylinders</div><div class="message general" style="font-family: Pretendard-Regular, sans-serif; padding: 0px 5px 6px 45px; margin: 0px; border: none; outline: none; position: relative; line-height: 1.25em; color: #3f3f3f; font-size: 16px;">
                 <div class="spacer" style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px -5px 8px -45px; border: none; outline: none; background-color: #e1e1e1; height: 1px;">&nbsp;</div>
                 <div class="avatar" style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; position: absolute; top: 0.2rem; left: 5px; width: 28px; height: 28px; align-items: stretch;" aria-hidden="true">
                     <img style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; width: 28px; height: 28px; object-fit: cover; border-radius: 0%;" src="assets/c7c24ae6deed.webp" />
@@ -4559,7 +4566,7 @@
                     <img style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; width: 28px; height: 28px; object-fit: cover; border-radius: 0%;" src="assets/f15755b5b0ac.webp" />
                 </div>
                 <span style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; font-weight: bold; position: relative; display: inline-block; left: -5px; vertical-align: top;" class="by">Gamemaster:</span>
-                <img src="assets/0a3b035f1212.webp" width="300"></div><div class="message general" style="font-family: Pretendard-Regular, sans-serif; padding: 0px 5px 6px 45px; margin: 0px; border: none; outline: none; position: relative; line-height: 1.25em; color: #3f3f3f; font-size: 16px;">
+                <div class="scene-card"><img class="scene-img" src="assets/0a3b035f1212.webp"></div></div><div class="message general" style="font-family: Pretendard-Regular, sans-serif; padding: 0px 5px 6px 45px; margin: 0px; border: none; outline: none; position: relative; line-height: 1.25em; color: #3f3f3f; font-size: 16px;">
                 <div class="spacer" style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px -5px 8px -45px; border: none; outline: none; background-color: #e1e1e1; height: 1px;">&nbsp;</div>
                 <div class="avatar" style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; position: absolute; top: 0.2rem; left: 5px; width: 28px; height: 28px; align-items: stretch;" aria-hidden="true">
                     <img style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; width: 28px; height: 28px; object-fit: cover; border-radius: 0%;" src="assets/c7c24ae6deed.webp" />
@@ -4754,7 +4761,7 @@
                 그러면 의외로 진시야 같은 것으로는 아무것도 파악할 수 없습니다 오가닉인듯하군요</div><div class="message general" style="font-family: Pretendard-Regular, sans-serif; padding: 0px 5px 6px 45px; margin: 0px; border: none; outline: none; position: relative; line-height: 1.25em; color: #3f3f3f; font-size: 16px;">할다론은 근처에서 기척을 느낍니다</div><div class="message general" style="font-family: Pretendard-Regular, sans-serif; padding: 0px 5px 6px 45px; margin: 0px; border: none; outline: none; position: relative; line-height: 1.25em; color: #3f3f3f; font-size: 16px;">
                 <div class="spacer" style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px -5px 8px -45px; border: none; outline: none; background-color: #e1e1e1; height: 1px;">&nbsp;</div>
                 <div class="avatar" style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; position: absolute; top: 0.2rem; left: 5px; width: 28px; height: 28px; align-items: stretch;" aria-hidden="true">
-                    <img style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; width: 28px; height: 28px; object-fit: cover; border-radius: 0%;" src="assets/1d2c8ddcb79a.webp" />
+                    &nbsp;
                 </div>
                 <span style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; font-weight: bold; position: relative; display: inline-block; left: -5px; vertical-align: top;" class="by">Cloak:</span>
                 클록을 써서 자신을 감춘 누군가가 숲 사이에 숨어있는걸 목격합니다</div><div class="message general" style="font-family: Pretendard-Regular, sans-serif; padding: 0px 5px 6px 45px; margin: 0px; border: none; outline: none; position: relative; line-height: 1.25em; color: #3f3f3f; font-size: 16px;">
@@ -4958,7 +4965,7 @@
     </div><div class="message general" style="font-family: Pretendard-Regular, sans-serif; padding: 0px 5px 6px 45px; margin: 0px; border: none; outline: none; position: relative; line-height: 1.25em; color: #3f3f3f; font-size: 16px;">
         <div class="spacer" style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px -5px 8px -45px; border: none; outline: none; background-color: #e1e1e1; height: 1px;">&nbsp;</div>
         <div class="avatar" style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; position: absolute; top: 0.2rem; left: 5px; width: 28px; height: 28px; align-items: stretch;" aria-hidden="true">
-            <img style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; width: 28px; height: 28px; object-fit: cover; border-radius: 0%;" src="assets/1d2c8ddcb79a.webp" />
+            &nbsp;
         </div>
         <span style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; font-weight: bold; position: relative; display: inline-block; left: -5px; vertical-align: top;" class="by">​Cloak</span>
         
@@ -5172,7 +5179,7 @@
                 (아놔</div><div class="message general" style="font-family: Pretendard-Regular, sans-serif; padding: 0px 5px 6px 45px; margin: 0px; border: none; outline: none; position: relative; line-height: 1.25em; color: #3f3f3f; font-size: 16px;">
                 <div class="spacer" style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px -5px 8px -45px; border: none; outline: none; background-color: #e1e1e1; height: 1px;">&nbsp;</div>
                 <div class="avatar" style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; position: absolute; top: 0.2rem; left: 5px; width: 28px; height: 28px; align-items: stretch;" aria-hidden="true">
-                    <img style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; width: 28px; height: 28px; object-fit: cover; border-radius: 0%;" src="assets/1d2c8ddcb79a.webp" />
+                    &nbsp;
                 </div>
                 <span style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; font-weight: bold; position: relative; display: inline-block; left: -5px; vertical-align: top;" class="by">Cloak:</span>
                 (딱히 저항이 있는건 아님</div><div class="message general" style="font-family: Pretendard-Regular, sans-serif; padding: 0px 5px 6px 45px; margin: 0px; border: none; outline: none; position: relative; line-height: 1.25em; color: #3f3f3f; font-size: 16px;">
@@ -5204,7 +5211,7 @@
             <div class="message general" style="font-family: Pretendard-Regular, sans-serif; padding: 0px 5px 6px 45px; margin: 0px; border: none; outline: none; position: relative; line-height: 1.25em; color: #3f3f3f; font-size: 16px;">
         <div class="spacer" style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px -5px 8px -45px; border: none; outline: none; background-color: #e1e1e1; height: 1px;">&nbsp;</div>
         <div class="avatar" style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; position: absolute; top: 0.2rem; left: 5px; width: 28px; height: 28px; align-items: stretch;" aria-hidden="true">
-            <img style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; width: 28px; height: 28px; object-fit: cover; border-radius: 0%;" src="assets/1d2c8ddcb79a.webp" />
+            &nbsp;
         </div>
         <span style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; font-weight: bold; position: relative; display: inline-block; left: -5px; vertical-align: top;" class="by">​Cloak</span>
         
@@ -5225,7 +5232,7 @@
     </div><div class="message general" style="font-family: Pretendard-Regular, sans-serif; padding: 0px 5px 6px 45px; margin: 0px; border: none; outline: none; position: relative; line-height: 1.25em; color: #3f3f3f; font-size: 16px;">
         <div class="spacer" style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px -5px 8px -45px; border: none; outline: none; background-color: #e1e1e1; height: 1px;">&nbsp;</div>
         <div class="avatar" style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; position: absolute; top: 0.2rem; left: 5px; width: 28px; height: 28px; align-items: stretch;" aria-hidden="true">
-            <img style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; width: 28px; height: 28px; object-fit: cover; border-radius: 0%;" src="assets/1d2c8ddcb79a.webp" />
+            &nbsp;
         </div>
         <span style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; font-weight: bold; position: relative; display: inline-block; left: -5px; vertical-align: top;" class="by">​Cloak</span>
         
@@ -5252,7 +5259,7 @@
                 그러면 풀 숲으로 모습을 감추더니</div><div class="message general" style="font-family: Pretendard-Regular, sans-serif; padding: 0px 5px 6px 45px; margin: 0px; border: none; outline: none; position: relative; line-height: 1.25em; color: #3f3f3f; font-size: 16px;">곧바로 석궁을 꺼내서 공격합니다</div><div class="message general" style="font-family: Pretendard-Regular, sans-serif; padding: 0px 5px 6px 45px; margin: 0px; border: none; outline: none; position: relative; line-height: 1.25em; color: #3f3f3f; font-size: 16px;">
         <div class="spacer" style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px -5px 8px -45px; border: none; outline: none; background-color: #e1e1e1; height: 1px;">&nbsp;</div>
         <div class="avatar" style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; position: absolute; top: 0.2rem; left: 5px; width: 28px; height: 28px; align-items: stretch;" aria-hidden="true">
-            <img style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; width: 28px; height: 28px; object-fit: cover; border-radius: 0%;" src="assets/1d2c8ddcb79a.webp" />
+            &nbsp;
         </div>
         <span style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; font-weight: bold; position: relative; display: inline-block; left: -5px; vertical-align: top;" class="by">​Cloak</span>
         
@@ -5294,7 +5301,7 @@
             DC 10 집중  굴림집중  굴림</div><div class="message general" style="font-family: Pretendard-Regular, sans-serif; padding: 0px 5px 6px 45px; margin: 0px; border: none; outline: none; position: relative; line-height: 1.25em; color: #3f3f3f; font-size: 16px;">
         <div class="spacer" style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px -5px 8px -45px; border: none; outline: none; background-color: #e1e1e1; height: 1px;">&nbsp;</div>
         <div class="avatar" style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; position: absolute; top: 0.2rem; left: 5px; width: 28px; height: 28px; align-items: stretch;" aria-hidden="true">
-            <img style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; width: 28px; height: 28px; object-fit: cover; border-radius: 0%;" src="assets/1d2c8ddcb79a.webp" />
+            &nbsp;
         </div>
         <span style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; font-weight: bold; position: relative; display: inline-block; left: -5px; vertical-align: top;" class="by">​Cloak</span>
         
@@ -5395,7 +5402,7 @@
                 ㅇ굿</div><div class="message general" style="font-family: Pretendard-Regular, sans-serif; padding: 0px 5px 6px 45px; margin: 0px; border: none; outline: none; position: relative; line-height: 1.25em; color: #3f3f3f; font-size: 16px;">
         <div class="spacer" style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px -5px 8px -45px; border: none; outline: none; background-color: #e1e1e1; height: 1px;">&nbsp;</div>
         <div class="avatar" style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; position: absolute; top: 0.2rem; left: 5px; width: 28px; height: 28px; align-items: stretch;" aria-hidden="true">
-            <img style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; width: 28px; height: 28px; object-fit: cover; border-radius: 0%;" src="assets/1d2c8ddcb79a.webp" />
+            &nbsp;
         </div>
         <span style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; font-weight: bold; position: relative; display: inline-block; left: -5px; vertical-align: top;" class="by">​Cloak</span>
         
@@ -5416,7 +5423,7 @@
     </div><div class="message general" style="font-family: Pretendard-Regular, sans-serif; padding: 0px 5px 6px 45px; margin: 0px; border: none; outline: none; position: relative; line-height: 1.25em; color: #3f3f3f; font-size: 16px;">
                 <div class="spacer" style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px -5px 8px -45px; border: none; outline: none; background-color: #e1e1e1; height: 1px;">&nbsp;</div>
                 <div class="avatar" style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; position: absolute; top: 0.2rem; left: 5px; width: 28px; height: 28px; align-items: stretch;" aria-hidden="true">
-                    <img style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; width: 28px; height: 28px; object-fit: cover; border-radius: 0%;" src="assets/1d2c8ddcb79a.webp" />
+                    &nbsp;
                 </div>
                 <span style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; font-weight: bold; position: relative; display: inline-block; left: -5px; vertical-align: top;" class="by">Cloak:</span>
                 (대미지는 안굴림</div><div class="message general" style="font-family: Pretendard-Regular, sans-serif; padding: 0px 5px 6px 45px; margin: 0px; border: none; outline: none; position: relative; line-height: 1.25em; color: #3f3f3f; font-size: 16px;">
@@ -5428,7 +5435,7 @@
                 (ㅋㅋㅋㅋ)</div><div class="message general" style="font-family: Pretendard-Regular, sans-serif; padding: 0px 5px 6px 45px; margin: 0px; border: none; outline: none; position: relative; line-height: 1.25em; color: #3f3f3f; font-size: 16px;">
                 <div class="spacer" style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px -5px 8px -45px; border: none; outline: none; background-color: #e1e1e1; height: 1px;">&nbsp;</div>
                 <div class="avatar" style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; position: absolute; top: 0.2rem; left: 5px; width: 28px; height: 28px; align-items: stretch;" aria-hidden="true">
-                    <img style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; width: 28px; height: 28px; object-fit: cover; border-radius: 0%;" src="assets/1d2c8ddcb79a.webp" />
+                    &nbsp;
                 </div>
                 <span style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; font-weight: bold; position: relative; display: inline-block; left: -5px; vertical-align: top;" class="by">Cloak:</span>
                 자 로웨 ㄴ턴</div><div class="message general" style="font-family: Pretendard-Regular, sans-serif; padding: 0px 5px 6px 45px; margin: 0px; border: none; outline: none; position: relative; line-height: 1.25em; color: #3f3f3f; font-size: 16px;">
@@ -6360,7 +6367,7 @@
     </div><div class="message general" style="font-family: Pretendard-Regular, sans-serif; padding: 0px 5px 6px 45px; margin: 0px; border: none; outline: none; position: relative; line-height: 1.25em; color: #3f3f3f; font-size: 16px;">
         <div class="spacer" style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px -5px 8px -45px; border: none; outline: none; background-color: #e1e1e1; height: 1px;">&nbsp;</div>
         <div class="avatar" style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; position: absolute; top: 0.2rem; left: 5px; width: 28px; height: 28px; align-items: stretch;" aria-hidden="true">
-            <img style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; width: 28px; height: 28px; object-fit: cover; border-radius: 0%;" src="assets/1d2c8ddcb79a.webp" />
+            &nbsp;
         </div>
         <span style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; font-weight: bold; position: relative; display: inline-block; left: -5px; vertical-align: top;" class="by">​Cloak</span>
         
@@ -6381,7 +6388,7 @@
     </div><div class="message general" style="font-family: Pretendard-Regular, sans-serif; padding: 0px 5px 6px 45px; margin: 0px; border: none; outline: none; position: relative; line-height: 1.25em; color: #3f3f3f; font-size: 16px;">
         <div class="spacer" style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px -5px 8px -45px; border: none; outline: none; background-color: #e1e1e1; height: 1px;">&nbsp;</div>
         <div class="avatar" style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; position: absolute; top: 0.2rem; left: 5px; width: 28px; height: 28px; align-items: stretch;" aria-hidden="true">
-            <img style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; width: 28px; height: 28px; object-fit: cover; border-radius: 0%;" src="assets/1d2c8ddcb79a.webp" />
+            &nbsp;
         </div>
         <span style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; font-weight: bold; position: relative; display: inline-block; left: -5px; vertical-align: top;" class="by">​Cloak</span>
         
@@ -6402,7 +6409,7 @@
     </div><div class="message general" style="font-family: Pretendard-Regular, sans-serif; padding: 0px 5px 6px 45px; margin: 0px; border: none; outline: none; position: relative; line-height: 1.25em; color: #3f3f3f; font-size: 16px;">
                 <div class="spacer" style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px -5px 8px -45px; border: none; outline: none; background-color: #e1e1e1; height: 1px;">&nbsp;</div>
                 <div class="avatar" style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; position: absolute; top: 0.2rem; left: 5px; width: 28px; height: 28px; align-items: stretch;" aria-hidden="true">
-                    <img style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; width: 28px; height: 28px; object-fit: cover; border-radius: 0%;" src="assets/1d2c8ddcb79a.webp" />
+                    &nbsp;
                 </div>
                 <span style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; font-weight: bold; position: relative; display: inline-block; left: -5px; vertical-align: top;" class="by">Cloak:</span>
                 하나 더 펑</div><div class="message general" style="font-family: Pretendard-Regular, sans-serif; padding: 0px 5px 6px 45px; margin: 0px; border: none; outline: none; position: relative; line-height: 1.25em; color: #3f3f3f; font-size: 16px;">2d6을 굴리는게 맞지</div><div class="message general" style="font-family: Pretendard-Regular, sans-serif; padding: 0px 5px 6px 45px; margin: 0px; border: none; outline: none; position: relative; line-height: 1.25em; color: #3f3f3f; font-size: 16px;">
@@ -6462,7 +6469,7 @@
                 Wild Magic Check - Roll a d20</div><div class="message general" style="font-family: Pretendard-Regular, sans-serif; padding: 0px 5px 6px 45px; margin: 0px; border: none; outline: none; position: relative; line-height: 1.25em; color: #3f3f3f; font-size: 16px;">
         <div class="spacer" style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px -5px 8px -45px; border: none; outline: none; background-color: #e1e1e1; height: 1px;">&nbsp;</div>
         <div class="avatar" style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; position: absolute; top: 0.2rem; left: 5px; width: 28px; height: 28px; align-items: stretch;" aria-hidden="true">
-            <img style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; width: 28px; height: 28px; object-fit: cover; border-radius: 0%;" src="assets/1d2c8ddcb79a.webp" />
+            &nbsp;
         </div>
         <span style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; font-weight: bold; position: relative; display: inline-block; left: -5px; vertical-align: top;" class="by">​Cloak</span>
         
@@ -6489,7 +6496,7 @@
                 (치유를 얘한데 쓰고 장남에게 포션먹일걸 아</div><div class="message general" style="font-family: Pretendard-Regular, sans-serif; padding: 0px 5px 6px 45px; margin: 0px; border: none; outline: none; position: relative; line-height: 1.25em; color: #3f3f3f; font-size: 16px;">
                 <div class="spacer" style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px -5px 8px -45px; border: none; outline: none; background-color: #e1e1e1; height: 1px;">&nbsp;</div>
                 <div class="avatar" style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; position: absolute; top: 0.2rem; left: 5px; width: 28px; height: 28px; align-items: stretch;" aria-hidden="true">
-                    <img style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; width: 28px; height: 28px; object-fit: cover; border-radius: 0%;" src="assets/1d2c8ddcb79a.webp" />
+                    &nbsp;
                 </div>
                 <span style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; font-weight: bold; position: relative; display: inline-block; left: -5px; vertical-align: top;" class="by">Cloak:</span>
                 2d6</div><div class="message general" style="font-family: Pretendard-Regular, sans-serif; padding: 0px 5px 6px 45px; margin: 0px; border: none; outline: none; position: relative; line-height: 1.25em; color: #3f3f3f; font-size: 16px;">굴려주세요</div><div class="message general" style="font-family: Pretendard-Regular, sans-serif; padding: 0px 5px 6px 45px; margin: 0px; border: none; outline: none; position: relative; line-height: 1.25em; color: #3f3f3f; font-size: 16px;">
@@ -6522,7 +6529,7 @@
                 (오</div><div class="message general" style="font-family: Pretendard-Regular, sans-serif; padding: 0px 5px 6px 45px; margin: 0px; border: none; outline: none; position: relative; line-height: 1.25em; color: #3f3f3f; font-size: 16px;">
                 <div class="spacer" style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px -5px 8px -45px; border: none; outline: none; background-color: #e1e1e1; height: 1px;">&nbsp;</div>
                 <div class="avatar" style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; position: absolute; top: 0.2rem; left: 5px; width: 28px; height: 28px; align-items: stretch;" aria-hidden="true">
-                    <img style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; width: 28px; height: 28px; object-fit: cover; border-radius: 0%;" src="assets/1d2c8ddcb79a.webp" />
+                    &nbsp;
                 </div>
                 <span style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; font-weight: bold; position: relative; display: inline-block; left: -5px; vertical-align: top;" class="by">Cloak:</span>
                 (ㅋㅋ</div><div class="message general" style="font-family: Pretendard-Regular, sans-serif; padding: 0px 5px 6px 45px; margin: 0px; border: none; outline: none; position: relative; line-height: 1.25em; color: #3f3f3f; font-size: 16px;">
@@ -6555,7 +6562,7 @@
                 (실력겜</div><div class="message general" style="font-family: Pretendard-Regular, sans-serif; padding: 0px 5px 6px 45px; margin: 0px; border: none; outline: none; position: relative; line-height: 1.25em; color: #3f3f3f; font-size: 16px;">
                 <div class="spacer" style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px -5px 8px -45px; border: none; outline: none; background-color: #e1e1e1; height: 1px;">&nbsp;</div>
                 <div class="avatar" style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; position: absolute; top: 0.2rem; left: 5px; width: 28px; height: 28px; align-items: stretch;" aria-hidden="true">
-                    <img style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; width: 28px; height: 28px; object-fit: cover; border-radius: 0%;" src="assets/1d2c8ddcb79a.webp" />
+                    &nbsp;
                 </div>
                 <span style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; font-weight: bold; position: relative; display: inline-block; left: -5px; vertical-align: top;" class="by">Cloak:</span>
                 하나 펑</div>
@@ -7062,7 +7069,7 @@
                     <img style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; width: 28px; height: 28px; object-fit: cover; border-radius: 0%;" src="assets/15a4206ba6d4.webp" />
                 </div>
                 <span style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; font-weight: bold; position: relative; display: inline-block; left: -5px; vertical-align: top;" class="by">아르셀리아:</span>
-                <img src="assets/3fb0d73b65cc.webp" width="300"></div><div class="message general" style="font-family: Pretendard-Regular, sans-serif; padding: 0px 5px 6px 45px; margin: 0px; border: none; outline: none; position: relative; line-height: 1.25em; color: #3f3f3f; font-size: 16px;">
+                Spell Sniper General Feat 다음의 이점을 얻습니다. 능력치 증가. 지능, 지혜, 또는 매력 능력치를 1 올립니다. 최대 20까지 올릴 수 있습니다. 엄폐 무시. 주문의 공격 굴림은 Half Cover 및 Three-Quarters Cover 를 무시합니다. 근접 시전. 적으로부터 5피트 이내에 있어도 주문의 공격 굴림에 불유리함이 부여되지 않습니다. 사거리 증가. 사거리가 최소 10피트이고 공격 굴림이 필요한 주문을 시전할 때, 주문의 사거리를 60피트 늘릴 수 있습니다. Spellcasting or Pact Magic Feature</div><div class="message general" style="font-family: Pretendard-Regular, sans-serif; padding: 0px 5px 6px 45px; margin: 0px; border: none; outline: none; position: relative; line-height: 1.25em; color: #3f3f3f; font-size: 16px;">
                 <div class="spacer" style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px -5px 8px -45px; border: none; outline: none; background-color: #e1e1e1; height: 1px;">&nbsp;</div>
                 <div class="avatar" style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; position: absolute; top: 0.2rem; left: 5px; width: 28px; height: 28px; align-items: stretch;" aria-hidden="true">
                     <img style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; width: 28px; height: 28px; object-fit: cover; border-radius: 0%;" src="assets/53506677a572.webp" />
@@ -7134,7 +7141,7 @@
                 (둘 다 넥스트 어택이라</div><div class="message general" style="font-family: Pretendard-Regular, sans-serif; padding: 0px 5px 6px 45px; margin: 0px; border: none; outline: none; position: relative; line-height: 1.25em; color: #3f3f3f; font-size: 16px;">
                 <div class="spacer" style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px -5px 8px -45px; border: none; outline: none; background-color: #e1e1e1; height: 1px;">&nbsp;</div>
                 <div class="avatar" style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; position: absolute; top: 0.2rem; left: 5px; width: 28px; height: 28px; align-items: stretch;" aria-hidden="true">
-                    <img style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; width: 28px; height: 28px; object-fit: cover; border-radius: 0%;" src="assets/1d2c8ddcb79a.webp" />
+                    &nbsp;
                 </div>
                 <span style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; font-weight: bold; position: relative; display: inline-block; left: -5px; vertical-align: top;" class="by">Cloak:</span>
                 그러면 서리 광선이</div><div class="message general" style="font-family: Pretendard-Regular, sans-serif; padding: 0px 5px 6px 45px; margin: 0px; border: none; outline: none; position: relative; line-height: 1.25em; color: #3f3f3f; font-size: 16px;">두개 몸에 박히고</div><div class="message general" style="font-family: Pretendard-Regular, sans-serif; padding: 0px 5px 6px 45px; margin: 0px; border: none; outline: none; position: relative; line-height: 1.25em; color: #3f3f3f; font-size: 16px;">하나는 간신히 회피합니다</div>
@@ -7318,7 +7325,7 @@
                 (엇</div><div class="message general" style="font-family: Pretendard-Regular, sans-serif; padding: 0px 5px 6px 45px; margin: 0px; border: none; outline: none; position: relative; line-height: 1.25em; color: #3f3f3f; font-size: 16px;">
                 <div class="spacer" style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px -5px 8px -45px; border: none; outline: none; background-color: #e1e1e1; height: 1px;">&nbsp;</div>
                 <div class="avatar" style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; position: absolute; top: 0.2rem; left: 5px; width: 28px; height: 28px; align-items: stretch;" aria-hidden="true">
-                    <img style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; width: 28px; height: 28px; object-fit: cover; border-radius: 0%;" src="assets/1d2c8ddcb79a.webp" />
+                    &nbsp;
                 </div>
                 <span style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; font-weight: bold; position: relative; display: inline-block; left: -5px; vertical-align: top;" class="by">Cloak:</span>
                 그러면 곧바로 쌍검을 들고</div><div class="message general" style="font-family: Pretendard-Regular, sans-serif; padding: 0px 5px 6px 45px; margin: 0px; border: none; outline: none; position: relative; line-height: 1.25em; color: #3f3f3f; font-size: 16px;">아르셀리아를 쓰러트리려고 합니다</div><div class="message general" style="font-family: Pretendard-Regular, sans-serif; padding: 0px 5px 6px 45px; margin: 0px; border: none; outline: none; position: relative; line-height: 1.25em; color: #3f3f3f; font-size: 16px;">
@@ -7330,7 +7337,7 @@
                 (OKAY)</div><div class="message general" style="font-family: Pretendard-Regular, sans-serif; padding: 0px 5px 6px 45px; margin: 0px; border: none; outline: none; position: relative; line-height: 1.25em; color: #3f3f3f; font-size: 16px;">
         <div class="spacer" style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px -5px 8px -45px; border: none; outline: none; background-color: #e1e1e1; height: 1px;">&nbsp;</div>
         <div class="avatar" style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; position: absolute; top: 0.2rem; left: 5px; width: 28px; height: 28px; align-items: stretch;" aria-hidden="true">
-            <img style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; width: 28px; height: 28px; object-fit: cover; border-radius: 0%;" src="assets/1d2c8ddcb79a.webp" />
+            &nbsp;
         </div>
         <span style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; font-weight: bold; position: relative; display: inline-block; left: -5px; vertical-align: top;" class="by">​Cloak</span>
         
@@ -7417,7 +7424,7 @@
                 (zz)</div><div class="message general" style="font-family: Pretendard-Regular, sans-serif; padding: 0px 5px 6px 45px; margin: 0px; border: none; outline: none; position: relative; line-height: 1.25em; color: #3f3f3f; font-size: 16px;">
         <div class="spacer" style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px -5px 8px -45px; border: none; outline: none; background-color: #e1e1e1; height: 1px;">&nbsp;</div>
         <div class="avatar" style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; position: absolute; top: 0.2rem; left: 5px; width: 28px; height: 28px; align-items: stretch;" aria-hidden="true">
-            <img style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; width: 28px; height: 28px; object-fit: cover; border-radius: 0%;" src="assets/1d2c8ddcb79a.webp" />
+            &nbsp;
         </div>
         <span style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; font-weight: bold; position: relative; display: inline-block; left: -5px; vertical-align: top;" class="by">​Cloak</span>
         
@@ -8440,7 +8447,7 @@
                     <img style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; width: 28px; height: 28px; object-fit: cover; border-radius: 0%;" src="assets/15a4206ba6d4.webp" />
                 </div>
                 <span style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; font-weight: bold; position: relative; display: inline-block; left: -5px; vertical-align: top;" class="by">아르셀리아:</span>
-                <img src="assets/1929bb2a5c84.webp" width="300"></div><div class="message general" style="font-family: Pretendard-Regular, sans-serif; padding: 0px 5px 6px 45px; margin: 0px; border: none; outline: none; position: relative; line-height: 1.25em; color: #3f3f3f; font-size: 16px;">
+                Tides of Chaos 특성 당신은 혼돈 자체를 조종하여 d20을 굴리기 전에 하나의 d20 판정에 유리함을 스스로 부여할 수 있습니다. 그렇게 한 후에는 이 기능을 다시 사용하기 전에 주문 슬롯으로 소마법사 주문을 시전하거나 긴 휴식을 마쳐야 합니다. 긴 휴식을 마치기 전에 주문 슬롯으로 소마법사 주문을 시전하면, 야생 마법 폭발 표에서 자동으로 굴립니다.</div><div class="message general" style="font-family: Pretendard-Regular, sans-serif; padding: 0px 5px 6px 45px; margin: 0px; border: none; outline: none; position: relative; line-height: 1.25em; color: #3f3f3f; font-size: 16px;">
                 <div class="spacer" style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px -5px 8px -45px; border: none; outline: none; background-color: #e1e1e1; height: 1px;">&nbsp;</div>
                 <div class="avatar" style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; position: absolute; top: 0.2rem; left: 5px; width: 28px; height: 28px; align-items: stretch;" aria-hidden="true">
                     <img style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; width: 28px; height: 28px; object-fit: cover; border-radius: 0%;" src="assets/20c208af0e3c.webp" />
@@ -9407,13 +9414,13 @@
                 (실력 좋네</div><div class="message general" style="font-family: Pretendard-Regular, sans-serif; padding: 0px 5px 6px 45px; margin: 0px; border: none; outline: none; position: relative; line-height: 1.25em; color: #3f3f3f; font-size: 16px;">
                 <div class="spacer" style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px -5px 8px -45px; border: none; outline: none; background-color: #e1e1e1; height: 1px;">&nbsp;</div>
                 <div class="avatar" style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; position: absolute; top: 0.2rem; left: 5px; width: 28px; height: 28px; align-items: stretch;" aria-hidden="true">
-                    <img style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; width: 28px; height: 28px; object-fit: cover; border-radius: 0%;" src="assets/763777048134.webp" />
+                    &nbsp;
                 </div>
                 <span style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; font-weight: bold; position: relative; display: inline-block; left: -5px; vertical-align: top;" class="by">Bulette:</span>
                 그러면 블렛 데들리 리프</div><div class="message general" style="font-family: Pretendard-Regular, sans-serif; padding: 0px 5px 6px 45px; margin: 0px; border: none; outline: none; position: relative; line-height: 1.25em; color: #3f3f3f; font-size: 16px;">
         <div class="spacer" style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px -5px 8px -45px; border: none; outline: none; background-color: #e1e1e1; height: 1px;">&nbsp;</div>
         <div class="avatar" style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; position: absolute; top: 0.2rem; left: 5px; width: 28px; height: 28px; align-items: stretch;" aria-hidden="true">
-            <img style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; width: 28px; height: 28px; object-fit: cover; border-radius: 0%;" src="assets/763777048134.webp" />
+            &nbsp;
         </div>
         <span style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; font-weight: bold; position: relative; display: inline-block; left: -5px; vertical-align: top;" class="by">​Bulette</span>
         
@@ -9485,7 +9492,7 @@
                 (또 죽는구나 했어요</div><div class="message general" style="font-family: Pretendard-Regular, sans-serif; padding: 0px 5px 6px 45px; margin: 0px; border: none; outline: none; position: relative; line-height: 1.25em; color: #3f3f3f; font-size: 16px;">
         <div class="spacer" style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px -5px 8px -45px; border: none; outline: none; background-color: #e1e1e1; height: 1px;">&nbsp;</div>
         <div class="avatar" style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; position: absolute; top: 0.2rem; left: 5px; width: 28px; height: 28px; align-items: stretch;" aria-hidden="true">
-            <img style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; width: 28px; height: 28px; object-fit: cover; border-radius: 0%;" src="assets/763777048134.webp" />
+            &nbsp;
         </div>
         <span style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; font-weight: bold; position: relative; display: inline-block; left: -5px; vertical-align: top;" class="by">​Bulette</span>
         
@@ -10713,7 +10720,7 @@
     </div><div class="message general" style="font-family: Pretendard-Regular, sans-serif; padding: 0px 5px 6px 45px; margin: 0px; border: none; outline: none; position: relative; line-height: 1.25em; color: #3f3f3f; font-size: 16px;">
                 <div class="spacer" style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px -5px 8px -45px; border: none; outline: none; background-color: #e1e1e1; height: 1px;">&nbsp;</div>
                 <div class="avatar" style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; position: absolute; top: 0.2rem; left: 5px; width: 28px; height: 28px; align-items: stretch;" aria-hidden="true">
-                    <img style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; width: 28px; height: 28px; object-fit: cover; border-radius: 0%;" src="assets/763777048134.webp" />
+                    &nbsp;
                 </div>
                 <span style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; font-weight: bold; position: relative; display: inline-block; left: -5px; vertical-align: top;" class="by">Bulette:</span>
                 이동합니다</div><div class="message general" style="font-family: Pretendard-Regular, sans-serif; padding: 0px 5px 6px 45px; margin: 0px; border: none; outline: none; position: relative; line-height: 1.25em; color: #3f3f3f; font-size: 16px;">기공</div><div class="message general" style="font-family: Pretendard-Regular, sans-serif; padding: 0px 5px 6px 45px; margin: 0px; border: none; outline: none; position: relative; line-height: 1.25em; color: #3f3f3f; font-size: 16px;">
@@ -10815,7 +10822,7 @@
                 (내)</div><div class="message general" style="font-family: Pretendard-Regular, sans-serif; padding: 0px 5px 6px 45px; margin: 0px; border: none; outline: none; position: relative; line-height: 1.25em; color: #3f3f3f; font-size: 16px;">(비무장공격이안떠서 제너릭액션해쓴데)</div><div class="message general" style="font-family: Pretendard-Regular, sans-serif; padding: 0px 5px 6px 45px; margin: 0px; border: none; outline: none; position: relative; line-height: 1.25em; color: #3f3f3f; font-size: 16px;">
         <div class="spacer" style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px -5px 8px -45px; border: none; outline: none; background-color: #e1e1e1; height: 1px;">&nbsp;</div>
         <div class="avatar" style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; position: absolute; top: 0.2rem; left: 5px; width: 28px; height: 28px; align-items: stretch;" aria-hidden="true">
-            <img style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; width: 28px; height: 28px; object-fit: cover; border-radius: 0%;" src="assets/763777048134.webp" />
+            &nbsp;
         </div>
         <span style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; font-weight: bold; position: relative; display: inline-block; left: -5px; vertical-align: top;" class="by">​Bulette</span>
         
@@ -10848,7 +10855,7 @@
                 그리고 슝 하고 점프하고</div><div class="message general" style="font-family: Pretendard-Regular, sans-serif; padding: 0px 5px 6px 45px; margin: 0px; border: none; outline: none; position: relative; line-height: 1.25em; color: #3f3f3f; font-size: 16px;">
                 <div class="spacer" style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px -5px 8px -45px; border: none; outline: none; background-color: #e1e1e1; height: 1px;">&nbsp;</div>
                 <div class="avatar" style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; position: absolute; top: 0.2rem; left: 5px; width: 28px; height: 28px; align-items: stretch;" aria-hidden="true">
-                    <img style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; width: 28px; height: 28px; object-fit: cover; border-radius: 0%;" src="assets/763777048134.webp" />
+                    &nbsp;
                 </div>
                 <span style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; font-weight: bold; position: relative; display: inline-block; left: -5px; vertical-align: top;" class="by">Bulette:</span>
                 죽어라 차남</div><div class="message general" style="font-family: Pretendard-Regular, sans-serif; padding: 0px 5px 6px 45px; margin: 0px; border: none; outline: none; position: relative; line-height: 1.25em; color: #3f3f3f; font-size: 16px;">아니 장남</div><div class="message general" style="font-family: Pretendard-Regular, sans-serif; padding: 0px 5px 6px 45px; margin: 0px; border: none; outline: none; position: relative; line-height: 1.25em; color: #3f3f3f; font-size: 16px;">
@@ -10866,7 +10873,7 @@
                 (안된다</div><div class="message general" style="font-family: Pretendard-Regular, sans-serif; padding: 0px 5px 6px 45px; margin: 0px; border: none; outline: none; position: relative; line-height: 1.25em; color: #3f3f3f; font-size: 16px;">
         <div class="spacer" style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px -5px 8px -45px; border: none; outline: none; background-color: #e1e1e1; height: 1px;">&nbsp;</div>
         <div class="avatar" style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; position: absolute; top: 0.2rem; left: 5px; width: 28px; height: 28px; align-items: stretch;" aria-hidden="true">
-            <img style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; width: 28px; height: 28px; object-fit: cover; border-radius: 0%;" src="assets/763777048134.webp" />
+            &nbsp;
         </div>
         <span style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; font-weight: bold; position: relative; display: inline-block; left: -5px; vertical-align: top;" class="by">​Bulette</span>
         
@@ -11138,7 +11145,7 @@
             <div class="message general" style="font-family: Pretendard-Regular, sans-serif; padding: 0px 5px 6px 45px; margin: 0px; border: none; outline: none; position: relative; line-height: 1.25em; color: #3f3f3f; font-size: 16px;">
         <div class="spacer" style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px -5px 8px -45px; border: none; outline: none; background-color: #e1e1e1; height: 1px;">&nbsp;</div>
         <div class="avatar" style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; position: absolute; top: 0.2rem; left: 5px; width: 28px; height: 28px; align-items: stretch;" aria-hidden="true">
-            <img style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; width: 28px; height: 28px; object-fit: cover; border-radius: 0%;" src="assets/763777048134.webp" />
+            &nbsp;
         </div>
         <span style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; font-weight: bold; position: relative; display: inline-block; left: -5px; vertical-align: top;" class="by">​Bulette</span>
         
@@ -11777,7 +11784,7 @@
             <div class="message general" style="font-family: Pretendard-Regular, sans-serif; padding: 0px 5px 6px 45px; margin: 0px; border: none; outline: none; position: relative; line-height: 1.25em; color: #3f3f3f; font-size: 16px;">
                 <div class="spacer" style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px -5px 8px -45px; border: none; outline: none; background-color: #e1e1e1; height: 1px;">&nbsp;</div>
                 <div class="avatar" style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; position: absolute; top: 0.2rem; left: 5px; width: 28px; height: 28px; align-items: stretch;" aria-hidden="true">
-                    <img style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; width: 28px; height: 28px; object-fit: cover; border-radius: 0%;" src="assets/763777048134.webp" />
+                    &nbsp;
                 </div>
                 <span style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; font-weight: bold; position: relative; display: inline-block; left: -5px; vertical-align: top;" class="by">Bulette:</span>
                 (ㅋㅋ</div><div class="message general" style="font-family: Pretendard-Regular, sans-serif; padding: 0px 5px 6px 45px; margin: 0px; border: none; outline: none; position: relative; line-height: 1.25em; color: #3f3f3f; font-size: 16px;">
@@ -11982,7 +11989,7 @@
                 돌진합니다</div><div class="message general" style="font-family: Pretendard-Regular, sans-serif; padding: 0px 5px 6px 45px; margin: 0px; border: none; outline: none; position: relative; line-height: 1.25em; color: #3f3f3f; font-size: 16px;">
                 <div class="spacer" style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px -5px 8px -45px; border: none; outline: none; background-color: #e1e1e1; height: 1px;">&nbsp;</div>
                 <div class="avatar" style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; position: absolute; top: 0.2rem; left: 5px; width: 28px; height: 28px; align-items: stretch;" aria-hidden="true">
-                    <img style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; width: 28px; height: 28px; object-fit: cover; border-radius: 0%;" src="assets/763777048134.webp" />
+                    &nbsp;
                 </div>
                 <span style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; font-weight: bold; position: relative; display: inline-block; left: -5px; vertical-align: top;" class="by">Bulette:</span>
                 이렇게 떨어졌다가</div><div class="message general" style="font-family: Pretendard-Regular, sans-serif; padding: 0px 5px 6px 45px; margin: 0px; border: none; outline: none; position: relative; line-height: 1.25em; color: #3f3f3f; font-size: 16px;">
@@ -12039,7 +12046,7 @@
             DC 10 집중  굴림집중  굴림</div><div class="message general" style="font-family: Pretendard-Regular, sans-serif; padding: 0px 5px 6px 45px; margin: 0px; border: none; outline: none; position: relative; line-height: 1.25em; color: #3f3f3f; font-size: 16px;">
         <div class="spacer" style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px -5px 8px -45px; border: none; outline: none; background-color: #e1e1e1; height: 1px;">&nbsp;</div>
         <div class="avatar" style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; position: absolute; top: 0.2rem; left: 5px; width: 28px; height: 28px; align-items: stretch;" aria-hidden="true">
-            <img style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; width: 28px; height: 28px; object-fit: cover; border-radius: 0%;" src="assets/763777048134.webp" />
+            &nbsp;
         </div>
         <span style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; font-weight: bold; position: relative; display: inline-block; left: -5px; vertical-align: top;" class="by">​Bulette</span>
         
@@ -12098,7 +12105,7 @@
                 (와인 쓸 일이 안생겨서 너무 좋네요</div><div class="message general" style="font-family: Pretendard-Regular, sans-serif; padding: 0px 5px 6px 45px; margin: 0px; border: none; outline: none; position: relative; line-height: 1.25em; color: #3f3f3f; font-size: 16px;">
                 <div class="spacer" style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px -5px 8px -45px; border: none; outline: none; background-color: #e1e1e1; height: 1px;">&nbsp;</div>
                 <div class="avatar" style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; position: absolute; top: 0.2rem; left: 5px; width: 28px; height: 28px; align-items: stretch;" aria-hidden="true">
-                    <img style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; width: 28px; height: 28px; object-fit: cover; border-radius: 0%;" src="assets/763777048134.webp" />
+                    &nbsp;
                 </div>
                 <span style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; font-weight: bold; position: relative; display: inline-block; left: -5px; vertical-align: top;" class="by">Bulette:</span>
                 이거 움직이는건 아니구만</div><div class="message general" style="font-family: Pretendard-Regular, sans-serif; padding: 0px 5px 6px 45px; margin: 0px; border: none; outline: none; position: relative; line-height: 1.25em; color: #3f3f3f; font-size: 16px;">
@@ -12167,7 +12174,7 @@
                 (저 행동 끝난거죠?</div><div class="message general" style="font-family: Pretendard-Regular, sans-serif; padding: 0px 5px 6px 45px; margin: 0px; border: none; outline: none; position: relative; line-height: 1.25em; color: #3f3f3f; font-size: 16px;">
                 <div class="spacer" style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px -5px 8px -45px; border: none; outline: none; background-color: #e1e1e1; height: 1px;">&nbsp;</div>
                 <div class="avatar" style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; position: absolute; top: 0.2rem; left: 5px; width: 28px; height: 28px; align-items: stretch;" aria-hidden="true">
-                    <img style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; width: 28px; height: 28px; object-fit: cover; border-radius: 0%;" src="assets/763777048134.webp" />
+                    &nbsp;
                 </div>
                 <span style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; font-weight: bold; position: relative; display: inline-block; left: -5px; vertical-align: top;" class="by">Bulette:</span>
                 네</div><div class="message private whisper" style="font-family: Pretendard-Regular, sans-serif; padding: 0px 5px 6px 45px; margin: 0px; border: none; outline: none; position: relative; line-height: 1.25em; background-color: #f2f5d3; color: #404040; font-size: 16px;">
@@ -12996,7 +13003,7 @@
                 (오?</div><div class="message general" style="font-family: Pretendard-Regular, sans-serif; padding: 0px 5px 6px 45px; margin: 0px; border: none; outline: none; position: relative; line-height: 1.25em; color: #3f3f3f; font-size: 16px;">
                 <div class="spacer" style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px -5px 8px -45px; border: none; outline: none; background-color: #e1e1e1; height: 1px;">&nbsp;</div>
                 <div class="avatar" style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; position: absolute; top: 0.2rem; left: 5px; width: 28px; height: 28px; align-items: stretch;" aria-hidden="true">
-                    <img style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; width: 28px; height: 28px; object-fit: cover; border-radius: 0%;" src="assets/763777048134.webp" />
+                    &nbsp;
                 </div>
                 <span style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; font-weight: bold; position: relative; display: inline-block; left: -5px; vertical-align: top;" class="by">Bulette:</span>
                 뷸렛 돌진 대미지 3d12임</div><div class="message general" style="font-family: Pretendard-Regular, sans-serif; padding: 0px 5px 6px 45px; margin: 0px; border: none; outline: none; position: relative; line-height: 1.25em; color: #3f3f3f; font-size: 16px;">
@@ -13008,7 +13015,7 @@
                 (번개빔 그거 로웬한테쓴거요..?)</div><div class="message general" style="font-family: Pretendard-Regular, sans-serif; padding: 0px 5px 6px 45px; margin: 0px; border: none; outline: none; position: relative; line-height: 1.25em; color: #3f3f3f; font-size: 16px;">
                 <div class="spacer" style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px -5px 8px -45px; border: none; outline: none; background-color: #e1e1e1; height: 1px;">&nbsp;</div>
                 <div class="avatar" style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; position: absolute; top: 0.2rem; left: 5px; width: 28px; height: 28px; align-items: stretch;" aria-hidden="true">
-                    <img style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; width: 28px; height: 28px; object-fit: cover; border-radius: 0%;" src="assets/763777048134.webp" />
+                    &nbsp;
                 </div>
                 <span style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; font-weight: bold; position: relative; display: inline-block; left: -5px; vertical-align: top;" class="by">Bulette:</span>
                 !!</div><div class="message general" style="font-family: Pretendard-Regular, sans-serif; padding: 0px 5px 6px 45px; margin: 0px; border: none; outline: none; position: relative; line-height: 1.25em; color: #3f3f3f; font-size: 16px;">
@@ -14315,7 +14322,7 @@
                     <img style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; width: 28px; height: 28px; object-fit: cover; border-radius: 0%;" src="assets/346184502f0a.webp" />
                 </div>
                 <span style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; font-weight: bold; position: relative; display: inline-block; left: -5px; vertical-align: top;" class="by">할다론 미스바르:</span>
-                <img src="assets/4a60e673b714.webp" width="300"></div><div class="message general" style="font-family: Pretendard-Regular, sans-serif; padding: 0px 5px 6px 45px; margin: 0px; border: none; outline: none; position: relative; line-height: 1.25em; color: #3f3f3f; font-size: 16px;">
+                Magic Weapon 2레벨 • 변환계 비마법 무기를 건드립니다. 주문이 끝나기 전에 그 무기는 공격 굴림과 피해 굴림에 +1 보너스를 지닌 마법 무기가 됩니다. 다시 시전하면 주문이 조기 종료됩니다. 고레벨 주문 슬롯 사용 시. 3~5레벨 주문 슬롯을 사용하면 보너스가 +2가 됩니다. 6레벨 이상 주문 슬롯을 사용하면 보너스가 +3이 됩니다. Consume Resource Refund Resource 음 및 동 Bonus Action 1시간 접촉 1 objects</div><div class="message general" style="font-family: Pretendard-Regular, sans-serif; padding: 0px 5px 6px 45px; margin: 0px; border: none; outline: none; position: relative; line-height: 1.25em; color: #3f3f3f; font-size: 16px;">
                 <div class="spacer" style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px -5px 8px -45px; border: none; outline: none; background-color: #e1e1e1; height: 1px;">&nbsp;</div>
                 <div class="avatar" style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; position: absolute; top: 0.2rem; left: 5px; width: 28px; height: 28px; align-items: stretch;" aria-hidden="true">
                     <img style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; width: 28px; height: 28px; object-fit: cover; border-radius: 0%;" src="assets/f2e730ed4df5.webp" />
@@ -14431,7 +14438,7 @@
                 "이게 무슨!"</div><div class="message general" style="font-family: Pretendard-Regular, sans-serif; padding: 0px 5px 6px 45px; margin: 0px; border: none; outline: none; position: relative; line-height: 1.25em; color: #3f3f3f; font-size: 16px;">
                 <div class="spacer" style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px -5px 8px -45px; border: none; outline: none; background-color: #e1e1e1; height: 1px;">&nbsp;</div>
                 <div class="avatar" style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; position: absolute; top: 0.2rem; left: 5px; width: 28px; height: 28px; align-items: stretch;" aria-hidden="true">
-                    <img style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; width: 28px; height: 28px; object-fit: cover; border-radius: 0%;" src="assets/59b4d58afdc5.webp" />
+                    &nbsp;
                 </div>
                 <span style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; font-weight: bold; position: relative; display: inline-block; left: -5px; vertical-align: top;" class="by">Vrock:</span>
                 그리고 라스티의 목을 들어서 조릅니다</div><div class="message general" style="font-family: Pretendard-Regular, sans-serif; padding: 0px 5px 6px 45px; margin: 0px; border: none; outline: none; position: relative; line-height: 1.25em; color: #3f3f3f; font-size: 16px;">
@@ -14638,7 +14645,7 @@
     </div><div class="message general" style="font-family: Pretendard-Regular, sans-serif; padding: 0px 5px 6px 45px; margin: 0px; border: none; outline: none; position: relative; line-height: 1.25em; color: #3f3f3f; font-size: 16px;">
         <div class="spacer" style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px -5px 8px -45px; border: none; outline: none; background-color: #e1e1e1; height: 1px;">&nbsp;</div>
         <div class="avatar" style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; position: absolute; top: 0.2rem; left: 5px; width: 28px; height: 28px; align-items: stretch;" aria-hidden="true">
-            <img style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; width: 28px; height: 28px; object-fit: cover; border-radius: 0%;" src="assets/59b4d58afdc5.webp" />
+            &nbsp;
         </div>
         <span style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; font-weight: bold; position: relative; display: inline-block; left: -5px; vertical-align: top;" class="by">​Vrock</span>
         
@@ -14705,7 +14712,7 @@
                 "어떻게든 막아내야겠네!"</div><div class="message general" style="font-family: Pretendard-Regular, sans-serif; padding: 0px 5px 6px 45px; margin: 0px; border: none; outline: none; position: relative; line-height: 1.25em; color: #3f3f3f; font-size: 16px;">
         <div class="spacer" style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px -5px 8px -45px; border: none; outline: none; background-color: #e1e1e1; height: 1px;">&nbsp;</div>
         <div class="avatar" style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; position: absolute; top: 0.2rem; left: 5px; width: 28px; height: 28px; align-items: stretch;" aria-hidden="true">
-            <img style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; width: 28px; height: 28px; object-fit: cover; border-radius: 0%;" src="assets/59b4d58afdc5.webp" />
+            &nbsp;
         </div>
         <span style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; font-weight: bold; position: relative; display: inline-block; left: -5px; vertical-align: top;" class="by">​Vrock</span>
         
@@ -15149,7 +15156,7 @@
     </div><div class="message general" style="font-family: Pretendard-Regular, sans-serif; padding: 0px 5px 6px 45px; margin: 0px; border: none; outline: none; position: relative; line-height: 1.25em; color: #3f3f3f; font-size: 16px;">
         <div class="spacer" style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px -5px 8px -45px; border: none; outline: none; background-color: #e1e1e1; height: 1px;">&nbsp;</div>
         <div class="avatar" style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; position: absolute; top: 0.2rem; left: 5px; width: 28px; height: 28px; align-items: stretch;" aria-hidden="true">
-            <img style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; width: 28px; height: 28px; object-fit: cover; border-radius: 0%;" src="assets/59b4d58afdc5.webp" />
+            &nbsp;
         </div>
         <span style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; font-weight: bold; position: relative; display: inline-block; left: -5px; vertical-align: top;" class="by">​Vrock</span>
         
@@ -15197,7 +15204,7 @@
                 (와...아슬아슬</div><div class="message general" style="font-family: Pretendard-Regular, sans-serif; padding: 0px 5px 6px 45px; margin: 0px; border: none; outline: none; position: relative; line-height: 1.25em; color: #3f3f3f; font-size: 16px;">
                 <div class="spacer" style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px -5px 8px -45px; border: none; outline: none; background-color: #e1e1e1; height: 1px;">&nbsp;</div>
                 <div class="avatar" style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; position: absolute; top: 0.2rem; left: 5px; width: 28px; height: 28px; align-items: stretch;" aria-hidden="true">
-                    <img style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; width: 28px; height: 28px; object-fit: cover; border-radius: 0%;" src="assets/59b4d58afdc5.webp" />
+                    &nbsp;
                 </div>
                 <span style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; font-weight: bold; position: relative; display: inline-block; left: -5px; vertical-align: top;" class="by">Vrock:</span>
                 아 이게아니네</div><div class="message general" style="font-family: Pretendard-Regular, sans-serif; padding: 0px 5px 6px 45px; margin: 0px; border: none; outline: none; position: relative; line-height: 1.25em; color: #3f3f3f; font-size: 16px;">
@@ -15239,7 +15246,7 @@
                 @ 기공 쳐줘잉</div><div class="message general" style="font-family: Pretendard-Regular, sans-serif; padding: 0px 5px 6px 45px; margin: 0px; border: none; outline: none; position: relative; line-height: 1.25em; color: #3f3f3f; font-size: 16px;">
         <div class="spacer" style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px -5px 8px -45px; border: none; outline: none; background-color: #e1e1e1; height: 1px;">&nbsp;</div>
         <div class="avatar" style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; position: absolute; top: 0.2rem; left: 5px; width: 28px; height: 28px; align-items: stretch;" aria-hidden="true">
-            <img style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; width: 28px; height: 28px; object-fit: cover; border-radius: 0%;" src="assets/59b4d58afdc5.webp" />
+            &nbsp;
         </div>
         <span style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; font-weight: bold; position: relative; display: inline-block; left: -5px; vertical-align: top;" class="by">​Vrock</span>
         
@@ -15414,7 +15421,7 @@
                 @ 바람과 함께 괴물과 유독가스를 모두 날려보내며 말합니다 "모두 도망치게!"</div><div class="message general" style="font-family: Pretendard-Regular, sans-serif; padding: 0px 5px 6px 45px; margin: 0px; border: none; outline: none; position: relative; line-height: 1.25em; color: #3f3f3f; font-size: 16px;">
                 <div class="spacer" style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px -5px 8px -45px; border: none; outline: none; background-color: #e1e1e1; height: 1px;">&nbsp;</div>
                 <div class="avatar" style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; position: absolute; top: 0.2rem; left: 5px; width: 28px; height: 28px; align-items: stretch;" aria-hidden="true">
-                    <img style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; width: 28px; height: 28px; object-fit: cover; border-radius: 0%;" src="assets/59b4d58afdc5.webp" />
+                    &nbsp;
                 </div>
                 <span style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; font-weight: bold; position: relative; display: inline-block; left: -5px; vertical-align: top;" class="by">Vrock:</span>
                 "키아아아악!"</div><div class="message general" style="font-family: Pretendard-Regular, sans-serif; padding: 0px 5px 6px 45px; margin: 0px; border: none; outline: none; position: relative; line-height: 1.25em; color: #3f3f3f; font-size: 16px;">
@@ -15432,7 +15439,7 @@
                 "이미 악마로 변이된 것은 다시 되돌릴 수 없어"</div><div class="message general" style="font-family: Pretendard-Regular, sans-serif; padding: 0px 5px 6px 45px; margin: 0px; border: none; outline: none; position: relative; line-height: 1.25em; color: #3f3f3f; font-size: 16px;">
         <div class="spacer" style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px -5px 8px -45px; border: none; outline: none; background-color: #e1e1e1; height: 1px;">&nbsp;</div>
         <div class="avatar" style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; position: absolute; top: 0.2rem; left: 5px; width: 28px; height: 28px; align-items: stretch;" aria-hidden="true">
-            <img style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; width: 28px; height: 28px; object-fit: cover; border-radius: 0%;" src="assets/59b4d58afdc5.webp" />
+            &nbsp;
         </div>
         <span style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; font-weight: bold; position: relative; display: inline-block; left: -5px; vertical-align: top;" class="by">​Vrock</span>
         
@@ -15588,7 +15595,7 @@
                 "저것이 지능이 있고 대화가 된다고 생각하나? 우리가 처리하는게 늦을수록 피해는 훨씬 커지고 상황이 더 안좋아질 뿐이야"</div><div class="message general" style="font-family: Pretendard-Regular, sans-serif; padding: 0px 5px 6px 45px; margin: 0px; border: none; outline: none; position: relative; line-height: 1.25em; color: #3f3f3f; font-size: 16px;">
         <div class="spacer" style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px -5px 8px -45px; border: none; outline: none; background-color: #e1e1e1; height: 1px;">&nbsp;</div>
         <div class="avatar" style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; position: absolute; top: 0.2rem; left: 5px; width: 28px; height: 28px; align-items: stretch;" aria-hidden="true">
-            <img style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; width: 28px; height: 28px; object-fit: cover; border-radius: 0%;" src="assets/59b4d58afdc5.webp" />
+            &nbsp;
         </div>
         <span style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; font-weight: bold; position: relative; display: inline-block; left: -5px; vertical-align: top;" class="by">​Vrock</span>
         
@@ -15621,7 +15628,7 @@
                 @ 아르셀리아는 안맞음</div><div class="message general" style="font-family: Pretendard-Regular, sans-serif; padding: 0px 5px 6px 45px; margin: 0px; border: none; outline: none; position: relative; line-height: 1.25em; color: #3f3f3f; font-size: 16px;">
                 <div class="spacer" style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px -5px 8px -45px; border: none; outline: none; background-color: #e1e1e1; height: 1px;">&nbsp;</div>
                 <div class="avatar" style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; position: absolute; top: 0.2rem; left: 5px; width: 28px; height: 28px; align-items: stretch;" aria-hidden="true">
-                    <img style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; width: 28px; height: 28px; object-fit: cover; border-radius: 0%;" src="assets/59b4d58afdc5.webp" />
+                    &nbsp;
                 </div>
                 <span style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; font-weight: bold; position: relative; display: inline-block; left: -5px; vertical-align: top;" class="by">Vrock:</span>
                 (아르셀리아는 피격아님</div><div class="message general" style="font-family: Pretendard-Regular, sans-serif; padding: 0px 5px 6px 45px; margin: 0px; border: none; outline: none; position: relative; line-height: 1.25em; color: #3f3f3f; font-size: 16px;">
@@ -15831,7 +15838,7 @@
             DC 10 집중  굴림집중  굴림</div><div class="message general" style="font-family: Pretendard-Regular, sans-serif; padding: 0px 5px 6px 45px; margin: 0px; border: none; outline: none; position: relative; line-height: 1.25em; color: #3f3f3f; font-size: 16px;">
         <div class="spacer" style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px -5px 8px -45px; border: none; outline: none; background-color: #e1e1e1; height: 1px;">&nbsp;</div>
         <div class="avatar" style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; position: absolute; top: 0.2rem; left: 5px; width: 28px; height: 28px; align-items: stretch;" aria-hidden="true">
-            <img style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; width: 28px; height: 28px; object-fit: cover; border-radius: 0%;" src="assets/59b4d58afdc5.webp" />
+            &nbsp;
         </div>
         <span style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; font-weight: bold; position: relative; display: inline-block; left: -5px; vertical-align: top;" class="by">​Vrock</span>
         
@@ -15998,7 +16005,7 @@
                 (그러게</div><div class="message general you" style="font-family: Pretendard-Regular, sans-serif; padding: 0px 5px 6px 45px; margin: 0px; border: none; outline: none; position: relative; line-height: 1.25em; background: #dddddd; color: #404040; font-size: 16px;">3d6굴려주세요 클로브</div><div class="message general" style="font-family: Pretendard-Regular, sans-serif; padding: 0px 5px 6px 45px; margin: 0px; border: none; outline: none; position: relative; line-height: 1.25em; color: #3f3f3f; font-size: 16px;">
         <div class="spacer" style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px -5px 8px -45px; border: none; outline: none; background-color: #e1e1e1; height: 1px;">&nbsp;</div>
         <div class="avatar" style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; position: absolute; top: 0.2rem; left: 5px; width: 28px; height: 28px; align-items: stretch;" aria-hidden="true">
-            <img style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; width: 28px; height: 28px; object-fit: cover; border-radius: 0%;" src="assets/59b4d58afdc5.webp" />
+            &nbsp;
         </div>
         <span style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; font-weight: bold; position: relative; display: inline-block; left: -5px; vertical-align: top;" class="by">​Vrock</span>
         
@@ -16040,10 +16047,10 @@
     </div><div class="message general" style="font-family: Pretendard-Regular, sans-serif; padding: 0px 5px 6px 45px; margin: 0px; border: none; outline: none; position: relative; line-height: 1.25em; color: #3f3f3f; font-size: 16px;">
                 <div class="spacer" style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px -5px 8px -45px; border: none; outline: none; background-color: #e1e1e1; height: 1px;">&nbsp;</div>
                 <div class="avatar" style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; position: absolute; top: 0.2rem; left: 5px; width: 28px; height: 28px; align-items: stretch;" aria-hidden="true">
-                    <img style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; width: 28px; height: 28px; object-fit: cover; border-radius: 0%;" src="assets/59b4d58afdc5.webp" />
+                    &nbsp;
                 </div>
                 <span style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; font-weight: bold; position: relative; display: inline-block; left: -5px; vertical-align: top;" class="by">Vrock:</span>
-                <img src="assets/bd26d6306dde.webp" width="300"></div><div class="message general" style="font-family: Pretendard-Regular, sans-serif; padding: 0px 5px 6px 45px; margin: 0px; border: none; outline: none; position: relative; line-height: 1.25em; color: #3f3f3f; font-size: 16px;">
+                Magic Resistance 특성 vrock 은(는) 주문과 기타 마법적 효과에 대한 내성 굴림에 이점을 얻습니다.</div><div class="message general" style="font-family: Pretendard-Regular, sans-serif; padding: 0px 5px 6px 45px; margin: 0px; border: none; outline: none; position: relative; line-height: 1.25em; color: #3f3f3f; font-size: 16px;">
                 <div class="spacer" style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px -5px 8px -45px; border: none; outline: none; background-color: #e1e1e1; height: 1px;">&nbsp;</div>
                 <div class="avatar" style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; position: absolute; top: 0.2rem; left: 5px; width: 28px; height: 28px; align-items: stretch;" aria-hidden="true">
                     <img style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; width: 28px; height: 28px; object-fit: cover; border-radius: 0%;" src="assets/c7c24ae6deed.webp" />
@@ -16058,7 +16065,7 @@
                 (좋은거 있네</div><div class="message general" style="font-family: Pretendard-Regular, sans-serif; padding: 0px 5px 6px 45px; margin: 0px; border: none; outline: none; position: relative; line-height: 1.25em; color: #3f3f3f; font-size: 16px;">
                 <div class="spacer" style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px -5px 8px -45px; border: none; outline: none; background-color: #e1e1e1; height: 1px;">&nbsp;</div>
                 <div class="avatar" style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; position: absolute; top: 0.2rem; left: 5px; width: 28px; height: 28px; align-items: stretch;" aria-hidden="true">
-                    <img style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; width: 28px; height: 28px; object-fit: cover; border-radius: 0%;" src="assets/59b4d58afdc5.webp" />
+                    &nbsp;
                 </div>
                 <span style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; font-weight: bold; position: relative; display: inline-block; left: -5px; vertical-align: top;" class="by">Vrock:</span>
                 악마의 피부는</div><div class="message general" style="font-family: Pretendard-Regular, sans-serif; padding: 0px 5px 6px 45px; margin: 0px; border: none; outline: none; position: relative; line-height: 1.25em; color: #3f3f3f; font-size: 16px;">
@@ -16070,7 +16077,7 @@
                 (포션주입으로 저주해제 물약...만드는건 안될까요</div><div class="message general" style="font-family: Pretendard-Regular, sans-serif; padding: 0px 5px 6px 45px; margin: 0px; border: none; outline: none; position: relative; line-height: 1.25em; color: #3f3f3f; font-size: 16px;">
                 <div class="spacer" style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px -5px 8px -45px; border: none; outline: none; background-color: #e1e1e1; height: 1px;">&nbsp;</div>
                 <div class="avatar" style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; position: absolute; top: 0.2rem; left: 5px; width: 28px; height: 28px; align-items: stretch;" aria-hidden="true">
-                    <img style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; width: 28px; height: 28px; object-fit: cover; border-radius: 0%;" src="assets/59b4d58afdc5.webp" />
+                    &nbsp;
                 </div>
                 <span style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; font-weight: bold; position: relative; display: inline-block; left: -5px; vertical-align: top;" class="by">Vrock:</span>
                 화염에 거의 손상되지 않습니다</div><div class="message general" style="font-family: Pretendard-Regular, sans-serif; padding: 0px 5px 6px 45px; margin: 0px; border: none; outline: none; position: relative; line-height: 1.25em; color: #3f3f3f; font-size: 16px;">(시전이 가능해야 만들 수 있음</div><div class="message general" style="font-family: Pretendard-Regular, sans-serif; padding: 0px 5px 6px 45px; margin: 0px; border: none; outline: none; position: relative; line-height: 1.25em; color: #3f3f3f; font-size: 16px;">
@@ -16164,7 +16171,7 @@
             DC 10 집중  굴림집중  굴림</div><div class="message general" style="font-family: Pretendard-Regular, sans-serif; padding: 0px 5px 6px 45px; margin: 0px; border: none; outline: none; position: relative; line-height: 1.25em; color: #3f3f3f; font-size: 16px;">
         <div class="spacer" style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px -5px 8px -45px; border: none; outline: none; background-color: #e1e1e1; height: 1px;">&nbsp;</div>
         <div class="avatar" style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; position: absolute; top: 0.2rem; left: 5px; width: 28px; height: 28px; align-items: stretch;" aria-hidden="true">
-            <img style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; width: 28px; height: 28px; object-fit: cover; border-radius: 0%;" src="assets/59b4d58afdc5.webp" />
+            &nbsp;
         </div>
         <span style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; font-weight: bold; position: relative; display: inline-block; left: -5px; vertical-align: top;" class="by">​Vrock</span>
         
@@ -16416,7 +16423,7 @@
                 "저주였다고 해명해도, 믿진 않겠지."</div><div class="message general" style="font-family: Pretendard-Regular, sans-serif; padding: 0px 5px 6px 45px; margin: 0px; border: none; outline: none; position: relative; line-height: 1.25em; color: #3f3f3f; font-size: 16px;">
         <div class="spacer" style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px -5px 8px -45px; border: none; outline: none; background-color: #e1e1e1; height: 1px;">&nbsp;</div>
         <div class="avatar" style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; position: absolute; top: 0.2rem; left: 5px; width: 28px; height: 28px; align-items: stretch;" aria-hidden="true">
-            <img style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; width: 28px; height: 28px; object-fit: cover; border-radius: 0%;" src="assets/59b4d58afdc5.webp" />
+            &nbsp;
         </div>
         <span style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; font-weight: bold; position: relative; display: inline-block; left: -5px; vertical-align: top;" class="by">​Vrock</span>
         
@@ -16680,7 +16687,7 @@
                 "그렇게 하지 않으면.."</div><div class="message general" style="font-family: Pretendard-Regular, sans-serif; padding: 0px 5px 6px 45px; margin: 0px; border: none; outline: none; position: relative; line-height: 1.25em; color: #3f3f3f; font-size: 16px;">"당신의 형이 이륙해온 모든게 망가져버려요.."</div><div class="message general" style="font-family: Pretendard-Regular, sans-serif; padding: 0px 5px 6px 45px; margin: 0px; border: none; outline: none; position: relative; line-height: 1.25em; color: #3f3f3f; font-size: 16px;">
         <div class="spacer" style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px -5px 8px -45px; border: none; outline: none; background-color: #e1e1e1; height: 1px;">&nbsp;</div>
         <div class="avatar" style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; position: absolute; top: 0.2rem; left: 5px; width: 28px; height: 28px; align-items: stretch;" aria-hidden="true">
-            <img style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; width: 28px; height: 28px; object-fit: cover; border-radius: 0%;" src="assets/59b4d58afdc5.webp" />
+            &nbsp;
         </div>
         <span style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; font-weight: bold; position: relative; display: inline-block; left: -5px; vertical-align: top;" class="by">​Vrock</span>
         
@@ -16812,7 +16819,7 @@
     </div><div class="message general" style="font-family: Pretendard-Regular, sans-serif; padding: 0px 5px 6px 45px; margin: 0px; border: none; outline: none; position: relative; line-height: 1.25em; color: #3f3f3f; font-size: 16px;">
                 <div class="spacer" style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px -5px 8px -45px; border: none; outline: none; background-color: #e1e1e1; height: 1px;">&nbsp;</div>
                 <div class="avatar" style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; position: absolute; top: 0.2rem; left: 5px; width: 28px; height: 28px; align-items: stretch;" aria-hidden="true">
-                    <img style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; width: 28px; height: 28px; object-fit: cover; border-radius: 0%;" src="assets/59b4d58afdc5.webp" />
+                    &nbsp;
                 </div>
                 <span style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; font-weight: bold; position: relative; display: inline-block; left: -5px; vertical-align: top;" class="by">Vrock:</span>
                 (아르셀리아 다 피한거봐라 ㅋㅋ</div><div class="message general" style="font-family: Pretendard-Regular, sans-serif; padding: 0px 5px 6px 45px; margin: 0px; border: none; outline: none; position: relative; line-height: 1.25em; color: #3f3f3f; font-size: 16px;">
@@ -16845,7 +16852,7 @@
             DC 10 집중  굴림집중  굴림</div><div class="message general" style="font-family: Pretendard-Regular, sans-serif; padding: 0px 5px 6px 45px; margin: 0px; border: none; outline: none; position: relative; line-height: 1.25em; color: #3f3f3f; font-size: 16px;">
         <div class="spacer" style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px -5px 8px -45px; border: none; outline: none; background-color: #e1e1e1; height: 1px;">&nbsp;</div>
         <div class="avatar" style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; position: absolute; top: 0.2rem; left: 5px; width: 28px; height: 28px; align-items: stretch;" aria-hidden="true">
-            <img style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; width: 28px; height: 28px; object-fit: cover; border-radius: 0%;" src="assets/59b4d58afdc5.webp" />
+            &nbsp;
         </div>
         <span style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; font-weight: bold; position: relative; display: inline-block; left: -5px; vertical-align: top;" class="by">​Vrock</span>
         
@@ -17263,7 +17270,7 @@
                     <img style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; width: 28px; height: 28px; object-fit: cover; border-radius: 0%;" src="assets/0f361c7a338e.webp" />
                 </div>
                 <span style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; font-weight: bold; position: relative; display: inline-block; left: -5px; vertical-align: top;" class="by">볼릭 모스비어드:</span>
-                <img src="assets/6569c917603f.webp" width="300"></div><div class="message general" style="font-family: Pretendard-Regular, sans-serif; padding: 0px 5px 6px 45px; margin: 0px; border: none; outline: none; position: relative; line-height: 1.25em; color: #3f3f3f; font-size: 16px;">@ 행복한 기억을 떠올리게 하는 물약을 먹입니다</div><div class="message general" style="font-family: Pretendard-Regular, sans-serif; padding: 0px 5px 6px 45px; margin: 0px; border: none; outline: none; position: relative; line-height: 1.25em; color: #3f3f3f; font-size: 16px;">
+                Philter of Boundless Joy Potion As you imbibe this potion, you remember a time of pure happiness and joy, usually related to love, parenthood, or some other enormous, life-altering event—the specific memories depend on the philter's creator. You have advantage on Charisma ability checks for 1 hour and immediately gain the effects of a short rest. The effects of this philter cancel the effects of a philter of deep despair. Memory Philters. First distilled by gnomes in the Court of Midnight Teeth, memory philters have since gained a large following among the fey. Each such philter contains a distilled emotion, specific memories, or a particular moment in time. The sable elves, shadow fey, shadow goblins, and wyrd gnomes all prize these ersatz memories, and the longer-lived fey in particular prize the memories of the young as a way of reliving fresh, youthful emotion. Some of these philters have game effects while others are prized more for their value as status items, entertainment, or simply for the smug sense of having stolen passionate moments from mortals. All memory philters superficially resemble potions: they are contained in flasks or small vials, often quite beautifully shaped or painted to hint at the contents. Their ability to transfer memories makes them also useful to a GM to dispense clues or story elements to players (as in a memory that reveals a secret door, a plot point, or a murderer's identity). 장비 중</div><div class="message general" style="font-family: Pretendard-Regular, sans-serif; padding: 0px 5px 6px 45px; margin: 0px; border: none; outline: none; position: relative; line-height: 1.25em; color: #3f3f3f; font-size: 16px;">@ 행복한 기억을 떠올리게 하는 물약을 먹입니다</div><div class="message general" style="font-family: Pretendard-Regular, sans-serif; padding: 0px 5px 6px 45px; margin: 0px; border: none; outline: none; position: relative; line-height: 1.25em; color: #3f3f3f; font-size: 16px;">
                 <div class="spacer" style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px -5px 8px -45px; border: none; outline: none; background-color: #e1e1e1; height: 1px;">&nbsp;</div>
                 <div class="avatar" style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; position: absolute; top: 0.2rem; left: 5px; width: 28px; height: 28px; align-items: stretch;" aria-hidden="true">
                     <img style="font-family: Pretendard-Regular, sans-serif; padding: 0px; margin: 0px; border: none; outline: none; width: 28px; height: 28px; object-fit: cover; border-radius: 0%;" src="assets/ebe3869f0494.webp" />

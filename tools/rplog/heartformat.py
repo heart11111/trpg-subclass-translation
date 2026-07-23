@@ -338,8 +338,18 @@ def chatcard(card_item):
 
         # 이미지 메시지 — 이미지에 딸린 설명 텍스트(장면 묘사, 등장 캐릭터 등)를
         # 버리지 않고 함께 보존한다. "새 창에서 이미지 열기" 같은 중복 링크
-        # 문단(created-gallery-image-open)은 제외.
-        imgs = [img.get('src') for img in message_div.find_all('img') if img.get('src')]
+        # 문단(created-gallery-image-open)은 제외. 이미지를 위에, 캡션을
+        # 아래에 두는 카드 형태로 감싼다(scene-card, CSS는 publish.py).
+        # 특성/아이템 카드의 작은 뱃지 아이콘(class에 icon 포함, 또는
+        # <header> 안에 있는 이미지)은 장면 이미지가 아니므로 제외한다.
+        def _is_badge_icon(img):
+            classes = ' '.join(img.get('class') or [])
+            if 'icon' in classes.lower():
+                return True
+            return img.find_parent('header') is not None
+
+        imgs = [img.get('src') for img in message_div.find_all('img')
+                if img.get('src') and not _is_badge_icon(img)]
         if imgs:
             paragraphs = []
             for p in message_div.find_all('p'):
@@ -349,9 +359,10 @@ def chatcard(card_item):
                 text = p.get_text(strip=True)
                 if text:
                     paragraphs.append(text)
-            text_part = '<br>'.join(paragraphs)
-            img_part = ''.join(f'<img src="{src}" width="300">' for src in imgs)
-            combined = (text_part + '<br>' if text_part else '') + img_part
+            img_part = ''.join(f'<img class="scene-img" src="{src}">' for src in imgs)
+            caption = (f'<div class="scene-caption">{"<br>".join(paragraphs)}</div>'
+                       if paragraphs else '')
+            combined = f'<div class="scene-card">{img_part}{caption}</div>'
             card_data.append(title_text)
             card_data.append(combined)
             return card_data

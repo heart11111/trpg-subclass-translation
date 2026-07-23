@@ -189,6 +189,13 @@ PAGE_TEMPLATE = """<!doctype html>
                overflow-wrap: break-word; }
   .log-body img { max-width: 100%; height: auto; }
   .log-body .message-content img { max-width: min(100%, 260px); }
+  .log-body .scene-card { margin: 6px 0 2px; max-width: 340px; border-radius: 10px;
+                           overflow: hidden; background: #f7f5ef; border: 1px solid #e6e0d2;
+                           box-shadow: 0 1px 4px rgba(0,0,0,.06); }
+  .log-body .scene-card .scene-img { display: block; width: 100%; max-width: 100%;
+                                      margin: 0; border-radius: 0; }
+  .log-body .scene-caption { padding: 10px 14px 12px; font-size: 13.5px; line-height: 1.65;
+                              color: #4a4438; }
   @font-face { font-family: 'Pretendard-Regular'; src: local('Pretendard Regular'), local('Pretendard'); }
   .log-body * { font-family: 'Pretendard', 'Pretendard-Regular', sans-serif !important; }
   .log-body .sheet-result span, .log-body .sheet-result * { font-family: 'Fraunces', serif !important; }
