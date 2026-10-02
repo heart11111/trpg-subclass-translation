@@ -29,6 +29,7 @@ MAX_PX = 1400
 QUALITY = 80
 EXT = {'image/webp': '.webp', 'image/png': '.png', 'image/jpeg': '.jpg', 'image/gif': '.gif',
        'image/avif': '.avif', 'image/svg+xml': '.svg', 'font/woff': '.woff', 'font/woff2': '.woff2'}
+REMOTE_IMG = re.compile(r'''(?:src=["']|url\(["']?|"(?:img|image|portrait)":")(https?://(?!fonts\.googleapis|cdn\.jsdelivr|fonts\.gstatic)[^"')\s>]+)''')
 DATA_URI = re.compile(r'data:((?:image/[a-z+]+)|(?:font/[a-z0-9]+));base64,([A-Za-z0-9+/=]+)')
 
 TOPBAR_CSS = """
@@ -82,6 +83,19 @@ def convert_page(src, slug, title, date, season, arc):
         html = f.read()
     convert, stats = make_asset_writer()
     html = DATA_URI.sub(convert, html)
+
+    # 내보내기 때 못 받아온 외부 이미지(사설 이미지 서버 등)는 사이트에서 깨지므로 받아서 로컬화
+    remote = {}
+    for url in set(REMOTE_IMG.findall(html)):
+        data = publish._fetch_url(url)
+        if not data:
+            print('WARN: 못 받은 외부 이미지:', url)
+            continue
+        ext = os.path.splitext(url.split('?')[0])[1] or '.webp'
+        remote[url] = publish.store_asset(data, ext, 1600)
+    for url, local in remote.items():
+        html = html.replace(url, local)
+    stats['remote_localized'] = len(remote)
 
     # <title>, 폰트(Cinzel 추가), 상단바 CSS
     html = re.sub(r'<title>.*?</title>', f'<title>{title} - 화살성채 RP 로그</title>', html, count=1, flags=re.S)
